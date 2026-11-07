@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exercicis propis · 4t d’ESO — Step Quiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body>
+
+<header>
+  <div class="hd-left">
+    <h1 id="hd-title">Exercicis propis · 4t d’ESO</h1>
+  </div>
+  <a class="site-link" href="https://step-quiz.net" target="_blank" rel="noopener" title="Step Quiz — David Arso Civil">
+    <div class="site-label">Step Quiz<br>step-quiz.net</div>
+    <img class="site-icon" src="assets/icon.png" alt="Step Quiz" onerror="this.style.display='none'">
+  </a>
+</header>
+
+<!-- VIEW: Matèries -->
+<div class="view active" id="v-materies">
+  <div class="cat-title">4t d’ESO</div>
+  <div class="cat-sub">Tria la teva matèria</div>
+  <ul class="ex-list" id="materies-list"></ul>
+  <div class="buit" id="materies-buit" style="display:none">
+    Encara no hi ha cap tasca publicada.<br>Torna-hi d'aquí a uns dies.
+  </div>
+<!--  <p class="cat-sub"><a href="errades.html">Totes les errades del solucionari, setmana a setmana →</a></p>-->
+</div>
+
+<!-- VIEW: Unitats (dins d'una matèria) -->
+<div class="view" id="v-unitats">
+  <button class="back-btn" id="back-materies" onclick="goBackMateries()">&larr; Torna a les matèries</button>
+  <div class="cat-title" id="unitats-title"></div>
+  <div class="cat-sub">Tria una unitat per veure les tasques</div>
+  <ul class="ex-list" id="unitats-list"></ul>
+</div>
+
+<!-- VIEW: Tasques (dins d'una unitat) -->
+<div class="view" id="v-tasques">
+  <button class="back-btn" id="back-unitats" onclick="goBackUnitats()">&larr; Torna a les unitats</button>
+  <div class="cat-title" id="tasca-cat-title"></div>
+  <div class="cat-sub" id="tasca-cat-sub"></div>
+  <ul class="ex-list" id="tasques-list"></ul>
+  <div class="buit" id="tasques-buit" style="display:none">
+    Encara no hi ha cap tasca oberta en aquesta unitat.<br>Torna-hi d'aquí a uns dies.
+  </div>
+</div>
+
+<footer>
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="flex-shrink:0;" aria-label="Llicència Creative Commons BY-NC-ND 4.0">
+    <img class="cc-img" alt="Llicència Creative Commons BY-NC-ND 4.0"
+         src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" onerror="this.style.display='none'">
+  </a>
+  <span>
+    &copy; 2026 <strong>David Arso Civil</strong>. Ús educatiu lliure.
+    Prohibida la comercialització i la modificació
+    (<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>).
+  </span>
+</footer>
+
+<script src="cataleg.js"></script>
+<script src="hints.js"></script>
+<script src="tasques.js"></script>
+<script src="progres.js"></script>
+<script>
+// Teclat: els elements de les llistes (matèries, unitats, tasques) són <li>
+// amb tabindex; amb el focus, Enter els obre com un clic.
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.matches('li[tabindex]')) { e.preventDefault(); e.target.click(); }
+});
+</script>
+<script>
+/* ── NAVEGACIÓ: matèria → unitat → tasca ─────────────────────────────────
+   Les matèries són a MATERIES i les unitats a UNITATS_META (cataleg.js).
+   Una unitat només surt si té alguna tasca visible (tasques.js), i una
+   matèria només surt si té alguna unitat visible. Si només n'hi ha una de
+   visible, la portada hi entra directament.
+
+   L'adreça mana:
+     (sense hash)   les matèries
+     #apl           les unitats de 4t ESO Aplicades
+     #apl-u4        les tasques de la unitat 4 d'Aplicades
+   La vista prèvia del professor (?tot=1) es manté en tots els enllaços. */
+
+const metaDe = u => UNITATS_META[u] || {nom:u, subtitol:''};
+
+function unitatsVisibles(m){
+  return Object.keys(UNITATS_META)
+    .filter(u => materiaDe(u) === m && tasquesDe(u).length > 0);
+}
+
+function materiesVisibles(){
+  return Object.keys(MATERIES).filter(m => unitatsVisibles(m).length > 0);
+}
+
+function fila(badge, titol, sub, accio){
+  const li = document.createElement('li');
+  li.className = 'ex-item';
+  li.innerHTML = `
+    <span class="ex-badge">${badge}</span>
+    <div class="ex-info">
+      <div class="ex-title">${titol}</div>
+      <div class="ex-sub">${sub}</div>
+    </div>
+    <span class="ex-arrow">&rarr;</span>`;
+  li.onclick = accio;
+  li.tabIndex = 0;
+  return li;
+}
+
+function showMateries(){
+  show('v-materies');
+  document.getElementById('hd-title').textContent = 'Exercicis propis · 4t d’ESO';
+  const ul = document.getElementById('materies-list');
+  ul.innerHTML = '';
+  const ms = materiesVisibles();
+  document.getElementById('materies-buit').style.display = ms.length ? 'none' : 'block';
+  ms.forEach(m => {
+    const n = unitatsVisibles(m).length;
+    ul.appendChild(fila(MATERIES[m].curs, MATERIES[m].nom,
+      n === 1 ? '1 unitat' : n + ' unitats', () => { location.hash = m; }));
+  });
+}
+
+function showUnitats(m){
+  show('v-unitats');
+  document.getElementById('hd-title').textContent = MATERIES[m].nom + ' · ' + MATERIES[m].curs;
+  document.getElementById('unitats-title').textContent = MATERIES[m].nom;
+  /* Si només hi ha una matèria, no cal el botó per tornar-hi. */
+  document.getElementById('back-materies').style.display = materiesVisibles().length > 1 ? '' : 'none';
+  const ul = document.getElementById('unitats-list');
+  ul.innerHTML = '';
+  unitatsVisibles(m).forEach(u => {
+    const meta = metaDe(u);
+    const n = tasquesDe(u).length;
+    ul.appendChild(fila(meta.nom, meta.subtitol, n === 1 ? '1 tasca' : n + ' tasques',
+      () => { location.hash = u; }));
+  });
+}
+
+function showTasques(u){
+  show('v-tasques');
+  const meta = metaDe(u);
+  const m = MATERIES[materiaDe(u)] || {nom:'', curs:''};
+  document.getElementById('hd-title').textContent = m.nom + ' · ' + meta.nom;
+  document.getElementById('tasca-cat-title').textContent = meta.nom + '. ' + meta.subtitol;
+  document.getElementById('tasca-cat-sub').textContent = m.nom + ' · ' + m.curs + ' · tria una tasca';
+  /* Si la portada ha entrat directament aquí (una sola matèria i una sola unitat), no hi ha on tornar. */
+  const unica = materiesVisibles().length === 1 && unitatsVisibles(materiaDe(u)).length === 1;
+  document.getElementById('back-unitats').style.display = unica ? 'none' : '';
+
+  const llista = tasquesDe(u);
+  const ul = document.getElementById('tasques-list');
+  ul.innerHTML = '';
+  document.getElementById('tasques-buit').style.display = llista.length ? 'none' : 'block';
+
+  llista.forEach(t => {
+    const refs  = refsDe(t);
+    const fets  = comptaFets(refs);
+    const tots  = refs.length;
+    const acabada = fets === tots && tots > 0;
+    const venc  = tascaVencuda(t);
+    const dies  = diesRestants(t);
+    const quan  = venc ? 'data límit passada'
+                : (dies === 0 ? 'venç avui' : dies === 1 ? 'venç demà' : 'falten ' + dies + ' dies');
+    const li = document.createElement('li');
+    li.className = 'ex-item' + (acabada ? ' is-fet' : '');
+    li.innerHTML = `
+      <span class="ex-badge">Setmana ${t.setmana}</span>
+      <div class="ex-info">
+        <div class="ex-title">${t.titol || ('Data límit: ' + dataLlarga(t.limit))}</div>
+        <div class="ex-sub">${tots} exercici${tots===1?'':'s'} &middot; ${fets} fet${fets===1?'':'s'} &middot; ${quan}</div>
+      </div>
+      ${acabada ? '<span class="ex-fet-tag">✓ Fet</span>' : ''}
+      <span class="ex-arrow">&rarr;</span>`;
+    li.onclick = () => { window.location.href = 'tasca.html' + cercaPreview() + '#' + idTasca(t); };
+    li.tabIndex = 0;
+    ul.appendChild(li);
+  });
+}
+
+function goBackMateries(){ location.hash = ''; }
+function goBackUnitats(){
+  const u = location.hash.replace('#','');
+  const m = materiaDe(u);
+  location.hash = (materiesVisibles().length > 1 || unitatsVisibles(m).length > 1) ? m : '';
+}
+
+function router(){
+  const h = location.hash.replace('#','');
+  if(UNITATS_META[h] && tasquesDe(h).length) return showTasques(h);
+  if(MATERIES[h] && unitatsVisibles(h).length) return showUnitats(h);
+  /* Portada: si només hi ha una matèria (i una unitat), s'hi entra directament. */
+  const ms = materiesVisibles();
+  if(ms.length === 1){
+    const us = unitatsVisibles(ms[0]);
+    if(us.length === 1) return showTasques(us[0]);
+    return showUnitats(ms[0]);
+  }
+  showMateries();
+}
+window.addEventListener('hashchange', router);
+
+function show(id){
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+router();
+</script>
+</body>
+</html>

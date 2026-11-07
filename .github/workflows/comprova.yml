@@ -1,0 +1,29 @@
+# Comprova que les dades del web quadren: catàleg, imatges, tasques, pistes i errades
+# (node eines/comprova.js). No escriu res al repositori.
+# S'executa a cada canvi a main, a cada pull request i a mà (Actions → Comprova el web →
+# Run workflow). Els commits del bot dels ZIP no el disparen per si sols (regla de GitHub):
+# per això unzip-upload.yml el llança després de desar.
+name: Comprova el web
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  proves:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Catàleg, imatges, tasques, pistes i errades
+        run: node eines/comprova.js
