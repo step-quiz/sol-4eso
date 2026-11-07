@@ -332,6 +332,9 @@ descuits, no estil. No les copiïs.
 - **Interfície:** tot element clicable, en passar-hi el ratolí o amb el focus del teclat, té vora negra pura
   gruixuda i fons gris clar, sense canviar de mida ni moure's (bloc final de `assets/style.css`). Qualsevol
   element clicable nou ha d'entrar en aquell bloc.
+- **Targetes d'exercici de la tasca (decisió del professor, 7/11/2026):** no són clicables, no tenen fletxa
+  ni canvien en passar-hi el ratolí (classe `ex-fixa`). La solució només s'obre amb el botó «Veure solució».
+  Les fórmules dels apartats no porten barres de desplaçament.
 
 - **Valida cada pista abans de desar-la:** una sola línia, només `<i>`, `<b>`, `<br>` (cap altre `<`, que
   s'escriu «menor que» en text), etiquetes tancades, cap accent greu ni `$`, cap `<br>` ni espai sobrer al final.

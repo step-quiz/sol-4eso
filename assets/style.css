@@ -217,7 +217,7 @@ footer span{font-size:.83rem;color:#333;font-family:'Source Code Pro',monospace;
 }
 .enun-apartats li{display:flex;align-items:center;gap:6px;min-width:0;}
 .enun-lletra{color:var(--ana);font-weight:700;flex-shrink:0;}
-.enun-ap{min-width:0;overflow-x:auto;}
+.enun-ap{min-width:0;}
 .enunciat .katex{font-size:1.05em;}
 .enun-fig{display:block;max-width:100%;height:auto;margin:8px 0 4px;border:1px solid var(--border);border-radius:4px;background:#fff;}
 .enun-ap{white-space:nowrap;}
@@ -227,3 +227,9 @@ footer span{font-size:.83rem;color:#333;font-family:'Source Code Pro',monospace;
   .ex-row.amb-enunciat .ex-info{flex:1 1 100%;order:3;}
   .ex-row.amb-enunciat .ex-arrow{margin-left:auto;}
 }
+
+/* ── Targetes d'exercici de la llista de la tasca: no són clicables (només ho és el botó
+      «Veure solució»), així que no tenen fletxa ni canvien en passar-hi el ratolí. ── */
+.ex-item.ex-fixa,.ex-item.ex-fixa .ex-row{cursor:default;}
+.ex-item.ex-fixa:hover{background:var(--surface);border-color:var(--border);box-shadow:inset 4px 0 0 transparent;transform:none;}
+.ex-item.ex-fixa.is-fet:hover{background:color-mix(in srgb,#22c55e 8%,var(--surface));border-color:color-mix(in srgb,#22c55e 35%,var(--border));}
