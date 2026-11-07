@@ -6,7 +6,7 @@
 <title>Tasca — Exercicis propis · 4t d’ESO</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/katex/katex.min.css">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
 
@@ -71,6 +71,7 @@
 <script src="hints.js"></script>
 <script src="assets/katex/katex.min.js"></script>
 <script src="errades.js?v=1"></script>
+<script src="enunciats.js?v=1"></script>
 <script src="tasques.js"></script>
 <script src="progres.js"></script>
 <script>
@@ -88,6 +89,8 @@ let Y_LLISTA = 0;      // fins on s'havia baixat a la llista en obrir un exercic
 const AMB_ERRADES = typeof htmlErrades === 'function';
 const AMB_MARQUES = AMB_ERRADES && typeof htmlMarques === 'function';   // les marques sobre la imatge (fase 2)
 const AMB_PEGATS  = AMB_ERRADES && typeof htmlPegats === 'function';    // els trossos ja corregits (fase 3)
+/* Els enunciats complets (enunciats.js). Sense ells, la llista mostra el títol curt del catàleg. */
+const AMB_ENUNCIATS = AMB_ERRADES && typeof htmlEnunciat === 'function';
 
 function render(){
   const id = location.hash.replace('#','');
@@ -114,8 +117,9 @@ function render(){
   document.getElementById('tasca-sub').textContent =
       mat.nom + ' · ' + meta.nom + '. ' + meta.subtitol + ' · data límit: ' + dataLlarga(TASCA.limit) + ' (' + quan + ')';
 
-  /* Si la tasca té alguna errada, es van demanant les lletres de les fórmules. */
-  if(AMB_ERRADES && refsDe(TASCA).some(r => erradesDe(r.u, r.n).length)) preparaFormules();
+  /* Si la tasca té alguna errada o algun enunciat, es van demanant les lletres de les fórmules. */
+  if(AMB_ERRADES && refsDe(TASCA).some(r => erradesDe(r.u, r.n).length || (AMB_ENUNCIATS && enunciatDe(r.u, r.n))))
+    preparaFormules();
 
   /* Només a la vista prèvia del professor (?tot=1): avisa si errades.js no
      s'ha pogut carregar, perquè als alumnes no els sortiria cap errada. */
@@ -153,12 +157,13 @@ function renderList(){
     const p = pistaDe(r.u, r.n);
     const avis = AMB_ERRADES ? htmlAvisErrades(r.u, r.n) : '';
     const errEnunciat = AMB_ERRADES ? htmlErradesEnunciat(r.u, r.n) : '';
+    const enunciat = AMB_ENUNCIATS ? htmlEnunciat(r.u, r.n) : '';
     li.className = 'ex-item' + (fet ? ' is-fet' : '');
     li.innerHTML = `
-      <div class="ex-row">
+      <div class="ex-row${enunciat ? ' amb-enunciat' : ''}">
         <span class="ex-badge">${etiquetaDe(r.u, r.n)}</span>
         <div class="ex-info">
-          <div class="ex-title">${f.t}</div>
+          ${enunciat || `<div class="ex-title">${f.t}</div>`}
           <div class="ex-sub">${[altra ? (UNITATS_META[r.u]||{}).nom : '', f.d].filter(Boolean).join(' · ')}</div>
         </div>
         ${fet ? '<span class="ex-fet-tag">✓ Fet</span>' : ''}

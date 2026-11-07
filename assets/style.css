@@ -200,3 +200,30 @@ footer span{font-size:.83rem;color:#333;font-family:'Source Code Pro',monospace;
 .site-link:hover,.site-link:focus-visible{background:#e9e9e9;box-shadow:0 0 0 1.5px #000;border-radius:4px;outline:none;}
 .site-link:hover .site-label,.site-link:focus-visible .site-label{color:#000;}
 .marca:hover,.marca:focus-visible,.marca.activa{background:rgba(128,128,128,.22);border-color:#000;box-shadow:0 0 0 1.5px #000;outline:none;}
+
+/* ── L'enunciat complet a la llista de la tasca (enunciats.js) ── */
+.enunciat{font-size:.9rem;line-height:1.55;color:var(--txt);}
+.enun-titol{font-weight:700;margin-bottom:4px;}
+.enun-text{margin-bottom:6px;}
+.enun-punts{margin:4px 0 6px 1.2em;}
+.enun-punts li{margin:3px 0;}
+.enun-apartats{list-style:none;display:grid;gap:6px 18px;margin:6px 0 4px;align-items:center;}
+.enun-apartats[data-col="1"]{grid-template-columns:1fr;}
+.enun-apartats[data-col="2"]{grid-template-columns:repeat(2,minmax(0,1fr));}
+.enun-apartats[data-col="3"]{grid-template-columns:repeat(3,minmax(0,1fr));}
+.enun-apartats[data-col="4"]{grid-template-columns:repeat(4,minmax(0,1fr));}
+@media (max-width:560px){
+  .enun-apartats[data-col="3"],.enun-apartats[data-col="4"]{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+.enun-apartats li{display:flex;align-items:center;gap:6px;min-width:0;}
+.enun-lletra{color:var(--ana);font-weight:700;flex-shrink:0;}
+.enun-ap{min-width:0;overflow-x:auto;}
+.enunciat .katex{font-size:1.05em;}
+.enun-fig{display:block;max-width:100%;height:auto;margin:8px 0 4px;border:1px solid var(--border);border-radius:4px;background:#fff;}
+.enun-ap{white-space:nowrap;}
+@media (max-width:560px){
+  /* Amb enunciat, l'etiqueta («Ex. 24») va a sobre i l'enunciat ocupa tota l'amplada. */
+  .ex-row.amb-enunciat{flex-wrap:wrap;}
+  .ex-row.amb-enunciat .ex-info{flex:1 1 100%;order:3;}
+  .ex-row.amb-enunciat .ex-arrow{margin-left:auto;}
+}

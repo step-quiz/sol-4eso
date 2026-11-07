@@ -16,7 +16,8 @@ llista ordenada d'exercicis amb una data límit. Si només hi ha una matèria (o
 visibles, la portada hi entra directament.
 
 **Estat (novembre de 2026):** Aplicades, unitat 4 (*Sistemes d'equacions i inequacions*): imatges i
-catàleg sencers. Falten les setmanes (`tasques.js`) i les pistes. Vegeu `TODO.md`.
+catàleg sencers, i els enunciats en KaTeX de la setmana d'exemple. Falten les setmanes
+(`tasques.js`), els seus enunciats i les pistes. Vegeu `TODO.md`.
 
 ## Com programo la feina
 
@@ -83,6 +84,7 @@ errades.html    ← totes les errades del solucionari, per setmanes (les publica
 tasques.js      ← LA PROGRAMACIÓ
 cataleg.js      ← matèries, unitats i fitxa de cada exercici (títol, dificultat, imatges). Es manté a mà
 hints.js        ← LES PISTES (una línia per pista; s'edita a mà)
+enunciats.js    ← ELS ENUNCIATS complets, en català i amb KaTeX (substitueixen el títol curt a la llista)
 errades.js      ← LES ERRADES DEL SOLUCIONARI (ara buit; el sistema és el de sol). Vegeu ERRADES.md
 marca.js        ← eina del professor per marcar on és una errada (tasca.html?tot=1&marca=1)
 pegats/         ← trossos de pàgina ja corregits que es posen a sobre de les imatges (ara buit)
@@ -105,8 +107,10 @@ apl-u4/                      ← Aplicades, unitat 4
   problemes-diferents/data/… problemes aparentment diferents (80–85)
   situacio/data/…            situació d'aprenentatge (SA1–SA3)
   autoavaluacio/data/…       autoavaluació (AV1–AV6)
+  enunciats/                 figures dels enunciats (gràfiques, taules…), si n'hi ha
 eines/
   retalla.py, retalls.json   ← fan les imatges d'una unitat a partir del PDF de source/
+  figura.py                  ← retalla una figura del PDF per a un enunciat (apl-u4/enunciats/…)
   comprova.js                ← les proves (també les passa GitHub a cada canvi)
   optimitza_png.py           ← comprimeix les imatges sense cap pèrdua
 source/         ← el PDF del solucionari (Santillana, Matemáticas 4 ESO Opción A)
@@ -117,6 +121,31 @@ _uploads/       ← on es pugen els ZIP (el workflow els descomprimeix)
 
 `cataleg.js` és el que permet que una tasca agafi exercicis d'on sigui: hi ha el títol, la dificultat
 i les imatges de cada exercici, un sol cop. Les tasques només guarden les claus.
+
+## Els enunciats
+
+A la llista de la tasca, cada exercici mostra el seu **enunciat complet**, en català i amb les
+fórmules ben escrites (KaTeX), en lloc del títol curt del catàleg. Viuen a **`enunciats.js`**, amb la
+mateixa clau que les pistes:
+
+```js
+  'apl-u4/24': {
+    text: TEX`Troba de quines equacions és solució $x = 2$, $y = -1$.`,
+    apartats: [TEX`$x + 3y = 5$`, TEX`$\dfrac{x}{2} + y = 0$`, TEX`$-2x + y = -5$`,
+               TEX`$3x - y = 7$`, TEX`$4x + 3y = 4$`, TEX`$x = 2y$`],
+    col: 3 },
+```
+
+- Només hi van els exercicis **programats** (com les pistes). Un exercici sense enunciat mostra el
+  títol curt, com abans.
+- Camps: `text`, `apartats` (a, b, c…), `col` (columnes dels apartats: 1–4; al mòbil, com a molt 2),
+  `punts` (preguntes amb pic), `titol` (nom d'una situació d'aprenentatge), `fig` (figures retallades
+  del PDF) i `despres` (text després dels apartats). Explicació a la capçalera del fitxer.
+- Les **figures** (gràfiques, taules, dibuixos) no es reescriuen: es retallen del PDF amb
+  `eines/figura.py` i van a `apl-u4/enunciats/`.
+- La imatge de la solució (el llibre) continua en castellà.
+- `eines/comprova.js` comprova que totes les fórmules es pintin sense error i avisa dels exercicis
+  programats que encara no tenen enunciat.
 
 ## Les pistes dels exercicis
 
@@ -154,7 +183,8 @@ node eines/comprova.js
 
 Comprova que cada unitat i matèria existeixen, que cada fitxa té imatges i que les imatges hi són,
 que les tasques només fan servir exercicis del catàleg i tenen dates vàlides, que les pistes tenen
-el format bo i que les errades apunten a exercicis i imatges que existeixen. GitHub la passa sola a
+el format bo, que les errades i els enunciats apunten a exercicis i imatges que existeixen, i que
+totes les fórmules es pinten amb KaTeX sense error. GitHub la passa sola a
 cada canvi (Actions → *Comprova el web*): si surt en vermell, alguna dada no quadra.
 
 <!-- atribucio-centre:inici -->

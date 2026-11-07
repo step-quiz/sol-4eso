@@ -9,6 +9,9 @@ Comença d'aquí a unes dues setmanes (finals de novembre de 2026).
       autoavaluació AV1–AV6 (97 fitxes). Dificultat llegida dels cercles del PDF.
 - [ ] Setmanes: la llista d'exercicis de cada setmana i les dates límit (`tasques.js`). Ara hi ha una
       setmana d'**exemple**, amagada (`visible:'mai'`): s'ha de substituir.
+- [x] Enunciats complets en català i KaTeX (`enunciats.js`): mecanisme fet, i els de la setmana d'exemple
+      (24, 25, 26, 32, 39, SA1).
+- [ ] Enunciats dels exercicis de les setmanes de debò, quan hi siguin.
 - [ ] Pistes dels exercicis programats (`hints.js`), quan hi hagi les setmanes.
 - [ ] Errades del solucionari dels exercicis programats (`errades.js`), si n'hi ha.
 
@@ -18,6 +21,10 @@ Comença d'aquí a unes dues setmanes (finals de novembre de 2026).
       (`eines/retalla.py`), el catàleg i `UNITATS_META` (`materia:'aca'`). Vegeu `CLAUDE.md`.
 
 ## Pendent de decidir
+
+- [ ] SA1 (situació d'aprenentatge 1): l'enunciat parla del «vuelo de la mañana», però la solució (i la
+      resta de la situació) fa servir el vol de la tarda. Possible errada de l'enunciat: preguntar-ho a
+      l'editorial. Ara es transcriu tal com és.
 
 - [ ] Les errades: si se n'han de fer moltes, o amb pegats, portar les eines de `sol` i adaptar-les
       (`ERRADES.md`, apartat 6).

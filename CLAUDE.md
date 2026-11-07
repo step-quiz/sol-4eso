@@ -76,12 +76,14 @@ i tot el que veu l'alumne són en català. Unitat 4 = pàgines 89–128 del llib
 | `tasques.js` | Programació: una línia per setmana (`unitat`, `setmana`, `limit`, `exercicis`) |
 | `cataleg.js` | `MATERIES`, `UNITATS_META` i la fitxa de **cada** exercici de la unitat (títol `t`, dificultat `d`, imatges `i`, i `e`/`nom` per a les claus de text). Mantingut a mà |
 | `hints.js` | Pistes, **només** dels exercicis programats a `tasques.js` |
+| `enunciats.js` | Enunciats complets en català i KaTeX, **només** dels exercicis programats. A la llista de la tasca substitueixen el títol curt `t` |
 | `errades.js` | Errades del solucionari dels exercicis programats. Ara és **buit**, però amb totes les funcions de `sol` (targetes, marques, pegats) |
 | `assets/katex/` | KaTeX 0.16.47: pinta les fórmules de `errades.js`. No s'hi toca res |
 | `marca.js` | Eina del professor per marcar on és una errada dins la imatge (`tasca.html?tot=1&marca=1`) |
 | `pegats/` | Trossos de pàgina ja corregits. Ara és buit |
 | `eines/retalla.py`, `eines/retalls.json` | Fan les imatges d'una unitat a partir del PDF |
-| `eines/comprova.js` | Les proves: catàleg, imatges, tasques, pistes i errades |
+| `eines/figura.py` | Retalla una figura del PDF per a un enunciat (`apl-uN/enunciats/<n>-1.png`) |
+| `eines/comprova.js` | Les proves: catàleg, imatges, tasques, pistes, errades, enunciats i fórmules (KaTeX) |
 | `source/` | El PDF del solucionari |
 
 ## Com s'afegeix una unitat nova (workflow)
@@ -102,10 +104,33 @@ i tot el que veu l'alumne són en català. Unitat 4 = pàgines 89–128 del llib
      següent comença a dalt de tot de la columna esquerra, la pàgina anterior). Amb la posició dels números
      (lletra `Raleway-SemiBold` a la capa de text) es calcula sol; després es mira a ull.
 4. L'usuari passa la **llista-sel** (exercicis de cada setmana, segons l'Excel).
-5. Afegir les setmanes a `tasques.js` i, si ho demana, esborranys de **pista** per exercici (que apuntin al
-   mètode, **mai** el resultat; segons l'apartat «Estil de les pistes»).
+5. Afegir les setmanes a `tasques.js`, l'**enunciat** de cada exercici programat a `enunciats.js` (apartat
+   «Enunciats») i, si ho demana, esborranys de **pista** per exercici (que apuntin al mètode, **mai** el
+   resultat; segons l'apartat «Estil de les pistes»).
 6. `node eines/comprova.js`, provar-ho al navegador amb `index.html?tot=1` i enviar els fitxers definitius al
    professor perquè els pugi.
+
+## Enunciats (`enunciats.js`)
+
+Decisió del professor (7/11/2026): a la llista de la tasca, en lloc del títol curt, l'enunciat complet, **en
+català**, amb KaTeX, **només dels exercicis programats**. Les figures es retallen del PDF.
+
+- **Transcripció fidel.** Mateixes dades, mateix ordre d'apartats, mateixos noms de variables i punts. Es
+  tradueix, no s'adapta ni s'aclareix. Es llegeix la imatge ampliada (no la capa de text, que barreja
+  columnes) i, en acabat, es compara la web renderitzada amb la imatge, apartat per apartat.
+- **Si l'enunciat del llibre té una errada**, no es corregeix en silenci: es transcriu tal com és i es diu al
+  professor (pot anar a `errades.js` amb `enunciat: 1`).
+- Les dades que l'enunciat del solucionari no porta (les de la pàgina d'obertura de la unitat, a les
+  situacions d'aprenentatge) no s'inventen.
+- Català del llibre: «Troba», «Resol», «Esbrina», «Determina», «Calcula»; «sistema compatible
+  determinat / indeterminat», «incompatible»; «inequació»; «parell»; vols «de la tarda / de la nit».
+- LaTeX: fraccions amb `\dfrac`; sistemes amb `\left.\begin{aligned} … \end{aligned}\right\}` (la clau a la
+  dreta, com el llibre); parells amb parèntesis normals, o `\left( … \right)` si porten fraccions.
+- `col`: 3 per a equacions curtes, 2 per a sistemes o expressions llargues, 1 si cal.
+- Figura: `python3 eines/figura.py apl-u4 37-1 <pàgina PDF> x0 y0 x1 y1` (coordenades de pdfplumber), mirar el
+  retall a `eines/sortida/`, i `--escriu`. A l'enunciat: `fig: ['enunciats/37-1.png']`.
+- Sempre `node eines/comprova.js` (pinta totes les fórmules) i mirar la tasca al navegador, a l'ordinador i al
+  mòbil (390 px): cap fórmula en vermell, cap apartat tallat.
 
 ## Estil de les pistes
 

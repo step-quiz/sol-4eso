@@ -12,6 +12,9 @@
                     servir <i>, <b> i <br> (cap altre «<»).
      · errades.js   es carrega, i cada errada és d'un exercici del catàleg i té ondiu i hadedir;
                     les imatges de marques i pegats existeixen.
+     · enunciats.js cada enunciat és d'un exercici del catàleg, té els camps bons i les figures
+                    existeixen. Avisa dels exercicis programats que encara no en tenen.
+     · fórmules     totes les d'errades.js i enunciats.js es pinten amb el KaTeX del web sense error.
    Acaba amb codi 1 si hi ha cap problema (el workflow comprova.yml surt en vermell). */
 'use strict';
 const fs = require('fs'), path = require('path'), vm = require('vm');
@@ -20,17 +23,17 @@ const problemes = [], avisos = [];
 const mal = s => problemes.push(s), avis = s => avisos.push(s);
 
 /* Carrega els fitxers del web en un mateix context, com fa el navegador. */
-const ctx = { console, location: { search: '' }, localStorage: null, document: {} };
+const ctx = { console, location: { search: '' }, localStorage: null, document: { compatMode: 'CSS1Compat' } };
 vm.createContext(ctx);
 function carrega(f){
   const codi = fs.readFileSync(path.join(ARREL, f), 'utf8')
     .replace(/^const (\w+)\s*=/gm, 'var $1 =');      // perquè les constants quedin visibles
   vm.runInContext(codi, ctx, { filename: f });
 }
-['cataleg.js', 'tasques.js', 'hints.js', 'progres.js', 'errades.js'].forEach(f => {
+['assets/katex/katex.min.js', 'cataleg.js', 'tasques.js', 'hints.js', 'progres.js', 'errades.js', 'enunciats.js'].forEach(f => {
   try { carrega(f); } catch (e) { mal(f + ': no es pot carregar (' + e.message + ')'); }
 });
-const { MATERIES, UNITATS_META, CATALEG, TASQUES, PISTES, ERRADES } = ctx;
+const { MATERIES, UNITATS_META, CATALEG, TASQUES, PISTES, ERRADES, ENUNCIATS, katex } = ctx;
 const existeix = f => fs.existsSync(path.join(ARREL, f));
 const DIF = ['', '●○○', '●●○', '●●●'];
 
@@ -106,11 +109,50 @@ if (ERRADES) for (const [k, llista] of Object.entries(ERRADES)) {
   });
 }
 
+/* ── enunciats.js ── */
+const CAMPS_ENUN = ['titol', 'text', 'punts', 'apartats', 'col', 'fig', 'despres'];
+if (ENUNCIATS) for (const [k, e] of Object.entries(ENUNCIATS)) {
+  const j = k.lastIndexOf('/');
+  const u = k.slice(0, j), n = k.slice(j + 1);
+  if (!aCataleg(u, n)) mal(`enunciats.js: ${k} no és al catàleg`);
+  Object.keys(e).forEach(c => { if (!CAMPS_ENUN.includes(c)) mal(`enunciats.js: ${k}: camp desconegut «${c}»`); });
+  if (!e.text && !e.titol && !(e.apartats || []).length && !(e.punts || []).length) mal(`enunciats.js: ${k} és buit`);
+  for (const c of ['punts', 'apartats', 'fig']) if (e[c] !== undefined && !Array.isArray(e[c])) mal(`enunciats.js: ${k}: «${c}» ha de ser una llista [ ]`);
+  if (e.col !== undefined && !(Number.isInteger(e.col) && e.col >= 1 && e.col <= 4)) mal(`enunciats.js: ${k}: col ha de ser 1, 2, 3 o 4`);
+  (e.fig || []).forEach(f => { if (!existeix(path.join(u, f))) mal(`enunciats.js: ${k}: no existeix la figura ${u}/${f}`); });
+}
+if (TASQUES && ENUNCIATS) {
+  const falten = new Set();
+  TASQUES.forEach(t => ctx.refsDe(t).forEach(r => { if (aCataleg(r.u, r.n) && !ENUNCIATS[r.u + '/' + r.n]) falten.add(r.u + '/' + r.n); }));
+  if (falten.size) avis(`enunciats.js: exercicis programats sense enunciat (es veurà el títol curt): ${[...falten].join(', ')}`);
+}
+
+/* ── Fórmules: totes s'han de poder pintar amb el KaTeX del web ── */
+let nFormules = 0;
+function provaFormules(on, s){
+  if (typeof s !== 'string') return;
+  const trossos = s.replace(/\\./g, m => m === '\\$' ? '' : m).split('$');
+  if (trossos.length % 2 === 0) { mal(`${on}: hi ha un «$» sense tancar`); return; }
+  for (let i = 1; i < trossos.length; i += 2) {
+    nFormules++;
+    try { katex.renderToString(trossos[i], { throwOnError: true, macros: Object.assign({}, ctx.ERRADES_MACROS || {}) }); }
+    catch (err) { mal(`${on}: KaTeX no entén «${trossos[i]}» (${String(err.message).split('\n')[0]})`); }
+  }
+}
+if (katex) {
+  if (ENUNCIATS) for (const [k, e] of Object.entries(ENUNCIATS))
+    for (const c of ['titol', 'text', 'despres', 'punts', 'apartats'])
+      [].concat(e[c] || []).forEach((s, i) => provaFormules(`enunciats.js: ${k} (${c}${Array.isArray(e[c]) ? ' ' + (i + 1) : ''})`, s));
+  if (ERRADES) for (const [k, llista] of Object.entries(ERRADES))
+    llista.forEach((e, i) => ['lloc', 'ondiu', 'hadedir', 'motiu'].forEach(c => provaFormules(`errades.js: ${k} #${i} (${c})`, e[c])));
+} else mal('assets/katex/katex.min.js: no s\'ha pogut carregar KaTeX per provar les fórmules');
+
 /* ── Resum ── */
 avisos.forEach(a => console.log('  ! ' + a));
 problemes.forEach(p => console.log('  ✗ ' + p));
 console.log(`matèries: ${Object.keys(MATERIES || {}).length} · unitats: ${Object.keys(UNITATS_META || {}).length}`
   + ` · fitxes: ${nFitxes} · tasques: ${(TASQUES || []).length} · pistes: ${Object.keys(PISTES || {}).length}`
-  + ` · exercicis amb errades: ${Object.keys(ERRADES || {}).length}`);
+  + ` · exercicis amb errades: ${Object.keys(ERRADES || {}).length}`
+  + ` · enunciats: ${Object.keys(ENUNCIATS || {}).length} · fórmules provades: ${nFormules}`);
 if (problemes.length) { console.log(`HI HA ${problemes.length} PROBLEMES`); process.exit(1); }
 console.log('TOT CORRECTE' + (avisos.length ? ` (amb ${avisos.length} avisos)` : ''));

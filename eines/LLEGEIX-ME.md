@@ -5,8 +5,9 @@ Totes s'executen des de l'arrel del repo. **Cap eina toca el repo si no li ho di
 
 | Eina | Què fa |
 |---|---|
-| `comprova.js` | Les proves: catàleg, imatges, tasques, pistes i errades. GitHub la passa a cada canvi |
+| `comprova.js` | Les proves: catàleg, imatges, tasques, pistes, errades, enunciats i fórmules (pinta totes les fórmules amb el KaTeX del web). GitHub la passa a cada canvi |
 | `retalla.py` + `retalls.json` | Fa les imatges de les pàgines d'una unitat a partir del PDF de `source/` |
+| `figura.py` | Retalla una figura del PDF (gràfica, taula, dibuix) per posar-la dins d'un enunciat |
 | `optimitza_png.py` | Comprimeix les imatges sense cap pèrdua (només si el resultat és idèntic píxel a píxel) |
 
 ## Què cal
@@ -22,6 +23,9 @@ node eines/comprova.js                       # passa les proves
 
 python3 eines/retalla.py apl-u4              # fa les imatges a eines/sortida/apl-u4/ (per mirar-les)
 python3 eines/retalla.py apl-u4 --escriu     # ... i les escriu a apl-u4/<tema>/data/full-K.png
+
+python3 eines/figura.py apl-u4 34-1 109 30 112 235 330           # retalla una figura (a eines/sortida/)
+python3 eines/figura.py apl-u4 34-1 109 30 112 235 330 --escriu # ... a apl-u4/enunciats/34-1.png
 
 python3 eines/optimitza_png.py               # comprimeix totes les imatges del web
 ```
