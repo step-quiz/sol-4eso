@@ -3,9 +3,12 @@ const TASQUES = [
 
   /* ── 4t ESO Aplicades ─────────────────────────────────────────────────── */
 
-  /* EXEMPLE: amagada (visible:'mai'). Es veu només amb  index.html?tot=1 .
-     Quan tinguis les setmanes de la UD4, substitueix-la per les de debò.    */
-  { unitat:'apl-u4', setmana:1, limit:'2026-11-29', visible:'mai', exercicis:[24, 25, 26, 32, 39, 'SA1'] },
+  /* EXEMPLES: amagats (visible:'mai'). Es veuen només amb  index.html?tot=1 .
+     Quan tinguis les setmanes de la UD4, substitueix-los per les de debò.   */
+  { unitat:'apl-ud4',  setmana:1, limit:'2026-11-29', visible:'mai',
+    exercicis:['4.1.3', '4.2.2', '4.2.7', 'U5.57', 'U5.64', 'U5.81', '4.3.2'] },
+  { unitat:'apl-ud10', setmana:1, limit:'2027-02-28', visible:'mai',
+    exercicis:['U4.24', 'U4.25', 'U4.26', 'U4.32', 'U4.39', 'U4.SA1'] },
 
   /* ── 4t ESO Acadèmiques ───────────────────────────────────────────────── */
 
@@ -22,25 +25,27 @@ const DIES_ABANS = 3;
 
    Cada línia és una TASCA (una setmana de feina):
 
-     { unitat:'apl-u4', setmana:3, limit:'2026-12-06',
-       exercicis:[62, 63, 64, 70, 'SA1'] },
+     { unitat:'apl-ud4', setmana:3, limit:'2026-12-06',
+       exercicis:['4.2.7', 'U5.57', 'U5.81', '4.3.2'] },
 
-     unitat     la unitat, amb el prefix de la matèria: 'apl-u4' (Aplicades,
-                unitat 4), 'aca-u2' (Acadèmiques, unitat 2)…
+     unitat     la UD del teu llibre, amb el prefix de la matèria: 'apl-ud4'
+                (Aplicades, UD4), 'apl-ud10' (Aplicades, UD10)…
      setmana    el número que veurà l'alumne
      limit      data límit, sempre en format AAAA-MM-DD
-     exercicis  els exercicis, EN L'ORDRE QUE VOLS QUE ELS FACIN.
-                Un número (24) o, per als que no en tenen al llibre, la clau
-                del catàleg entre cometes: 'R1' (repte), 'FN' (fake news),
-                'SA1' (situació d'aprenentatge), 'AV1' (autoavaluació).
+     exercicis  els exercicis, EN L'ORDRE QUE VOLS QUE ELS FACIN, sempre
+                entre cometes. La clau diu d'on surt cada exercici:
+                  'U5.57'   Santillana, unitat 5, exercici 57
+                  'U4.SA1'  Santillana, unitat 4, situació d'aprenentatge 1
+                            (també 'U4.FN' fake news, 'U4.AV1' autoavaluació)
+                  '4.2.7'   el teu llibre, exercici 4.2.7
 
-   L'ORDRE MANA. Si escrius [62, 63, 24, 70], l'alumne els veurà
-   exactament així, encara que el 24 sigui d'una altra part del llibre.
+   L'ORDRE MANA. Si escrius ['U5.64', '4.2.7', 'U5.57'], l'alumne els veurà
+   exactament així.
 
    ── Barrejar unitats en una mateixa tasca ──────────────────────────────
-   Un exercici d'una altra unitat s'escriu amb el prefix i dos punts:
+   Un exercici d'una altra UD s'escriu amb la UD i dos punts:
 
-     exercicis:[62, 63, 'apl-u3:44', 70]
+     exercicis:['U5.64', 'apl-ud10:U4.24', '4.3.2']
 
    Útil per a setmanes de repàs abans d'un examen.
 
@@ -65,7 +70,7 @@ const DIES_ABANS = 3;
    A PARTIR D'AQUÍ NO CAL QUE TOQUIS RES
    ═══════════════════════════════════════════════════════════════════════ */
 
-/* Identificador estable d'una tasca: 'apl-u4/s3'. Surt de la unitat i la
+/* Identificador estable d'una tasca: 'apl-ud4/s3'. Surt de la unitat i la
    setmana, així que no l'has d'escriure ni mantenir. */
 function idTasca(t){ return t.unitat + '/s' + t.setmana; }
 
@@ -113,13 +118,13 @@ function diesRestants(t, ara){
   return Math.round((_data(t.limit) - avui) / 86400000);
 }
 
-/* Una clau d'exercici: 24 (o '24') és un número; 'SA1' es queda com a text. */
+/* Una clau d'exercici: 24 (o '24') és un número; 'U5.57' o '4.2.7' es queden com a text. */
 function _clauEx(x){
   const s = String(x).trim();
   return /^\d+$/.test(s) ? parseInt(s, 10) : s;
 }
 
-/* Els exercicis d'una tasca, resolts a {u, n}. Accepta 24, 'SA1' i 'apl-u3:44'. */
+/* Els exercicis d'una tasca, resolts a {u, n}. Accepta 'U5.57', '4.2.7' i 'apl-ud10:U4.24'. */
 function refsDe(t){
   return t.exercicis.map(e => {
     const s = String(e);

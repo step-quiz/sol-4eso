@@ -6,7 +6,7 @@
 <title>Tasca — Exercicis propis · 4t d’ESO</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/katex/katex.min.css">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 
@@ -67,16 +67,16 @@
   </span>
 </footer>
 
-<script src="cataleg.js"></script>
+<script src="cataleg.js?v=2"></script>
 <script src="hints.js"></script>
 <script src="assets/katex/katex.min.js"></script>
-<script src="errades.js?v=1"></script>
-<script src="enunciats.js?v=1"></script>
+<script src="errades.js?v=2"></script>
+<script src="enunciats.js?v=2"></script>
 <script src="tasques.js"></script>
 <script src="progres.js"></script>
 <script>
 /* ── VISOR DE TASQUES ─────────────────────────────────────────────────
-   Pàgina genèrica. L'adreça mana:  tasca.html#apl-u4/s1  obre la setmana 3
+   Pàgina genèrica. L'adreça mana:  tasca.html#apl-ud10/s1  obre la setmana 3
    de la unitat 7. Afegir una setmana NO vol dir crear cap fitxer nou:
    n'hi ha prou amb una línia a tasques.js. */
 
@@ -202,6 +202,16 @@ function showExercise(r){
   document.getElementById('err-wrap').innerHTML = AMB_ERRADES ? htmlErrades(r.u, r.n) : '';
 
   const wrap = document.getElementById('page-wrap');
+  /* Exercici del llibre propi: no hi ha imatge del solucionari. Es mostren
+     l'enunciat i la solució escrits a enunciats.js. */
+  if(!f.i || f.i.length === 0){
+    const sol = AMB_ENUNCIATS ? htmlSolucio(r.u, r.n) : '';
+    wrap.innerHTML = '<div class="propi-wrap">' + (AMB_ENUNCIATS ? htmlEnunciat(r.u, r.n) : '')
+      + (sol || '<p class="ex-sub">La solució d’aquest exercici encara no és al web.</p>') + '</div>';
+    updateDoneBtn();
+    window.scrollTo(0, 0);
+    return;
+  }
   wrap.innerHTML = f.i.map((p, i) => {
     const src = r.u + '/' + p;
     const quina = f.i.length > 1 ? 'Imatge ' + (i+1) + ' de ' + f.i.length : 'Enunciat i solució';

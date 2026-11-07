@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """retalla.py — fa les imatges de les pàgines d'una unitat a partir del PDF del solucionari.
 
-   Ús:  python3 eines/retalla.py apl-u4              escriu a eines/sortida/apl-u4/... (no toca el repo)
-        python3 eines/retalla.py apl-u4 --escriu     escriu a apl-u4/<tema>/data/full-K.png
+   Ús:  python3 eines/retalla.py apl-ud4              escriu a eines/sortida/apl-ud4/... (no toca el repo)
+        python3 eines/retalla.py apl-ud4 --escriu     escriu a apl-ud4/<tema>/data/full-K.png
 
    Llegeix eines/retalls.json: quin PDF, quines pàgines van a cada tema i la caixa del retall.
    Cada pàgina es passa a 300 ppp, es retalla amb la caixa (sense la capçalera «SOLUCIONARIO»

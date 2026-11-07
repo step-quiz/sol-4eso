@@ -4,9 +4,9 @@
 > errades del solucionari al web. Abans llegeix `CLAUDE.md` i el `README.md`.
 >
 > **Estat (7 de novembre de 2026):** el sistema és el de `sol` (Matemàtiques II), copiat sencer i provat
-> amb els identificadors d'aquest repositori (`apl-u4`). **Encara no hi ha cap errada**: `ERRADES` i
-> `OBSERVACIONS` són buits. Els exemples d'aquest document (`u7/92`, `u9/42`…) són de `sol`; aquí la clau
-> s'escriu `'apl-u4/24'`, i les imatges, `'sistemes/data/full-1.png'` (sense la carpeta de la unitat).
+> amb els identificadors d'aquest repositori (`apl-ud4`). Hi ha dues errades (UD4: U5 · 64 i U5 · 77);
+> `OBSERVACIONS` és buit. Els exemples d'aquest document (`u7/92`, `u9/42`…) són de `sol`; aquí la clau
+> s'escriu `'apl-ud4/U5.64'`, i les imatges, `'u5-semblanca/data/full-3.png'` (sense la carpeta de la UD).
 
 ---
 
@@ -213,12 +213,12 @@ sense. Anuncia «1 errada al solucionari» i ensenya una sola targeta, amb el n�
 en què surten a la solució:
 
 ```js
-  'apl-u4/25': [
+  'apl-ud10/U4.25': [
     { lloc:    TEX`a)`,
       ondiu:   TEX`$x+y=1$`,
       hadedir: TEX`$x+y=5$`,
       motiu:   TEX`...`,
-      marca:   ['sistemes/data/full-1.png', 55.0, 18.0, 30.0, 4.0] },
+      marca:   ['u4-sistemes/data/full-1.png', 55.0, 18.0, 30.0, 4.0] },
   ],
 ```
 
@@ -231,7 +231,7 @@ fórmula surti en vermell, i pujar el número de `errades.js?v=` a `tasca.html` 
 s'adapten:
 
 - els identificadors: `genera.py` i `dades.py` busquen unitats amb l'expressió `u\d+` (`u7`); aquí són
-  `apl-u4`, `aca-u2`;
+  `apl-ud4`, `aca-ud2`, i les claus d'exercici porten l'origen (`U5.64`, `4.2.7`);
 - la relació setmana → unitat (`tex/errors-setmanaN.tex`), que aquí pot ser de dues matèries;
 - el PDF de `source/` i la casació imatge ↔ pàgina (`localitzador/casa.json`): aquí la relació és a
   `eines/retalls.json`, i les imatges es fan amb una caixa fixa i la resolució triada perquè facin 1208 px

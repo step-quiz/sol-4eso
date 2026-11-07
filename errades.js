@@ -4,7 +4,7 @@
    El solucionari té errades. Aquí hi ha les dels exercicis programats a
    tasques.js. La clau és la mateixa que a hints.js:  'unitat/exercici'.
 
-     'apl-u4/76': [
+     'apl-ud10/U4.76': [
        { lloc:    TEX`f)`,
          ondiu:   TEX`$\dlim_{x\to 3}\dfrac{3-x}{x+2}=0$`,
          hadedir: TEX`$\dlim_{x\to 3}\dfrac{-(3+x)}{x+2}=-\dfrac{6}{5}$`,
@@ -84,7 +84,22 @@ const TEX = String.raw;        // no toquis aquesta línia
 
 const ERRADES = {
 
-  /* ── 4t ESO Aplicades · Unitat 4 ─────────────────────────────────────── */
+  /* ── 4t ESO Aplicades · UD4 · Mesura indirecta (Santillana U5) ────────── */
+
+  'apl-ud4/U5.64': [
+    { ondiu:   TEX`Els costats mesuraran $6$; $9{,}6$ i $12{,}8$ cm.`,
+      hadedir: TEX`Els costats mesuraran $8$; $9{,}6$ i $12{,}8$ cm.`,
+      motiu:   TEX`$5\cdot 1{,}6 = 8$, no $6$.`,
+      marca:   ['u5-semblanca/data/full-3.png', 55.2, 34.6, 31.0, 4.4] },
+  ],
+
+  'apl-ud4/U5.77': [
+    { ondiu:   TEX`$\dfrac{\overline{AB}}{\overline{CB}} = \dfrac{n}{m}$, i després $\dfrac{\overline{AB}}{h} = 1 + \dfrac{\overline{AB}}{\overline{CB}}$`,
+      hadedir: TEX`$\dfrac{\overline{AB}}{\overline{CD}} = \dfrac{n}{m}$, i després $\dfrac{\overline{AB}}{h} = 1 + \dfrac{\overline{AB}}{\overline{CD}}$`,
+      motiu:   TEX`La raó és entre les dues columnes, $\overline{AB}$ i $\overline{CD}$; $\overline{CB}$ és un dels cables. El resultat final, $h = \dfrac{\overline{AB}\cdot\overline{CD}}{\overline{AB}+\overline{CD}}$, és correcte.`,
+      marca:   [['u5-problemes/data/full-1.png', 57.0, 90.0, 10.5, 4.8],
+                ['u5-problemes/data/full-2.png', 9.0, 0.5, 20.0, 10.0]] },
+  ],
 
 };
 
@@ -95,7 +110,7 @@ const ERRADES = {
    Comentaris que no són errades, però que poden confondre. Només es veuen
    si ERRADES_OBS és true: surten dins de l'exercici, sota les errades.
 
-     'apl-u4/66': [
+     'apl-ud10/U4.66': [
        { lloc: TEX`c) i d)`,
          text: TEX`Les respostes són el nombre màxim.` },
      ],

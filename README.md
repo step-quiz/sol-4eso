@@ -8,16 +8,22 @@ aquí hi ha **dues matèries** de 4t d'ESO:
 
 | Matèria | Prefix | Exemple d'unitat |
 |---|---|---|
-| Matemàtiques Aplicades | `apl` | `apl-u4` (unitat 4) |
-| Matemàtiques Acadèmiques | `aca` | `aca-u2` (unitat 2) |
+| Matemàtiques Aplicades | `apl` | `apl-ud4` (UD4 del llibre propi) |
+| Matemàtiques Acadèmiques | `aca` | `aca-ud2` (UD2) |
+
+**Les unitats són les UD del llibre propi (Overleaf), no les de Santillana.** Cada UD agafa els
+exercicis de pràctica d'on calgui: d'una o més unitats del solucionari de Santillana (imatges) i del
+llibre propi (enunciat i solució escrits en KaTeX). L'índex mostra les UD en l'ordre del curs:
+UD1, UD2, UD3, UD4, UD11, UD5, UD10, UD6, UD7, UD8, UD9.
 
 L'alumne navega **matèria → unitat → tasca → exercici**. Una *tasca* és una setmana de feina: una
 llista ordenada d'exercicis amb una data límit. Si només hi ha una matèria (o una unitat) amb tasques
 visibles, la portada hi entra directament.
 
-**Estat (novembre de 2026):** Aplicades, unitat 4 (*Sistemes d'equacions i inequacions*): imatges i
-catàleg sencers, i els enunciats en KaTeX de la setmana d'exemple. Falten les setmanes
-(`tasques.js`), els seus enunciats i les pistes. Vegeu `TODO.md`.
+**Estat (novembre de 2026):** Aplicades, **UD4** (*Mesura indirecta*): 13 exercicis de Santillana
+(U5 i U7) i 33 del llibre propi amb la solució. **UD10** (*Sistemes*): els 63 exercicis de la unitat 4
+de Santillana que són del curs. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres
+UD es carregaran unes setmanes abans de fer-les. Vegeu `TODO.md`.
 
 ## Com programo la feina
 
@@ -25,40 +31,43 @@ Edita **`tasques.js`**.
 
 ```js
 const TASQUES = [
-  { unitat:'apl-u4', setmana:1, limit:'2026-11-29', exercicis:[24, 25, 26, 32, 39] },
-  { unitat:'apl-u4', setmana:2, limit:'2026-12-06', exercicis:[62, 63, 64, 70, 'SA1'] },
+  { unitat:'apl-ud4', setmana:1, limit:'2026-11-29', exercicis:['4.1.3', '4.2.2', 'U5.57', 'U5.64'] },
+  { unitat:'apl-ud4', setmana:2, limit:'2026-12-06', exercicis:['4.2.7', 'U5.81', '4.3.2', '4.3.5'] },
 ];
 ```
 
 **L'ordre mana.** Els exercicis es mostren tal com els escrius, encara que no estiguin ordenats per
-número i encara que siguin de parts diferents del llibre.
+número i encara que vinguin de llocs diferents.
 
 Afegir una setmana és **una línia**. No cal crear cap carpeta ni cap fitxer.
 
 Es pot fer des del mòbil: GitHub → `tasques.js` → llapis → *Commit changes*.
 
-### Els exercicis que no tenen número
+### Les claus dels exercicis
 
-Al llibre hi ha coses que no tenen número d'exercici, o en tenen un que es repeteix (1, 2, 3…). Al
-catàleg porten una clau de text, i a `tasques.js` s'escriuen **entre cometes**:
+Cada clau diu d'on surt l'exercici, i a `tasques.js` s'escriu **entre cometes**:
 
 | Clau | Què és | L'alumne veu |
 |---|---|---|
-| `'R1'`, `'R2'` | Reptes de l'inici de la unitat | Repte 1 |
-| `'FN'` | Fake news | Fake news |
-| `'SA1'`, `'SA2'`… | Situació d'aprenentatge | Situació 1 |
-| `'AV1'`, `'AV2'`… | Autoavaluació | Autoav. 1 |
+| `'U5.57'` | Santillana, unitat 5, exercici 57 | U5 · 57 |
+| `'U4.FN'` | Santillana, unitat 4, fake news | U4 · Fake news |
+| `'U4.SA1'`, `'U4.SA2'`… | Santillana, situació d'aprenentatge | U4 · Situació 1 |
+| `'U4.AV1'`, `'U4.AV2'`… | Santillana, autoavaluació | U4 · Autoav. 1 |
+| `'4.2.7'` | Llibre propi, exercici 4.2.7 | 4.2.7 |
 
 ```js
-exercicis:[80, 81, 'FN', 'SA1', 'AV3']
+exercicis:['4.2.7', 'U5.57', 'U4.SA1']
 ```
+
+Els exercicis del llibre propi no tenen imatge: en prémer *Veure solució* surten l'enunciat i la
+solució escrits (a `enunciats.js`).
 
 ### Barrejar unitats
 
-Per a una setmana de repàs, un exercici d'una altra unitat porta el prefix i dos punts:
+Per a una setmana de repàs, un exercici d'una altra UD porta la UD i dos punts:
 
 ```js
-exercicis:[112, 113, 'apl-u3:44', 120]
+exercicis:['4.3.2', 'apl-ud10:U4.24', 'U5.64']
 ```
 
 ### Quan es fa visible una tasca
@@ -79,13 +88,13 @@ L'`?tot=1` es manté en passar a les tasques i tornar. Els alumnes no ho saben.
 
 ```
 index.html      ← portada: matèries → unitats → tasques
-tasca.html      ← visor genèric d'una tasca. Es governa per l'adreça: #apl-u4/s1
+tasca.html      ← visor genèric d'una tasca. Es governa per l'adreça: #apl-ud4/s1
 errades.html    ← totes les errades del solucionari, per setmanes (les publicades; amb ?tot=1, totes)
 tasques.js      ← LA PROGRAMACIÓ
-cataleg.js      ← matèries, unitats i fitxa de cada exercici (títol, dificultat, imatges). Es manté a mà
+cataleg.js      ← matèries, UD i fitxa de cada exercici (títol, dificultat, imatges). Es manté a mà
 hints.js        ← LES PISTES (una línia per pista; s'edita a mà)
-enunciats.js    ← ELS ENUNCIATS complets, en català i amb KaTeX (substitueixen el títol curt a la llista)
-errades.js      ← LES ERRADES DEL SOLUCIONARI (ara buit; el sistema és el de sol). Vegeu ERRADES.md
+enunciats.js    ← ELS ENUNCIATS complets, en català i amb KaTeX, i les solucions del llibre propi
+errades.js      ← LES ERRADES DEL SOLUCIONARI (el sistema és el de sol). Vegeu ERRADES.md
 marca.js        ← eina del professor per marcar on és una errada (tasca.html?tot=1&marca=1)
 pegats/         ← trossos de pàgina ja corregits que es posen a sobre de les imatges (ara buit)
 progres.js      ← les creuetes de "fet" de l'alumne (al seu navegador)
@@ -98,19 +107,20 @@ assets/
   style.css     ← compartit per totes les pàgines (el mateix de sol, amb el bloc final de clicables)
   icon.png
   katex/        ← KaTeX: pinta les fórmules de les errades (no s'hi toca res)
-apl-u4/                      ← Aplicades, unitat 4
-  activitats/data/full-1.png … full-15.png       activitats del tema (1–23) i reptes
-  sistemes/data/…            activitats finals, apartat 1 (24–49)
-  inequacions/data/…         apartat 2 (50–61)
-  problemes/data/…           apartat 3 (62–79)
-  fake-news/data/…           fake news
-  problemes-diferents/data/… problemes aparentment diferents (80–85)
-  situacio/data/…            situació d'aprenentatge (SA1–SA3)
-  autoavaluacio/data/…       autoavaluació (AV1–AV6)
-  enunciats/                 figures dels enunciats (gràfiques, taules…), si n'hi ha
+apl-ud4/                     ← Aplicades, UD4 · Mesura indirecta
+  u5-activitats/data/…       Santillana U5, activitats 19–21
+  u5-semblanca/data/…        U5, activitats finals 57–66
+  u5-problemes/data/…        U5, 77, 80 i 81
+  u7-problemes/data/…        U7, 91
+  enunciats/4.1.4.png        figures dels exercicis del llibre propi
+apl-ud10/                    ← Aplicades, UD10 · Sistemes (Santillana U4)
+  u4-activitats/data/…       activitats 1–12 i reptes
+  u4-sistemes/data/…         activitats finals, apartat 1
+  u4-problemes/data/…        apartat 3 (62–79)
+  u4-fake-news/data/…, u4-problemes-diferents/data/…, u4-situacio/data/…, u4-autoavaluacio/data/…
 eines/
   retalla.py, retalls.json   ← fan les imatges d'una unitat a partir del PDF de source/
-  figura.py                  ← retalla una figura del PDF per a un enunciat (apl-u4/enunciats/…)
+  figura.py                  ← retalla una figura del PDF per a un enunciat (apl-ud10/enunciats/…)
   comprova.js                ← les proves (també les passa GitHub a cada canvi)
   optimitza_png.py           ← comprimeix les imatges sense cap pèrdua
 source/         ← el PDF del solucionari (Santillana, Matemáticas 4 ESO Opción A)
@@ -129,20 +139,21 @@ fórmules ben escrites (KaTeX), en lloc del títol curt del catàleg. Viuen a **
 mateixa clau que les pistes:
 
 ```js
-  'apl-u4/24': {
+  'apl-ud10/U4.24': {
     text: TEX`Troba de quines equacions és solució $x = 2$, $y = -1$.`,
     apartats: [TEX`$x + 3y = 5$`, TEX`$\dfrac{x}{2} + y = 0$`, TEX`$-2x + y = -5$`,
                TEX`$3x - y = 7$`, TEX`$4x + 3y = 4$`, TEX`$x = 2y$`],
     col: 3 },
 ```
 
-- Només hi van els exercicis **programats** (com les pistes). Un exercici sense enunciat mostra el
-  títol curt, com abans.
+- Dels de Santillana, només hi van els **programats** (com les pistes); un exercici sense enunciat
+  mostra el títol curt. Els del **llibre propi** hi són tots, amb la solució al camp `solucio`.
 - Camps: `text`, `apartats` (a, b, c…), `col` (columnes dels apartats: 1–4; al mòbil, com a molt 2),
   `punts` (preguntes amb pic), `titol` (nom d'una situació d'aprenentatge), `fig` (figures retallades
   del PDF) i `despres` (text després dels apartats). Explicació a la capçalera del fitxer.
 - Les **figures** (gràfiques, taules, dibuixos) no es reescriuen: es retallen del PDF amb
-  `eines/figura.py` i van a `apl-u4/enunciats/`.
+  `eines/figura.py` i van a `apl-udN/enunciats/`. Les del llibre propi són la `tikzpicture` de
+  l'Overleaf compilada a part.
 - La imatge de la solució (el llibre) continua en castellà.
 - `eines/comprova.js` comprova que totes les fórmules es pintin sense error i avisa dels exercicis
   programats que encara no tenen enunciat.
@@ -154,8 +165,8 @@ feta. Totes viuen a **`hints.js`**, una línia per pista, amb la clau `'unitat/e
 
 ```js
 const PISTES = {
-  'apl-u4/24': 'Substitueix <i>x</i> = 2 i <i>y</i> = −1 a cada equació i mira si es compleix la igualtat.',
-  'apl-u4/SA1': 'Compta primer quantes nits dormiràs a l\'hotel.',
+  'apl-ud10/U4.24': 'Substitueix <i>x</i> = 2 i <i>y</i> = −1 a cada equació i mira si es compleix la igualtat.',
+  'apl-ud4/4.2.7':  'Busca els dos triangles semblants: tots dos tenen un angle recte.',
 };
 ```
 
@@ -173,7 +184,7 @@ const PISTES = {
 El solucionari té errades. Les dels exercicis programats van a **`errades.js`**, amb la mateixa clau
 que les pistes. El sistema és el de `sol`, sencer: avís a la llista de la tasca, targeta «On diu /
 Ha de dir» dins de l'exercici, requadre vermell sobre la imatge (`marca`) i, si es fa, la imatge ja
-corregida (`pegat`). Ara és buit. Com s'escriuen: `ERRADES.md`.
+corregida (`pegat`). Ara n'hi ha dues, de la UD4 (U5 · 64 i U5 · 77). Com s'escriuen: `ERRADES.md`.
 
 ## Les proves
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Exercicis propis · 4t d’ESO — Step Quiz</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 
@@ -61,7 +61,7 @@
   </span>
 </footer>
 
-<script src="cataleg.js"></script>
+<script src="cataleg.js?v=2"></script>
 <script src="hints.js"></script>
 <script src="tasques.js"></script>
 <script src="progres.js"></script>
@@ -75,21 +75,23 @@ document.addEventListener('keydown', e => {
 <script>
 /* ── NAVEGACIÓ: matèria → unitat → tasca ─────────────────────────────────
    Les matèries són a MATERIES i les unitats a UNITATS_META (cataleg.js).
-   Una unitat només surt si té alguna tasca visible (tasques.js), i una
+   Una unitat només surt si té alguna tasca visible (tasques.js), en l'ordre
+   del curs (`ordre` a UNITATS_META), i una
    matèria només surt si té alguna unitat visible. Si només n'hi ha una de
    visible, la portada hi entra directament.
 
    L'adreça mana:
      (sense hash)   les matèries
      #apl           les unitats de 4t ESO Aplicades
-     #apl-u4        les tasques de la unitat 4 d'Aplicades
+     #apl-ud4       les tasques de la UD4 d'Aplicades
    La vista prèvia del professor (?tot=1) es manté en tots els enllaços. */
 
 const metaDe = u => UNITATS_META[u] || {nom:u, subtitol:''};
 
 function unitatsVisibles(m){
   return Object.keys(UNITATS_META)
-    .filter(u => materiaDe(u) === m && tasquesDe(u).length > 0);
+    .filter(u => materiaDe(u) === m && tasquesDe(u).length > 0)
+    .sort((a, b) => ordreDe(a) - ordreDe(b));       // en l'ordre del curs
 }
 
 function materiesVisibles(){

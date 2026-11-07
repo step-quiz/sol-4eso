@@ -5,7 +5,8 @@
 
    Mira:
      · cataleg.js   cada unitat de CATALEG és a UNITATS_META, i la seva matèria a MATERIES;
-                    cada fitxa té títol, dificultat vàlida i imatges, i les imatges existeixen.
+                    cada fitxa té títol, dificultat vàlida, una clau bona ('U5.57', 'U4.SA1',
+                    '4.2.7') i imatges que existeixen (les del llibre propi no en tenen).
      · tasques.js   cada tasca té unitat coneguda, setmana, data vàlida i exercicis que són al
                     catàleg; no hi ha dues tasques amb el mateix identificador.
      · hints.js     cada pista és d'un exercici del catàleg, és d'una sola línia i només fa
@@ -13,7 +14,8 @@
      · errades.js   es carrega, i cada errada és d'un exercici del catàleg i té ondiu i hadedir;
                     les imatges de marques i pegats existeixen.
      · enunciats.js cada enunciat és d'un exercici del catàleg, té els camps bons i les figures
-                    existeixen. Avisa dels exercicis programats que encara no en tenen.
+                    existeixen; els exercicis del llibre propi (i:[]) tenen enunciat i solució.
+                    Avisa dels exercicis programats que encara no en tenen.
      · fórmules     totes les d'errades.js i enunciats.js es pinten amb el KaTeX del web sense error.
    Acaba amb codi 1 si hi ha cap problema (el workflow comprova.yml surt en vermell). */
 'use strict';
@@ -48,9 +50,15 @@ if (CATALEG) for (const u of Object.keys(CATALEG)) {
     const k = `${u}/${n}`;
     if (!f.t) mal(`cataleg.js: ${k} no té títol (t)`);
     if (!DIF.includes(f.d)) mal(`cataleg.js: ${k} té una dificultat estranya: «${f.d}»`);
-    if (!Array.isArray(f.i) || !f.i.length) { mal(`cataleg.js: ${k} no té imatges (i)`); continue; }
+    if (!Array.isArray(f.i)) { mal(`cataleg.js: ${k} no té el camp d'imatges (i)`); continue; }
+    if (!/^(U\d+\.(\d+|[A-Z]+\d*)|\d+\.\d+\.\d+)$/.test(n)) mal(`cataleg.js: ${k}: clau estranya (ha de ser 'U5.57', 'U4.SA1' o '4.2.7')`);
+    if (!f.i.length) {
+      /* Exercici del llibre propi: l'enunciat i la solució han de ser a enunciats.js. */
+      if (!/^\d+\.\d+\.\d+$/.test(n)) mal(`cataleg.js: ${k} no té imatges (i) i no és del llibre propi`);
+      continue;
+    }
     f.i.forEach(img => { if (!existeix(path.join(u, img))) mal(`cataleg.js: ${k}: no existeix ${u}/${img}`); });
-    if (!/^\d+$/.test(n) && !f.e) avis(`cataleg.js: ${k} té una clau de text i no té etiqueta (e)`);
+    if (/^U\d+\.[A-Z]/.test(n) && !f.e) avis(`cataleg.js: ${k} té una clau de text i no té etiqueta (e)`);
   }
 }
 const aCataleg = (u, n) => !!(CATALEG && CATALEG[u] && CATALEG[u][n]);
@@ -110,7 +118,7 @@ if (ERRADES) for (const [k, llista] of Object.entries(ERRADES)) {
 }
 
 /* ── enunciats.js ── */
-const CAMPS_ENUN = ['titol', 'text', 'punts', 'apartats', 'col', 'fig', 'despres'];
+const CAMPS_ENUN = ['titol', 'text', 'punts', 'apartats', 'col', 'fig', 'despres', 'solucio'];
 if (ENUNCIATS) for (const [k, e] of Object.entries(ENUNCIATS)) {
   const j = k.lastIndexOf('/');
   const u = k.slice(0, j), n = k.slice(j + 1);
@@ -120,6 +128,14 @@ if (ENUNCIATS) for (const [k, e] of Object.entries(ENUNCIATS)) {
   for (const c of ['punts', 'apartats', 'fig']) if (e[c] !== undefined && !Array.isArray(e[c])) mal(`enunciats.js: ${k}: «${c}» ha de ser una llista [ ]`);
   if (e.col !== undefined && !(Number.isInteger(e.col) && e.col >= 1 && e.col <= 4)) mal(`enunciats.js: ${k}: col ha de ser 1, 2, 3 o 4`);
   (e.fig || []).forEach(f => { if (!existeix(path.join(u, f))) mal(`enunciats.js: ${k}: no existeix la figura ${u}/${f}`); });
+  if (e.solucio !== undefined && (!Array.isArray(e.solucio) || !e.solucio.length)) mal(`enunciats.js: ${k}: «solucio» ha de ser una llista [ ] amb algun paràgraf`);
+}
+/* Els exercicis del llibre propi (sense imatges) han de tenir enunciat i solució. */
+if (CATALEG) for (const u of Object.keys(CATALEG)) for (const [n, f] of Object.entries(CATALEG[u])) {
+  if (!Array.isArray(f.i) || f.i.length) continue;
+  const e = ENUNCIATS && ENUNCIATS[u + '/' + n];
+  if (!e) mal(`enunciats.js: ${u}/${n} és del llibre propi i no té enunciat`);
+  else if (!e.solucio) mal(`enunciats.js: ${u}/${n} és del llibre propi i no té solució (solucio)`);
 }
 if (TASQUES && ENUNCIATS) {
   const falten = new Set();
@@ -141,7 +157,7 @@ function provaFormules(on, s){
 }
 if (katex) {
   if (ENUNCIATS) for (const [k, e] of Object.entries(ENUNCIATS))
-    for (const c of ['titol', 'text', 'despres', 'punts', 'apartats'])
+    for (const c of ['titol', 'text', 'despres', 'punts', 'apartats', 'solucio'])
       [].concat(e[c] || []).forEach((s, i) => provaFormules(`enunciats.js: ${k} (${c}${Array.isArray(e[c]) ? ' ' + (i + 1) : ''})`, s));
   if (ERRADES) for (const [k, llista] of Object.entries(ERRADES))
     llista.forEach((e, i) => ['lloc', 'ondiu', 'hadedir', 'motiu'].forEach(c => provaFormules(`errades.js: ${k} #${i} (${c})`, e[c])));

@@ -233,3 +233,12 @@ footer span{font-size:.83rem;color:#333;font-family:'Source Code Pro',monospace;
 .ex-item.ex-fixa,.ex-item.ex-fixa .ex-row{cursor:default;}
 .ex-item.ex-fixa:hover{background:var(--surface);border-color:var(--border);box-shadow:inset 4px 0 0 transparent;transform:none;}
 .ex-item.ex-fixa.is-fet:hover{background:color-mix(in srgb,#22c55e 8%,var(--surface));border-color:color-mix(in srgb,#22c55e 35%,var(--border));}
+
+/* ── Exercicis del llibre propi: enunciat i solució escrits (sense imatge) ── */
+.enun-apartats[data-col="1"] .enun-ap{white-space:normal;}
+.propi-wrap{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 18px;}
+.propi-wrap .enunciat{font-size:1rem;}
+.solucio-propia{margin-top:14px;padding-top:12px;border-top:1px dashed var(--border);font-size:1rem;line-height:1.6;}
+.solucio-propia .sol-cap{font-weight:700;color:#2F7D52;margin-bottom:6px;}
+.solucio-propia p{margin:0 0 8px;}
+.solucio-propia .katex{font-size:1.05em;}

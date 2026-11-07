@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """figura.py — retalla una figura (gràfica, taula, dibuix) del PDF per posar-la dins d'un enunciat.
 
-   Ús:  python3 eines/figura.py apl-u4 34-1 109 40 120 230 300
+   Ús:  python3 eines/figura.py apl-ud10 U4.34-1 109 40 120 230 300
                                  │      │   │   └──────────── rectangle en punts del PDF: x0 y0 x1 y1
                                  │      │   └──────────────── pàgina del PDF (no del llibre)
-                                 │      └──────────────────── nom: 34-1 → apl-u4/enunciats/34-1.png
+                                 │      └──────────────────── nom: U4.34-1 → apl-ud10/enunciats/U4.34-1.png
                                  └─────────────────────────── unitat (retalls.json diu quin PDF)
-        ... --escriu     l'escriu al repo (sense, va a eines/sortida/apl-u4/enunciats/)
+        ... --escriu     l'escriu al repo (sense, va a eines/sortida/apl-ud10/enunciats/)
 
-   Després, a enunciats.js:  fig: ['enunciats/34-1.png']
+   Després, a enunciats.js:  fig: ['enunciats/U4.34-1.png']
 
    Les coordenades són les de la capa de text del PDF (pdfplumber): x cap a la dreta i y cap avall,
    en punts (1/72 de polzada), i la pàgina fa uns 468 × 680 punts. Una manera de trobar-les: el

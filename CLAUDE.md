@@ -57,19 +57,32 @@ L'alumne navega **matèria → unitat → tasca setmanal → exercici** i veu la
 Vegeu `README.md` i `TODO.md`.
 
 **Llibre i solucionari:** Santillana, *Matemáticas 4 ESO Opción A* (edició de la Comunitat Valenciana, en
-castellà): `source/4ESO_aplicades_-_Solucionario.pdf`. Les imatges surten d'aquest PDF; els títols del catàleg
-i tot el que veu l'alumne són en català. Unitat 4 = pàgines 89–128 del llibre (90–129 del PDF).
+castellà): `source/4ESO_aplicades_-_Solucionario.pdf`. Les imatges surten d'aquest PDF (pàgina del PDF =
+pàgina del llibre + 1); els títols del catàleg i tot el que veu l'alumne són en català.
+
+**Llibre propi:** el del professor, a l'Overleaf (`4eso-apl`, 11 UD). **Les unitats del web són les seves UD**
+(vistiplau del 7/11/2026), i cada UD agafa la pràctica de Santillana que li toca, d'una o més unitats, més els
+exercicis del llibre propi quan Santillana no en té. Quins exercicis de Santillana van a cada UD: artifact
+«Vistiplau · Mapa de continguts 4t A ↔ Santillana» (P1–P11) i doc «Mapa de continguts». Les UD es carreguen
+una a una, unes setmanes abans de fer-les. Ordre del curs: UD1, UD2, UD3, UD4, UD11, UD5, UD10, UD6, UD7, UD8,
+UD9 (camp `ordre` a `UNITATS_META`). No es carrega cap contingut d'ampliació.
 
 ### Identificadors (diferència amb `sol`)
 
-- **Unitat:** prefix de la matèria + número: `apl-u4`, `aca-u2`. És la carpeta de les imatges
-  (`apl-u4/<tema>/data/full-K.png`) i el principi de les claus: `'apl-u4/24'` a `hints.js` i `errades.js`.
-- **Exercici:** el número del llibre (24). Els que no en tenen porten una clau de text perquè no xoquin amb
-  els exercicis: `'R1'` (reptes de l'inici de la unitat), `'FN'` (fake news), `'SA1'` (situació
-  d'aprenentatge), `'AV1'` (autoavaluació). A `tasques.js` van entre cometes: `exercicis:[24, 25, 'SA1']`.
-  A `cataleg.js` porten `e` (etiqueta curta) i `nom` (títol de la pàgina).
-- Les activitats de dins del tema (1–23 a la UD4) i les activitats finals tenen la numeració seguida del
-  llibre: no xoquen. Els «¿Qué sabes ya?» i el «Desafío» no són al catàleg.
+- **Unitat:** prefix de la matèria + UD del llibre propi: `apl-ud4`, `apl-ud10`. És la carpeta de les imatges
+  (`apl-ud4/<tema>/data/full-K.png`; el tema porta la unitat de Santillana al davant: `u5-semblanca`) i el
+  principi de les claus: `'apl-ud4/U5.64'` a `hints.js`, `errades.js` i `enunciats.js`.
+- **Exercici:** la clau diu d'on surt.
+  - Santillana: `'U5.57'` (unitat 5, ex. 57). Els que no tenen número: `'U4.FN'` (fake news), `'U4.SA1'`
+    (situació d'aprenentatge), `'U4.AV1'` (autoavaluació), `'U4.R1'` (repte); porten `e` (etiqueta) i `nom`.
+    L'etiqueta que veu l'alumne és «U5 · 57», «U4 · Situació 1».
+  - Llibre propi: `'4.2.7'` (el número del llibre: UD.activitat.exercici). `i:[]`: no tenen imatge; l'enunciat
+    i la solució (camp `solucio`) són a `enunciats.js`, i `tasca.html` els mostra en prémer «Veure solució».
+    Es transcriuen del `.tex` (exlist i sollist). Fora: «Per al Quadern d'eines», reflexions personals i la
+    prova escrita. Les figures: la `tikzpicture` compilada a part (`standalone`, colors de `defs.tex`) i
+    passada a PNG a `apl-udN/enunciats/<clau>.png`.
+  - A `tasques.js` van sempre entre cometes: `exercicis:['4.2.7', 'U5.57', 'U4.SA1']`.
+- Els «¿Qué sabes ya?» i el «Desafío» de Santillana no són al catàleg.
 
 | Fitxer | Paper |
 |---|---|
@@ -127,8 +140,8 @@ català**, amb KaTeX, **només dels exercicis programats**. Les figures es retal
 - LaTeX: fraccions amb `\dfrac`; sistemes amb `\left.\begin{aligned} … \end{aligned}\right\}` (la clau a la
   dreta, com el llibre); parells amb parèntesis normals, o `\left( … \right)` si porten fraccions.
 - `col`: 3 per a equacions curtes, 2 per a sistemes o expressions llargues, 1 si cal.
-- Figura: `python3 eines/figura.py apl-u4 37-1 <pàgina PDF> x0 y0 x1 y1` (coordenades de pdfplumber), mirar el
-  retall a `eines/sortida/`, i `--escriu`. A l'enunciat: `fig: ['enunciats/37-1.png']`.
+- Figura: `python3 eines/figura.py apl-ud10 U4.37-1 <pàgina PDF> x0 y0 x1 y1` (coordenades de pdfplumber), mirar
+  el retall a `eines/sortida/`, i `--escriu`. A l'enunciat: `fig: ['enunciats/U4.37-1.png']`.
 - Sempre `node eines/comprova.js` (pinta totes les fórmules) i mirar la tasca al navegador, a l'ordinador i al
   mòbil (390 px): cap fórmula en vermell, cap apartat tallat.
 
@@ -209,7 +222,7 @@ descuits, no estil. No les copiïs.
   corregeix quan ell ho diu.
 - **Flux de treball.** Com a `sol`: el professor edita les pistes amb un artifact «Editor de pistes» (que parteix
   de `hints.js`). Si Claude proposa pistes noves, les deixa com a **esborranys a la base de dades de l'artifact**
-  (col·lecció `hints`, document `apl-u4_24`, camps `key` i `text`) perquè ell les revisi; Claude no les posa a
+  (col·lecció `hints`, document `apl-ud10_U4.24`, camps `key` i `text`) perquè ell les revisi; Claude no les posa a
   `hints.js` si no li ho demana. Abans de tornar a escriure un esborrany, comprova que la versió del document
   encara és la que va escriure Claude (si el professor l'ha tocat, no el trepitgis).
 - Quan el professor dona per bones les pistes, Claude les passa a `hints.js` (i a la base de l'Editor) i passa
@@ -220,7 +233,7 @@ descuits, no estil. No les copiïs.
 ### Contrastar amb el solucionari
 
 - Claude **pot llegir l'enunciat i la solució** de cada exercici: `cataleg.js` dona les imatges
-  (`apl-u4/<tema>/data/full-K.png`) i el Read les mostra. Una pista nova o revisada es comprova sempre contra
+  (`apl-ud4/<tema>/data/full-K.png`) i el Read les mostra. Una pista nova o revisada es comprova sempre contra
   l'enunciat (dades, noms dels punts i de les funcions, tots els apartats) i contra la resolució.
 - Paranys trobats en la revisió de 2026: la pista parla d'un altre tipus d'exercici (u7/90, u13/96); dona per
   feta una forma de les dades que l'enunciat no té (recta en forma contínua o com a intersecció de plans, pla
@@ -313,18 +326,18 @@ descuits, no estil. No les copiïs.
 ## Errades del solucionari
 
 - El sistema és el de `sol`, sencer i provat: `errades.js` (dades i funcions), KaTeX, `marca.js`, `pegats/`,
-  `errades.html`. Ara `ERRADES` i `OBSERVACIONS` són **buits**. Format i comportament: `ERRADES.md`.
+  `errades.html`. Ara hi ha dues errades (UD4: U5 · 64 i U5 · 77) i `OBSERVACIONS` és buit. Format i comportament: `ERRADES.md`.
 - **Diferència amb `sol`:** allà `errades.js` es genera amb `eines/conversor/genera.py` a partir de `tex/`, i
   les marques i els pegats tenen les seves eines (`eines/localitzador/`, `eines/pegats/`). Aquí encara no hi
   són. Mentre no hi siguin, les errades s'escriuen **directament a `errades.js`**. Quan se'n vulguin fer
-  moltes, o amb pegats, es copien les eines de `sol` i s'adapten als identificadors nous (`apl-u4` en lloc de
+  moltes, o amb pegats, es copien les eines de `sol` i s'adapten als identificadors nous (`apl-ud4` en lloc de
   `u7`: hi ha expressions regulars `u\d+` a `genera.py` i `dades.py`).
 - El llibre fa servir les mateixes lletres que el de `sol` (VectoraLTStd, MMa…): el motor de pegats hauria de
   funcionar amb poques adaptacions.
 - El text s'escriu entre accents greus amb `TEX` al davant, i les fórmules entre `$...$` (LaTeX). No s'hi pot
   posar cap accent greu ni la parella `${`.
 - Una marca mal posada és pitjor que cap marca: s'ha de comprovar sempre a la imatge ampliada.
-- Després de tocar `errades.js`: `node eines/comprova.js`, obrir `tasca.html?tot=1#apl-u4/s1` i mirar que cap
+- Després de tocar `errades.js`: `node eines/comprova.js`, obrir `tasca.html?tot=1#apl-ud4/s1` i mirar que cap
   fórmula surti en vermell, i pujar el número de `errades.js?v=` a `tasca.html` i `errades.html`.
 
 ## Suggeriments de treball per a Claude

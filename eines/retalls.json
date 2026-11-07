@@ -1,18 +1,87 @@
 {
   "_com_es_llegeix": "Per a cada unitat: el PDF de source/, i per a cada tema (carpeta), les pàgines del PDF (no del llibre) que hi van, en ordre. Una pàgina amb exercicis de dos temes va a les dues carpetes. La caixa és el retall, en píxels a 300 ppp: [x0, y0, x1, y1]. Treu la capçalera «SOLUCIONARIO» i el número de pàgina.",
-
-  "apl-u4": {
+  "apl-ud4": {
     "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
-    "caixa": [40, 270, 1930, 2680],
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
     "temes": {
-      "activitats":          [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104],
-      "sistemes":            [104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114],
-      "inequacions":         [115, 116, 117, 118, 119, 120],
-      "problemes":           [120, 121, 122, 123, 124, 125],
-      "fake-news":           [125],
-      "problemes-diferents": [125, 126],
-      "situacio":            [126, 127, 128],
-      "autoavaluacio":       [128, 129]
+      "u5-activitats": [
+        134,
+        135
+      ],
+      "u5-semblanca": [
+        146,
+        147,
+        148,
+        149
+      ],
+      "u5-problemes": [
+        151,
+        152
+      ],
+      "u7-problemes": [
+        224
+      ]
+    }
+  },
+  "apl-ud10": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u4-activitats": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "u4-sistemes": [
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        113,
+        114
+      ],
+      "u4-problemes": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "u4-fake-news": [
+        125
+      ],
+      "u4-problemes-diferents": [
+        125,
+        126
+      ],
+      "u4-situacio": [
+        126,
+        127,
+        128
+      ],
+      "u4-autoavaluacio": [
+        128,
+        129
+      ]
     }
   }
 }

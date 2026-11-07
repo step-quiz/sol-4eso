@@ -3,7 +3,7 @@
    EL PROGRÉS DE L'ALUMNE  —  no cal tocar res d'aquest fitxer
    ───────────────────────────────────────────────────────────────────────
    Les creuetes de "fet" es guarden al navegador de l'alumne, UNA CLAU PER
-   UNITAT ('apl-u4-fet'), amb la llista de claus d'exercici (24, 'SA1'…).
+   UNITAT ('apl-ud4-fet'), amb la llista de claus d'exercici ('U5.57', '4.2.7'…).
 
    Es guarda per unitat i no per tasca a posta: així, si reorganitzes la
    programació a mig curs (mous un exercici d'una setmana a una altra, el
