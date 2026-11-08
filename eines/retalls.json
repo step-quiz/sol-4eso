@@ -1,5 +1,109 @@
 {
   "_com_es_llegeix": "Per a cada unitat: el PDF de source/, i per a cada tema (carpeta), les pàgines del PDF (no del llibre) que hi van, en ordre. Una pàgina amb exercicis de dos temes va a les dues carpetes. La caixa és el retall, en píxels a 300 ppp: [x0, y0, x1, y1]. Treu la capçalera «SOLUCIONARIO» i el número de pàgina.",
+  "apl-ud1": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u1-activitats": [
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "u1-reals": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "u1-aproximacio": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "u1-intervals": [
+        26,
+        27,
+        28,
+        29
+      ]
+    }
+  },
+  "apl-ud2": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u2-percentatges": [
+        38,
+        39,
+        40
+      ],
+      "u2-problemes": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "u2-fake-news": [
+        58
+      ]
+    }
+  },
+  "apl-ud3": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u2-activitats": [
+        32,
+        33,
+        34
+      ],
+      "u2-problemes": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "u5-escales": [
+        135,
+        137,
+        138
+      ],
+      "u5-problemes": [
+        149,
+        150,
+        152
+      ],
+      "u3-problemes": [
+        83
+      ]
+    }
+  },
   "apl-ud4": {
     "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
     "caixa": [
