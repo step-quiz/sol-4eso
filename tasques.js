@@ -5,6 +5,12 @@ const TASQUES = [
 
   /* EXEMPLES: amagats (visible:'mai'). Es veuen només amb  index.html?tot=1 .
      Quan tinguis les setmanes de la UD4, substitueix-los per les de debò.   */
+  { unitat:'apl-ud1',  setmana:1, limit:'2026-10-04', visible:'mai',
+    exercicis:['U1.45', 'U1.57', 'U1.90', 'U1.97', 'U1.99', 'U1.101'] },
+  { unitat:'apl-ud2',  setmana:1, limit:'2026-10-25', visible:'mai',
+    exercicis:['U2.28', 'U2.35', 'U2.36', 'U2.92', 'U2.94', 'U2.103', '2.5.2', '2.6.3'] },
+  { unitat:'apl-ud3',  setmana:1, limit:'2026-11-15', visible:'mai',
+    exercicis:['U2.48', 'U2.59', 'U5.28', 'U5.34', 'U5.67', 'U5.69'] },
   { unitat:'apl-ud4',  setmana:1, limit:'2026-11-29', visible:'mai',
     exercicis:['4.1.3', '4.2.2', '4.2.7', 'U5.57', 'U5.64', 'U5.81', '4.3.2'] },
   { unitat:'apl-ud11', setmana:1, limit:'2026-12-20', visible:'mai',

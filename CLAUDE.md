@@ -333,7 +333,7 @@ descuits, no estil. No les copiïs.
 ## Errades del solucionari
 
 - El sistema és el de `sol`, sencer i provat: `errades.js` (dades i funcions), KaTeX, `marca.js`, `pegats/`,
-  `errades.html`. Ara hi ha dues errades (UD4: U5 · 64 i U5 · 77) i `OBSERVACIONS` és buit. Format i comportament: `ERRADES.md`.
+  `errades.html`. Les errades de cada UD són a `TODO.md`; `OBSERVACIONS` és buit. Format i comportament: `ERRADES.md`.
 - **Diferència amb `sol`:** allà `errades.js` es genera amb `eines/conversor/genera.py` a partir de `tex/`, i
   les marques i els pegats tenen les seves eines (`eines/localitzador/`, `eines/pegats/`). Aquí encara no hi
   són. Mentre no hi siguin, les errades s'escriuen **directament a `errades.js`**. Quan se'n vulguin fer

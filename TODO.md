@@ -5,6 +5,31 @@ unes setmanes abans de fer-les, en l'ordre del curs: UD1, UD2, UD3, UD4, UD11, U
 UD8, UD9. La llista d'exercicis de Santillana de cada UD és a l'artifact «Vistiplau · Mapa de
 continguts 4t A ↔ Santillana» (punts P1–P11) i, més detallada, al doc «Mapa de continguts».
 
+## 4t ESO Aplicades · UD1 (Nombres reals des de l'estimació)
+
+- [x] U1 · Act. 3–12, 20–23 i 27–31; ex. 34, 40, 41, 43–60, 79–107 i la fake news (70 fitxes,
+      22 imatges a `apl-ud1/`). Fora: U1 · 42 (el solucionari diu «Resuelta en el libro de texto»).
+      Els ex. 82, 87, 88 i 89 demanen error absolut i relatiu; es carreguen perquè són a P1.
+- [x] Errades de la llista: 45 a), 48 c), 57 c) i d), 89 (kg i g barrejats), 90 b), 99 d), 101
+      (hi ha 5 solucions).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
+## 4t ESO Aplicades · UD2 (Percentatges i matemàtica financera)
+
+- [x] U2 · Act. 27–39; ex. 89–105, 107, 108 i la fake news (33 fitxes, 10 imatges a `apl-ud2/`).
+- [x] Errades de la llista: 35, 94 b) i 103.
+- [x] Llibre propi (S2): 2.5.1–2.5.6 i 2.6.1–2.6.5 (11 fitxes), amb l'enunciat i la solució en KaTeX.
+      Fora: els «Per al Quadern d'eines». En total, 44 fitxes.
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
+## 4t ESO Aplicades · UD3 (Proporcionalitat i escales)
+
+- [x] U2 · Act. 1–12; ex. 45–51 i 58–65. U5 · Act. 22, 23, 28, 32 i 34; ex. 67–71 i 79. U3 · ex. 61
+      (39 fitxes, 15 imatges a `apl-ud3/`). Fora: U5 · Act. 24, 25, 29 i 33 (volums × k³, F1).
+- [x] Errades: U2 · 59 a) (de la llista) i, noves de la revisió de la U5, 22 a) (81 000 000 cm) i 69
+      (les escales 1:500 000 i 1:250 000 no hi caben en un DIN A4).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
 ## 4t ESO Aplicades · UD4 (Mesura indirecta)
 
 Comença a finals de novembre de 2026.
@@ -92,11 +117,8 @@ Comença a finals de novembre de 2026.
 
 ## Les altres UD (vistiplau P1–P3, P5–P6, P8–P11)
 
-- [ ] UD1, UD2 i UD3 (P1–P3): són al principi del curs, que ja ha passat; carregar-les si calen per a
-      repàs. Porten les 45 errades de U1–U3 ja detectades (E5). Després, Acadèmiques.
-      Les que fan servir U1–U3 de Santillana porten les 45 errades ja detectades (vistiplau E5).
-- [ ] Exercicis propis sense pràctica a Santillana (vistiplau S2–S5): 2.5–2.6 (comptat, terminis o
-      crèdit), 8.3 (mitjana ponderada), 9.5 (joc just) i altres continguts propis quan surtin a una
+- [ ] Després de les UD d'Aplicades, Acadèmiques.
+- [ ] Exercicis propis sense pràctica a Santillana (vistiplau S3–S5; els S2, a la UD2): 8.3 (mitjana ponderada), 9.5 (joc just) i altres continguts propis quan surtin a una
       tasca. Com a la UD4: enunciat i solució en KaTeX.
 - [ ] Marca «Ampliació» (vistiplau E6): més endavant. Ara no es carrega cap ampliació (F2, F3, F6–F9,
       F11, F16, F18: no).
@@ -116,6 +138,7 @@ Comença a finals de novembre de 2026.
       l'editorial.
 - [ ] Les errades: si se n'han de fer moltes, o amb pegats, portar les eines de `sol` i adaptar-les
       (`ERRADES.md`, apartat 6).
+- [ ] U5 · 68 c): 12,85 cm (truncat); arrodonit seria 12,86. No s'ha posat a `errades.js`.
 - [ ] Annex de Polinomis, pàg. 332 del llibre: hi ha dos exercicis numerats 68 (el segon és el 69).
       Per a la llista d'errades de l'editorial.
 - [ ] U7 · 104 (substància radioactiva): «se va desintegrando en cuatro partes iguales al cabo de una

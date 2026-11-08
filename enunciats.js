@@ -507,6 +507,159 @@ const ENUNCIATS = {
       TEX`Si $y$ és el preu de l’hotel Downtown per persona i nit, expressa el preu per persona de 3 nits i de 4 nits tenint en compte l’oferta.`,
       TEX`Escriu la inequació corresponent a la situació següent: agafar el vol del matí i allotjar-nos 4 nits a l’hotel Downtown és més car que allotjar-nos 3 nits si agafem el vol de la nit.`] },
 
+
+  /* ── 4t ESO Aplicades · UD1 · exercicis de Santillana programats ── */
+
+  'apl-ud1/U1.45': {
+    text: TEX`Utilitza la calculadora i ordena de menor a major.`,
+    apartats: [TEX`$\sqrt{3},\ \dfrac{\sqrt{6}}{2},\ \dfrac{\sqrt{3}}{3}$`, TEX`$\sqrt{65},\ 5\sqrt{3},\ \dfrac{\sqrt{265}}{2}$`],
+    col: 2 },
+
+  'apl-ud1/U1.57': {
+    titol: TEX`Investiga`,
+    text: TEX`Si $a$ és un nombre racional, indica quin tipus de nombre és cadascun dels següents.`,
+    apartats: [TEX`$2a$`, TEX`$\dfrac{a}{2}$`, TEX`$\sqrt{2}\,a$`, TEX`$\pi a$`],
+    col: 4 },
+
+  'apl-ud1/U1.90': {
+    text: TEX`Expressa mitjançant intervals aquestes situacions.`,
+    apartats: [TEX`La capacitat dels envasos és menor que $5$ ℓ.`,
+               TEX`L’altura de les cortines ha de ser menor o igual que $2{,}8$ m.`,
+               TEX`El descompte s’aplica a compres superiors a $40$ €.`,
+               TEX`Els preus van des de $30$ € fins a $60$ €.`],
+    col: 1 },
+
+  'apl-ud1/U1.97': {
+    text: TEX`Si $A = (-\infty, 3]$, $B = (-2, 0]$ i $C = [2, 5)$, calcula:`,
+    apartats: [TEX`$A \cup B$`, TEX`$A \cup B \cup C$`, TEX`$A \cap C$`, TEX`$A \cap B \cap C$`],
+    col: 2 },
+
+  'apl-ud1/U1.99': {
+    titol: TEX`Investiga`,
+    text: TEX`Si dos nombres reals, $x$ i $y$, pertanyen als intervals $(-1, 3)$ i $[0, 2]$ respectivament, a quin interval pertany el resultat d’aquestes operacions?`,
+    apartats: [TEX`$x + y$`, TEX`$x - y$`, TEX`$y - x$`, TEX`$x \cdot y$`],
+    col: 2 },
+
+  'apl-ud1/U1.101': {
+    titol: TEX`Repte`,
+    text: TEX`Troba les edats, consecutives i diferents, de cada persona.`,
+    punts: [TEX`$10 <$ Javier $< 14$`, TEX`$10 \leq$ Ismael $< 12$`, TEX`Elisa $<$ Pilar $<$ Javier`, TEX`Cristina $>$ Javier`, TEX`Milena $<$ Elisa`] },
+
+  /* ── 4t ESO Aplicades · UD2 · exercicis de Santillana programats ── */
+
+  'apl-ud2/U2.28': {
+    text: TEX`Calcula el preu d’un televisor que valia $360$ € si se n’ha augmentat el preu un $5{,}8\,\%$.` },
+
+  'apl-ud2/U2.35': {
+    text: TEX`Si el preu inicial d’un producte s’augmenta un $15\,\%$ i després, sobre aquest preu augmentat, es disminueix un $15\,\%$, obtenim el preu inicial?` },
+
+  'apl-ud2/U2.36': {
+    text: TEX`Calcula l’interès que obtindrem si invertim un capital de $100$ € a un rèdit del $3{,}5\,\%$ durant $2$ anys i mig.` },
+
+  'apl-ud2/U2.92': {
+    text: TEX`Un comerciant decideix apujar un $3\,\%$ el preu d’una mercaderia de $72$ €. Si la setmana següent decideix apujar-lo un altre $3\,\%$, quin és el preu final de la venda?` },
+
+  'apl-ud2/U2.94': {
+    text: TEX`Un venedor de cotxes rep com a comissió el $0{,}8\,\%$ de les vendes que fa.`,
+    apartats: [TEX`Si en un mes rep $300$ € de comissió, quines vendes va fer?`,
+               TEX`L’empresa proposa al venedor canviar-li el percentatge de comissió per un $7{,}5$ per mil. Li convé acceptar?`],
+    col: 1 },
+
+  'apl-ud2/U2.103': {
+    text: TEX`Quant valia un producte que està etiquetat a $60$ €, sabent que se li ha afegit el $21\,\%$ d’IVA i que se n’obté un guany del $10\,\%$?` },
+
+  /* ── 4t ESO Aplicades · UD2 · llibre propi (activitats 2.5 i 2.6) ── */
+
+  'apl-ud2/2.5.1': {
+    titol: TEX`Interès simple`,
+    text: TEX`Calcula l’interès de:`,
+    apartats: [TEX`$2\,000$ € al $6\,\%$ durant $3$ anys`, TEX`$800$ € al $10\,\%$ durant $1$ any`],
+    col: 2,
+    solucio: [TEX`a) $2\,000\cdot 0{,}06\cdot 3 = 360$ €`,
+              TEX`b) $800\cdot 0{,}10\cdot 1 = 80$ €`] },
+
+  'apl-ud2/2.5.2': {
+    titol: TEX`Quota i total`,
+    text: TEX`Demanes $1\,500$ € al $10\,\%$ anual per tornar en $2$ anys. Calcula l’interès, el total i la quota mensual.`,
+    solucio: [TEX`$I = 1\,500\cdot 0{,}10\cdot 2 = 300$ €; total $= 1\,800$ €; quota $= \dfrac{1\,800}{24} = 75$ €/mes.`] },
+
+  'apl-ud2/2.5.3': {
+    titol: TEX`El cost real`,
+    text: TEX`Un mòbil de $480$ € al comptat s’ofereix en $12$ quotes de $44$ €. Quant pagues en total? Quin és el sobrecost?`,
+    solucio: [TEX`Total $= 12\cdot 44 = 528$ €; sobrecost $= 528 - 480 = 48$ €.`] },
+
+  'apl-ud2/2.5.4': {
+    titol: TEX`Caça l’error`,
+    text: TEX`Un company calcula l’interès de $1\,000$ € al $5\,\%$ durant $2$ anys així: «$1\,000\cdot 0{,}05 = 50$ €». Què s’ha deixat? Quin és l’interès correcte?`,
+    solucio: [TEX`S’ha deixat el temps ($t = 2$ anys). Correcte: $1\,000\cdot 0{,}05\cdot 2 = 100$ €.`] },
+
+  'apl-ud2/2.5.5': {
+    titol: TEX`Decideix`,
+    text: TEX`Per un ordinador de $700$ €: opció A, pagar al comptat; opció B, $18$ quotes de $42$ €. Quant costa cada opció? Val la pena finançar?`,
+    solucio: [TEX`A: $700$ €. B: $18\cdot 42 = 756$ €. Finançar costa $56$ € més; val la pena finançar només si no es poden avançar els $700$ € i es necessita l’ordinador ja (decisió raonada).`] },
+
+  'apl-ud2/2.5.6': {
+    titol: TEX`Estima abans de calcular`,
+    text: TEX`Un préstec de $3\,000$ € al $9\,\%$ durant $1$ any: estima l’interès de memòria i després calcula’l.`,
+    solucio: [TEX`Estimació: un $9\,\%$ de $3\,000$ és uns $270$ €. Exacte: $3\,000\cdot 0{,}09\cdot 1 = 270$ €.`] },
+
+  'apl-ud2/2.6.1': {
+    titol: TEX`Escalfem el cap`,
+    text: TEX`Calcula el cost total de:`,
+    apartats: [TEX`entrada $100$ € $+$ $6$ quotes de $30$ €`, TEX`$10$ quotes de $25$ €`],
+    col: 2,
+    solucio: [TEX`a) $100 + 6\cdot 30 = 280$ €`,
+              TEX`b) $10\cdot 25 = 250$ €`] },
+
+  'apl-ud2/2.6.2': {
+    titol: TEX`Compara`,
+    text: TEX`Una bici de $400$ €: opció comptat $400$ €; opció terminis, entrada $40$ € $+$ $9$ quotes de $45$ €. Quant costa cada opció? Quin és el sobrecost de finançar?`,
+    solucio: [TEX`Comptat: $400$ €. Terminis: $40 + 9\cdot 45 = 445$ €. Sobrecost de finançar: $45$ €.`] },
+
+  'apl-ud2/2.6.3': {
+    titol: TEX`Tres opcions`,
+    text: TEX`Un portàtil de $800$ €: (A) comptat $800$ €; (B) $12$ quotes de $72$ €; (C) $24$ quotes de $38$ €. Ordena de més barata a més cara.`,
+    solucio: [TEX`A: $800$ €. B: $12\cdot 72 = 864$ €. C: $24\cdot 38 = 912$ €. Ordre: A ($800$) $<$ B ($864$) $<$ C ($912$).`] },
+
+  'apl-ud2/2.6.4': {
+    titol: TEX`Caça l’error`,
+    text: TEX`En l’exercici anterior, un company diu: «l’opció C és la millor perquè la quota és de només $38$ €». Per què el seu raonament és incomplet?`,
+    solucio: [TEX`Mira només la quota, no el cost total. C té la quota més petita però és la més cara ($912$ €), perquè paga $24$ mesos.`] },
+
+  'apl-ud2/2.6.5': {
+    titol: TEX`Decideix amb criteri`,
+    text: TEX`Per a la compra del portàtil anterior, en quin cas triaries finançar tot i el sobrecost? Escriu dos motius raonables.`,
+    solucio: [TEX`Resposta oberta. Motius raonables: no es disposa dels $800$ € ara i es necessita l’equip; el sobrecost és assumible; s’evita quedar-se sense estalvi per a imprevistos.`] },
+
+  /* ── 4t ESO Aplicades · UD3 · exercicis de Santillana programats ── */
+
+  'apl-ud3/U2.48': {
+    text: TEX`Una recepta per a $6$ persones porta $240$ g de salmó. Quant salmó es necessita per a $8$ persones?` },
+
+  'apl-ud3/U2.59': {
+    text: TEX`Entre dues poblacions hi ha $61$ pals de telèfon, separats $15$ m entre si.`,
+    apartats: [TEX`Si estiguessin a $25$ m de separació, quants pals hi hauria?`,
+               TEX`Quina distància hi ha entre les poblacions?`],
+    col: 1 },
+
+  'apl-ud3/U5.28': {
+    text: TEX`Les dimensions d’un camp de futbol són $70$ i $100$ m, respectivament. Quina és la superfície d’un futbolí fet a escala $1{:}75$?` },
+
+  'apl-ud3/U5.34': {
+    text: TEX`Un aficionat al futbol vol construir un futbolí de manera que el recinte de joc sigui semblant al del seu equip favorit, que és un rectangle de $100 \times 70$ m. Si vol que la còpia tingui una raó de semblança $r = \dfrac{1}{100}$ respecte de l’original:`,
+    apartats: [TEX`Quines seran les mesures del rectangle de joc al futbolí?`,
+               TEX`I la seva superfície?`],
+    col: 1 },
+
+  'apl-ud3/U5.67': {
+    text: TEX`L’escala d’un mapa és $1{:}400\,000$. Troba:`,
+    apartats: [TEX`La distància real que separa dues localitats si al mapa és $11$ cm.`,
+               TEX`La distància al mapa de dues localitats que en la realitat disten $236$ km.`],
+    col: 1 },
+
+  'apl-ud3/U5.69': {
+    titol: TEX`Inventa`,
+    text: TEX`Tria $3$ escales diferents de manera que puguis representar Galícia en un paper de mida DIN A4. La pots representar amb aquestes mateixes escales en un pòsit de mida $10 \times 10$ cm?` },
 };
 
 /* ── Funcions (no cal tocar-les) ─────────────────────────────────────── */

@@ -8,6 +8,9 @@
    Aquest web té dues matèries de 4t d'ESO: Aplicades i Acadèmiques.
    Les unitats són les UD del llibre propi (Overleaf), no les de Santillana:
 
+     apl-ud1    Aplicades, UD1 · Nombres reals des de l’estimació (carpeta apl-ud1/)
+     apl-ud2    Aplicades, UD2 · Percentatges i matemàtica financera (carpeta apl-ud2/)
+     apl-ud3    Aplicades, UD3 · Proporcionalitat i escales (carpeta apl-ud3/)
      apl-ud4    Aplicades, UD4 · Mesura indirecta       (carpeta apl-ud4/)
      apl-ud11   Aplicades, UD11 · Idea de polinomi      (carpeta apl-ud11/)
      apl-ud5    Aplicades, UD5 · Equacions de 2n grau   (carpeta apl-ud5/)
@@ -55,6 +58,9 @@ const MATERIES = {
 };
 
 const UNITATS_META = {
+  'apl-ud1':  {materia:'apl', nom:'Unitat 1',  subtitol:'Nombres reals des de l’estimació',    ordre:1},
+  'apl-ud2':  {materia:'apl', nom:'Unitat 2',  subtitol:'Percentatges i matemàtica financera', ordre:2},
+  'apl-ud3':  {materia:'apl', nom:'Unitat 3',  subtitol:'Proporcionalitat i escales',          ordre:3},
   'apl-ud4':  {materia:'apl', nom:'Unitat 4',  subtitol:'Mesura indirecta',                    ordre:4},
   'apl-ud11': {materia:'apl', nom:'Unitat 11', subtitol:'Idea de polinomi',                    ordre:5},
   'apl-ud5':  {materia:'apl', nom:'Unitat 5',  subtitol:'Equacions de 2n grau',                ordre:6},
@@ -66,6 +72,194 @@ const UNITATS_META = {
 };
 
 const CATALEG = {
+
+  'apl-ud1': {
+    /* ── Santillana, unitat 1 · Activitats (pàgines 6–11 del llibre) */
+    'U1.3': {t:'Representa nombres racionals a la recta', d:'', i:['u1-activitats/data/full-1.png']},
+    'U1.4': {t:'Arrels quadrades de l’1 al 20: racionals o irracionals', d:'', i:['u1-activitats/data/full-1.png']},
+    'U1.5': {t:'De quin tipus són aquests nombres', d:'', i:['u1-activitats/data/full-1.png']},
+    'U1.6': {t:'Escriu quatre nombres irracionals i explica per què ho són', d:'', i:['u1-activitats/data/full-1.png']},
+    'U1.7': {t:'Classifica en racionals i irracionals', d:'', i:['u1-activitats/data/full-1.png', 'u1-activitats/data/full-2.png']},
+    'U1.8': {t:'Representa nombres reals a la recta', d:'', i:['u1-activitats/data/full-2.png']},
+    'U1.9': {t:'Troba amb la calculadora aquests nombres i representa’ls de manera aproximada', d:'', i:['u1-activitats/data/full-2.png']},
+    'U1.10': {t:'Una recta real amb els punts A, B, C i D', d:'', i:['u1-activitats/data/full-2.png']},
+    'U1.11': {t:'A quin conjunt numèric pertany cada nombre', d:'', i:['u1-activitats/data/full-2.png']},
+    'U1.12': {t:'El menor conjunt numèric de cada nombre', d:'', i:['u1-activitats/data/full-2.png']},
+    'U1.20': {t:'Trunca i arrodoneix a les centèsimes', d:'', i:['u1-activitats/data/full-3.png']},
+    'U1.21': {t:'Arrodonir les notes de 10 estudiants', d:'', i:['u1-activitats/data/full-3.png']},
+    'U1.22': {t:'Aproxima per arrodoniment i per truncament amb dues xifres decimals', d:'', i:['u1-activitats/data/full-3.png']},
+    'U1.23': {t:'La diagonal d’un rectangle de 8 cm i 10 cm: quin tipus de nombre és', d:'', i:['u1-activitats/data/full-3.png']},
+    'U1.27': {t:'Expressa com a intervals els nombres reals que compleixen unes condicions', d:'', i:['u1-activitats/data/full-4.png']},
+    'U1.28': {t:'Escriu i representa intervals a la recta real', d:'', i:['u1-activitats/data/full-4.png']},
+    'U1.29': {t:'Expressa com a intervals', d:'', i:['u1-activitats/data/full-4.png']},
+    'U1.30': {t:'Unió i intersecció d’intervals', d:'', i:['u1-activitats/data/full-4.png', 'u1-activitats/data/full-5.png']},
+    'U1.31': {t:'Vertader o fals sobre intervals', d:'', i:['u1-activitats/data/full-5.png']},
+
+    /* ── Santillana, unitat 1 · Activitats finals: nombres reals (pàgines 11–18). L’exercici 42 surt resolt al llibre */
+    'U1.34': {t:'Ordena nombres amb la seva lletra i troba el palíndrom', d:'●○○', i:['u1-reals/data/full-1.png']},
+    'U1.40': {t:'Quines arrels quadrades de l’1 al 20 són racionals', d:'●○○', i:['u1-reals/data/full-2.png']},
+    'U1.41': {t:'Quins d’aquests nombres són racionals i quins irracionals', d:'●○○', i:['u1-reals/data/full-3.png']},
+    'U1.43': {t:'Representa arrels a la recta real', d:'●●○', i:['u1-reals/data/full-3.png']},
+    'U1.44': {t:'Representa irracionals de forma exacta amb dues descomposicions', d:'●●●', i:['u1-reals/data/full-3.png', 'u1-reals/data/full-4.png']},
+    'U1.45': {t:'Ordena de menor a major amb la calculadora', d:'●●○', i:['u1-reals/data/full-4.png']},
+    'U1.46': {t:'L’altura d’un triangle equilàter: quin tipus de nombre és', d:'●●○', i:['u1-reals/data/full-4.png']},
+    'U1.47': {t:'Raona si les afirmacions són certes', d:'●●●', i:['u1-reals/data/full-4.png']},
+    'U1.48': {t:'Un nombre irracional entre dos racionals', d:'●●●', i:['u1-reals/data/full-4.png']},
+    'U1.49': {t:'Es pot representar el nombre d’or de forma exacta a la recta?', d:'●●●', i:['u1-reals/data/full-4.png', 'u1-reals/data/full-5.png']},
+    'U1.50': {t:'Encreuat: el menor conjunt numèric de cada nombre', d:'●○○', i:['u1-reals/data/full-5.png']},
+    'U1.51': {t:'Joc de les targetes dels conjunts numèrics', d:'●●○', i:['u1-reals/data/full-5.png']},
+    'U1.52': {t:'Tots els conjunts numèrics als quals pertanyen aquests nombres', d:'●●○', i:['u1-reals/data/full-5.png']},
+    'U1.53': {t:'Classifica, escriu en forma decimal i ordena', d:'●●○', i:['u1-reals/data/full-5.png', 'u1-reals/data/full-6.png']},
+    'U1.54': {t:'Ordena els nombres i troba dues paraules bifrontals', d:'●●○', i:['u1-reals/data/full-6.png']},
+    'U1.55': {t:'Vertader o fals sobre nombres, amb raonament', d:'●●○', i:['u1-reals/data/full-6.png']},
+    'U1.56': {t:'Repte: si a < b, què passa amb els oposats i amb els inversos?', d:'●●●', i:['u1-reals/data/full-6.png']},
+    'U1.57': {t:'Si a és racional, quin tipus de nombre és 2a, a/2, √2·a i πa', d:'●●○', i:['u1-reals/data/full-6.png', 'u1-reals/data/full-7.png']},
+    'U1.58': {t:'Si a és irracional, quin tipus de nombre és cada expressió', d:'●●○', i:['u1-reals/data/full-7.png']},
+    'U1.59': {t:'Vertader o fals sobre nombres reals, amb raonament', d:'●●○', i:['u1-reals/data/full-7.png']},
+    'U1.60': {t:'Opera i indica quin tipus de nombre real resulta', d:'●●●', i:['u1-reals/data/full-8.png']},
+
+    /* ── Santillana, unitat 1 · Activitats finals: aproximació i error (pàgines 21–25) */
+    'U1.79': {t:'Encreuat: arrodoneix a les horitzontals i trunca a les verticals', d:'●○○', i:['u1-aproximacio/data/full-1.png', 'u1-aproximacio/data/full-2.png']},
+    'U1.80': {t:'Arrodoneix a les deumil·lèsimes i compara amb l’excés i el defecte', d:'●○○', i:['u1-aproximacio/data/full-2.png']},
+    'U1.81': {t:'Poden coincidir les aproximacions per excés i per defecte?', d:'●●○', i:['u1-aproximacio/data/full-2.png']},
+    'U1.82': {t:'Aproximacions històriques de π: error absolut i relatiu', d:'●○○', i:['u1-aproximacio/data/full-2.png', 'u1-aproximacio/data/full-3.png']},
+    'U1.83': {t:'Arrodonir abans o després d’operar: on es comet menys error?', d:'●○○', i:['u1-aproximacio/data/full-3.png']},
+    'U1.84': {t:'Excés, defecte i arrodoniment: poden coincidir?', d:'●●○', i:['u1-aproximacio/data/full-3.png']},
+    'U1.85': {t:'Què surt a la calculadora si fixem 4 o 5 decimals', d:'●●○', i:['u1-aproximacio/data/full-3.png']},
+    'U1.86': {t:'Escriu un nombre que compleixi unes condicions d’aproximació', d:'●●○', i:['u1-aproximacio/data/full-4.png']},
+    'U1.87': {t:'Error absolut i relatiu en arrodonir i truncar', d:'●●○', i:['u1-aproximacio/data/full-4.png']},
+    'U1.88': {t:'L’any solar: error absolut i relatiu', d:'●●○', i:['u1-aproximacio/data/full-4.png']},
+    'U1.89': {t:'La massa del protó i de l’electró: error absolut i relatiu', d:'●●○', i:['u1-aproximacio/data/full-4.png', 'u1-aproximacio/data/full-5.png']},
+
+    /* ── Santillana, unitat 1 · Activitats finals i problemes: intervals (pàgines 25–28). Els 102–107 són els problemes aparentment diferents */
+    'U1.90': {t:'Expressa situacions mitjançant intervals', d:'●○○', i:['u1-intervals/data/full-1.png']},
+    'U1.91': {t:'En quin interval es troba un nombre', d:'●○○', i:['u1-intervals/data/full-1.png']},
+    'U1.92': {t:'Escriu tres nombres de cada interval', d:'●○○', i:['u1-intervals/data/full-1.png']},
+    'U1.93': {t:'El límit de 125 anys d’edat en forma d’interval', d:'●●○', i:['u1-intervals/data/full-1.png']},
+    'U1.94': {t:'Memory: uneix les targetes del mateix interval', d:'●○○', i:['u1-intervals/data/full-1.png', 'u1-intervals/data/full-2.png']},
+    'U1.95': {t:'Nombres racionals entre 0 i 1', d:'●○○', i:['u1-intervals/data/full-2.png']},
+    'U1.96': {t:'Vertader o fals sobre intervals', d:'●○○', i:['u1-intervals/data/full-2.png']},
+    'U1.97': {t:'Unions i interseccions dels intervals A, B i C', d:'●●○', i:['u1-intervals/data/full-2.png']},
+    'U1.98': {t:'Completa amb parèntesis, claudàtors o nombres', d:'●●○', i:['u1-intervals/data/full-2.png']},
+    'U1.99': {t:'A quin interval pertanyen x + y, x − y, y − x i x · y', d:'●●●', i:['u1-intervals/data/full-2.png']},
+    'U1.100': {t:'Expressa com a interval aquests conjunts numèrics', d:'●●○', i:['u1-intervals/data/full-2.png', 'u1-intervals/data/full-3.png']},
+    'U1.101': {t:'Repte: les edats consecutives de sis persones', d:'●●●', i:['u1-intervals/data/full-3.png']},
+    'U1.102': {t:'Els nombres entre 147 000 000 i 152 000 000 en forma d’interval', d:'', i:['u1-intervals/data/full-3.png']},
+    'U1.103': {t:'La distància de la Terra al Sol en forma d’interval', d:'', i:['u1-intervals/data/full-3.png']},
+    'U1.104': {t:'Copia i completa els buits', d:'', i:['u1-intervals/data/full-3.png']},
+    'U1.105': {t:'Invertir 1 000 € en un fons al 3 % anual', d:'', i:['u1-intervals/data/full-4.png']},
+    'U1.106': {t:'L’interval que conté aquests nombres', d:'', i:['u1-intervals/data/full-4.png']},
+    'U1.107': {t:'Inversió mínima i màxima en un fons al 3 % anual', d:'', i:['u1-intervals/data/full-4.png']},
+
+    /* ── Santillana, unitat 1 · Fake news (pàgina 27) */
+    'U1.FN': {t:'Hi havia tanta gent? Tres quartes parts i un terç dels assistents', d:'', i:['u1-intervals/data/full-3.png'], e:'Fake news', nom:'Fake news'},
+  },
+
+  'apl-ud2': {
+    /* ── Santillana, unitat 2 · Activitats de percentatges i interès (pàgines 37–39 del llibre) */
+    'U2.27': {t:'Percentatge d’estudiants que fan cada activitat extraescolar', d:'', i:['u2-percentatges/data/full-1.png']},
+    'U2.28': {t:'Un televisor de 360 € que s’encareix un 5,8 %', d:'', i:['u2-percentatges/data/full-1.png']},
+    'U2.29': {t:'70 tones de cereal: quant s’obté del gra i de la palla', d:'', i:['u2-percentatges/data/full-1.png']},
+    'U2.30': {t:'La natalitat baixa un 12,5 %: quants nadons van néixer l’any passat', d:'', i:['u2-percentatges/data/full-1.png']},
+    'U2.31': {t:'Augment del 12 %, i el 20 % d’això és 112: quina és la quantitat', d:'', i:['u2-percentatges/data/full-1.png']},
+    'U2.32': {t:'Un cotxe amb un descompte del 20 % i un 21 % d’IVA', d:'', i:['u2-percentatges/data/full-2.png']},
+    'U2.33': {t:'Augment del 28 % i rebaixa del 12 %: el preu inicial', d:'', i:['u2-percentatges/data/full-2.png']},
+    'U2.34': {t:'El 94 % dels estudiants superen les proves d’accés', d:'', i:['u2-percentatges/data/full-2.png']},
+    'U2.35': {t:'Pujar un 15 % i després baixar un 15 %: tornem al preu inicial?', d:'', i:['u2-percentatges/data/full-2.png']},
+    'U2.36': {t:'Interès de 100 € al 3,5 % durant 2 anys i mig', d:'', i:['u2-percentatges/data/full-2.png']},
+    'U2.37': {t:'Capital invertit al 4,5 % durant 2 anys si en retornen 2 346 €', d:'', i:['u2-percentatges/data/full-2.png']},
+    'U2.38': {t:'El rèdit d’un préstec de 4 000 € que es torna amb 5 080 €', d:'', i:['u2-percentatges/data/full-2.png', 'u2-percentatges/data/full-3.png']},
+    'U2.39': {t:'Quant de temps cal tenir 3 000 € al 3 % per obtenir 225 €', d:'', i:['u2-percentatges/data/full-3.png']},
+
+    /* ── Santillana, unitat 2 · Activitats finals (pàgines 51–56) */
+    'U2.89': {t:'Quin percentatge hi ha en aquestes expressions', d:'●○○', i:['u2-problemes/data/full-1.png']},
+    'U2.90': {t:'Calcula aquests percentatges de 300', d:'●○○', i:['u2-problemes/data/full-1.png']},
+    'U2.91': {t:'Un embassament de 200 hm³ al 45 %', d:'●○○', i:['u2-problemes/data/full-1.png']},
+    'U2.92': {t:'Dues pujades seguides del 3 % sobre 72 €', d:'●●○', i:['u2-problemes/data/full-1.png']},
+    'U2.93': {t:'Una notícia de premsa amb percentatges', d:'●●○', i:['u2-problemes/data/full-2.png']},
+    'U2.94': {t:'La comissió d’un venedor de cotxes', d:'●○○', i:['u2-problemes/data/full-2.png']},
+    'U2.95': {t:'Vertader o fals sobre percentatges', d:'●●○', i:['u2-problemes/data/full-2.png']},
+    'U2.96': {t:'Els estudiants d’un institut baixen un 20 %', d:'●○○', i:['u2-problemes/data/full-3.png']},
+    'U2.97': {t:'Un televisor de 240 € amb un descompte del 20 % i IVA', d:'●●○', i:['u2-problemes/data/full-3.png']},
+    'U2.98': {t:'A quant ha de vendre un minorista per guanyar un 20 %', d:'●●○', i:['u2-problemes/data/full-3.png']},
+    'U2.99': {t:'Quants diners cal augmentar per a una pujada del 24 %', d:'●●○', i:['u2-problemes/data/full-3.png']},
+    'U2.100': {t:'Un còctel amb suc de taronja i extracte de kiwi', d:'●●○', i:['u2-problemes/data/full-3.png', 'u2-problemes/data/full-4.png']},
+    'U2.101': {t:'La bretxa salarial: en quin percentatge és superior el salari dels homes', d:'●●○', i:['u2-problemes/data/full-4.png']},
+    'U2.102': {t:'Repte: reduir un 40 % els accidents a l’aire lliure', d:'●●●', i:['u2-problemes/data/full-4.png']},
+    'U2.103': {t:'Quant valia un producte etiquetat a 60 € amb IVA i guany', d:'●●●', i:['u2-problemes/data/full-4.png']},
+    'U2.104': {t:'Uns pantalons de 38 € amb un descompte del 25 % i IVA', d:'●●○', i:['u2-problemes/data/full-4.png', 'u2-problemes/data/full-5.png']},
+    'U2.105': {t:'L’IVA en cada etapa: fabricant, magatzem i botiga', d:'●●●', i:['u2-problemes/data/full-5.png']},
+    'U2.107': {t:'El capital invertit al 2,5 % durant 3 anys', d:'●●○', i:['u2-problemes/data/full-5.png']},
+    'U2.108': {t:'El rèdit d’un préstec de 6 000 € que es torna amb 7 600 €', d:'●○○', i:['u2-problemes/data/full-6.png']},
+
+    /* ── Santillana, unitat 2 · Fake news (pàgina 57) */
+    'U2.FN': {t:'La calefacció: tres pujades seguides del 10 % al gasoil', d:'', i:['u2-fake-news/data/full-1.png'], e:'Fake news', nom:'Fake news'},
+
+    /* ── Llibre propi · UD2 (activitats 2.5 i 2.6). L'enunciat i la solució són a enunciats.js.
+          Fora: «Per al Quadern d'eines». */
+    '2.5.1': {t:'Interès simple de dos capitals', d:'', i:[]},
+    '2.5.2': {t:'Quota i total d’un crèdit de 1 500 €', d:'', i:[]},
+    '2.5.3': {t:'El cost real d’un mòbil en 12 quotes', d:'', i:[]},
+    '2.5.4': {t:'Caça l’error: l’interès sense el temps', d:'', i:[]},
+    '2.5.5': {t:'Decideix: un ordinador al comptat o en 18 quotes', d:'', i:[]},
+    '2.5.6': {t:'Estima abans de calcular: un préstec de 3 000 €', d:'', i:[]},
+    '2.6.1': {t:'Cost total amb entrada i quotes', d:'', i:[]},
+    '2.6.2': {t:'Una bici al comptat o a terminis', d:'', i:[]},
+    '2.6.3': {t:'Tres opcions per a un portàtil de 800 €', d:'', i:[]},
+    '2.6.4': {t:'Caça l’error: la quota més baixa', d:'', i:[]},
+    '2.6.5': {t:'Decideix amb criteri: quan finançar', d:'', i:[]},
+  },
+
+  'apl-ud3': {
+    /* ── Santillana, unitat 2 · Activitats de proporcionalitat (pàgines 31–33 del llibre) */
+    'U2.1': {t:'4 pàgines en 20 minuts: quant triguen a fer-ne 22', d:'', i:['u2-activitats/data/full-1.png']},
+    'U2.2': {t:'Una connexió de 600 Mbps repartida entre ordinadors', d:'', i:['u2-activitats/data/full-1.png', 'u2-activitats/data/full-2.png']},
+    'U2.3': {t:'Dos exemples de magnituds directament i inversament proporcionals', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.4': {t:'Una impressora 3D que fa 4 peces en 20 minuts', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.5': {t:'Diners per a 12 dies: quant puc gastar perquè en durin 15', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.6': {t:'30 gallines i un sac de pinso', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.7': {t:'Quants menús del dia pel preu de 14 menús degustació', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.8': {t:'16 màquines en 6 hores: quantes en calen per a 4 hores', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.9': {t:'Les calories d’un iogurt de 125 g', d:'', i:['u2-activitats/data/full-2.png']},
+    'U2.10': {t:'El tipus de proporcionalitat entre tres magnituds', d:'', i:['u2-activitats/data/full-3.png']},
+    'U2.11': {t:'Exemples de tres magnituds relacionades', d:'', i:['u2-activitats/data/full-3.png']},
+    'U2.12': {t:'Un exemple de quatre magnituds relacionades', d:'', i:['u2-activitats/data/full-3.png']},
+
+    /* ── Santillana, unitat 2 · Activitats finals (pàgines 40–44) */
+    'U2.45': {t:'Indica el tipus de proporcionalitat en cada cas', d:'●○○', i:['u2-problemes/data/full-1.png']},
+    'U2.46': {t:'El lloguer d’un traster', d:'●○○', i:['u2-problemes/data/full-1.png']},
+    'U2.47': {t:'Exemples de magnituds proporcionals a classe', d:'●○○', i:['u2-problemes/data/full-1.png']},
+    'U2.48': {t:'El salmó d’una recepta per a 8 persones', d:'●○○', i:['u2-problemes/data/full-1.png', 'u2-problemes/data/full-2.png']},
+    'U2.49': {t:'15 € diaris durant 6 dies: i si han de durar 9?', d:'●○○', i:['u2-problemes/data/full-2.png']},
+    'U2.50': {t:'La velocitat d’un coet al cap de 5 minuts', d:'●○○', i:['u2-problemes/data/full-2.png']},
+    'U2.51': {t:'L’eco contra una paret a 50 m', d:'●○○', i:['u2-problemes/data/full-2.png']},
+    'U2.58': {t:'Plantar avets a 50 cm en lloc de 60 cm', d:'●○○', i:['u2-problemes/data/full-3.png']},
+    'U2.59': {t:'61 pals de telèfon separats 15 m', d:'●●○', i:['u2-problemes/data/full-4.png']},
+    'U2.60': {t:'15 pàgines al dia durant 12 dies: quantes per acabar en 8', d:'●●○', i:['u2-problemes/data/full-4.png']},
+    'U2.61': {t:'La velocitat d’un vaixell que fa la travessia en 6 h i mitja', d:'●●○', i:['u2-problemes/data/full-4.png']},
+    'U2.62': {t:'Els vasos d’arròs d’una paella', d:'●●○', i:['u2-problemes/data/full-4.png']},
+    'U2.63': {t:'12 kg de cafè: quant cal pagar si n’envien 4,5 kg menys', d:'●●○', i:['u2-problemes/data/full-4.png']},
+    'U2.64': {t:'640 ovelles i menjar per a 65 dies', d:'●●○', i:['u2-problemes/data/full-4.png', 'u2-problemes/data/full-5.png']},
+    'U2.65': {t:'Investiga amb un quadrat de costat a', d:'●●○', i:['u2-problemes/data/full-5.png']},
+
+    /* ── Santillana, unitat 5 · Escales (pàgines 134–137). Fora les 24, 25, 29 i 33: volums × k³ (F1) */
+    'U5.22': {t:'Distàncies en un mapa: Sevilla–Barcelona i Càceres–València', d:'', i:['u5-escales/data/full-1.png']},
+    'U5.23': {t:'L’escala dels mapes on l’equador mesura 30 cm, 95 cm i 2 m', d:'', i:['u5-escales/data/full-1.png']},
+    'U5.28': {t:'La superfície d’un futbolí a escala 1:75', d:'', i:['u5-escales/data/full-2.png']},
+    'U5.32': {t:'El preu de les tartes segons la superfície', d:'', i:['u5-escales/data/full-3.png']},
+    'U5.34': {t:'Un futbolí semblant a un camp de 100 × 70 m', d:'', i:['u5-escales/data/full-3.png']},
+
+    /* ── Santillana, unitat 5 · Activitats finals: escales i problemes (pàgines 148–151) */
+    'U5.67': {t:'Un mapa a escala 1:400 000', d:'●●○', i:['u5-problemes/data/full-1.png']},
+    'U5.68': {t:'Una carretera de 45 km en tres plànols', d:'●●○', i:['u5-problemes/data/full-1.png']},
+    'U5.69': {t:'Tres escales per representar Galícia en un DIN A4', d:'●●○', i:['u5-problemes/data/full-1.png']},
+    'U5.70': {t:'Escala gràfica i escala numèrica', d:'●●○', i:['u5-problemes/data/full-1.png']},
+    'U5.71': {t:'París–Viena en un mapa: l’escala i la distància Berlín–Praga', d:'●●○', i:['u5-problemes/data/full-1.png', 'u5-problemes/data/full-2.png']},
+    'U5.79': {t:'Els augments d’un microscopi electrònic', d:'', i:['u5-problemes/data/full-3.png']},
+
+    /* ── Santillana, unitat 3 · Activitats finals (pàgina 82) */
+    'U3.61': {t:'Les tarifes de l’aigua: quants metres cúbics per 50,83 €', d:'●●○', i:['u3-problemes/data/full-1.png']},
+  },
 
   'apl-ud4': {
 

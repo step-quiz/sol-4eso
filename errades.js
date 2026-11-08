@@ -86,6 +86,120 @@ const ERRADES = {
 
   /* ── 4t ESO Aplicades · UD4 · Mesura indirecta (Santillana U5) ────────── */
 
+  /* ── 4t ESO Aplicades · UD1 ── */
+
+  'apl-ud1/U1.45': [
+    { lloc:    TEX`a)`,
+      ondiu:   TEX`$\dfrac{\sqrt{3}}{2} < \dfrac{\sqrt{6}}{2} < \sqrt{3}$`,
+      hadedir: TEX`$\dfrac{\sqrt{3}}{3} < \dfrac{\sqrt{6}}{2} < \sqrt{3}$`,
+      motiu:   TEX`El nombre de l’enunciat és $\dfrac{\sqrt{3}}{3}$, no $\dfrac{\sqrt{3}}{2}$.`,
+      marca:   ['u1-reals/data/full-4.png', 14.2, 35.2, 4.9, 4.0] },
+  ],
+
+  'apl-ud1/U1.48': [
+    { lloc:    TEX`c)`,
+      ondiu:   TEX`$\sqrt{\dfrac{7}{3}} = 1{,}527525231\ldots$`,
+      hadedir: TEX`per exemple, $\sqrt{2{,}4} = 1{,}549193338\ldots$`,
+      motiu:   TEX`Cal un irracional entre $1{,}5\widehat{3} = 1{,}533\ldots$ i $1{,}\widehat{5} = 1{,}555\ldots$, i $1{,}5275\ldots$ és menor que tots dos.`,
+      marca:   ['u1-reals/data/full-4.png', 57.4, 63.5, 23.8, 4.7] },
+  ],
+
+  'apl-ud1/U1.57': [
+    { lloc:    TEX`c) i d)`,
+      ondiu:   TEX`$\sqrt{2}\,a$ és irracional i $\pi a$ és irracional`,
+      hadedir: TEX`$\sqrt{2}\,a$ i $\pi a$ són irracionals només si $a \neq 0$. Si $a = 0$, tots dos valen $0$, que és racional`,
+      motiu:   TEX`Per aïllar $\sqrt{2}$ o $\pi$ es divideix per $a = \dfrac{b}{c}$, i això demana que $b \neq 0$.`,
+      marca:   [['u1-reals/data/full-7.png', 12.4, 28.0, 34.4, 4.3], ['u1-reals/data/full-7.png', 12.4, 45.3, 28.0, 5.7]] },
+  ],
+
+  'apl-ud1/U1.89': [
+    { lloc:    TEX`a)`,
+      ondiu:   TEX`$m = 1{,}6726\cdot 10^{-27}$ g, $E_a = 1{,}998\cdot 10^{-24}$, $E_r = 1\,194{,}74$. És un error molt gran`,
+      hadedir: TEX`$m = 1{,}6726\cdot 10^{-24}$ g, $E_a = 3{,}274\cdot 10^{-25}$ g, $E_r \approx 0{,}196$ (un $19{,}6\,\%$)`,
+      motiu:   TEX`La massa del protó és $1{,}6726\cdot 10^{-27}$ kg, és a dir, $1{,}6726\cdot 10^{-24}$ g. El solucionari barreja quilograms i grams.`,
+      marca:   ['u1-aproximacio/data/full-5.png', 9.1, 22.6, 36.8, 15.6] },
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$m = 9{,}1\cdot 10^{-31}$ g, $E_a = 8{,}99\cdot 10^{-28}$, $E_r = 988{,}01$. És un error molt gran`,
+      hadedir: TEX`$m = 9{,}1\cdot 10^{-28}$ g, $E_a = 10^{-29}$ g, $E_r \approx 0{,}011$ (un $1{,}1\,\%$): és un error petit`,
+      motiu:   TEX`La massa de l’electró és $9{,}1\cdot 10^{-31}$ kg, és a dir, $9{,}1\cdot 10^{-28}$ g.`,
+      marca:   ['u1-aproximacio/data/full-5.png', 9.1, 38.6, 36.8, 14.9] },
+  ],
+
+  'apl-ud1/U1.90': [
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$2{,}8 = [0;\ 2{,}8]$`,
+      hadedir: TEX`$[0;\ 2{,}8]$`,
+      motiu:   TEX`El «$2{,}8 =$» del davant sobra: l’interval és $[0;\ 2{,}8]$.`,
+      marca:   ['u1-intervals/data/full-1.png', 11.3, 94.5, 12.6, 2.8] },
+  ],
+
+  'apl-ud1/U1.99': [
+    { lloc:    TEX`d)`,
+      ondiu:   TEX`$0 = 0\cdot 0 < x\cdot y$ \quad i \quad $0 = 0\cdot 0 > x\cdot y$`,
+      hadedir: TEX`$0 = 0\cdot 0 \leq x\cdot y$ \quad i \quad $0 = 0\cdot 0 \geq x\cdot y$`,
+      motiu:   TEX`$y$ pot valer $0$, i llavors $x\cdot y = 0$. El resultat final, $(-2, 6)$, és correcte.`,
+      marca:   [['u1-intervals/data/full-2.png', 61.8, 74.9, 26.9, 2.6], ['u1-intervals/data/full-2.png', 64.7, 79.9, 31.5, 2.6]] },
+  ],
+
+  'apl-ud1/U1.101': [
+    { ondiu:   TEX`Milena $9$, Ismael $10$, Elisa $11$, Pilar $12$, Javier $13$, Cristina $14$, com a única solució`,
+      hadedir: TEX`el problema té cinc solucions. En l’ordre Milena, Elisa, Pilar, Javier, Cristina, Ismael: $9, 11, 12, 13, 14, 10$ · $9, 10, 12, 13, 14, 11$ · $8, 9, 11, 12, 13, 10$ · $8, 9, 10, 12, 13, 11$ · $7, 8, 9, 11, 12, 10$`,
+      motiu:   TEX`Les condicions no fixen on va l’Ismael dins de l’ordre Milena $<$ Elisa $<$ Pilar $<$ Javier $<$ Cristina.`,
+      marca:   ['u1-intervals/data/full-3.png', 9.8, 28.6, 20.5, 15.2] },
+  ],
+
+  /* ── 4t ESO Aplicades · UD2 ── */
+
+  'apl-ud2/U2.35': [
+    { ondiu:   TEX`un $3\,\%$ menys aproximadament`,
+      hadedir: TEX`un $2{,}25\,\%$ menys`,
+      motiu:   TEX`$1 - 0{,}9775 = 0{,}0225$.`,
+      marca:   ['u2-percentatges/data/full-2.png', 88.3, 18.1, 4.4, 2.4] },
+  ],
+
+  'apl-ud2/U2.94': [
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$8\,\% = \dfrac{0{,}8}{100} = 0{,}008$`,
+      hadedir: TEX`$0{,}8\,\% = \dfrac{0{,}8}{100} = 0{,}008$`,
+      motiu:   TEX`La comissió de l’enunciat és el $0{,}8\,\%$. La conclusió és correcta.`,
+      marca:   ['u2-problemes/data/full-2.png', 59.8, 31.5, 5.3, 3.6] },
+  ],
+
+  'apl-ud2/U2.103': [
+    { ondiu:   TEX`Com que l’IVA i el guany es calculen sobre el preu inicial`,
+      hadedir: TEX`Com que l’IVA es calcula sobre el preu que ja porta el guany`,
+      motiu:   TEX`Multiplicar per $1{,}21\cdot 1{,}10 = 1{,}331$ vol dir aplicar un increment sobre l’altre, i el resultat, $45{,}08$ €, és correcte. Si tots dos es calculessin sobre el preu inicial, seria $\dfrac{60}{1{,}31} = 45{,}80$ €.`,
+      marca:   ['u2-problemes/data/full-4.png', 57.0, 57.1, 30.0, 4.5] },
+  ],
+
+  /* ── 4t ESO Aplicades · UD3 ── */
+
+  'apl-ud3/U2.59': [
+    { lloc:    TEX`a)`,
+      ondiu:   TEX`$\dfrac{x}{61} = \dfrac{15}{25} \to x = 36{,}6$, i la columna «Distancia (cm)»`,
+      hadedir: TEX`$61$ pals fan $60$ separacions, $60\cdot 15 = 900$ m, i $\dfrac{900}{25} = 36$ separacions: $37$ pals. La distància és en metres`,
+      motiu:   TEX`La proporcionalitat inversa és entre les separacions i la distància de cada separació, no entre els pals. El $37$ només surt per l’arrodoniment.`,
+      marca:   ['u2-problemes/data/full-4.png', 10.9, 26.0, 39.0, 9.5] },
+  ],
+
+  'apl-ud3/U5.22': [
+    { lloc:    TEX`a)`,
+      ondiu:   TEX`$x = 8\,100\,000$ cm i $\dfrac{8\,100\,000}{100\,000} = 810$ km`,
+      hadedir: TEX`$x = 81\,000\,000$ cm i $\dfrac{81\,000\,000}{100\,000} = 810$ km`,
+      motiu:   TEX`$4{,}5\cdot 18\,000\,000 = 81\,000\,000$. El resultat, $810$ km, és correcte.`,
+      marca:   ['u5-escales/data/full-1.png', 58.7, 12.2, 24.7, 7.1] },
+  ],
+
+  'apl-ud3/U5.69': [
+    { ondiu:   TEX`Les escales $1{:}500\,000$ ($39{,}2 \times 42{,}2$ cm) i $1{:}250\,000$ ($78{,}4 \times 84{,}4$ cm)`,
+      hadedir: TEX`Han de ser escales que hi càpiguen, per exemple $1{:}1\,000\,000$ ($19{,}6 \times 21{,}1$ cm), $1{:}1\,500\,000$ ($13{,}1 \times 14{,}1$ cm) i $1{:}2\,000\,000$ ($9{,}8 \times 10{,}6$ cm)`,
+      motiu:   TEX`Un DIN A4 fa $21 \times 29{,}7$ cm. Amb aquestes tres escales Galícia hi cap, però en un pòsit de $10 \times 10$ cm no.`,
+      marca:   ['u5-problemes/data/full-1.png', 57.4, 32.4, 34.2, 13.9] },
+  ],
+
+
+  /* ── 4t ESO Aplicades · UD4 ── */
+
   'apl-ud4/U5.64': [
     { ondiu:   TEX`Els costats mesuraran $6$; $9{,}6$ i $12{,}8$ cm.`,
       hadedir: TEX`Els costats mesuraran $8$; $9{,}6$ i $12{,}8$ cm.`,

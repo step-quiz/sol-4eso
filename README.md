@@ -20,7 +20,9 @@ L'alumne navega **matèria → unitat → tasca → exercici**. Una *tasca* és 
 llista ordenada d'exercicis amb una data límit. Si només hi ha una matèria (o una unitat) amb tasques
 visibles, la portada hi entra directament.
 
-**Estat (novembre de 2026):** Aplicades, **UD4** (*Mesura indirecta*): 13 exercicis de Santillana
+**Estat (novembre de 2026):** Aplicades, **UD1** (*Nombres reals des de l'estimació*): 70 exercicis de la U1. **UD2**
+(*Percentatges i matemàtica financera*): 33 exercicis de la U2 i 11 del llibre propi amb la solució. **UD3** (*Proporcionalitat i escales*):
+39 exercicis de la U2, la U5 i la U3. **UD4** (*Mesura indirecta*): 13 exercicis de Santillana
 (U5 i U7) i 33 del llibre propi amb la solució. **UD11** (*Idea de polinomi*): 19 exercicis de l'annex
 de Polinomis. **UD5** (*Equacions de 2n grau*): 49 exercicis de la U3, la U7 i l'annex de Polinomis
 (igualtats notables). **UD10** (*Sistemes*): 79 exercicis de la U4, la U3 (inequacions i problemes), la U2 (mòbils) i la
