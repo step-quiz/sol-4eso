@@ -23,8 +23,8 @@ visibles, la portada hi entra directament.
 **Estat (novembre de 2026):** Aplicades, **UD4** (*Mesura indirecta*): 13 exercicis de Santillana
 (U5 i U7) i 33 del llibre propi amb la solució. **UD11** (*Idea de polinomi*): 19 exercicis de l'annex
 de Polinomis. **UD5** (*Equacions de 2n grau*): 49 exercicis de la U3, la U7 i l'annex de Polinomis
-(igualtats notables). **UD10** (*Sistemes*): els 63 exercicis de la unitat 4 de Santillana que són del
-curs. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres UD es carregaran unes
+(igualtats notables). **UD10** (*Sistemes*): 79 exercicis de la U4, la U3 (inequacions i problemes), la U2 (mòbils) i la
+U7. **UD6** (*La paràbola*): 25 exercicis de la U7, la U6 i la U3. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres UD es carregaran unes
 setmanes abans de fer-les. Vegeu `TODO.md`.
 
 ## Com programo la feina
@@ -127,11 +127,21 @@ apl-ud5/                     ← Aplicades, UD5 · Equacions de 2n grau
   u3-problemes/data/…        U3, 63, 71 i 77
   u7-problemes/data/…        U7, 94 i 95
   ap-activitats/data/…, ap-igualtats/data/…   annex de Polinomis, igualtats notables
-apl-ud10/                    ← Aplicades, UD10 · Sistemes (Santillana U4)
-  u4-activitats/data/…       activitats 1–12 i reptes
-  u4-sistemes/data/…         activitats finals, apartat 1
-  u4-problemes/data/…        apartat 3 (62–79)
+apl-ud10/                    ← Aplicades, UD10 · Sistemes
+  u4-activitats/data/…       Santillana U4, activitats 1–12 i reptes
+  u4-sistemes/data/…         U4, activitats finals, apartat 1
+  u4-problemes/data/…        U4, apartat 3 (62–79)
   u4-fake-news/data/…, u4-problemes-diferents/data/…, u4-situacio/data/…, u4-autoavaluacio/data/…
+  u3-activitats/data/…, u3-inequacions/data/…, u3-problemes/data/…   U3, inequacions i problemes
+  u2-problemes/data/…        U2, mòbils (68 i 69)
+  u7-problemes/data/…        U7, 93
+apl-ud6/                     ← Aplicades, UD6 · La paràbola
+  u7-activitats/data/…       Santillana U7, Què saps ja 1 i activitats 8–10
+  u7-paraboles/data/…        U7, activitats finals 45–55
+  u7-problemes/data/…        U7, problemes 86–106
+  u6-activitats/data/…, u6-problemes/data/…   U6, punts de tall
+  u3-equacions/data/…        U3, 45
+  enunciats/U7.86.png        figures dels enunciats
 eines/
   retalla.py, retalls.json   ← fan les imatges d'una unitat a partir del PDF de source/
   figura.py                  ← retalla una figura del PDF per a un enunciat (apl-ud10/enunciats/…)
@@ -198,7 +208,7 @@ const PISTES = {
 El solucionari té errades. Les dels exercicis programats van a **`errades.js`**, amb la mateixa clau
 que les pistes. El sistema és el de `sol`, sencer: avís a la llista de la tasca, targeta «On diu /
 Ha de dir» dins de l'exercici, requadre vermell sobre la imatge (`marca`) i, si es fa, la imatge ja
-corregida (`pegat`). Ara n'hi ha a la UD4, la UD11 i la UD5. Com s'escriuen: `ERRADES.md`.
+corregida (`pegat`). Ara n'hi ha a la UD4, la UD11, la UD5 i la UD6. Com s'escriuen: `ERRADES.md`.
 
 ## Les proves
 

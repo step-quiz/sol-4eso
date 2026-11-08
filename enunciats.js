@@ -319,6 +319,38 @@ const ENUNCIATS = {
   'apl-ud5/U7.94': {
     text: TEX`El llançament d’una pilota segueix una trajectòria d’equació $h(t) = 2t - t^2$. Determina l’altura, en metres, i els segons que calen perquè la pilota arribi al punt més alt de la trajectòria.` },
 
+  /* ── 4t ESO Aplicades · UD6 · La paràbola ── */
+
+  'apl-ud6/U7.QS1': {
+    text: TEX`Resol l’equació $x^2 - 2x + 1 = 0$ i digues quantes solucions té.` },
+
+  'apl-ud6/U7.45': {
+    text: TEX`Representa les funcions següents.`,
+    apartats: [TEX`$y = -5x^2$`, TEX`$y = 5x^2$`, TEX`$y = \dfrac{x^2}{4}$`],
+    col: 3 },
+
+  'apl-ud6/U7.49': {
+    text: TEX`Troba el vèrtex de les paràboles següents i representa-les. Raona, en cada cas, si el vèrtex és un màxim o un mínim.`,
+    apartats: [
+      TEX`$y = -2x^2 + 1$`, TEX`$y = 3x^2 - 6$`, TEX`$y = 5x^2 - 4$`,
+      TEX`$y = -4x^2 + 2$`, TEX`$y = x^2 - 8x + 15$`, TEX`$y = x^2 + 9x + 18$`],
+    col: 3 },
+
+  'apl-ud6/U7.86': {
+    titol: TEX`Matemàtiques i videojocs`,
+    text: TEX`En una pantalla d’un videojoc, el personatge salta descrivint una paràbola i arriba a l’altura màxima al punt $(4, 4)$ per caure sobre l’enemic. Des d’on va poder saltar? Escriu l’equació de la paràbola.`,
+    fig: ['enunciats/U7.86.png'] },
+
+  'apl-ud6/U7.105': {
+    text: TEX`Donada la funció $y = -\dfrac{1}{4}x^2 + 4x + 20$:`,
+    apartats: [TEX`Calcula’n el vèrtex.`, TEX`Troba $f(15)$.`],
+    col: 2 },
+
+  'apl-ud6/U6.24': {
+    text: TEX`Determina els punts de tall amb els eixos de cadascuna de les funcions següents.`,
+    apartats: [TEX`$f(x) = x^2 - 3x$`, TEX`$f(x) = 9x^2 - 4$`, TEX`$f(x) = -x^2 + 144$`, TEX`$f(x) = 5x^2 - 4x$`],
+    col: 2 },
+
   /* ── 4t ESO Aplicades · UD10 · Sistemes d'equacions i inequacions (Santillana U4) ── */
 
   'apl-ud10/U4.24': {

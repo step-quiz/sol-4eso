@@ -147,6 +147,72 @@
       "u4-autoavaluacio": [
         128,
         129
+      ],
+      "u3-activitats": [
+        69,
+        70
+      ],
+      "u3-inequacions": [
+        82,
+        83
+      ],
+      "u3-problemes": [
+        84,
+        85,
+        86,
+        87
+      ],
+      "u2-problemes": [
+        45,
+        46
+      ],
+      "u7-problemes": [
+        224,
+        225
+      ]
+    }
+  },
+  "apl-ud6": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u7-activitats": [
+        190,
+        193,
+        194
+      ],
+      "u7-paraboles": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210
+      ],
+      "u7-problemes": [
+        222,
+        225,
+        226,
+        227,
+        228
+      ],
+      "u6-activitats": [
+        160,
+        161,
+        162
+      ],
+      "u6-problemes": [
+        174
+      ],
+      "u3-equacions": [
+        77,
+        78
       ]
     }
   }

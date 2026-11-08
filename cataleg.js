@@ -12,6 +12,7 @@
      apl-ud11   Aplicades, UD11 · Idea de polinomi      (carpeta apl-ud11/)
      apl-ud5    Aplicades, UD5 · Equacions de 2n grau   (carpeta apl-ud5/)
      apl-ud10   Aplicades, UD10 · Sistemes              (carpeta apl-ud10/)
+     apl-ud6    Aplicades, UD6 · La paràbola            (carpeta apl-ud6/)
 
    L'identificador és alhora la carpeta de les imatges i el principi de la
    clau de pistes, errades i enunciats:  'apl-ud10/U4.24'.
@@ -55,6 +56,7 @@ const UNITATS_META = {
   'apl-ud11': {materia:'apl', nom:'Unitat 11', subtitol:'Idea de polinomi',                    ordre:5},
   'apl-ud5':  {materia:'apl', nom:'Unitat 5',  subtitol:'Equacions de 2n grau',                ordre:6},
   'apl-ud10': {materia:'apl', nom:'Unitat 10', subtitol:'Sistemes d’equacions i inequacions', ordre:7},
+  'apl-ud6':  {materia:'apl', nom:'Unitat 6',  subtitol:'La paràbola',                         ordre:8},
 };
 
 const CATALEG = {
@@ -218,7 +220,7 @@ const CATALEG = {
 
   'apl-ud10': {
 
-    /* Santillana, unitat 4. Fora (vistiplau F10–F12 i F18): paràmetres, sistemes
+    /* Santillana, unitat 4 (i, al final, la U3, la U2 i la U7). Fora (vistiplau F10–F12 i F18): paràmetres, sistemes
        d'inequacions, inequacions amb dues incògnites i el sistema no lineal (ex. 72). */
 
     /* ── Activitats (pàgines 89–95 del llibre) */
@@ -296,7 +298,76 @@ const CATALEG = {
     'U4.AV4': {t:'Solució d’un sistema amb parèntesis', d:'', i:['u4-autoavaluacio/data/full-1.png'], e:'Autoav. 4', nom:'Autoavaluació 4'},
     'U4.AV6': {t:'La parcel·la de la Sílvia: àrea d’un terreny rectangular', d:'', i:['u4-autoavaluacio/data/full-2.png'], e:'Autoav. 6', nom:'Autoavaluació 6'},
 
+
+    /* ── Santillana, unitat 3 · Inequacions d'una incògnita (pàgines 68–69 i 81–82) */
+    'U3.24': {t:'Resol inequacions de primer grau', d:'', i:['u3-activitats/data/full-1.png', 'u3-activitats/data/full-2.png']},
+    'U3.25': {t:'Resol inequacions amb parèntesis i fraccions', d:'', i:['u3-activitats/data/full-2.png']},
+    'U3.26': {t:'Escriu una inequació amb solució [2, +∞)', d:'', i:['u3-activitats/data/full-2.png']},
+    'U3.58': {t:'Completa amb <, ≤, > o ≥ per a x = 2', d:'●○○', i:['u3-inequacions/data/full-1.png']},
+    'U3.59': {t:'Opera i resol inequacions', d:'●●○', i:['u3-inequacions/data/full-1.png', 'u3-inequacions/data/full-2.png']},
+
+    /* ── Santillana, unitat 3 · Problemes (pàgines 83–86) */
+    'U3.64': {t:'Una família de cinc viatja en tren per 29,40 €: el preu de cada bitllet', d:'●●○', i:['u3-problemes/data/full-1.png']},
+    'U3.65': {t:'Gasta el 25 % dels estalvis i encara li queden 120 €', d:'●●○', i:['u3-problemes/data/full-1.png']},
+    'U3.66': {t:'Uns pantalons rebaixats un 20 % costen 18 €: el preu inicial', d:'●●○', i:['u3-problemes/data/full-1.png']},
+    'U3.73': {t:'Cadires i gandules a la platja: quan surt més a compte la gandula?', d:'●●○', i:['u3-problemes/data/full-2.png']},
+    'U3.74': {t:'Un pelegrí que camina entre 4 i 6 km/h: la distància recorreguda', d:'●●●', i:['u3-problemes/data/full-2.png', 'u3-problemes/data/full-3.png']},
+    'U3.75': {t:'Les edats de tres nois en intervals', d:'●●●', i:['u3-problemes/data/full-3.png']},
+    'U3.80': {t:'Resol la inequació doble 0 < x − 3 < 18', d:'', i:['u3-problemes/data/full-4.png']},
+    'U3.81': {t:'L’Alfons és menor d’edat: l’edat possible de la seva germana', d:'', i:['u3-problemes/data/full-4.png']},
+
+    /* ── Santillana, unitat 2 · Problemes de mòbils (pàgines 44–45). El 67 no hi és: el
+          solucionari no en dona la solució («Resuelta en el libro de texto»). */
+    'U2.68': {t:'Dos trens en el mateix sentit: on i quan l’atrapa?', d:'●●○', i:['u2-problemes/data/full-1.png', 'u2-problemes/data/full-2.png']},
+    'U2.69': {t:'Una moto i un cotxe en sentit contrari: quan i on es troben?', d:'●●○', i:['u2-problemes/data/full-2.png']},
+
+    /* ── Santillana, unitat 7 (pàgines 223–224) */
+    'U7.93': {t:'El lloguer d’una caravana: dues tarifes, quina surt més a compte?', d:'●●○', i:['u7-problemes/data/full-1.png', 'u7-problemes/data/full-2.png']},
+
   },
+
+  'apl-ud6': {
+
+    /* Santillana, unitat 7 (funcions polinòmiques), unitat 6 (punts de tall) i unitat 3.
+       Fora (vistiplau P8): translacions (Act. 11–13), recta i paràbola (ex. 56–58, 101–102),
+       paràmetres (ex. 50 i 53), i les Act. 25–27 de la U6 (calen Ruffini o biquadrades: F1 i F9). */
+
+    /* ── U7 · Què saps ja i activitats (pàgines 189–193 del llibre) */
+    'U7.QS1': {t:'Resol x² − 2x + 1 = 0 i digues quantes solucions té', d:'', i:['u7-activitats/data/full-1.png'], e:'Què saps ja 1', nom:'Què saps ja 1'},
+    'U7.8':   {t:'Relaciona cada funció amb la seva paràbola', d:'', i:['u7-activitats/data/full-2.png']},
+    'U7.9':   {t:'Si la paràbola taronja és y = 3x², quines són les altres dues?', d:'', i:['u7-activitats/data/full-2.png']},
+    'U7.10':  {t:'Representa y = 3x², y = x²/3 i y = −2x²', d:'', i:['u7-activitats/data/full-2.png', 'u7-activitats/data/full-3.png']},
+
+    /* ── U7 · Activitats finals · 2. Relació quadràtica (pàgines 203–209) */
+    'U7.45':  {t:'Representa y = −5x², y = 5x² i y = x²/4', d:'●●○', i:['u7-paraboles/data/full-1.png']},
+    'U7.46':  {t:'Relaciona cada funció amb la seva paràbola', d:'●●○', i:['u7-paraboles/data/full-2.png']},
+    'U7.47':  {t:'Vèrtex, eix i talls de quatre paràboles a partir de la gràfica', d:'●●○', i:['u7-paraboles/data/full-2.png', 'u7-paraboles/data/full-3.png']},
+    'U7.48':  {t:'Un quadrat màgic amb els eixos de simetria de tres paràboles', d:'●○○', i:['u7-paraboles/data/full-3.png']},
+    'U7.49':  {t:'Vèrtex de sis paràboles: màxim o mínim? Representa-les', d:'●●○', i:['u7-paraboles/data/full-3.png', 'u7-paraboles/data/full-4.png']},
+    'U7.51':  {t:'Representa quatre paràboles', d:'●○○', i:['u7-paraboles/data/full-5.png', 'u7-paraboles/data/full-6.png']},
+    'U7.52':  {t:'Representa y = |x² − x − 6|', d:'●●●', i:['u7-paraboles/data/full-6.png']},
+    'U7.54':  {t:'Inventa paràboles amb un vèrtex o un punt donats', d:'●●○', i:['u7-paraboles/data/full-6.png']},
+    'U7.55':  {t:'Joc: el «Qui és qui?» de les paràboles', d:'●●○', i:['u7-paraboles/data/full-6.png', 'u7-paraboles/data/full-7.png']},
+
+    /* ── U7 · Problemes (pàgines 220–227) */
+    'U7.86':  {t:'Un salt de videojoc: des d’on salta i l’equació de la paràbola', d:'●●○', i:['u7-problemes/data/full-1.png']},
+    'U7.94':  {t:'El llançament d’una pilota: l’altura màxima i quan s’hi arriba', d:'●○○', i:['u7-problemes/data/full-2.png']},
+    'U7.95':  {t:'Un tir lliure de bàsquet: l’equació de la paràbola', d:'●●○', i:['u7-problemes/data/full-2.png']},
+    'U7.96':  {t:'Un bumerang i un ocell: on es troben les trajectòries?', d:'●●○', i:['u7-problemes/data/full-2.png']},
+    'U7.100': {t:'Ajuda humanitària: l’altura de llançament segons la velocitat', d:'●●●', i:['u7-problemes/data/full-3.png', 'u7-problemes/data/full-4.png']},
+    'U7.105': {t:'Vèrtex de y = −x²/4 + 4x + 20 i f(15)', d:'', i:['u7-problemes/data/full-5.png']},
+    'U7.106': {t:'El cost de fabricar un tractor: el màxim i el cost amb 15 unitats', d:'', i:['u7-problemes/data/full-5.png']},
+
+    /* ── U6 · Punts de tall amb els eixos (pàgines 159–161 i 173) */
+    'U6.23':  {t:'Punts de tall de quatre funcions lineals', d:'', i:['u6-activitats/data/full-1.png', 'u6-activitats/data/full-2.png']},
+    'U6.24':  {t:'Punts de tall amb els eixos de quatre funcions de segon grau', d:'', i:['u6-activitats/data/full-2.png']},
+    'U6.28':  {t:'Punts de tall de dues funcions amb fraccions', d:'', i:['u6-activitats/data/full-3.png']},
+    'U6.72':  {t:'Calcula els punts de tall amb els eixos', d:'●○○', i:['u6-problemes/data/full-1.png']},
+
+    /* ── U3 · Equacions (pàgines 76–77) */
+    'U3.45':  {t:'Sense resoldre, quantes solucions té cada equació?', d:'●○○', i:['u3-equacions/data/full-1.png', 'u3-equacions/data/full-2.png']},
+  },
+
 
 };
 

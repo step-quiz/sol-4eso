@@ -43,14 +43,25 @@ Comença a finals de novembre de 2026.
 - [x] Santillana U4, tret dels exclosos (vistiplau F10–F12, F18): paràmetres (30, 33, 41–43),
       sistemes d'inequacions (13–18, 50–56, 84–85, R2, AV5), semiplans (19–23, 57–61), R1 i el
       sistema no lineal (72). Queden 63 fitxes a `apl-ud10/`.
-- [ ] Quan toqui (vistiplau P7): afegir U3 · Activitats 24–26; ex. 58–59, 64–66, 73–75 i 80–81
-      (inequacions d'una incògnita), U2 · ex. 67–69 (mòbils) i U7 · ex. 93. Les de la U3 tenen
-      errades detectades: aplicar-les (vistiplau E5).
+- [x] Afegits (vistiplau P7): U3 · Act. 24–26; ex. 58–59, 64–66, 73–75, 80–81. U2 · ex. 68–69.
+      U7 · ex. 93. Cap no té errades de la llista. Fora: U2 · 67 (el solucionari diu «Resuelta en el
+      libro de texto» i no en dona la solució). En total, 79 fitxes.
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
+## 4t ESO Aplicades · UD6 (La paràbola)
+
+- [x] U7 · Què saps ja 1, Act. 8–10; ex. 45–49, 51, 52, 54, 55, 86, 94–96, 100, 105 i 106. U6 · Act. 23,
+      24 i 28; ex. 72. U3 · ex. 45 (25 fitxes, 21 imatges a `apl-ud6/`). Fora: U6 · Act. 25–27, que
+      eren a la llista P8 però demanen Ruffini o biquadrades (F1 i F9).
+- [x] Errades noves: U7 · 45 (taula: −1 i −2 per 1 i 2), 46 c) (vèrtex (−1, −2)), 47 d) (l'equació no
+      passa pel vèrtex), 49 f) (vèrtex (−9/2, −9/4)), 51 d) (taula de valors), 95 (com a la UD5) i 100
+      (es demana h = v²/20, no v = √(20h)).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
 
 ## Les altres UD (vistiplau P1–P3, P5–P6, P8–P11)
 
-- [ ] UD6, UD7, UD8, UD9 (i UD1, UD2, UD3 si calen per a repàs): carregar-les unes setmanes abans
-      de fer-les. Següent paquet: la resta de la UD10 (U3, U2 i U7) i la UD6.
+- [ ] UD7, UD8, UD9 (i UD1, UD2, UD3 si calen per a repàs): carregar-les unes setmanes abans de
+      fer-les. Següent paquet: la UD7 (P9).
       Les que fan servir U1–U3 de Santillana porten les 45 errades ja detectades (vistiplau E5).
 - [ ] Exercicis propis sense pràctica a Santillana (vistiplau S2–S5): 2.5–2.6 (comptat, terminis o
       crèdit), 8.3 (mitjana ponderada), 9.5 (joc just) i altres continguts propis quan surtin a una

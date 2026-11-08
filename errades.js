@@ -173,6 +173,64 @@ const ERRADES = {
                 ['ap-igualtats/data/full-2.png', 32.0, 9.7, 8.0, 4.4]] },
   ],
 
+  /* ── 4t ESO Aplicades · UD6 · La paràbola (Santillana U7, U6 i U3) ────── */
+
+  'apl-ud6/U7.45': [
+    { lloc:    TEX`la taula`,
+      ondiu:   TEX`$x$: \quad $-2$ \quad $-1$ \quad $0$ \quad $-1$ \quad $-2$`,
+      hadedir: TEX`$x$: \quad $-2$ \quad $-1$ \quad $0$ \quad $1$ \quad $2$`,
+      motiu:   TEX`Els dos últims valors de $x$ són positius; els valors de $y$ de la taula són correctes.`,
+      marca:   ['u7-paraboles/data/full-1.png', 81.6, 65.4, 10.2, 2.9] },
+  ],
+
+  'apl-ud6/U7.46': [
+    { lloc:    TEX`c)`,
+      ondiu:   TEX`el vèrtex és $(-1, -1)$`,
+      hadedir: TEX`el vèrtex és $(-1, -2)$`,
+      motiu:   TEX`$y = 2(x + 1)^2 - 2$ té el vèrtex a $(-1, -2)$; la gràfica rosa ho mostra bé.`,
+      marca:   ['u7-paraboles/data/full-2.png', 38.0, 57.4, 8.9, 2.9] },
+  ],
+
+  'apl-ud6/U7.47': [
+    { lloc:    TEX`d)`,
+      ondiu:   TEX`Tall amb l’eix $X$: $\left(\dfrac{1}{2}, 0\right)$ … $y = -\dfrac{8}{9}x^2 - \dfrac{32}{9}x + 2$ … i $\left(-\dfrac{9}{2}, 0\right)$`,
+      hadedir: TEX`$y = -(x + 2)^2 + 6 = -x^2 - 4x + 2$, que talla l’eix $X$ a $x = -2 \pm \sqrt{6}$, és a dir, a $x \approx 0{,}45$ i $x \approx -4{,}45$`,
+      motiu:   TEX`Amb el vèrtex $(-2, 6)$ i el tall $(0, 2)$, $a = -1$. L’equació del llibre surt de llegir $\tfrac{1}{2}$ a la gràfica en lloc de $0{,}45$, i no passa pel vèrtex: hi dona $\tfrac{50}{9} \approx 5{,}6$, no $6$.`,
+      marca:   ['u7-paraboles/data/full-3.png', 10.8, 20.6, 33.6, 19.2] },
+  ],
+
+  'apl-ud6/U7.49': [
+    { lloc:    TEX`f)`,
+      ondiu:   TEX`Vèrtex: $\left(-\dfrac{9}{2}, \dfrac{9}{4}\right)$`,
+      hadedir: TEX`Vèrtex: $\left(-\dfrac{9}{2}, -\dfrac{9}{4}\right)$`,
+      motiu:   TEX`$\left(-\tfrac{9}{2}\right)^2 + 9\cdot\left(-\tfrac{9}{2}\right) + 18 = \tfrac{81}{4} - \tfrac{162}{4} + \tfrac{72}{4} = -\tfrac{9}{4}$. La taula i la gràfica ja ho mostren.`,
+      marca:   ['u7-paraboles/data/full-4.png', 66.0, 0.5, 9.8, 4.6] },
+  ],
+
+  'apl-ud6/U7.51': [
+    { lloc:    TEX`d), la taula`,
+      ondiu:   TEX`$y$: \quad $-16$ \quad $-9$ \quad $0$ \quad $-1$ \quad $0$ \quad $5$`,
+      hadedir: TEX`$y$: \quad $-\dfrac{56}{3}$ \quad $-11$ \quad $0$ \quad $-\dfrac{1}{3}$ \quad $0$ \quad $-\dfrac{8}{3}$`,
+      motiu:   TEX`Són els valors de $y = -x^2 + \tfrac{2}{3}x$ per a $x = -4, -3, 0, 1, \tfrac{2}{3}, 2$. Per exemple, per a $x = 2$: $-4 + \tfrac{4}{3} = -\tfrac{8}{3}$. La gràfica és correcta.`,
+      marca:   ['u7-paraboles/data/full-6.png', 22.2, 31.2, 24.0, 3.2] },
+  ],
+
+  'apl-ud6/U7.95': [
+    { ondiu:   TEX`Una paràbola d’equació $y = x^2 + bx + c$ … $y = x^2 - 4{,}6x + 8{,}79$`,
+      hadedir: TEX`Una paràbola $y = a(x - 2{,}3)^2 + 3{,}5$ amb $a < 0$`,
+      motiu:   TEX`Amb el coeficient de $x^2$ igual a $1$, el vèrtex $(2{,}3;\ 3{,}5)$ és el punt més baix de la paràbola, no el més alt. Per trobar $a$ cal una altra dada: per exemple, que la pilota entra a la cistella, a $3{,}05$ m d’alçada.`,
+      marca:   [['u7-problemes/data/full-2.png', 56.8, 25.6, 26.5, 4.6],
+                ['u7-problemes/data/full-2.png', 59.4, 46.0, 33.5, 2.9]] },
+  ],
+
+  'apl-ud6/U7.100': [
+    { ondiu:   TEX`La taula i la gràfica de $v = \sqrt{20h}$: la velocitat en funció de l’altura`,
+      hadedir: TEX`L’altura en funció de la velocitat: $h = \dfrac{v^2}{20}$, una paràbola`,
+      motiu:   TEX`L’enunciat demana l’altura des de la qual s’ha de llançar l’objecte perquè arribi amb una velocitat donada: la variable independent és $v$. Per exemple, per arribar a $10$ m/s cal llançar-lo des de $5$ m.`,
+      marca:   [['u7-problemes/data/full-3.png', 55.2, 89.6, 34.8, 9.6],
+                ['u7-problemes/data/full-4.png', 11.4, 0.4, 30.4, 19.4]] },
+  ],
+
 };
 
 
