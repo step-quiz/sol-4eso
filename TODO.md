@@ -19,6 +19,25 @@ Comença a finals de novembre de 2026.
 - [ ] Enunciats en català dels exercicis de Santillana que es programin (ara: U5 · 57, 64 i 81).
 - [ ] Pistes dels exercicis programats (`hints.js`).
 
+## 4t ESO Aplicades · UD11 (Idea de polinomi)
+
+- [x] Annex de Polinomis: Què saps ja 1, Act. 1–4; ex. 32, 33, 35, 36, 38, 71–77, 80 i 81 (19 fitxes,
+      8 imatges a `apl-ud11/`). Atenció: l'Act. 3 (multiplicar) i alguns apartats dels ex. 32 i 33 són
+      productes de polinomis; eren a la llista aprovada (P5), però potser no cal posar-los a cap tasca.
+- [x] Errades: AP · 74 (17 686 i 13 384 per 17,686 i 13,384, a l'enunciat i a la solució) i AP · 77
+      (1 460 € per 1 460 000 €: l'enunciat és en milers d'euros).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
+## 4t ESO Aplicades · UD5 (Equacions de 2n grau)
+
+- [x] U3 · Què saps ja 1–2, Act. 1–9, 11 i 20; ex. 32–46, 48, 49, 51, 63, 71 i 77. U7 · ex. 94–95.
+      Annex de Polinomis · Act. 8–11 i ex. 49–57 (49 fitxes, 18 imatges a `apl-ud5/`). Fora: Act. 10,
+      ex. 47, 50 i 52 (paràmetres), biquadrades i grau 3 (F9).
+- [x] Errades de la U3 ja detectades que toquen aquests exercicis (vistiplau E5): 33 e) (enunciat),
+      41 e), 44 i 63. Noves: U7 · 95 (la paràbola té el vèrtex com a mínim) i AP · 52 d) (signe de
+      2x³/5 i 51x³/125).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
 ## 4t ESO Aplicades · UD10 (Sistemes d'equacions i inequacions)
 
 - [x] Santillana U4, tret dels exclosos (vistiplau F10–F12, F18): paràmetres (30, 33, 41–43),
@@ -30,7 +49,8 @@ Comença a finals de novembre de 2026.
 
 ## Les altres UD (vistiplau P1–P3, P5–P6, P8–P11)
 
-- [ ] UD1, UD2, UD3, UD11, UD5, UD6, UD7, UD8, UD9: carregar-les unes setmanes abans de fer-les.
+- [ ] UD6, UD7, UD8, UD9 (i UD1, UD2, UD3 si calen per a repàs): carregar-les unes setmanes abans
+      de fer-les. Següent paquet: la resta de la UD10 (U3, U2 i U7) i la UD6.
       Les que fan servir U1–U3 de Santillana porten les 45 errades ja detectades (vistiplau E5).
 - [ ] Exercicis propis sense pràctica a Santillana (vistiplau S2–S5): 2.5–2.6 (comptat, terminis o
       crèdit), 8.3 (mitjana ponderada), 9.5 (joc just) i altres continguts propis quan surtin a una
@@ -53,6 +73,8 @@ Comença a finals de novembre de 2026.
       l'editorial.
 - [ ] Les errades: si se n'han de fer moltes, o amb pegats, portar les eines de `sol` i adaptar-les
       (`ERRADES.md`, apartat 6).
+- [ ] Annex de Polinomis, pàg. 332 del llibre: hi ha dos exercicis numerats 68 (el segon és el 69).
+      Per a la llista d'errades de l'editorial.
 - [ ] L'enllaç a `errades.html` de la portada és comentat (com a `sol`). Destapar-lo quan hi hagi errades
       d'exercicis programats.
 - [ ] Provar el web amb Safari (iPhone) i Firefox. Només s'ha provat amb Chrome.

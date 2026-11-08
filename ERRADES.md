@@ -4,7 +4,7 @@
 > errades del solucionari al web. Abans llegeix `CLAUDE.md` i el `README.md`.
 >
 > **Estat (7 de novembre de 2026):** el sistema és el de `sol` (Matemàtiques II), copiat sencer i provat
-> amb els identificadors d'aquest repositori (`apl-ud4`). Hi ha dues errades (UD4: U5 · 64 i U5 · 77);
+> amb els identificadors d'aquest repositori (`apl-ud4`). Hi ha errades a la UD4, la UD11 i la UD5;
 > `OBSERVACIONS` és buit. Els exemples d'aquest document (`u7/92`, `u9/42`…) són de `sol`; aquí la clau
 > s'escriu `'apl-ud4/U5.64'`, i les imatges, `'u5-semblanca/data/full-3.png'` (sense la carpeta de la UD).
 

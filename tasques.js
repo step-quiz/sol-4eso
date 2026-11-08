@@ -7,6 +7,10 @@ const TASQUES = [
      Quan tinguis les setmanes de la UD4, substitueix-los per les de debò.   */
   { unitat:'apl-ud4',  setmana:1, limit:'2026-11-29', visible:'mai',
     exercicis:['4.1.3', '4.2.2', '4.2.7', 'U5.57', 'U5.64', 'U5.81', '4.3.2'] },
+  { unitat:'apl-ud11', setmana:1, limit:'2026-12-20', visible:'mai',
+    exercicis:['AP.1', 'AP.2', 'AP.33', 'AP.36', 'AP.71'] },
+  { unitat:'apl-ud5',  setmana:1, limit:'2027-01-17', visible:'mai',
+    exercicis:['U3.33', 'U3.37', 'U3.41', 'AP.49', 'U3.63', 'U7.94'] },
   { unitat:'apl-ud10', setmana:1, limit:'2027-02-28', visible:'mai',
     exercicis:['U4.24', 'U4.25', 'U4.26', 'U4.32', 'U4.39', 'U4.SA1'] },
 
@@ -36,7 +40,9 @@ const DIES_ABANS = 3;
                 entre cometes. La clau diu d'on surt cada exercici:
                   'U5.57'   Santillana, unitat 5, exercici 57
                   'U4.SA1'  Santillana, unitat 4, situació d'aprenentatge 1
-                            (també 'U4.FN' fake news, 'U4.AV1' autoavaluació)
+                            (també 'U4.FN' fake news, 'U4.AV1' autoavaluació,
+                            'U3.QS1' Què saps ja)
+                  'AP.33'   Santillana, annex de Polinomis, exercici 33
                   '4.2.7'   el teu llibre, exercici 4.2.7
 
    L'ORDRE MANA. Si escrius ['U5.64', '4.2.7', 'U5.57'], l'alumne els veurà

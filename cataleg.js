@@ -9,6 +9,8 @@
    Les unitats són les UD del llibre propi (Overleaf), no les de Santillana:
 
      apl-ud4    Aplicades, UD4 · Mesura indirecta       (carpeta apl-ud4/)
+     apl-ud11   Aplicades, UD11 · Idea de polinomi      (carpeta apl-ud11/)
+     apl-ud5    Aplicades, UD5 · Equacions de 2n grau   (carpeta apl-ud5/)
      apl-ud10   Aplicades, UD10 · Sistemes              (carpeta apl-ud10/)
 
    L'identificador és alhora la carpeta de les imatges i el principi de la
@@ -22,6 +24,9 @@
 
      'U4.24'    Santillana, unitat 4, exercici 24     → etiqueta «U4 · 24»
      'U4.SA1'   Santillana, unitat 4, situació 1      → «U4 · Situació 1»
+     'U3.QS1'   Santillana, unitat 3, Què saps ja 1   → «U3 · Què saps ja 1»
+     'AP.33'    Santillana, annex de Polinomis, 33    → «Annex Pol. · 33»
+                (els altres annexos: 'AR.' Potències i radicals, 'AT.' Trigonometria)
      '4.2.7'    llibre propi, exercici 4.2.7          → «4.2.7»
 
    ── Cada exercici ──────────────────────────────────────────────────────
@@ -47,6 +52,8 @@ const MATERIES = {
 
 const UNITATS_META = {
   'apl-ud4':  {materia:'apl', nom:'Unitat 4',  subtitol:'Mesura indirecta',                    ordre:4},
+  'apl-ud11': {materia:'apl', nom:'Unitat 11', subtitol:'Idea de polinomi',                    ordre:5},
+  'apl-ud5':  {materia:'apl', nom:'Unitat 5',  subtitol:'Equacions de 2n grau',                ordre:6},
   'apl-ud10': {materia:'apl', nom:'Unitat 10', subtitol:'Sistemes d’equacions i inequacions', ordre:7},
 };
 
@@ -110,6 +117,103 @@ const CATALEG = {
     '4.6.4': {t:'Amb marge: l’altura d’una torre', d:'', i:[]},
     '4.6.5': {t:'Caça l’error: l’escala de 5 m', d:'', i:[]},
     '4.6.6': {t:'Decideix el mètode: la diagonal d’una bassa', d:'', i:[]},
+  },
+
+  'apl-ud11': {
+
+    /* Santillana, annex de Polinomis (clau 'AP.'). Fora (vistiplau P5): divisió, Ruffini i
+       factorització; les igualtats notables van a la UD5. */
+
+    /* ── Què saps ja i activitats (pàgines 317–318 del llibre) */
+    'AP.QS1': {t:'Calcula 2x²y − 3x − x²y + 5x', d:'', i:['ap-activitats/data/full-1.png'], e:'Què saps ja 1', nom:'Què saps ja 1'},
+    'AP.1':   {t:'Resta dos polinomis de grau 3', d:'', i:['ap-activitats/data/full-1.png']},
+    'AP.2':   {t:'Valor numèric: P(1) + P(−1) i P(0) + Q(−1)', d:'', i:['ap-activitats/data/full-1.png', 'ap-activitats/data/full-2.png']},
+    'AP.3':   {t:'Multiplica un polinomi de grau 3 per x − 1', d:'', i:['ap-activitats/data/full-2.png']},
+    'AP.4':   {t:'Quant ha de valer a perquè P(a) = 0?', d:'', i:['ap-activitats/data/full-2.png']},
+
+    /* ── Activitats finals · Polinomis (pàgines 324–325) */
+    'AP.32':  {t:'Opera amb tres polinomis P, Q i R', d:'●○○', i:['ap-exercicis/data/full-1.png']},
+    'AP.33':  {t:'Opera i digues el grau i el terme independent del resultat', d:'●○○', i:['ap-exercicis/data/full-1.png', 'ap-exercicis/data/full-2.png']},
+    'AP.35':  {t:'Inventa tres polinomis amb P(2) = 5', d:'●○○', i:['ap-exercicis/data/full-2.png']},
+    'AP.36':  {t:'Troba a sabent el valor numèric del polinomi per a x = −3', d:'●○○', i:['ap-exercicis/data/full-2.png']},
+    'AP.38':  {t:'Joc: inventa polinomis que donin un valor numèric fixat', d:'●●○', i:['ap-exercicis/data/full-2.png']},
+
+    /* ── Activitats finals · 3. Problemes amb polinomis (pàgines 332–335) */
+    'AP.71':  {t:'La pàgina d’un llibre: superfície total i superfície útil', d:'●●○', i:['ap-problemes/data/full-1.png']},
+    'AP.72':  {t:'El cost de x contenidors amb x caixes, x bosses i x articles', d:'●●○', i:['ap-problemes/data/full-1.png', 'ap-problemes/data/full-2.png']},
+    'AP.73':  {t:'La càrrega i la descàrrega de la bateria d’un cotxe elèctric', d:'●●○', i:['ap-problemes/data/full-2.png']},
+    'AP.74':  {t:'Les calories diàries segons l’OMS i l’activitat física', d:'●●●', i:['ap-problemes/data/full-2.png']},
+    'AP.75':  {t:'El volum d’un cilindre en funció del radi', d:'●●●', i:['ap-problemes/data/full-2.png']},
+    'AP.76':  {t:'B(x) = I(x) − G(x) i B(365)', d:'', i:['ap-problemes/data/full-3.png']},
+    'AP.77':  {t:'Ingressos i despeses d’una empresa: el benefici en un any', d:'', i:['ap-problemes/data/full-3.png']},
+    'AP.80':  {t:'Valor numèric d’un polinomi de grau 2 en diversos punts', d:'', i:['ap-problemes/data/full-3.png']},
+    'AP.81':  {t:'Els assistents a una festa al llarg de les hores', d:'', i:['ap-problemes/data/full-4.png']},
+  },
+
+  'apl-ud5': {
+
+    /* Santillana, unitat 3 (equacions), unitat 7 (paràboles) i annex de Polinomis (igualtats
+       notables). Fora (vistiplau P6 i F9): biquadrades, grau 3 amb Ruffini, paràmetres
+       (Act. 10, ex. 47, 50 i 52) i inequacions. */
+
+    /* ── U3 · Què saps ja i activitats (pàgines 61–67 del llibre) */
+    'U3.QS1': {t:'Quins valors són solució de (x + 1)(x − 1) = 3?', d:'', i:['u3-activitats/data/full-1.png'], e:'Què saps ja 1', nom:'Què saps ja 1'},
+    'U3.QS2': {t:'Quins punts no són a l’interval de la recta?', d:'', i:['u3-activitats/data/full-1.png'], e:'Què saps ja 2', nom:'Què saps ja 2'},
+    'U3.1':   {t:'Indica la incògnita, el grau i els membres de dues equacions', d:'', i:['u3-activitats/data/full-1.png']},
+    'U3.2':   {t:'Quins valors són solució d’una equació amb fraccions?', d:'', i:['u3-activitats/data/full-1.png', 'u3-activitats/data/full-2.png']},
+    'U3.3':   {t:'Comprova si x = 3 i x = −3 són solució de quatre equacions', d:'', i:['u3-activitats/data/full-2.png']},
+    'U3.4':   {t:'Escriu una equació que tingui la solució donada', d:'', i:['u3-activitats/data/full-2.png']},
+    'U3.5':   {t:'Resol quatre equacions de primer i de segon grau', d:'', i:['u3-activitats/data/full-2.png']},
+    'U3.6':   {t:'Escriu una equació de primer grau amb la solució donada', d:'', i:['u3-activitats/data/full-2.png']},
+    'U3.7':   {t:'Troba equacions de segon grau amb les solucions donades', d:'', i:['u3-activitats/data/full-3.png']},
+    'U3.8':   {t:'Resol equacions de segon grau', d:'', i:['u3-activitats/data/full-3.png']},
+    'U3.9':   {t:'Determina el nombre de solucions amb el discriminant', d:'', i:['u3-activitats/data/full-3.png']},
+    'U3.11':  {t:'Dues equacions de segon grau amb una única solució, −2', d:'', i:['u3-activitats/data/full-3.png']},
+    'U3.20':  {t:'Resol equacions factoritzades', d:'', i:['u3-activitats/data/full-4.png']},
+
+    /* ── U3 · Activitats finals · 1. Equacions de primer i segon grau (pàgines 73–78) */
+    'U3.32':  {t:'Membres, incògnita i grau de cada equació (taula)', d:'●○○', i:['u3-equacions/data/full-1.png']},
+    'U3.33':  {t:'Relaciona cada equació amb les seves solucions', d:'●○○', i:['u3-equacions/data/full-1.png']},
+    'U3.34':  {t:'Inventa equacions que compleixin unes condicions', d:'●●○', i:['u3-equacions/data/full-1.png']},
+    'U3.35':  {t:'Troba x en un quadrat màgic', d:'●●○', i:['u3-equacions/data/full-1.png', 'u3-equacions/data/full-2.png']},
+    'U3.36':  {t:'Condició perquè dues equacions de primer grau tinguin la mateixa solució', d:'●●●', i:['u3-equacions/data/full-2.png']},
+    'U3.37':  {t:'Resol deu equacions de segon grau', d:'●○○', i:['u3-equacions/data/full-2.png']},
+    'U3.38':  {t:'Resol equacions de segon grau incompletes (x per un factor)', d:'●○○', i:['u3-equacions/data/full-2.png', 'u3-equacions/data/full-3.png']},
+    'U3.39':  {t:'Resol sis equacions del tipus x(x + 1) = …', d:'●●○', i:['u3-equacions/data/full-3.png']},
+    'U3.40':  {t:'Resol equacions de segon grau amb igualtats notables, sense la fórmula', d:'●●○', i:['u3-equacions/data/full-3.png']},
+    'U3.41':  {t:'Desenvolupa i resol vuit equacions de segon grau', d:'●●○', i:['u3-equacions/data/full-3.png', 'u3-equacions/data/full-4.png']},
+    'U3.42':  {t:'Indica el grau de cada equació i resol-la', d:'●●○', i:['u3-equacions/data/full-4.png']},
+    'U3.43':  {t:'Resol equacions de segon grau amb fraccions', d:'●●○', i:['u3-equacions/data/full-4.png']},
+    'U3.44':  {t:'Si x = √2 − 1 és solució de 3x² − ax + 1 = 0, quant val a?', d:'●●●', i:['u3-equacions/data/full-4.png']},
+    'U3.45':  {t:'Sense resoldre, quantes solucions té cada equació?', d:'●○○', i:['u3-equacions/data/full-4.png', 'u3-equacions/data/full-5.png']},
+    'U3.46':  {t:'Joc: tria b i c perquè l’equació tingui o no tingui solució', d:'●●○', i:['u3-equacions/data/full-5.png']},
+    'U3.48':  {t:'Completa equacions de segon grau perquè no tinguin solució', d:'●●●', i:['u3-equacions/data/full-5.png']},
+    'U3.49':  {t:'Inventa quatre equacions de la forma x² + 2x + c = 0', d:'●●○', i:['u3-equacions/data/full-5.png', 'u3-equacions/data/full-6.png']},
+    'U3.51':  {t:'Vertader o fals sobre equacions de segon grau', d:'●●○', i:['u3-equacions/data/full-6.png']},
+
+    /* ── U3 · Activitats finals · 4. Problemes (pàgines 83–85) */
+    'U3.63':  {t:'Quants germans sou si entre tots feu 36 regals?', d:'●●○', i:['u3-problemes/data/full-1.png']},
+    'U3.71':  {t:'Un hort rectangular tancat amb 70 m de cable: la superfície', d:'●●○', i:['u3-problemes/data/full-2.png']},
+    'U3.77':  {t:'Un jardí rectangular de 5 600 m²: l’amplada', d:'', i:['u3-problemes/data/full-3.png']},
+
+    /* ── U7 · Problemes de paràboles (pàgina 224) */
+    'U7.94':  {t:'El llançament d’una pilota: l’altura màxima i quan s’hi arriba', d:'●○○', i:['u7-problemes/data/full-1.png']},
+    'U7.95':  {t:'Un tir lliure de bàsquet: l’equació de la paràbola', d:'●●○', i:['u7-problemes/data/full-1.png']},
+
+    /* ── Annex de Polinomis · Igualtats notables (pàgines 318–319 i 327–328) */
+    'AP.8':   {t:'Desenvolupa potències de binomis', d:'', i:['ap-activitats/data/full-1.png', 'ap-activitats/data/full-2.png']},
+    'AP.9':   {t:'Vertader o fals amb igualtats notables', d:'', i:['ap-activitats/data/full-2.png']},
+    'AP.10':  {t:'Desenvolupa amb les igualtats notables', d:'', i:['ap-activitats/data/full-2.png']},
+    'AP.11':  {t:'Expressa com una igualtat notable', d:'', i:['ap-activitats/data/full-2.png']},
+    'AP.49':  {t:'Efectua dos quadrats i un cub de binomis', d:'●○○', i:['ap-igualtats/data/full-1.png']},
+    'AP.50':  {t:'Efectua i redueix termes semblants', d:'●●○', i:['ap-igualtats/data/full-1.png']},
+    'AP.51':  {t:'Opera: el quadrat del quadrat d’un binomi', d:'●●○', i:['ap-igualtats/data/full-1.png']},
+    'AP.52':  {t:'Desenvolupa potències de trinomis', d:'●●●', i:['ap-igualtats/data/full-1.png', 'ap-igualtats/data/full-2.png']},
+    'AP.53':  {t:'Dos nombres més grans que 1 que multiplicats donin 999 991', d:'●●●', i:['ap-igualtats/data/full-2.png']},
+    'AP.54':  {t:'Operacions amb igualtats notables', d:'●●○', i:['ap-igualtats/data/full-2.png']},
+    'AP.55':  {t:'Quins són el quadrat d’un binomi?', d:'●●○', i:['ap-igualtats/data/full-2.png']},
+    'AP.56':  {t:'Demostra que el triangle és rectangle per a qualsevol x', d:'●●●', i:['ap-igualtats/data/full-2.png']},
+    'AP.57':  {t:'A quin quadrat és igual x² + (x + 1)² + x²(x + 1)²?', d:'●●●', i:['ap-igualtats/data/full-2.png']},
   },
 
   'apl-ud10': {
@@ -201,10 +305,14 @@ const CATALEG = {
 function fitxaDe(u, n){
   const c = CATALEG[u]; return (c && c[n]) ? c[n] : null;
 }
-/* La clau partida: 'U4.24' → {origen:'U4', num:'24'}; '4.2.7' → {origen:'', num:'4.2.7'}. */
+/* Com es diu cada origen a l'etiqueta: les unitats de Santillana es diuen igual
+   que la clau ('U4'); els annexos, amb nom curt. */
+const ORIGENS = {AP:'Annex Pol.', AR:'Annex Pot.', AT:'Annex Trig.'};
+/* La clau partida: 'U4.24' → {origen:'U4', num:'24'}; 'AP.33' → {origen:'Annex Pol.', num:'33'};
+   '4.2.7' → {origen:'', num:'4.2.7'}. */
 function _parts(n){
-  const m = /^(U\d+)\.(.+)$/.exec(String(n));
-  return m ? {origen: m[1], num: m[2]} : {origen: '', num: String(n)};
+  const m = /^(U\d+|AP|AR|AT)\.(.+)$/.exec(String(n));
+  return m ? {origen: ORIGENS[m[1]] || m[1], num: m[2]} : {origen: '', num: String(n)};
 }
 /* L'etiqueta del requadre de la llista: «U4 · 24», «U4 · Situació 2», «4.2.7»… */
 function etiquetaDe(u, n){

@@ -6,7 +6,7 @@
    Mira:
      · cataleg.js   cada unitat de CATALEG és a UNITATS_META, i la seva matèria a MATERIES;
                     cada fitxa té títol, dificultat vàlida, una clau bona ('U5.57', 'U4.SA1',
-                    '4.2.7') i imatges que existeixen (les del llibre propi no en tenen).
+                    'AP.33', '4.2.7') i imatges que existeixen (les del llibre propi no en tenen).
      · tasques.js   cada tasca té unitat coneguda, setmana, data vàlida i exercicis que són al
                     catàleg; no hi ha dues tasques amb el mateix identificador.
      · hints.js     cada pista és d'un exercici del catàleg, és d'una sola línia i només fa
@@ -51,14 +51,14 @@ if (CATALEG) for (const u of Object.keys(CATALEG)) {
     if (!f.t) mal(`cataleg.js: ${k} no té títol (t)`);
     if (!DIF.includes(f.d)) mal(`cataleg.js: ${k} té una dificultat estranya: «${f.d}»`);
     if (!Array.isArray(f.i)) { mal(`cataleg.js: ${k} no té el camp d'imatges (i)`); continue; }
-    if (!/^(U\d+\.(\d+|[A-Z]+\d*)|\d+\.\d+\.\d+)$/.test(n)) mal(`cataleg.js: ${k}: clau estranya (ha de ser 'U5.57', 'U4.SA1' o '4.2.7')`);
+    if (!/^((U\d+|AP|AR|AT)\.(\d+|[A-Z]+\d*)|\d+\.\d+\.\d+)$/.test(n)) mal(`cataleg.js: ${k}: clau estranya (ha de ser 'U5.57', 'U4.SA1', 'AP.33' o '4.2.7')`);
     if (!f.i.length) {
       /* Exercici del llibre propi: l'enunciat i la solució han de ser a enunciats.js. */
       if (!/^\d+\.\d+\.\d+$/.test(n)) mal(`cataleg.js: ${k} no té imatges (i) i no és del llibre propi`);
       continue;
     }
     f.i.forEach(img => { if (!existeix(path.join(u, img))) mal(`cataleg.js: ${k}: no existeix ${u}/${img}`); });
-    if (/^U\d+\.[A-Z]/.test(n) && !f.e) avis(`cataleg.js: ${k} té una clau de text i no té etiqueta (e)`);
+    if (/^(U\d+|AP|AR|AT)\.[A-Z]/.test(n) && !f.e) avis(`cataleg.js: ${k} té una clau de text i no té etiqueta (e)`);
   }
 }
 const aCataleg = (u, n) => !!(CATALEG && CATALEG[u] && CATALEG[u][n]);

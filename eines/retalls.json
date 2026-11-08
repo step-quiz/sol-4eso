@@ -28,6 +28,72 @@
       ]
     }
   },
+  "apl-ud11": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "ap-activitats": [
+        318,
+        319
+      ],
+      "ap-exercicis": [
+        325,
+        326
+      ],
+      "ap-problemes": [
+        333,
+        334,
+        335,
+        336
+      ]
+    }
+  },
+  "apl-ud5": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u3-activitats": [
+        62,
+        63,
+        64,
+        68
+      ],
+      "u3-equacions": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "u3-problemes": [
+        84,
+        85,
+        86
+      ],
+      "u7-problemes": [
+        225
+      ],
+      "ap-activitats": [
+        319,
+        320
+      ],
+      "ap-igualtats": [
+        328,
+        329
+      ]
+    }
+  },
   "apl-ud10": {
     "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
     "caixa": [

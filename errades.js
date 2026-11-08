@@ -101,6 +101,78 @@ const ERRADES = {
                 ['u5-problemes/data/full-2.png', 9.0, 0.5, 20.0, 10.0]] },
   ],
 
+  /* ── 4t ESO Aplicades · UD11 · Idea de polinomi (annex de Polinomis) ─── */
+
+  'apl-ud11/AP.74': [
+    { enunciat: 1,
+      lloc:    TEX`la taula de l’OMS`,
+      ondiu:   TEX`$17\,686\cdot\text{pes} + 658{,}2$ \quad i \quad $13\,384\cdot\text{pes} + 692{,}6$`,
+      hadedir: TEX`$17{,}686\cdot\text{pes} + 658{,}2$ \quad i \quad $13{,}384\cdot\text{pes} + 692{,}6$`,
+      motiu:   TEX`Són els coeficients de l’OMS: $17{,}686$ i $13{,}384$. Amb $17\,686$, una persona de $50$ kg necessitaria més de $880\,000$ kcal al dia.`,
+      marca:   ['ap-problemes/data/full-2.png', 15.5, 72.8, 30.8, 5.0] },
+    { ondiu:   TEX`$1{,}40\cdot(17\,686\cdot x + 658{,}2)$, $1{,}40\cdot(13\,384\cdot x + 692{,}6)$…`,
+      hadedir: TEX`$1{,}40\cdot(17{,}686\, x + 658{,}2)$, $1{,}40\cdot(13{,}384\, x + 692{,}6)$…`,
+      motiu:   TEX`La mateixa errada de la taula, a les vuit expressions de la solució.`,
+      marca:   ['ap-problemes/data/full-2.png', 55.2, 19.4, 31.5, 28.6] },
+  ],
+
+  'apl-ud11/AP.77': [
+    { ondiu:   TEX`$B(365) = 1\,460$ € de benefici`,
+      hadedir: TEX`$B(365) = 1\,460$ milers d’euros, és a dir, $1\,460\,000$ € de benefici`,
+      motiu:   TEX`L’enunciat diu que els ingressos i les despeses són en milers d’euros.`,
+      marca:   ['ap-problemes/data/full-3.png', 57.0, 8.6, 30.8, 4.6] },
+  ],
+
+  /* ── 4t ESO Aplicades · UD5 · Equacions de 2n grau (Santillana U3, U7 i annex) ─ */
+
+  'apl-ud5/U3.33': [
+    { enunciat: 1,
+      lloc:    TEX`e)`,
+      ondiu:   TEX`$x^2 + x - 1 = 0$`,
+      hadedir: TEX`$x^2 + x - 6 = 0$`,
+      motiu:   TEX`Les solucions de $x^2 + x - 1 = 0$ són $\dfrac{-1 \pm \sqrt{5}}{2}$, que no són a la llista. La solució resol $x^2 + x - 6 = 0$.`,
+      marca:   ['u3-equacions/data/full-1.png', 9.6, 67.6, 17.8, 3.2] },
+  ],
+
+  'apl-ud5/U3.41': [
+    { lloc:    TEX`e)`,
+      ondiu:   TEX`$(x - 12) \to x^2 + x - 2 + 3x = \ldots$`,
+      hadedir: TEX`$x^2 + x - 2 + 3x = \ldots$`,
+      motiu:   TEX`Al principi de la línia sobra «$(x - 12) \to$». La resolució és correcta.`,
+      marca:   ['u3-equacions/data/full-4.png', 11.2, 0.2, 13.5, 3.2] },
+  ],
+
+  'apl-ud5/U3.44': [
+    { ondiu:   TEX`$\dfrac{(10 - 6\sqrt{2})(\sqrt{2} + 1)}{(\sqrt{2} - 1)(\sqrt{2} + 1)} = \dfrac{6 - 6\sqrt{2} + 3 + 1}{2 - 1}$`,
+      hadedir: TEX`$\dfrac{(10 - 6\sqrt{2})(\sqrt{2} + 1)}{(\sqrt{2} - 1)(\sqrt{2} + 1)} = \dfrac{10\sqrt{2} + 10 - 12 - 6\sqrt{2}}{2 - 1}$`,
+      motiu:   TEX`El numerador de la línia del mig és $3(\sqrt{2} - 1)^2 + 1$ sense desenvolupar, i no el producte de la línia anterior. El resultat, $a = 4\sqrt{2} - 2$, és correcte.`,
+      marca:   ['u3-equacions/data/full-4.png', 56.8, 67.0, 23.5, 4.6] },
+  ],
+
+  'apl-ud5/U3.63': [
+    { ondiu:   TEX`$(x - 1)x = 36 \to x^2 - 2x - 35 = 0 \to x = 7$`,
+      hadedir: TEX`$(x - 1)x = 36 \to x^2 - x - 36 = 0$, que no té cap solució entera`,
+      motiu:   TEX`Amb $36$ regals el problema no té solució. Amb $7$ persones hi ha $7\cdot 6 = 42$ regals: si l’enunciat digués $42$, $x^2 - x - 42 = 0 \to x = 7$.`,
+      marca:   ['u3-problemes/data/full-1.png', 9.2, 34.0, 36.0, 7.0] },
+  ],
+
+  'apl-ud5/U7.95': [
+    { ondiu:   TEX`Una paràbola d’equació $y = x^2 + bx + c$ … $y = x^2 - 4{,}6x + 8{,}79$`,
+      hadedir: TEX`Una paràbola $y = a(x - 2{,}3)^2 + 3{,}5$ amb $a < 0$`,
+      motiu:   TEX`Amb el coeficient de $x^2$ igual a $1$, el vèrtex $(2{,}3;\ 3{,}5)$ és el punt més baix de la paràbola, no el més alt. Per trobar $a$ cal una altra dada: per exemple, que la pilota entra a la cistella, a $3{,}05$ m d’alçada.`,
+      marca:   [['u7-problemes/data/full-1.png', 56.8, 25.6, 26.5, 4.6],
+                ['u7-problemes/data/full-1.png', 59.4, 46.0, 33.5, 2.9]] },
+  ],
+
+  'apl-ud5/AP.52': [
+    { lloc:    TEX`d)`,
+      ondiu:   TEX`$\ldots + \dfrac{2x^3}{5} = \ldots + \dfrac{51x^3}{125} + \ldots$`,
+      hadedir: TEX`$\ldots - \dfrac{2x^3}{5} = \ldots - \dfrac{51x^3}{125} + \ldots$`,
+      motiu:   TEX`El doble producte dels tres termes és $6\cdot\dfrac{x^2}{3}\cdot\left(-\dfrac{x}{5}\right)\cdot 1 = -\dfrac{2x^3}{5}$, i $-\dfrac{x^3}{125} - \dfrac{2x^3}{5} = -\dfrac{51x^3}{125}$.`,
+      marca:   [['ap-igualtats/data/full-2.png', 32.3, 5.2, 4.8, 4.2],
+                ['ap-igualtats/data/full-2.png', 32.0, 9.7, 8.0, 4.4]] },
+  ],
+
 };
 
 

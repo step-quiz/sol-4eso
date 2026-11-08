@@ -21,9 +21,11 @@ llista ordenada d'exercicis amb una data límit. Si només hi ha una matèria (o
 visibles, la portada hi entra directament.
 
 **Estat (novembre de 2026):** Aplicades, **UD4** (*Mesura indirecta*): 13 exercicis de Santillana
-(U5 i U7) i 33 del llibre propi amb la solució. **UD10** (*Sistemes*): els 63 exercicis de la unitat 4
-de Santillana que són del curs. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres
-UD es carregaran unes setmanes abans de fer-les. Vegeu `TODO.md`.
+(U5 i U7) i 33 del llibre propi amb la solució. **UD11** (*Idea de polinomi*): 19 exercicis de l'annex
+de Polinomis. **UD5** (*Equacions de 2n grau*): 49 exercicis de la U3, la U7 i l'annex de Polinomis
+(igualtats notables). **UD10** (*Sistemes*): els 63 exercicis de la unitat 4 de Santillana que són del
+curs. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres UD es carregaran unes
+setmanes abans de fer-les. Vegeu `TODO.md`.
 
 ## Com programo la feina
 
@@ -53,6 +55,8 @@ Cada clau diu d'on surt l'exercici, i a `tasques.js` s'escriu **entre cometes**:
 | `'U4.FN'` | Santillana, unitat 4, fake news | U4 · Fake news |
 | `'U4.SA1'`, `'U4.SA2'`… | Santillana, situació d'aprenentatge | U4 · Situació 1 |
 | `'U4.AV1'`, `'U4.AV2'`… | Santillana, autoavaluació | U4 · Autoav. 1 |
+| `'U3.QS1'`, `'U3.QS2'` | Santillana, «¿Qué sabes ya?» | U3 · Què saps ja 1 |
+| `'AP.33'` | Santillana, annex de Polinomis, ex. 33 (`AR.` Potències i radicals, `AT.` Trigonometria) | Annex Pol. · 33 |
 | `'4.2.7'` | Llibre propi, exercici 4.2.7 | 4.2.7 |
 
 ```js
@@ -113,6 +117,16 @@ apl-ud4/                     ← Aplicades, UD4 · Mesura indirecta
   u5-problemes/data/…        U5, 77, 80 i 81
   u7-problemes/data/…        U7, 91
   enunciats/4.1.4.png        figures dels exercicis del llibre propi
+apl-ud11/                    ← Aplicades, UD11 · Idea de polinomi
+  ap-activitats/data/…       annex de Polinomis, Què saps ja 1 i activitats 1–4
+  ap-exercicis/data/…        activitats finals 32–38
+  ap-problemes/data/…        problemes 71–81
+apl-ud5/                     ← Aplicades, UD5 · Equacions de 2n grau
+  u3-activitats/data/…       Santillana U3, Què saps ja i activitats
+  u3-equacions/data/…        U3, activitats finals 32–51
+  u3-problemes/data/…        U3, 63, 71 i 77
+  u7-problemes/data/…        U7, 94 i 95
+  ap-activitats/data/…, ap-igualtats/data/…   annex de Polinomis, igualtats notables
 apl-ud10/                    ← Aplicades, UD10 · Sistemes (Santillana U4)
   u4-activitats/data/…       activitats 1–12 i reptes
   u4-sistemes/data/…         activitats finals, apartat 1
@@ -184,7 +198,7 @@ const PISTES = {
 El solucionari té errades. Les dels exercicis programats van a **`errades.js`**, amb la mateixa clau
 que les pistes. El sistema és el de `sol`, sencer: avís a la llista de la tasca, targeta «On diu /
 Ha de dir» dins de l'exercici, requadre vermell sobre la imatge (`marca`) i, si es fa, la imatge ja
-corregida (`pegat`). Ara n'hi ha dues, de la UD4 (U5 · 64 i U5 · 77). Com s'escriuen: `ERRADES.md`.
+corregida (`pegat`). Ara n'hi ha a la UD4, la UD11 i la UD5. Com s'escriuen: `ERRADES.md`.
 
 ## Les proves
 

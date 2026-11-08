@@ -75,14 +75,21 @@ UD9 (camp `ordre` a `UNITATS_META`). No es carrega cap contingut d'ampliació.
 - **Exercici:** la clau diu d'on surt.
   - Santillana: `'U5.57'` (unitat 5, ex. 57). Els que no tenen número: `'U4.FN'` (fake news), `'U4.SA1'`
     (situació d'aprenentatge), `'U4.AV1'` (autoavaluació), `'U4.R1'` (repte); porten `e` (etiqueta) i `nom`.
-    L'etiqueta que veu l'alumne és «U5 · 57», «U4 · Situació 1».
+    L'etiqueta que veu l'alumne és «U5 · 57», «U4 · Situació 1». Els «¿Qué sabes ya?» que siguin a la
+    llista aprovada: `'U3.QS1'`. Els annexos: `'AP.33'` (Polinomis), `'AR.'` (Potències i radicals),
+    `'AT.'` (Trigonometria); l'etiqueta és «Annex Pol. · 33» (`ORIGENS` a `cataleg.js`).
   - Llibre propi: `'4.2.7'` (el número del llibre: UD.activitat.exercici). `i:[]`: no tenen imatge; l'enunciat
     i la solució (camp `solucio`) són a `enunciats.js`, i `tasca.html` els mostra en prémer «Veure solució».
     Es transcriuen del `.tex` (exlist i sollist). Fora: «Per al Quadern d'eines», reflexions personals i la
     prova escrita. Les figures: la `tikzpicture` compilada a part (`standalone`, colors de `defs.tex`) i
     passada a PNG a `apl-udN/enunciats/<clau>.png`.
   - A `tasques.js` van sempre entre cometes: `exercicis:['4.2.7', 'U5.57', 'U4.SA1']`.
-- Els «¿Qué sabes ya?» i el «Desafío» de Santillana no són al catàleg.
+- El «Desafío» de Santillana no és al catàleg.
+- **Com es carrega una UD:** pàgines de cada exercici amb `pdfplumber` (els números són Raleway-SemiBold de
+  8 pt a x < 60 o 235 < x < 260; la dificultat són tres cercles de 3,2 pt just a sota, plens si tenen color
+  CMYK), temes a `eines/retalls.json`, `retalla.py --escriu`, catàleg, i **revisar cada solució** (les errades
+  noves van a `errades.js`, amb la marca comprovada a la imatge). Una tasca d'exemple amagada per UD, amb els
+  enunciats dels seus exercicis.
 
 | Fitxer | Paper |
 |---|---|

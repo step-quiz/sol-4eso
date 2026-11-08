@@ -253,6 +253,72 @@ const ENUNCIATS = {
   'apl-ud4/U5.81': {
     text: TEX`L’ombra d’un edifici, a una certa hora del dia, fa $15$ m. En aquell mateix moment, l’ombra d’un fanal de $5$ m d’alçada fa $3$ m. Quina és l’altura de l’edifici?` },
 
+  /* ── 4t ESO Aplicades · UD11 · Idea de polinomi (annex de Polinomis) ── */
+
+  'apl-ud11/AP.1': {
+    text: TEX`Efectua: $(-2x^3 + x^2 + x - 1) - (x^3 + x^2 - x - 1)$.` },
+
+  'apl-ud11/AP.2': {
+    text: TEX`Si $P(x) = x^2 - x + 2$ i $Q(x) = x^3 - x^2 + 1$, calcula:`,
+    apartats: [TEX`$P(1) + P(-1)$`, TEX`$P(0) + Q(-1)$`],
+    col: 2 },
+
+  'apl-ud11/AP.33': {
+    text: TEX`Efectua les operacions següents i indica el grau i el terme independent del resultat.`,
+    apartats: [
+      TEX`$x^2 + x(x - 3) - (4x - 6)$`, TEX`$3x(2x + 5) - x^2(x - 1) + 5$`,
+      TEX`$(3 + x)(4x - x^2) - (x - 8)$`, TEX`$7x - (x + 9) - 3x^2 + (x - 1)\cdot 4$`,
+      TEX`$(2 - 3x) - (x^2 - x + 4) + (x^2 - 1)x$`],
+    col: 2 },
+
+  'apl-ud11/AP.36': {
+    text: TEX`Sabent que el valor numèric del polinomi $P(x) = x^3 + 3x^2 - ax + 5$ per a $x = -3$ és $-1$, calcula el valor de $a$.` },
+
+  'apl-ud11/AP.71': {
+    text: TEX`La pàgina d’un llibre fa el doble d’alt que d’ample, els marges laterals fan $2$ cm, i els marges superior i inferior, $3$ cm.`,
+    apartats: [
+      TEX`Expressa la superfície total de la pàgina en llenguatge algebraic.`,
+      TEX`Fes el mateix amb la superfície útil de paper (el que queda dins dels marges).`],
+    col: 1 },
+
+  /* ── 4t ESO Aplicades · UD5 · Equacions de 2n grau ── */
+
+  'apl-ud5/U3.33': {
+    text: TEX`Relaciona cada equació amb les seves solucions.`,
+    apartats: [
+      TEX`$6x - 2 = x + 8$`, TEX`$(x + 3)^2 = 0$`, TEX`$(x - 2)(x + 4) = 0$`,
+      TEX`$x^2 + 8x = 0$`, TEX`$x^2 + x - 1 = 0$`],
+    col: 3,
+    despres: TEX`Solucions: \quad I) $x = -3$ \quad II) $x = -4$ \quad III) $x = 2$ \quad IV) $x = 0$ \quad V) $x = -8$` },
+
+  'apl-ud5/U3.37': {
+    text: TEX`Resol les equacions de segon grau següents.`,
+    apartats: [
+      TEX`$x^2 - 5x + 6 = 0$`, TEX`$x^2 = 4x - 3$`, TEX`$x^2 - 2x = 3$`, TEX`$x^2 + 3x - 2 = 0$`,
+      TEX`$x^2 + 15 = 8x$`, TEX`$x^2 - x = 30$`, TEX`$8x^2 = 15 - 2x$`, TEX`$x^2 - 3x - 1 = 0$`,
+      TEX`$2x^2 + 7x = 3$`, TEX`$x^2 = x - 3$`],
+    col: 3 },
+
+  'apl-ud5/U3.41': {
+    text: TEX`Desenvolupa i resol aquestes equacions de segon grau.`,
+    apartats: [
+      TEX`$(x + 3)(x - 4) + x(x + 2) = 2 - x^2$`, TEX`$3x - 2(x + 1)^2 = -3$`,
+      TEX`$x^2 + (x + 2)(x - 3) = 0$`, TEX`$4x^2 + 2(x - 6) - (x + 2)^2 = 0$`,
+      TEX`$(x - 1)(x + 2) + 3x = 4(x - 2) - (x - 12)$`, TEX`$(x + 5)(3 - x) = 2x(1 - x) + 12$`,
+      TEX`$x + x(x - 3) + 3 = x(4 - 2x) + x + 1$`, TEX`$2x^2 - 3(x + 2) = x(x + 3) - 11$`],
+    col: 2 },
+
+  'apl-ud5/AP.49': {
+    text: TEX`Efectua:`,
+    apartats: [TEX`$(3x + 4)^2$`, TEX`$\left(4x - \dfrac{2}{3}\right)^2$`, TEX`$(2x - 3)^3$`],
+    col: 3 },
+
+  'apl-ud5/U3.63': {
+    text: TEX`Quants germans i germanes tens si per Nadal cadascú fa un regal a cadascun dels altres i entre tots reuniu $36$ regals?` },
+
+  'apl-ud5/U7.94': {
+    text: TEX`El llançament d’una pilota segueix una trajectòria d’equació $h(t) = 2t - t^2$. Determina l’altura, en metres, i els segons que calen perquè la pilota arribi al punt més alt de la trajectòria.` },
+
   /* ── 4t ESO Aplicades · UD10 · Sistemes d'equacions i inequacions (Santillana U4) ── */
 
   'apl-ud10/U4.24': {
