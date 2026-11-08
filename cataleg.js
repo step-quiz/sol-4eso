@@ -13,6 +13,9 @@
      apl-ud5    Aplicades, UD5 · Equacions de 2n grau   (carpeta apl-ud5/)
      apl-ud10   Aplicades, UD10 · Sistemes              (carpeta apl-ud10/)
      apl-ud6    Aplicades, UD6 · La paràbola            (carpeta apl-ud6/)
+     apl-ud7    Aplicades, UD7 · Funcions: llegim gràfics (carpeta apl-ud7/)
+     apl-ud8    Aplicades, UD8 · Estadística            (carpeta apl-ud8/)
+     apl-ud9    Aplicades, UD9 · Atzar i decisions      (carpeta apl-ud9/)
 
    L'identificador és alhora la carpeta de les imatges i el principi de la
    clau de pistes, errades i enunciats:  'apl-ud10/U4.24'.
@@ -57,6 +60,9 @@ const UNITATS_META = {
   'apl-ud5':  {materia:'apl', nom:'Unitat 5',  subtitol:'Equacions de 2n grau',                ordre:6},
   'apl-ud10': {materia:'apl', nom:'Unitat 10', subtitol:'Sistemes d’equacions i inequacions', ordre:7},
   'apl-ud6':  {materia:'apl', nom:'Unitat 6',  subtitol:'La paràbola',                         ordre:8},
+  'apl-ud7':  {materia:'apl', nom:'Unitat 7',  subtitol:'Funcions: llegim gràfics',            ordre:9},
+  'apl-ud8':  {materia:'apl', nom:'Unitat 8',  subtitol:'Estadística',                         ordre:10},
+  'apl-ud9':  {materia:'apl', nom:'Unitat 9',  subtitol:'Atzar i decisions',                   ordre:11},
 };
 
 const CATALEG = {
@@ -367,6 +373,257 @@ const CATALEG = {
     /* ── U3 · Equacions (pàgines 76–77) */
     'U3.45':  {t:'Sense resoldre, quantes solucions té cada equació?', d:'●○○', i:['u3-equacions/data/full-1.png', 'u3-equacions/data/full-2.png']},
   },
+
+  'apl-ud7': {
+
+    /* Santillana, unitat 6 (funcions), unitat 7 (funcions elementals i situacions reals) i
+       unitat 2 (interès compost). Fora (vistiplau P9, F1, F14 i F15): domini calculat,
+       continuïtat, simetria, periodicitat i transformacions; U6 · 56 (mòdul d'un vector) i 57
+       (trigonometria); U6 · 88 (el solucionari no en dona la solució). */
+
+    /* ── U6 · Activitats (pàgines 155–157 del llibre) */
+    'U6.1':   {t:'Són funcions o no? Cinc relacions entre magnituds', d:'', i:['u6-activitats/data/full-1.png', 'u6-activitats/data/full-2.png']},
+    'U6.2':   {t:'y = 2x − 1: un enunciat i una taula de valors', d:'', i:['u6-activitats/data/full-2.png']},
+    'U6.3':   {t:'El cub menys dues vegades el quadrat: expressió i taula', d:'', i:['u6-activitats/data/full-2.png']},
+    'U6.4':   {t:'Aquestes gràfiques són d’una funció?', d:'', i:['u6-activitats/data/full-2.png']},
+    'U6.5':   {t:'Taula de valors de dues funcions', d:'', i:['u6-activitats/data/full-2.png']},
+    'U6.6':   {t:'La temperatura d’una sala: la gràfica a partir d’una taula', d:'', i:['u6-activitats/data/full-2.png', 'u6-activitats/data/full-3.png']},
+    'U6.7':   {t:'La quarta part més cinc: expressió, taula i gràfica', d:'', i:['u6-activitats/data/full-3.png']},
+
+    /* ── U6 · Activitats finals · 1. Relacions entre magnituds (pàgines 167–170) */
+    'U6.47':  {t:'Quines relacions són funcions?', d:'●○○', i:['u6-funcions/data/full-1.png']},
+    'U6.48':  {t:'L’expressió algebraica de quatre relacions', d:'●○○', i:['u6-funcions/data/full-1.png', 'u6-funcions/data/full-2.png']},
+    'U6.49':  {t:'Inventa dues relacions entre magnituds que siguin funcions', d:'●○○', i:['u6-funcions/data/full-2.png']},
+    'U6.50':  {t:'Un sudoku 2 × 2 amb la taula de y = −3x + 4', d:'●○○', i:['u6-funcions/data/full-2.png']},
+    'U6.51':  {t:'Taula i gràfica de f(x) = −x + 2', d:'●○○', i:['u6-funcions/data/full-2.png']},
+    'U6.52':  {t:'Les imatges de 2, −2, 3, −3, 1 i −1 per a sis funcions', d:'●○○', i:['u6-funcions/data/full-2.png', 'u6-funcions/data/full-3.png']},
+    'U6.53':  {t:'Inventa dues funcions per a una mateixa taula', d:'●●○', i:['u6-funcions/data/full-3.png']},
+    'U6.54':  {t:'El triple menys el quadrat: expressió i taula', d:'●○○', i:['u6-funcions/data/full-3.png']},
+    'U6.55':  {t:'El volum d’una esfera en funció del radi', d:'●●○', i:['u6-funcions/data/full-3.png']},
+    'U6.58':  {t:'Triangles de superfície S: la base en funció de l’altura', d:'●●○', i:['u6-funcions/data/full-3.png', 'u6-funcions/data/full-4.png']},
+
+    /* ── U6 · Creixement i decreixement (pàgines 174–178) */
+    'U6.78':  {t:'Creixement i decreixement de dues gràfiques', d:'●○○', i:['u6-creixement/data/full-1.png', 'u6-creixement/data/full-2.png']},
+    'U6.79':  {t:'Intervals de creixement, màxims i mínims de dues gràfiques', d:'●○○', i:['u6-creixement/data/full-2.png']},
+    'U6.80':  {t:'Dibuixa els eixos perquè el mínim sigui (1, −1)', d:'●●○', i:['u6-creixement/data/full-2.png']},
+    'U6.81':  {t:'Inventa una funció amb un màxim a (2, 4)', d:'●○○', i:['u6-creixement/data/full-2.png']},
+    'U6.82':  {t:'Creixement, màxims i mínims de dues gràfiques', d:'●●○', i:['u6-creixement/data/full-3.png']},
+    'U6.83':  {t:'Mots encreuats del creixement', d:'●○○', i:['u6-creixement/data/full-3.png']},
+    'U6.84':  {t:'La temperatura d’un dia: el màxim i el mínim', d:'●●○', i:['u6-creixement/data/full-3.png']},
+    'U6.85':  {t:'Funció creixent de domini [−6, 3] i recorregut [3, 6]', d:'●●●', i:['u6-creixement/data/full-3.png']},
+    'U6.86':  {t:'Mots encreuats de la taxa de variació mitjana', d:'●●○', i:['u6-creixement/data/full-4.png']},
+    'U6.87':  {t:'Vertader o fals sobre la taxa de variació mitjana', d:'●●●', i:['u6-creixement/data/full-4.png']},
+    'U6.89':  {t:'La taxa de variació relativa a [−1, 2]', d:'●○○', i:['u6-creixement/data/full-4.png']},
+    'U6.90':  {t:'Dues funcions amb la mateixa TVM a [1, 5]', d:'●●○', i:['u6-creixement/data/full-5.png']},
+
+    /* ── U6 · Funcions a trossos i problemes (pàgines 180–184) */
+    'U6.100': {t:'Representa una funció a trossos: domini i recorregut', d:'●○○', i:['u6-a-trossos/data/full-1.png']},
+    'U6.101': {t:'Completa perquè les funcions siguin contínues', d:'●●○', i:['u6-a-trossos/data/full-1.png']},
+    'U6.102': {t:'L’expressió algebraica de dues funcions a trossos', d:'●●○', i:['u6-a-trossos/data/full-1.png']},
+    'U6.103': {t:'L’expressió algebraica d’una funció a trossos a partir de la gràfica', d:'●●●', i:['u6-a-trossos/data/full-2.png']},
+    'U6.104': {t:'Quina és la gràfica de f(x) = x − x/|x|?', d:'●●●', i:['u6-a-trossos/data/full-2.png']},
+    'U6.105': {t:'El moviment d’un gronxador', d:'●●○', i:['u6-a-trossos/data/full-2.png']},
+    'U6.106': {t:'El so: la velocitat i la distància en funció del temps', d:'●●○', i:['u6-a-trossos/data/full-2.png', 'u6-a-trossos/data/full-3.png']},
+    'U6.107': {t:'Fórmula 1: la velocitat al llarg de quatre voltes', d:'●●○', i:['u6-a-trossos/data/full-3.png']},
+    'U6.108': {t:'Un electrocardiograma: és una funció periòdica?', d:'●●○', i:['u6-a-trossos/data/full-3.png']},
+    'U6.109': {t:'Videojoc: la funció «terra» dels bolets', d:'●●○', i:['u6-a-trossos/data/full-3.png', 'u6-a-trossos/data/full-4.png']},
+    'U6.110': {t:'El preu d’una acció: el creixement', d:'●●○', i:['u6-a-trossos/data/full-4.png']},
+    'U6.111': {t:'La distància de frenada d’un vehicle', d:'●●○', i:['u6-a-trossos/data/full-4.png']},
+    'U6.112': {t:'El cost dels enviaments: una funció a trossos', d:'●●○', i:['u6-a-trossos/data/full-5.png']},
+
+    /* ── U7 · Activitats finals · 1. Relació lineal (pàgines 200–203) */
+    'U7.35':  {t:'Classifica dues funcions de primer grau i troba’n els punts de tall', d:'●○○', i:['u7-lineals/data/full-1.png']},
+    'U7.36':  {t:'Quins punts són de la funció y = −x + 2?', d:'●○○', i:['u7-lineals/data/full-1.png']},
+    'U7.37':  {t:'Representa sis funcions de primer grau', d:'●○○', i:['u7-lineals/data/full-2.png']},
+    'U7.38':  {t:'Inventa una funció lineal, una de proporcionalitat directa i una constant', d:'●○○', i:['u7-lineals/data/full-2.png']},
+    'U7.39':  {t:'L’expressió algebraica a partir del pendent i un punt', d:'●●○', i:['u7-lineals/data/full-3.png']},
+    'U7.40':  {t:'La recta que passa per dos punts', d:'●●○', i:['u7-lineals/data/full-3.png']},
+    'U7.41':  {t:'Inventa tres funcions que passin per (−1, 2)', d:'●○○', i:['u7-lineals/data/full-3.png']},
+    'U7.42':  {t:'L’equació de quatre rectes a partir de la gràfica', d:'●●○', i:['u7-lineals/data/full-3.png', 'u7-lineals/data/full-4.png']},
+    'U7.43':  {t:'Si f(6) − f(2) = 12, quant val f(12) − f(2)?', d:'●●●', i:['u7-lineals/data/full-4.png']},
+    'U7.44':  {t:'Dibuixa la gràfica de y = x/|x|', d:'●●●', i:['u7-lineals/data/full-4.png']},
+
+    /* ── U7 · 3. Proporcionalitat inversa (pàgines 210–212) */
+    'U7.62':  {t:'Relaciona cada hipèrbola amb la seva equació', d:'●○○', i:['u7-inversa/data/full-1.png']},
+    'U7.63':  {t:'Una taula de proporcionalitat inversa: expressió i gràfica', d:'●○○', i:['u7-inversa/data/full-1.png', 'u7-inversa/data/full-2.png']},
+    'U7.64':  {t:'Representa tres funcions de proporcionalitat inversa', d:'●○○', i:['u7-inversa/data/full-2.png', 'u7-inversa/data/full-3.png']},
+    'U7.65':  {t:'y = −5/x: creixement i valors a prop de 0', d:'●○○', i:['u7-inversa/data/full-3.png']},
+
+    /* ── U7 · 4. Relació exponencial (pàgines 216–219) */
+    'U7.74':  {t:'Relaciona cada funció exponencial amb la seva gràfica', d:'●○○', i:['u7-exponencial/data/full-1.png']},
+    'U7.75':  {t:'Representa tres funcions exponencials als mateixos eixos', d:'●○○', i:['u7-exponencial/data/full-1.png']},
+    'U7.76':  {t:'Inventa una exponencial decreixent que passi per (0, 2)', d:'●○○', i:['u7-exponencial/data/full-1.png', 'u7-exponencial/data/full-2.png']},
+    'U7.77':  {t:'Troba a en dues funcions y = aˣ a partir de la gràfica', d:'●●○', i:['u7-exponencial/data/full-2.png']},
+    'U7.83':  {t:'Estudia i representa sis funcions exponencials', d:'●●○', i:['u7-exponencial/data/full-3.png', 'u7-situacions/data/full-1.png']},
+
+    /* ── U7 · 5. Situacions reals (pàgines 220–227) */
+    'U7.85':  {t:'Caminar sobre una cinta mecànica: distància i temps', d:'●●○', i:['u7-situacions/data/full-1.png']},
+    'U7.86':  {t:'Videojoc: el salt parabòlic', d:'●●○', i:['u7-situacions/data/full-2.png']},
+    'U7.87':  {t:'La factura de la llum: quota fixa més el consum', d:'●●○', i:['u7-situacions/data/full-2.png']},
+    'U7.88':  {t:'La temperatura de l’aire segons l’altitud', d:'●●○', i:['u7-situacions/data/full-2.png', 'u7-situacions/data/full-3.png']},
+    'U7.89':  {t:'El taxi: baixada de bandera i preu per quilòmetre', d:'●●○', i:['u7-situacions/data/full-3.png']},
+    'U7.90':  {t:'Les escales de temperatura: Celsius, Fahrenheit i Kelvin', d:'●●●', i:['u7-situacions/data/full-3.png']},
+    'U7.91':  {t:'L’ombra d’un pal d’1 m: taula, funció i gràfica', d:'●●○', i:['u7-situacions/data/full-4.png']},
+    'U7.92':  {t:'Les capses de polvorons del viatge d’estudis', d:'●●○', i:['u7-situacions/data/full-4.png']},
+    'U7.97':  {t:'El bacteri E. coli es divideix cada 25 minuts', d:'●●○', i:['u7-situacions/data/full-5.png', 'u7-situacions/data/full-6.png']},
+    'U7.104': {t:'Una substància radioactiva en funció del temps', d:'', i:['u7-situacions/data/full-7.png']},
+
+    /* ── U2 · Interès compost (pàgines 39–40 i 56–57) */
+    'U2.40':  {t:'Interès compost: 2 000 € durant 10 anys al 2,75 %', d:'', i:['u2-activitats/data/full-1.png']},
+    'U2.41':  {t:'Quin capital dona 200 € en 2 anys al 5 % compost?', d:'', i:['u2-activitats/data/full-1.png']},
+    'U2.42':  {t:'Interès compost: 3 050 € durant 3 anys al 5 %', d:'', i:['u2-activitats/data/full-1.png']},
+    'U2.43':  {t:'Un capital que dona 244 € d’interessos en 5 anys al 4 %', d:'', i:['u2-activitats/data/full-1.png']},
+    'U2.44':  {t:'Interès simple o compost: quin és més rendible?', d:'', i:['u2-activitats/data/full-1.png', 'u2-activitats/data/full-2.png']},
+    'U2.109': {t:'Quin capital dona 111 € d’interessos en 2 anys al 4 %?', d:'●○○', i:['u2-interes/data/full-1.png']},
+    'U2.110': {t:'Un dipòsit amb un rèdit el primer mes i un altre la resta de l’any', d:'●●○', i:['u2-interes/data/full-1.png']},
+    'U2.111': {t:'L’Emília inverteix 9 600 € al 3,85 %: interessos i penalització', d:'●○○', i:['u2-interes/data/full-1.png', 'u2-interes/data/full-2.png']},
+  },
+
+  'apl-ud8': {
+
+    /* Santillana, unitat 8. Fora (vistiplau P10, F1, F16 i F17): quartils i percentils (Act. 11–18),
+       dispersió (ex. 64–66), dues variables (Act. 19–32; ex. 78, 79, 85, 90 i 91), i els ex. 68 i 72
+       (el solucionari diu «Resuelta en el libro de texto»). Els ex. 75 d), e) i 76 d), e) pregunten
+       per quartils i percentils (F16); s’hi han deixat perquè eren a la llista P10. */
+
+    /* ── U8 · Activitats (pàgines 231–235 del llibre) */
+    'U8.1': {t:'Població o mostra? Els cargols d’una màquina i el pes de cinc amics', d:'', i:['u8-activitats/data/full-1.png']},
+    'U8.2': {t:'El color de cabells de 15 noies: taula de freqüències', d:'', i:['u8-activitats/data/full-1.png', 'u8-activitats/data/full-2.png']},
+    'U8.3': {t:'El sexe de 20 nadons: taula, diagrama de sectors i de barres', d:'', i:['u8-activitats/data/full-2.png']},
+    'U8.4': {t:'50 llançaments d’un dau: diagrama de barres i polígon', d:'', i:['u8-activitats/data/full-2.png']},
+    'U8.5': {t:'La taula de freqüències de dos histogrames', d:'', i:['u8-activitats/data/full-2.png', 'u8-activitats/data/full-3.png']},
+    'U8.6': {t:'El pes de 20 persones: taula, gràfic i mesures de centralització', d:'', i:['u8-activitats/data/full-3.png']},
+    'U8.7': {t:'Mesures de centralització de dades agrupades', d:'', i:['u8-activitats/data/full-3.png']},
+    'U8.8': {t:'Quins valors es poden afegir perquè la mediana no canviï?', d:'', i:['u8-activitats/data/full-4.png']},
+    'U8.9': {t:'Calcula i interpreta les mesures de centralització', d:'', i:['u8-activitats/data/full-4.png']},
+    'U8.10': {t:'Mesures de centralització a partir de dos gràfics', d:'', i:['u8-activitats/data/full-4.png', 'u8-activitats/data/full-5.png']},
+
+    /* ── U8 · Activitats finals · 1. Taules i gràfics (pàgines 241–247) */
+    'U8.33': {t:'Joc: una variable quantitativa discreta, la població i una mostra', d:'●●○', i:['u8-taules/data/full-1.png']},
+    'U8.34': {t:'Les hores d’estudi de 30 estudiants: taula de freqüències', d:'●●○', i:['u8-taules/data/full-1.png', 'u8-taules/data/full-2.png']},
+    'U8.35': {t:'Quantes vegades van anar al banc 30 persones?', d:'●●○', i:['u8-taules/data/full-2.png']},
+    'U8.36': {t:'Inventa una enquesta amb unes freqüències donades', d:'●●○', i:['u8-taules/data/full-2.png']},
+    'U8.37': {t:'Completa una taula de freqüències amb cinc valors', d:'●●○', i:['u8-taules/data/full-2.png', 'u8-taules/data/full-3.png']},
+    'U8.38': {t:'Completar una taula a partir de les freqüències acumulades', d:'●●○', i:['u8-taules/data/full-3.png']},
+    'U8.39': {t:'Aprovats i suspesos d’una classe de 30: taula de freqüències', d:'●●○', i:['u8-taules/data/full-3.png']},
+    'U8.40': {t:'El 15 % de la classe són esquerrans: quants alumnes com a mínim?', d:'●●●', i:['u8-taules/data/full-3.png']},
+    'U8.41': {t:'Les cançons escoltades: taula amb 8 classes', d:'●●○', i:['u8-taules/data/full-3.png']},
+    'U8.42': {t:'Els resultats d’un test: classes d’amplitud 3', d:'●●●', i:['u8-taules/data/full-4.png']},
+    'U8.43': {t:'Completa la taula i respon', d:'●●○', i:['u8-taules/data/full-4.png']},
+    'U8.44': {t:'El temps davant la televisió: completa la taula', d:'●●○', i:['u8-taules/data/full-4.png']},
+    'U8.45': {t:'Els retards d’un tren AVE: diagrama de barres', d:'●○○', i:['u8-taules/data/full-4.png', 'u8-taules/data/full-5.png']},
+    'U8.46': {t:'Tria un gràfic adequat per a 35 dades', d:'●●○', i:['u8-taules/data/full-5.png']},
+    'U8.47': {t:'Diagrama de barres amb unes condicions sobre les freqüències', d:'●●○', i:['u8-taules/data/full-5.png']},
+    'U8.48': {t:'La venda de cotxes d’un any: freqüències', d:'●●○', i:['u8-taules/data/full-5.png']},
+    'U8.49': {t:'Diagrama de sectors dels menjars', d:'●●○', i:['u8-taules/data/full-6.png']},
+    'U8.50': {t:'Diagrama de sectors: l’amplitud de cada sector', d:'●●○', i:['u8-taules/data/full-6.png']},
+    'U8.51': {t:'Histograma i polígons de freqüències absolutes i acumulades', d:'●●○', i:['u8-taules/data/full-6.png']},
+    'U8.52': {t:'Les estatures de 27 joves: taula i histograma', d:'●●○', i:['u8-taules/data/full-6.png']},
+    'U8.53': {t:'Mots encreuats a partir d’un histograma', d:'●●○', i:['u8-taules/data/full-7.png']},
+    'U8.54': {t:'La taula de freqüències d’un histograma', d:'●●○', i:['u8-taules/data/full-7.png']},
+    'U8.55': {t:'La taula de freqüències d’un histograma acumulat', d:'●○○', i:['u8-taules/data/full-7.png']},
+    'U8.56': {t:'El diagrama de sectors de la Sara: taula i histograma', d:'●●●', i:['u8-taules/data/full-7.png', 'u8-parametres/data/full-1.png']},
+
+    /* ── U8 · 2. Paràmetres estadístics (pàgines 248–252) */
+    'U8.57': {t:'Mots encreuats dels paràmetres estadístics', d:'●○○', i:['u8-parametres/data/full-1.png']},
+    'U8.58': {t:'Mitjana, mediana i moda de tres grups de dades', d:'●○○', i:['u8-parametres/data/full-1.png']},
+    'U8.59': {t:'El valor de x₄ perquè la mitjana sigui 5', d:'●●●', i:['u8-parametres/data/full-1.png']},
+    'U8.60': {t:'Inventa 10 dades amb una moda, una mediana o una mitjana donades', d:'●●○', i:['u8-parametres/data/full-1.png']},
+    'U8.61': {t:'El percentatge d’encistellades de la Jana', d:'●●○', i:['u8-parametres/data/full-1.png']},
+    'U8.62': {t:'Mitjana, mediana i moda de dades agrupades', d:'●●○', i:['u8-parametres/data/full-2.png']},
+    'U8.63': {t:'Mesures de centralització de 40 dades', d:'●○○', i:['u8-parametres/data/full-2.png']},
+    'U8.67': {t:'Joc: endevina la mitjana i el rang', d:'●●○', i:['u8-parametres/data/full-3.png']},
+    'U8.69': {t:'Els valors de x i y perquè la mitjana sigui 20 i la moda 23', d:'●○○', i:['u8-parametres/data/full-4.png']},
+    'U8.70': {t:'La puntuació de l’Ana', d:'●●○', i:['u8-parametres/data/full-4.png']},
+    'U8.71': {t:'Una competició de tir: quants punts va fer l’Antoni com a mínim?', d:'●●●', i:['u8-parametres/data/full-4.png']},
+    'U8.73': {t:'Afegeix dues dades perquè la mediana sigui 8,5, 8 o 9', d:'●●○', i:['u8-parametres/data/full-4.png']},
+    'U8.74': {t:'Les dades 0, 1, x i 4: el valor de x i un sudoku', d:'●●○', i:['u8-parametres/data/full-4.png']},
+    'U8.75': {t:'Mitjana, mediana, moda, quartils i P₃₂ a partir d’un gràfic', d:'●●○', i:['u8-parametres/data/full-5.png']},
+    'U8.76': {t:'Respon raonadament sobre mitjana, moda, mediana i quartils', d:'●●○', i:['u8-parametres/data/full-5.png']},
+    'U8.77': {t:'S’esborren 20 nombres: la mitjana dels nombres esborrats', d:'●●●', i:['u8-parametres/data/full-5.png']},
+
+    /* ── U8 · 3. Informació estadística dels mitjans (pàgines 254–258) */
+    'U8.80': {t:'Un fons d’inversió: la rendibilitat mitjana en 5 anys', d:'●●○', i:['u8-informacio/data/full-1.png']},
+    'U8.81': {t:'Les coliflors: ingressos i preu mitjà per quilo', d:'●●○', i:['u8-informacio/data/full-1.png', 'u8-informacio/data/full-2.png']},
+    'U8.82': {t:'L’estatura mitjana d’una classe: vertader o fals', d:'●●○', i:['u8-informacio/data/full-2.png']},
+    'U8.83': {t:'La venda de cafès al llarg del dia', d:'●●○', i:['u8-informacio/data/full-2.png', 'u8-informacio/data/full-3.png']},
+    'U8.84': {t:'Les sals minerals de l’aigua embotellada', d:'●●○', i:['u8-informacio/data/full-3.png']},
+    'U8.85': {t:'Les oposicions de policia local: dues proves', d:'●●○', i:['u8-informacio/data/full-4.png', 'u8-informacio/data/full-5.png']},
+    'U8.FN': {t:'Malos humos: els fumadors per província', d:'', i:['u8-informacio/data/full-4.png', 'u8-informacio/data/full-5.png'], e:'Fake news', nom:'Fake news'},
+    'U8.88': {t:'Dades 2, 5, 5, 7, 3, x: la mitjana i la mediana', d:'', i:['u8-informacio/data/full-5.png']},
+    'U8.89': {t:'La corredora: quants quilòmetres ha de córrer dissabte?', d:'', i:['u8-informacio/data/full-5.png']},
+  },
+
+  'apl-ud9': {
+
+    /* Santillana, unitat 9. Fora (vistiplau P11 i F1): combinatòria amb fórmula, operacions amb
+       successos i probabilitat condicionada amb fórmula: Act. 4–16, 18–22, 31, 32 i 35–39; ex. 49–56,
+       60, 62, 66–75, 90–92, 94, 95 i 104. També el 83 (el solucionari diu «Resuelta en el libro de
+       texto»). */
+
+    /* ── U9 · Activitats (pàgines 263–272 del llibre) */
+    'U9.1': {t:'Dues equipacions: de quantes maneres es poden vestir?', d:'', i:['u9-activitats/data/full-1.png']},
+    'U9.2': {t:'De quantes maneres es poden col·locar les lletres de PACO?', d:'', i:['u9-activitats/data/full-2.png']},
+    'U9.3': {t:'Les combinacions de les lletres de ROSA amb un diagrama d’arbre', d:'', i:['u9-activitats/data/full-2.png']},
+    'U9.17': {t:'Experiments aleatoris o deterministes?', d:'', i:['u9-activitats/data/full-3.png']},
+    'U9.23': {t:'La freqüència relativa de sortir creu en 75 llançaments', d:'', i:['u9-activitats/data/full-4.png']},
+    'U9.24': {t:'Com calcularies la probabilitat que una volandera sigui defectuosa?', d:'', i:['u9-activitats/data/full-4.png']},
+    'U9.25': {t:'5 000 extraccions d’una bossa: probabilitats a partir de freqüències', d:'', i:['u9-activitats/data/full-4.png']},
+    'U9.26': {t:'Una bossa amb boles de colors: probabilitat de cada color', d:'', i:['u9-activitats/data/full-4.png', 'u9-activitats/data/full-5.png']},
+    'U9.27': {t:'17 nois i 19 noies: probabilitat de triar un noi o una noia', d:'', i:['u9-activitats/data/full-5.png']},
+    'U9.28': {t:'Camises i samarretes: la probabilitat de cada peça', d:'', i:['u9-activitats/data/full-5.png']},
+    'U9.29': {t:'Un dau amb la cara 6 canviada per un 1', d:'', i:['u9-activitats/data/full-5.png']},
+    'U9.30': {t:'La baralla espanyola: unió i intersecció de tres successos', d:'', i:['u9-activitats/data/full-5.png', 'u9-activitats/data/full-6.png']},
+    'U9.33': {t:'La suma de dos daus', d:'', i:['u9-activitats/data/full-6.png', 'u9-activitats/data/full-7.png']},
+    'U9.34': {t:'Probabilitat de no treure ni asos ni figures', d:'', i:['u9-activitats/data/full-7.png']},
+    'U9.40': {t:'Una urna amb 2 boles blanques i 2 de blaves: amb i sense reemplaçament', d:'', i:['u9-activitats/data/full-8.png']},
+    'U9.41': {t:'Tres monedes: diagrama d’arbre i probabilitats', d:'', i:['u9-activitats/data/full-8.png']},
+    'U9.42': {t:'Quatre cavalls de la baralla: amb i sense reemplaçament', d:'', i:['u9-activitats/data/full-8.png', 'u9-activitats/data/full-9.png']},
+    'U9.43': {t:'Una campanya de vacunació: vacunat i no malalt', d:'', i:['u9-activitats/data/full-9.png']},
+    'U9.44': {t:'Tres missatgers: paquets entregats a temps', d:'', i:['u9-activitats/data/full-9.png']},
+
+    /* ── U9 · Activitats finals · 1. Mètodes de recompte (pàgines 272–273) */
+    'U9.45': {t:'El menú del dia: quants menús diferents?', d:'●○○', i:['u9-activitats/data/full-9.png']},
+    'U9.46': {t:'Dos tipus d’arbres en tres espais', d:'●○○', i:['u9-recompte/data/full-1.png']},
+    'U9.47': {t:'Nombres de tres xifres amb 1, 2, 3 i 4', d:'●●○', i:['u9-recompte/data/full-1.png']},
+    'U9.48': {t:'Un torneig de ping-pong: la graella de partides', d:'●●●', i:['u9-recompte/data/full-1.png']},
+
+    /* ── U9 · 2. Situacions aleatòries (pàgines 275–277) */
+    'U9.57': {t:'Matrícules de vehicles: quantes se’n poden fer?', d:'●●○', i:['u9-aleatori/data/full-1.png']},
+    'U9.58': {t:'Quantes encaixades de mans hi haurà en una reunió de 10 persones?', d:'●●○', i:['u9-aleatori/data/full-2.png']},
+    'U9.59': {t:'La quiniela: quantes apostes diferents i quant costarien?', d:'●●○', i:['u9-aleatori/data/full-2.png']},
+    'U9.61': {t:'Pedra, paper i tisora: guanyar després de 4 rondes', d:'●●○', i:['u9-aleatori/data/full-2.png']},
+    'U9.63': {t:'Deterministes o aleatoris?', d:'●○○', i:['u9-aleatori/data/full-3.png']},
+    'U9.64': {t:'Comptar els dilluns d’un mes i triar una fruita: quin tipus d’experiment?', d:'●○○', i:['u9-aleatori/data/full-3.png']},
+    'U9.65': {t:'Inventa dos experiments aleatoris i dos que no ho siguin', d:'●○○', i:['u9-aleatori/data/full-3.png']},
+
+    /* ── U9 · 3. Probabilitats (pàgines 281–285) */
+    'U9.76': {t:'Expressa en termes de probabilitat', d:'●○○', i:['u9-probabilitat/data/full-1.png']},
+    'U9.77': {t:'Un bombo amb 10 boles: freqüències relatives', d:'●●○', i:['u9-probabilitat/data/full-1.png', 'u9-probabilitat/data/full-2.png']},
+    'U9.78': {t:'Monedes d’1 € de diferents països', d:'●○○', i:['u9-probabilitat/data/full-2.png']},
+    'U9.79': {t:'Una xinxeta: amb la punta cap amunt o cap avall?', d:'●●○', i:['u9-probabilitat/data/full-2.png']},
+    'U9.80': {t:'La baralla espanyola: as, ors, rei de bastos', d:'●○○', i:['u9-probabilitat/data/full-2.png', 'u9-probabilitat/data/full-3.png']},
+    'U9.81': {t:'Quatre probabilitats que no sumen 1', d:'●○○', i:['u9-probabilitat/data/full-3.png']},
+    'U9.82': {t:'Un quadrat màgic de probabilitats', d:'●●○', i:['u9-probabilitat/data/full-3.png', 'u9-probabilitat/data/full-4.png']},
+    'U9.84': {t:'Un dau amb P(1) = P(2) = P(3) = 1/7: quant val x?', d:'●●○', i:['u9-probabilitat/data/full-4.png']},
+    'U9.85': {t:'P(A) = P(B) = P(C) i P(D) = 2P(A)', d:'●●○', i:['u9-probabilitat/data/full-4.png']},
+    'U9.86': {t:'Un punt a l’atzar en un rectangle: probabilitat que x < y', d:'●●●', i:['u9-probabilitat/data/full-4.png']},
+    'U9.87': {t:'La suma de les cares visibles d’un dau', d:'●●○', i:['u9-probabilitat/data/full-4.png']},
+    'U9.88': {t:'Tres monedes: almenys, com a màxim', d:'●●○', i:['u9-probabilitat/data/full-4.png', 'u9-probabilitat/data/full-5.png']},
+    'U9.89': {t:'Joc: quins tres nombres consecutius triaries?', d:'●●○', i:['u9-probabilitat/data/full-5.png']},
+
+    /* ── U9 · 4. Problemes de la vida quotidiana (pàgines 286–288) */
+    'U9.93': {t:'Una urna amb 4 boles vermelles i 6 de blanques: dues extraccions', d:'●●●', i:['u9-problemes/data/full-1.png']},
+    'U9.96': {t:'Tres daus: probabilitat que el producte sigui 36', d:'●●○', i:['u9-problemes/data/full-1.png', 'u9-problemes/data/full-2.png']},
+    'U9.97': {t:'Un nombre del 20 al 79: el producte de les xifres és 18', d:'●●○', i:['u9-problemes/data/full-2.png']},
+    'U9.98': {t:'Una penya: probabilitat de ser noia i nombre de membres', d:'●●○', i:['u9-problemes/data/full-2.png']},
+    'U9.99': {t:'Dos fills: dos nois, dues noies, un de cada', d:'●●○', i:['u9-problemes/data/full-2.png']},
+    'U9.100': {t:'Un test de 4 preguntes contestat a l’atzar', d:'●●●', i:['u9-problemes/data/full-2.png']},
+    'U9.101': {t:'Set pinzells: almenys un que no sigui petit', d:'●●●', i:['u9-problemes/data/full-2.png', 'u9-problemes/data/full-3.png']},
+    'U9.102': {t:'Dos jugadors de bàsquet alternen tirs lliures', d:'●●●', i:['u9-problemes/data/full-3.png']},
+    'U9.103': {t:'Tres taronges de vuit fruites: dues peces a l’atzar', d:'●●●', i:['u9-problemes/data/full-3.png']},
+  },
+
 
 
 };

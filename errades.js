@@ -231,6 +231,233 @@ const ERRADES = {
                 ['u7-problemes/data/full-4.png', 11.4, 0.4, 30.4, 19.4]] },
   ],
 
+  /* ── 4t ESO Aplicades · UD7 · Funcions: llegim gràfics (Santillana U6, U7 i U2) ─ */
+
+  'apl-ud7/U6.7': [
+    { lloc:    TEX`c)`,
+      ondiu:   TEX`Una recta contínua, i no es respon si es poden unir els punts`,
+      hadedir: TEX`Punts aïllats, un per a cada nombre enter: $(-12, 2)$, $(-8, 3)$, … No es poden unir.`,
+      motiu:   TEX`L’enunciat diu que la funció associa un valor a cada nombre enter: entre dos enters no hi ha cap valor de la funció.`,
+      marca:   ['u6-activitats/data/full-3.png', 11.0, 59.4, 31.5, 15.0] },
+  ],
+
+  'apl-ud7/U6.52': [
+    { lloc:    TEX`f)`,
+      ondiu:   TEX`$f(3) = \dfrac{-12}{15}$`,
+      hadedir: TEX`$f(3) = \dfrac{-12}{5}$`,
+      motiu:   TEX`$f(3) = \dfrac{9}{3} - 6 + \dfrac{3}{5} = -3 + \dfrac{3}{5} = -\dfrac{12}{5}$.`,
+      marca:   ['u6-funcions/data/full-3.png', 12.0, 24.6, 12.0, 5.0] },
+  ],
+
+  'apl-ud7/U6.82': [
+    { lloc:    TEX`a)`,
+      ondiu:   TEX`Creixent a $(-\infty, 0)$ i a $(0, 3)$. Constant a $(3, 5)$ i decreixent a $(5, +\infty)$.`,
+      hadedir: TEX`Creixent a $(-3, 0)$ i a $(0, 3)$, i decreixent a partir de $x = 3$.`,
+      motiu:   TEX`A la gràfica, la funció comença a $x = -3$ i, després de $x = 3$, baixa en línia recta: no hi ha cap tram constant. A $x = 3$ passa de créixer a decréixer, i hi té un màxim de valor $3$.`,
+      marca:   ['u6-creixement/data/full-3.png', 13.8, 37.4, 32.5, 7.2] },
+  ],
+
+  'apl-ud7/U6.89': [
+    { ondiu:   TEX`$TVR = \dfrac{f(2) - f(-1)}{2 - (-1)}\cdot 100$: \; a) $300\,\%$; \; b) $-300\,\%$; \; c) $-400\,\%$`,
+      hadedir: TEX`$TVR = \dfrac{f(2) - f(-1)}{f(-1)}\cdot 100$: \; a) $\dfrac{9}{-4}\cdot 100 = -225\,\%$; \; b) $\dfrac{-9}{4}\cdot 100 = -225\,\%$; \; c) $\dfrac{-12}{8}\cdot 100 = -150\,\%$`,
+      motiu:   TEX`La taxa de variació relativa, tal com la defineix el llibre a l’exercici 88, divideix per $f(a)$, no per $b - a$. El solucionari calcula la taxa de variació mitjana multiplicada per $100$.`,
+      marca:   ['u6-creixement/data/full-4.png', 55.5, 71.8, 33.0, 27.8] },
+  ],
+
+  'apl-ud7/U6.106': [
+    { lloc:    TEX`a) i b)`,
+      ondiu:   TEX`a) $f(t) = \dfrac{340}{t}$ \quad b) $g(t) = \dfrac{340t}{t} = 340$`,
+      hadedir: TEX`a) $v(t) = 340$ (funció constant) \quad b) $d(t) = 340t$ (proporcionalitat directa)`,
+      motiu:   TEX`La velocitat del so no depèn del temps, i la distància recorreguda és velocitat per temps. La corba $\dfrac{340}{t}$ de la gràfica no representa cap de les dues relacions.`,
+      marca:   ['u6-a-trossos/data/full-3.png', 11.5, 0.0, 20.5, 9.2] },
+    { lloc:    TEX`c)`,
+      ondiu:   TEX`$f(t) = \dfrac{22{,}22}{t}$ \quad i \quad $g(t) = \dfrac{22{,}22t}{t} = 22{,}22$`,
+      hadedir: TEX`$v(t) = 22{,}22$ \quad i \quad $d(t) = 22{,}22t$`,
+      motiu:   TEX`La mateixa errada que als apartats a) i b).`,
+      marca:   ['u6-a-trossos/data/full-3.png', 11.5, 33.4, 24.5, 9.0] },
+  ],
+
+  'apl-ud7/U6.112': [
+    { ondiu:   TEX`$0{,}10x$ \quad si $400 \le x < 900$`,
+      hadedir: TEX`$0{,}10x$ \quad si $400 \le x < 990$`,
+      motiu:   TEX`El cartell diu «$400$ € – $990$ €». Amb $900$, els pedidos d’entre $900$ i $990$ € quedarien sense preu.`,
+      marca:   ['u6-a-trossos/data/full-5.png', 25.0, 37.9, 16.5, 2.8] },
+  ],
+
+  'apl-ud7/U7.90': [
+    { ondiu:   TEX`a) $y = 32 + \dfrac{180}{100}x$ \quad b) $y = 273{,}15 + x$`,
+      hadedir: TEX`a) $y = 273{,}15 + x$ \quad b) $y = 32 + \dfrac{180}{100}x$`,
+      motiu:   TEX`L’apartat a) demana passar de Celsius a Kelvin, i el b), de Celsius a Fahrenheit: les dues funcions estan intercanviades.`,
+      marca:   ['u7-situacions/data/full-3.png', 56.5, 39.6, 30.5, 7.4] },
+    { ondiu:   TEX`$x = 301{,}39375$ °C $\to$ $y = 574{,}54375$`,
+      hadedir: TEX`$x = 301{,}4375$ °C $\to$ $y = 574{,}5875$`,
+      motiu:   TEX`$0{,}8x = 241{,}15 \to x = \dfrac{241{,}15}{0{,}8} = 301{,}4375$, i $273{,}15 + 301{,}4375 = 574{,}5875$.`,
+      marca:   ['u7-situacions/data/full-3.png', 56.5, 91.2, 37.0, 8.4] },
+  ],
+
+  'apl-ud7/U2.42': [
+    { ondiu:   TEX`$1{,}05^3 = 1{,}158 \to C_f = 3\,531{,}90$ €, \; $I = 481{,}90$ €`,
+      hadedir: TEX`$1{,}05^3 = 1{,}157625 \to C_f = 3\,530{,}76$ €, \; $I = 480{,}76$ €`,
+      motiu:   TEX`Arrodonir $1{,}05^3$ a tres decimals fa una diferència d’$1{,}14$ €.`,
+      marca:   ['u2-activitats/data/full-1.png', 53.5, 8.8, 26.0, 8.0] },
+  ],
+
+  'apl-ud7/U2.43': [
+    { enunciat: 1,
+      lloc:    TEX`b)`,
+      ondiu:   TEX`«Quants diners obtindrem al cap d’uns altres 5 anys?» $\to$ $1\,126{,}23\cdot 1{,}2167 = 1\,370{,}28$ €`,
+      hadedir: TEX`Si són 5 anys més (10 en total): $1\,126{,}23\cdot 1{,}04^{10} \approx 1\,667{,}09$ €. Si són els mateixos 5 anys: $1\,126{,}23 + 244 = 1\,370{,}23$ €.`,
+      motiu:   TEX`«Uns altres 5 anys» fa pensar en 10 anys en total, però la solució calcula els 5 primers. A més, $1\,370{,}28$ surt d’arrodonir $1{,}04^5$ a $1{,}2167$.`,
+      marca:   [['u2-activitats/data/full-1.png', 54.0, 28.4, 18.0, 4.2],
+                ['u2-activitats/data/full-1.png', 56.0, 57.4, 28.5, 3.2]] },
+  ],
+
+  'apl-ud7/U2.110': [
+    { ondiu:   TEX`$10\,000\cdot 1{,}06^{\frac{1}{12}} = 10\,048$ € \; i, al final, $10\,461{,}70$ €`,
+      hadedir: TEX`$10\,000\cdot 1{,}06^{\frac{1}{12}} = 10\,048{,}68$ € \; i, al final, $10\,048{,}68\cdot 1{,}045^{\frac{11}{12}} = 10\,462{,}42$ €`,
+      motiu:   TEX`El capital del primer mes s’ha truncat a $10\,048$ €: la diferència final és de $0{,}72$ €.`,
+      marca:   [['u2-interes/data/full-1.png', 11.5, 91.6, 26.5, 3.4],
+                ['u2-interes/data/full-1.png', 56.5, 15.6, 31.0, 3.8]] },
+  ],
+
+  /* ── 4t ESO Aplicades · UD8 · Estadística (Santillana U8) ─────────────── */
+
+  'apl-ud8/U8.7': [
+    { ondiu:   TEX`$\bar{x} = \dfrac{10\cdot 2{,}5 + 12\cdot 7{,}5 + 37\cdot 12{,}5 + 21\cdot 12{,}5}{80}$`,
+      hadedir: TEX`$\bar{x} = \dfrac{10\cdot 2{,}5 + 12\cdot 7{,}5 + 37\cdot 12{,}5 + 21\cdot 17{,}5}{80} = \dfrac{945}{80} = 11{,}81$`,
+      motiu:   TEX`La marca de classe de $[15, 20)$ és $17{,}5$. El resultat, $11{,}81$, és correcte: l’errada és només a la fórmula.`,
+      marca:   ['u8-activitats/data/full-3.png', 60.4, 84.2, 26.5, 3.4] },
+  ],
+
+  'apl-ud8/U8.9': [
+    { lloc:    TEX`a)`,
+      ondiu:   TEX`$Me = 6$`,
+      hadedir: TEX`$Me = \dfrac{6 + 8}{2} = 7$`,
+      motiu:   TEX`Hi ha $18$ dades: la mediana és la mitjana de la $9$a i la $10$a. La $9$a val $6$ ($F = 9$) i la $10$a, $8$.`,
+      marca:   ['u8-activitats/data/full-4.png', 58.2, 3.2, 8.0, 2.8] },
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$f_i = 6,\ 9,\ 14,\ 20$; \ $N = 49$; \ $\bar{x} = 37{,}19$; \ interval modal $[45, 60)$`,
+      hadedir: TEX`$f_i = 6,\ 3,\ 5,\ 6$; \ $N = 20$; \ $\bar{x} = \dfrac{615}{20} = 30{,}75$; \ dos intervals modals, $[0, 15)$ i $[45, 60)$; \ interval medià $[30, 45)$`,
+      motiu:   TEX`La taula de l’enunciat dona les freqüències acumulades $F_i$, no les absolutes: $f_i = F_i - F_{i-1}$.`,
+      marca:   ['u8-activitats/data/full-4.png', 55.8, 7.4, 38.0, 31.4] },
+  ],
+
+  'apl-ud8/U8.10': [
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$F_i$: \quad $2$ \quad $10$ \quad $22$ \quad $32$`,
+      hadedir: TEX`$F_i$: \quad $4$ \quad $12$ \quad $24$ \quad $34$`,
+      motiu:   TEX`Amb $f_i = 4, 8, 12, 10$ (el gràfic i la mateixa taula), les acumulades són $4, 12, 24, 34$. La mitjana, $\dfrac{294}{34} = 8{,}65$, és correcta.`,
+      marca:   ['u8-activitats/data/full-5.png', 41.0, 14.6, 6.0, 11.6] },
+  ],
+
+  'apl-ud8/U8.35': [
+    { ondiu:   TEX`$H_i$: $0{,}334$; $0{,}401$; $0{,}501$… \quad c) $43{,}2\,\%$ \quad d) $49{,}9\,\%$`,
+      hadedir: TEX`$H_i$: $0{,}333$; $0{,}4$; $0{,}5$… \quad c) $\dfrac{13}{30} = 43{,}3\,\%$ \quad d) $\dfrac{15}{30} = 50\,\%$`,
+      motiu:   TEX`Les $H_i$ s’han fet sumant les $h_i$ arrodonides, i l’error s’acumula. Cal calcular $H_i = \dfrac{F_i}{N}$.`,
+      marca:   [['u8-taules/data/full-2.png', 83.2, 7.5, 5.4, 8.0],
+                ['u8-taules/data/full-2.png', 61.8, 37.2, 33.0, 7.6]] },
+  ],
+
+  'apl-ud8/U8.48': [
+    { ondiu:   TEX`$h_i$: $0{,}1$; $0{,}06$; $0{,}06$; $0{,}08$; $0{,}06$… \quad i \quad $H_i$: $0{,}1$; $0{,}16$; $0{,}222$…`,
+      hadedir: TEX`$h_i = \dfrac{f_i}{1\,030}$: $0{,}097$; $0{,}058$; $0{,}068$; $0{,}078$; $0{,}068$; $0{,}097$; $0{,}117$; $0{,}107$; $0{,}078$; $0{,}068$; $0{,}087$; $0{,}078$`,
+      motiu:   TEX`El total és $N = 1\,030$ cotxes. Les $h_i$ del solucionari no són $\dfrac{f_i}{1\,030}$ ni $\dfrac{f_i}{1\,000}$ (al març i al maig, amb $f = 70$, hi posa $0{,}06$), i les $H_i$ tampoc no quadren.`,
+      marca:   ['u8-taules/data/full-5.png', 81.6, 63.0, 12.8, 35.6] },
+  ],
+
+  'apl-ud8/U8.51': [
+    { lloc:    TEX`l’histograma de freqüències acumulades`,
+      ondiu:   TEX`Barres d’altura $6$, $16$, $28$, $36$ i $40$`,
+      hadedir: TEX`Barres d’altura $3$, $8$, $14$, $18$ i $20$`,
+      motiu:   TEX`Són les $F_i$ de la taula. Les barres del gràfic fan el doble.`,
+      marca:   ['u8-taules/data/full-6.png', 56.5, 16.2, 34.0, 18.0] },
+  ],
+
+  'apl-ud8/U8.59': [
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$\bar{x} = \dfrac{10 + 6 + 24 + x_4\cdot 3}{28}$`,
+      hadedir: TEX`$\bar{x} = \dfrac{10 + 6 + 24 + x_4\cdot 3}{14}$`,
+      motiu:   TEX`$N = 5 + 2 + 4 + 3 = 14$. A la línia següent ja hi ha $14$, i el resultat, $x_4 = 10$, és correcte.`,
+      marca:   ['u8-parametres/data/full-1.png', 72.0, 33.2, 3.8, 2.8] },
+  ],
+
+  'apl-ud8/U8.60': [
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`$5, 5, 6, 6, 6, 7, 7, 8, 8$`,
+      hadedir: TEX`$10$ dades, per exemple: $5, 5, 6, 6, 6, 6, 7, 7, 8, 8$`,
+      motiu:   TEX`L’enunciat demana $10$ dades, i l’exemple en té $9$.`,
+      marca:   ['u8-parametres/data/full-1.png', 56.5, 62.0, 25.0, 2.8] },
+  ],
+
+  'apl-ud8/U8.81': [
+    { lloc:    TEX`a) i b)`,
+      ondiu:   TEX`$1\cdot 1{,}20 + 6\cdot 1{,}50 + 19\cdot 1{,}80 + 7\cdot 2{,}10 = 59{,}10$ € \quad b) $\dfrac{59{,}10}{40{,}75} = 1{,}45$ €/kg`,
+      hadedir: TEX`$0{,}25\cdot 1{,}20 + 4{,}5\cdot 1{,}50 + 23{,}75\cdot 1{,}80 + 12{,}25\cdot 2{,}10 = 75{,}53$ € \quad b) $\dfrac{75{,}53}{40{,}75} = 1{,}85$ €/kg`,
+      motiu:   TEX`El preu és per quilo: cal multiplicar-lo pels quilos de cada classe ($f_i\cdot x_i$), no pel nombre de coliflors. (Amb els pesos exactes, $75{,}08$ € i $1{,}84$ €/kg.)`,
+      marca:   ['u8-informacio/data/full-2.png', 11.5, 19.6, 30.0, 11.6] },
+    { lloc:    TEX`e)`,
+      ondiu:   TEX`$1\cdot 1{,}50 + 10\cdot 1{,}80 + 17\cdot 2{,}10 + 5\cdot 2{,}40 = 67{,}20$ €; \ $1{,}24$ €/kg. «No s’incrementa el preu mitjà per quilo.»`,
+      hadedir: TEX`$0{,}75\cdot 1{,}50 + 12{,}5\cdot 1{,}80 + 29{,}75\cdot 2{,}10 + 11{,}25\cdot 2{,}40 = 113{,}10$ €; \ $\dfrac{113{,}10}{54{,}25} = 2{,}08$ €/kg. El preu mitjà per quilo sí que augmenta.`,
+      motiu:   TEX`La mateixa errada que a l’apartat a): el preu és per quilo. Ara les coliflors pesen més i passen a classes més cares.`,
+      marca:   ['u8-informacio/data/full-2.png', 11.5, 66.0, 30.0, 13.0] },
+  ],
+
+  'apl-ud8/U8.83': [
+    { lloc:    TEX`l’eix de l’histograma`,
+      ondiu:   TEX`$\ldots\ 15 \quad 17 \quad 21 \quad 19 \quad 23$`,
+      hadedir: TEX`$\ldots\ 15 \quad 17 \quad 19 \quad 21 \quad 23$`,
+      motiu:   TEX`Les etiquetes $19$ i $21$ estan intercanviades.`,
+      marca:   ['u8-informacio/data/full-3.png', 37.8, 45.2, 6.0, 2.4] },
+  ],
+
+  'apl-ud8/U8.84': [
+    { enunciat: 1,
+      lloc:    TEX`l’enunciat`,
+      ondiu:   TEX`«$30$ marques d’aigua embotellada», i hi ha $33$ dades`,
+      hadedir: TEX`«$33$ marques d’aigua embotellada»`,
+      motiu:   TEX`La llista té tres files d’$11$ dades, i la solució treballa amb $N = 33$.`,
+      marca:   ['u8-informacio/data/full-3.png', 11.4, 74.6, 10.6, 2.6] },
+    { ondiu:   TEX`$F_1 = 10$`,
+      hadedir: TEX`$F_1 = 9$`,
+      motiu:   TEX`La primera classe té $f_1 = 9$ dades; la resta de la columna ($24$, $32$, $33$) és correcta.`,
+      marca:   ['u8-informacio/data/full-3.png', 78.4, 35.2, 3.4, 2.6] },
+  ],
+
+  'apl-ud8/U8.85': [
+    { enunciat: 1,
+      lloc:    TEX`les taules de l’enunciat`,
+      ondiu:   TEX`$14$ parelles de notes`,
+      hadedir: TEX`$15$ parelles: hi falta la parella A $= 6$, B $= 6$`,
+      motiu:   TEX`L’enunciat parla de $15$ persones. El diagrama de dispersió de la solució té el punt $(6, 6)$, i els apartats c) i e) el fan servir.`,
+      marca:   ['u8-informacio/data/full-4.png', 10.0, 20.4, 23.5, 12.4] },
+  ],
+
+  /* ── 4t ESO Aplicades · UD9 · Atzar i decisions (Santillana U9) ───────── */
+
+  'apl-ud9/U9.42': [
+    { lloc:    TEX`«únicament 3 cavalls»`,
+      ondiu:   TEX`$\dfrac{4}{40}\cdot\dfrac{4}{40}\cdot\dfrac{4}{40} = 0{,}001$ \quad i \quad $\dfrac{4}{40}\cdot\dfrac{3}{39}\cdot\dfrac{2}{38} = 0{,}0004$`,
+      hadedir: TEX`Amb reemplaçament: $4\cdot\left(\dfrac{1}{10}\right)^3\cdot\dfrac{9}{10} = 0{,}0036$. \ Sense: $4\cdot\dfrac{4}{40}\cdot\dfrac{3}{39}\cdot\dfrac{2}{38}\cdot\dfrac{36}{37} \approx 0{,}0016$`,
+      motiu:   TEX`Es treuen $4$ cartes i han de ser cavalls exactament $3$: la quarta no ho ha de ser, i aquesta carta pot sortir en $4$ posicions. La solució calcula la probabilitat que $3$ cartes seguides siguin cavalls.`,
+      marca:   ['u9-activitats/data/full-9.png', 10.0, 2.4, 37.5, 12.4] },
+  ],
+
+  'apl-ud9/U9.76': [
+    { lloc:    TEX`b)`,
+      ondiu:   TEX`«Pelo rubio»: $P = 0{,}46$`,
+      hadedir: TEX`«Pelo moreno»: $P = 0{,}46$`,
+      motiu:   TEX`L’enunciat parla dels joves amb els cabells morens.`,
+      marca:   ['u9-probabilitat/data/full-1.png', 57.5, 48.2, 21.5, 2.8] },
+  ],
+
+  'apl-ud9/U9.88': [
+    { lloc:    TEX`c)`,
+      ondiu:   TEX`$P(C) = \dfrac{6}{8} = 0{,}75$`,
+      hadedir: TEX`$P(C) = \dfrac{7}{8} = 0{,}875$`,
+      motiu:   TEX`«Com a màxim dues creus» és tot menys «tres creus»: $1 - \dfrac{1}{8} = \dfrac{7}{8}$.`,
+      marca:   ['u9-probabilitat/data/full-5.png', 10.0, 10.6, 18.5, 4.4] },
+  ],
+
 };
 
 

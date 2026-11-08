@@ -58,10 +58,42 @@ Comença a finals de novembre de 2026.
       (es demana h = v²/20, no v = √(20h)).
 - [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
 
+## 4t ESO Aplicades · UD7 (Funcions: llegim gràfics)
+
+- [x] U6 · Act. 1–7; ex. 47–55, 58, 78–87, 89, 90 i 100–112. U7 · ex. 35–44, 62–65, 74–77, 83,
+      85–92, 97 i 104. U2 · Act. 40–44; ex. 109–111 (79 fitxes, 38 imatges a `apl-ud7/`). Fora:
+      U6 · 56 (mòdul d'un vector), 57 (trigonometria, F1) i 88 (el solucionari diu «Resuelta en el
+      libro de texto»).
+- [x] Errades de la llista que toquen aquests exercicis: U2 · 42 i 43 b). Noves: U6 · 7 (els punts no
+      es poden unir), 52 f) (−12/15 per −12/5), 82 a) (no hi ha cap tram constant), 89 (la TVR
+      divideix per f(a): −225 %, −225 %, −150 %), 106 (v = 340 i d = 340t), 112 (< 990, no < 900);
+      U7 · 90 (a) i b) intercanviats; 301,4375 i 574,5875); U2 · 110 (10 048,68 € i 10 462,42 €).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
+## 4t ESO Aplicades · UD8 (Estadística)
+
+- [x] U8 · Act. 1–10; ex. 33–63, 67, 69–71, 73–77, 80–85, 88, 89 i la fake news (59 fitxes, 21 imatges
+      a `apl-ud8/`). Fora: 68 i 72 (el solucionari diu «Resuelta en el libro de texto»). Els ex. 75 i 76
+      pregunten també per quartils i percentils (F16), però eren a la llista P10.
+- [x] Errades noves: Act. 7 (21 · 12,5 per 21 · 17,5), 9 a) (Me = 7) i 9 b) (la taula són F, no f),
+      10 b) (F: 4, 12, 24, 34); ex. 35 (H arrodonides: 50 %, no 49,9 %), 48 (h no és f/1 030), 51
+      (histograma acumulat amb el doble d'altura), 59 b) (/14, no /28), 60 b) (9 dades, no 10), 81
+      (el preu és per quilo: 75,53 €, 1,85 €/kg i, a e), 2,08 €/kg), 83 (19 i 21 intercanviats a l'eix),
+      84 (30 marques i n'hi ha 33; F₁ = 9) i 85 (a l'enunciat hi falta la parella 6–6).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
+## 4t ESO Aplicades · UD9 (Atzar i decisions)
+
+- [x] U9 · Act. 1–3, 17, 23–30, 33, 34 i 40–44; ex. 45–48, 57–59, 61, 63–65, 76–82, 84–89, 93 i 96–103
+      (52 fitxes, 22 imatges a `apl-ud9/`). Fora: 83 («Resuelta en el libro de texto»).
+- [x] Errades noves: Act. 42 (exactament 3 cavalls en 4 cartes: 0,0036 i 0,0016), ex. 76 b) («moreno»,
+      no «rubio») i 88 c) (7/8, no 6/8).
+- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+
 ## Les altres UD (vistiplau P1–P3, P5–P6, P8–P11)
 
-- [ ] UD7, UD8, UD9 (i UD1, UD2, UD3 si calen per a repàs): carregar-les unes setmanes abans de
-      fer-les. Següent paquet: la UD7 (P9).
+- [ ] UD1, UD2 i UD3 (P1–P3): són al principi del curs, que ja ha passat; carregar-les si calen per a
+      repàs. Porten les 45 errades de U1–U3 ja detectades (E5). Després, Acadèmiques.
       Les que fan servir U1–U3 de Santillana porten les 45 errades ja detectades (vistiplau E5).
 - [ ] Exercicis propis sense pràctica a Santillana (vistiplau S2–S5): 2.5–2.6 (comptat, terminis o
       crèdit), 8.3 (mitjana ponderada), 9.5 (joc just) i altres continguts propis quan surtin a una
@@ -86,6 +118,12 @@ Comença a finals de novembre de 2026.
       (`ERRADES.md`, apartat 6).
 - [ ] Annex de Polinomis, pàg. 332 del llibre: hi ha dos exercicis numerats 68 (el segon és el 69).
       Per a la llista d'errades de l'editorial.
+- [ ] U7 · 104 (substància radioactiva): «se va desintegrando en cuatro partes iguales al cabo de una
+      hora» i la solució és f(t) = 4ᵗ (el nombre de parts). Si es pensa en la quantitat que queda,
+      seria (1/4)ᵗ. L'enunciat és ambigu: preguntar-ho a l'editorial.
+- [ ] U8 · 48: l'eix del gràfic té els mesos «J A J» (juliol i agost intercanviats), i els valors que
+      llegeix la solució no quadren del tot amb les barres. Mirar-ho amb l'editorial.
+- [ ] U9 · 77: A = «múltiple de 3» no compta el 0 (que també ho és). Criteri a decidir.
 - [ ] L'enllaç a `errades.html` de la portada és comentat (com a `sol`). Destapar-lo quan hi hagi errades
       d'exercicis programats.
 - [ ] Provar el web amb Safari (iPhone) i Firefox. Només s'ha provat amb Chrome.

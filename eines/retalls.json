@@ -215,5 +215,157 @@
         78
       ]
     }
+  },
+  "apl-ud7": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u6-activitats": [
+        156,
+        157,
+        158
+      ],
+      "u6-funcions": [
+        168,
+        169,
+        170,
+        171
+      ],
+      "u6-creixement": [
+        175,
+        176,
+        177,
+        178,
+        179
+      ],
+      "u6-a-trossos": [
+        181,
+        182,
+        183,
+        184,
+        185
+      ],
+      "u7-lineals": [
+        201,
+        202,
+        203,
+        204
+      ],
+      "u7-inversa": [
+        211,
+        212,
+        213
+      ],
+      "u7-exponencial": [
+        217,
+        218,
+        220
+      ],
+      "u7-situacions": [
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        228
+      ],
+      "u2-activitats": [
+        40,
+        41
+      ],
+      "u2-interes": [
+        57,
+        58
+      ]
+    }
+  },
+  "apl-ud8": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u8-activitats": [
+        232,
+        233,
+        234,
+        235,
+        236
+      ],
+      "u8-taules": [
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248
+      ],
+      "u8-parametres": [
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      "u8-informacio": [
+        255,
+        256,
+        257,
+        258,
+        259
+      ]
+    }
+  },
+  "apl-ud9": {
+    "pdf": "source/4ESO_aplicades_-_Solucionario.pdf",
+    "caixa": [
+      40,
+      270,
+      1930,
+      2680
+    ],
+    "temes": {
+      "u9-activitats": [
+        264,
+        265,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273
+      ],
+      "u9-recompte": [
+        274
+      ],
+      "u9-aleatori": [
+        276,
+        277,
+        278
+      ],
+      "u9-probabilitat": [
+        282,
+        283,
+        284,
+        285,
+        286
+      ],
+      "u9-problemes": [
+        287,
+        288,
+        289
+      ]
+    }
   }
 }

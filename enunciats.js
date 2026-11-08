@@ -351,6 +351,115 @@ const ENUNCIATS = {
     apartats: [TEX`$f(x) = x^2 - 3x$`, TEX`$f(x) = 9x^2 - 4$`, TEX`$f(x) = -x^2 + 144$`, TEX`$f(x) = 5x^2 - 4x$`],
     col: 2 },
 
+  /* ── 4t ESO Aplicades · UD7 · Funcions: llegim gràfics ── */
+
+  'apl-ud7/U6.7': {
+    text: TEX`Donada la funció que associa a cada nombre enter la seva quarta part més cinc unitats:`,
+    apartats: [
+      TEX`Troba’n l’expressió algebraica.`,
+      TEX`Completa una taula de valors.`,
+      TEX`Representa-la gràficament. Es poden unir els punts?`],
+    col: 1 },
+
+  'apl-ud7/U6.52': {
+    text: TEX`Per a cadascuna de les funcions, calcula la imatge de $2$, $-2$, $3$, $-3$, $1$ i $-1$.`,
+    apartats: [
+      TEX`$f(x) = 5x^2 - 1$`, TEX`$f(x) = x^3 - 1$`, TEX`$f(x) = \dfrac{1}{x^2 + 2}$`,
+      TEX`$f(x) = x^2 - x - 1$`, TEX`$f(x) = \sqrt{\dfrac{x}{2} + 5}$`, TEX`$f(x) = \dfrac{x^2}{3} - 2x + \dfrac{3}{5}$`],
+    col: 3 },
+
+  'apl-ud7/U6.89': {
+    text: TEX`Troba la taxa de variació relativa a l’interval $[-1, 2]$.`,
+    apartats: [TEX`$y = 3x - 1$`, TEX`$y = 1 - 3x$`, TEX`$y = x^2 - 5x + 2$`],
+    col: 3,
+    despres: TEX`Recorda: $TVR\,[a, b] = \dfrac{f(b) - f(a)}{f(a)}\cdot 100$.` },
+
+  'apl-ud7/U7.89': {
+    text: TEX`Els taxis d’una ciutat cobren $1$ € per baixada de bandera i $0{,}80$ € per cada quilòmetre recorregut.`,
+    apartats: [
+      TEX`Fes una taula que expressi el preu del viatge en funció dels quilòmetres recorreguts.`,
+      TEX`Escriu la funció que relaciona les dues magnituds i representa-la.`],
+    col: 1 },
+
+  'apl-ud7/U7.92': {
+    text: TEX`Els alumnes de 4t d’ESO volen anar de viatge d’estudis. Per aconseguir diners, compren $360$ capses de polvorons, que han de vendre entre tots.`,
+    apartats: [
+      TEX`Fes una taula que relacioni el nombre d’alumnes que van al viatge amb el nombre de capses que ha de vendre cadascun.`,
+      TEX`Escriu-ne l’expressió algebraica i representa la funció.`,
+      TEX`Comprova que el producte del nombre d’alumnes pel nombre de capses és constant. Quin és aquest valor?`],
+    col: 1 },
+
+  'apl-ud7/U2.44': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Què és més rendible: invertir $1\,000$ € durant $3$ anys al $4\,\%$ a interès simple o a interès compost?` },
+
+  /* ── 4t ESO Aplicades · UD8 · Estadística ── */
+
+  'apl-ud8/U8.6': {
+    text: TEX`Organitza en una taula de freqüències aquestes dades sobre el pes, en kg, de $20$ persones: $42$, $51$, $56$, $66$, $75$, $69$, $59$, $50$, $70$, $59$, $47$, $51$, $45$, $63$, $79$, $62$, $54$, $60$, $63$, $58$.`,
+    apartats: [
+      TEX`Representa les dades amb el gràfic més adequat.`,
+      TEX`Calcula’n les mesures de centralització.`],
+    col: 1 },
+
+  'apl-ud8/U8.34': {
+    text: TEX`Les hores diàries d’estudi de $30$ estudiants són: $3$, $4$, $3$, $5$, $5$, $3$, $4$, $5$, $0$, $2$, $2$, $1$, $3$, $2$, $0$, $1$, $1$, $1$, $1$, $2$, $0$, $3$, $2$, $2$, $1$, $1$, $2$, $1$, $4$, $3$.`,
+    apartats: [
+      TEX`Fes el recompte i organitza els resultats en una taula de freqüències.`,
+      TEX`Què volen dir les freqüències acumulades que has calculat?`],
+    col: 1 },
+
+  'apl-ud8/U8.40': {
+    titol: TEX`Repte`,
+    text: TEX`El $15\,\%$ dels estudiants d’una classe són esquerrans i la resta, destres. Quin és el nombre més petit d’estudiants que pot tenir la classe?` },
+
+  'apl-ud8/U8.58': {
+    text: TEX`Calcula la mitjana aritmètica, la mediana i la moda de cada grup de valors.`,
+    apartats: [
+      TEX`$1, 0, 2, 3, 1, 2, 2, 0, 3, 4, 1, 5, 3, 1, 2, 4, 5, 3, 2, 2, 1, 0$`,
+      TEX`$8, 4, 2, 6, 8, 4, 4, 2, 6, 6, 8, 8, 4, 6, 2$`,
+      TEX`$100, 150, 300, 100, 250, 200, 250, 100, 200, 250$`],
+    col: 1 },
+
+  'apl-ud8/U8.70': {
+    titol: TEX`Investiga`,
+    text: TEX`La puntuació mitjana de $27$ estudiants en un test és $84$. Quan l’Ana s’afegeix al grup, la mitjana passa a ser $83$. Quina és la puntuació de l’Ana?` },
+
+  'apl-ud8/U8.89': {
+    text: TEX`Una corredora recorre, de dilluns a divendres, $2$, $5$, $5$, $7$ i $3$ km. Quina distància ha de recórrer dissabte per mantenir la mitjana? I perquè la mediana no variï?` },
+
+  /* ── 4t ESO Aplicades · UD9 · Atzar i decisions ── */
+
+  'apl-ud9/U9.2': {
+    text: TEX`De quantes maneres diferents es poden col·locar les $4$ lletres de la paraula PACO?` },
+
+  'apl-ud9/U9.27': {
+    text: TEX`En una aula hi ha $17$ nois i $19$ noies. Se n’escull una persona a l’atzar. Calcula la probabilitat d’aquests successos:`,
+    apartats: [TEX`«Ser un noi».`, TEX`«Ser una noia».`],
+    col: 2 },
+
+  'apl-ud9/U9.33': {
+    text: TEX`Es llancen dos daus i se sumen els punts obtinguts. Calcula la probabilitat que la suma:`,
+    apartats: [TEX`Sigui $3$.`, TEX`No sigui $7$.`, TEX`Sigui més petita que $11$.`, TEX`Sigui $4$ o $5$.`],
+    col: 2 },
+
+  'apl-ud9/U9.41': {
+    text: TEX`Es llancen $3$ monedes enlaire. Construeix el diagrama d’arbre i calcula aquestes probabilitats:`,
+    apartats: [
+      TEX`$P(\text{3 cares})$`, TEX`$P(\text{0 cares})$`, TEX`$P(\text{4 cares})$`, TEX`$P(\text{2 creus i 1 cara})$`,
+      TEX`$P(\text{2 cares i 1 creu})$`, TEX`$P(\text{1 creu})$`, TEX`$P(\text{almenys 2 cares})$`, TEX`$P(\text{com a màxim 1 cara})$`],
+    col: 2 },
+
+  'apl-ud9/U9.58': {
+    text: TEX`A una reunió hi van $10$ persones. Quantes encaixades de mans hi haurà si cadascuna saluda la resta una vegada?` },
+
+  'apl-ud9/U9.93': {
+    text: TEX`En una urna hi ha $4$ boles vermelles i $6$ de blanques. Si se’n treuen $2$ boles una darrere l’altra, calcula la probabilitat d’aquests successos:`,
+    apartats: [
+      TEX`«Treure dues boles blanques».`, TEX`«Treure una bola blanca i una de vermella».`,
+      TEX`«Treure almenys una bola vermella».`, TEX`«No treure cap bola vermella».`],
+    col: 1 },
+
   /* ── 4t ESO Aplicades · UD10 · Sistemes d'equacions i inequacions (Santillana U4) ── */
 
   'apl-ud10/U4.24': {

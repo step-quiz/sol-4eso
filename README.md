@@ -24,7 +24,9 @@ visibles, la portada hi entra directament.
 (U5 i U7) i 33 del llibre propi amb la solució. **UD11** (*Idea de polinomi*): 19 exercicis de l'annex
 de Polinomis. **UD5** (*Equacions de 2n grau*): 49 exercicis de la U3, la U7 i l'annex de Polinomis
 (igualtats notables). **UD10** (*Sistemes*): 79 exercicis de la U4, la U3 (inequacions i problemes), la U2 (mòbils) i la
-U7. **UD6** (*La paràbola*): 25 exercicis de la U7, la U6 i la U3. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres UD es carregaran unes
+U7. **UD6** (*La paràbola*): 25 exercicis de la U7, la U6 i la U3. **UD7** (*Funcions: llegim
+gràfics*): 79 exercicis de la U6, la U7 i la U2 (interès compost). **UD8** (*Estadística*): 59 exercicis de la U8.
+**UD9** (*Atzar i decisions*): 52 exercicis de la U9. Falten les setmanes de debò (`tasques.js`) i les pistes; les altres UD es carregaran unes
 setmanes abans de fer-les. Vegeu `TODO.md`.
 
 ## Com programo la feina
@@ -142,6 +144,15 @@ apl-ud6/                     ← Aplicades, UD6 · La paràbola
   u6-activitats/data/…, u6-problemes/data/…   U6, punts de tall
   u3-equacions/data/…        U3, 45
   enunciats/U7.86.png        figures dels enunciats
+apl-ud7/                     ← Aplicades, UD7 · Funcions: llegim gràfics
+  u6-activitats/data/…       Santillana U6, activitats 1–7
+  u6-funcions/data/…, u6-creixement/data/…, u6-a-trossos/data/…   U6, activitats finals 47–112
+  u7-lineals/data/…, u7-inversa/data/…, u7-exponencial/data/…, u7-situacions/data/…   U7
+  u2-activitats/data/…, u2-interes/data/…   U2, interès compost
+apl-ud8/                     ← Aplicades, UD8 · Estadística (Santillana U8)
+  u8-activitats/data/…, u8-taules/data/…, u8-parametres/data/…, u8-informacio/data/…
+apl-ud9/                     ← Aplicades, UD9 · Atzar i decisions (Santillana U9)
+  u9-activitats/data/…, u9-recompte/data/…, u9-aleatori/data/…, u9-probabilitat/data/…, u9-problemes/data/…
 eines/
   retalla.py, retalls.json   ← fan les imatges d'una unitat a partir del PDF de source/
   figura.py                  ← retalla una figura del PDF per a un enunciat (apl-ud10/enunciats/…)
@@ -208,7 +219,7 @@ const PISTES = {
 El solucionari té errades. Les dels exercicis programats van a **`errades.js`**, amb la mateixa clau
 que les pistes. El sistema és el de `sol`, sencer: avís a la llista de la tasca, targeta «On diu /
 Ha de dir» dins de l'exercici, requadre vermell sobre la imatge (`marca`) i, si es fa, la imatge ja
-corregida (`pegat`). Ara n'hi ha a la UD4, la UD11, la UD5 i la UD6. Com s'escriuen: `ERRADES.md`.
+corregida (`pegat`). Ara n'hi ha a totes les UD carregades menys la UD10. Com s'escriuen: `ERRADES.md`.
 
 ## Les proves
 
