@@ -227,11 +227,20 @@ descuits, no estil. No les copiïs.
 - **Les pistes les escriu o les revisa el professor.** Ara mateix `hints.js` és buit. No es reescriu cap pista
   seva si ell no ho demana. Una errada d'escriptura o de format no es corregeix en silenci: s'enumera, i es
   corregeix quan ell ho diu.
-- **Flux de treball.** Com a `sol`: el professor edita les pistes amb un artifact «Editor de pistes» (que parteix
-  de `hints.js`). Si Claude proposa pistes noves, les deixa com a **esborranys a la base de dades de l'artifact**
-  (col·lecció `hints`, document `apl-ud10_U4.24`, camps `key` i `text`) perquè ell les revisi; Claude no les posa a
-  `hints.js` si no li ho demana. Abans de tornar a escriure un esborrany, comprova que la versió del document
-  encara és la que va escriure Claude (si el professor l'ha tocat, no el trepitgis).
+- **Flux de treball.** Com a `sol`: el professor edita les pistes amb l'artifact «Editor de pistes · 4t ESO»
+  (https://claude.ai/artifact/HwSFxGF2DzqWXi7sDkedT8), que porta l'enunciat de cada exercici programat. Si Claude
+  proposa pistes noves, les deixa com a **esborranys a la base de dades de l'artifact** (col·lecció `hints`,
+  document `apl-ud10_U4.24`) perquè ell les revisi; Claude no les posa a `hints.js` si no li ho demana. Camps del
+  document: `key`, `text` (la versió actual), `claude` (l'esborrany original de Claude, que no es toca), `estat`
+  (`bona`, `parlem`, `fora` o buit), `comentari` (del professor) i `resposta` (de Claude, que l'Editor mostra a
+  sota del comentari). Abans de tornar a escriure un document, comprova que la versió encara és la que va escriure
+  Claude (si el professor l'ha tocat, no el trepitgis): escriu sempre amb `if_version`.
+- **«Revisa artifact».** Claude llegeix la col·lecció, compara `text` amb `claude` a cada pista, respon al camp
+  `resposta` (què n'aprèn i, sense corregir-los, els descuits que hi veu) i apunta les lliçons a «Què s'ha après
+  dels esborranys».
+- **`estat: parlem` («En parlem»)** vol dir: «compara el teu text amb el meu i entén per què el meu és millor».
+  No espera una discussió: espera que la `resposta` expliqui el **perquè** del canvi (què hi veu un professor que
+  la màquina no hi veia), no només què ha canviat.
 - Quan el professor dona per bones les pistes, Claude les passa a `hints.js` (i a la base de l'Editor) i passa
   `node eines/comprova.js`, que valida el format de cada pista.
 - Quan el professor retoca els esborranys, Claude compara la seva versió amb la final i afegeix aquí, a
@@ -250,7 +259,37 @@ descuits, no estil. No les copiïs.
 
 ### Què s'ha après dels esborranys
 
-*(De `sol`, 2n de Batxillerat. Quan hi hagi esborranys de 4t d'ESO, s'hi afegeixen al davant.)*
+*(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 1, 9/11/2026)**:
+  - **El perquè de fons.** Claude escrivia des del contingut matemàtic i ho explicava tot; el professor escriu
+    des del que l'alumne ja sap i ja ha viscut (la fotocopiadora, els percentatges de la UD2, la proporció directa
+    de la UD3) i li deixa el pas central. Plantejar la proporció *és* l'exercici: si la pista l'escriu, no queda
+    res per pensar. Quan l'alumne s'equivoca, no li diu la regla: li fa *sentir* l'absurd amb un cas que es pot
+    imaginar. I primer el raonament, després el càlcul, que només el comprova.
+  - Una situació quotidiana que l'alumne coneix val més que una definició: la **fotocòpia ampliada** per a la
+    semblança i la raó de semblança (4.1.2, U5.64). I l'enllaça amb els percentatges de la UD2: «una fotocòpia
+    amb un 20% d'augment, llavors *k* = 1,2»; «*r* = 1,6… posaries l'ampliació del 60%».
+  - Fa servir el vocabulari de les unitats anteriors: «**proporció directa**» (UD3), no «són proporcionals»
+    (4.1.3, 4.2.2).
+  - No dicta el plantejament: treu la igualtat de fraccions («l'altura dividida per l'ombra…»), «anomenem *h*…
+    aïlla *h*» i l'<b>Atenció</b> sobre l'ordre de les fraccions. Diu que hi ha proporció directa i que, per tant,
+    «podem escriure una equació i podem trobar el que ens demanen»; l'equació la munta l'alumne (4.1.3, 4.2.2).
+  - Treu les comprovacions d'estimació del final («com ha de ser la torre comparada amb la seva ombra?»,
+    «comprova que els tres costats són més llargs») i les frases d'enganxada («Com en tots els problemes
+    d'ombres»).
+  - Quan hi ha un raonament curt, el posa com a camí principal en lloc del càlcul: «Pensa amb lògica: dels dos
+    triangles que has obtingut, un és el doble de l'original, i l'altre és la meitat. Quant creus que val la raó
+    de semblança?» (U5.57 c). La pregunta final de Claude («saps per què la podies endevinar?») era el camí bo.
+  - **Caça l'error** (refutar el raonament d'un company): primer reconeix el que és cert («És veritat que l'ombra
+    de l'arbre fa 3,9 m més que l'ombra del pal, però…»), després un **contraexemple extrem i creïble** (al
+    migdia, dues ombres gairebé iguals) i una pregunta «Tu creus que…?». No anomena el que falla (el quocient):
+    hi ha d'arribar l'alumne. Els números inventats hi són vàlids perquè fan de contraexemple (4.1.5).
+  - To oral, amb incisos («sempre que sigui al mateix instant, és clar») i la primera persona del plural
+    («podem escriure una equació», «el que ens demanen»).
+  - Una pista curta i clara la deixa tal com és (4.2.1).
+  - Descuits seus d'aquesta tanda (no són estil): punts finals que falten, «al pla» per «al pal», salts de línia
+    fets amb Enter en lloc de `<br>`, nombres en cursiva, un `<br>` al final.
 
 - **Què s'ha après dels esborranys de la u14**:
   - Retalla les preguntes que demanen un recompte o una deducció intermèdia («quants termes tindràs?»,
