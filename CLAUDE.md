@@ -261,6 +261,24 @@ descuits, no estil. No les copiïs.
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
 
+- **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 2, 9/11/2026)**: 3 de 8 sense
+  canvis (U5.81, 4.3.6 i, de la setmana 1, 4.2.1). Les lliçons de la setmana 1 ja funcionen; ara afina:
+  - **El mateix nom per a la mateixa eina, cada vegada**: «proporció directa» també al mirall i al riu (4.2.4,
+    4.2.7). Si tots els exercicis porten la mateixa etiqueta, l'alumne veu que són el mateix problema. «Posa cada
+    dada al seu lloc» converteix l'exercici en omplir forats: fora.
+  - **«Fes un esquema» / «Fes un dibuix»**: una acció concreta en lloc de «pensa bé» (4.3.2, 4.2.7). Els
+    elements que cal dibuixar, en llista «- ».
+  - L'objectiu es diu amb les dades, no amb l'operació algebraica: «l'has de trobar a partir de la hipotenusa i
+    l'altre catet», no «aïlla'l de la igualtat» (4.3.1). No repeteix definicions ja repassades a l'«Escalfem el
+    cap» (què és la hipotenusa).
+  - Passos explícits i separats: «Finalment, amb el valor de *k*, podràs trobar els costats del triangle gran»
+    (U5.65). Noms que no deixen dubte («el triangle gran», no «els tres costats»).
+  - Precisió: «tenen en comú el vèrtex *B*», no «es toquen pel punt *B*» (4.2.7).
+  - **Caça l'error, afinat**: el «És veritat que…» només hi va si diu alguna cosa (4.3.6: triangle rectangle i
+    Pitàgores, d'acord); si no, comença directament per l'absurd. I després de l'absurd assenyala **on** és
+    l'error sense dir quin és: «Segurament el company no ha escrit correctament la proporció» (4.2.5).
+  - Descuits seus: espai abans dels dos punts, «quin del tres».
+
 - **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 1, 9/11/2026)**:
   - **El perquè de fons.** Claude escrivia des del contingut matemàtic i ho explicava tot; el professor escriu
     des del que l'alumne ja sap i ja ha viscut (la fotocopiadora, els percentatges de la UD2, la proporció directa
