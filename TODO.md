@@ -21,7 +21,7 @@ continguts 4t A ↔ Santillana» (punts P1–P11) i, més detallada, al doc «Ma
 - [x] Llibre propi (S2): 2.5.1–2.5.6 i 2.6.1–2.6.5 (11 fitxes), amb l'enunciat i la solució en KaTeX.
       Fora: els «Per al Quadern d'eines». En total, 44 fitxes.
 - [x] Cinc setmanes (S5–S9) amagades, per al curs 2027-28.
-- [ ] Quan es facin visibles les tasques de la UD1 i la UD2: transcriure els enunciats que falten (`comprova.js` avisa).
+- [x] Enunciats en català de les tasques amagades de la UD1 i la UD2 (es veuen amb `?tot=1`).
 
 ## 4t ESO Aplicades · UD3 (Proporcionalitat i escales)
 

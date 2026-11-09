@@ -441,7 +441,7 @@ const ENUNCIATS = {
   'apl-ud9/U9.33': {
     text: TEX`Es llancen dos daus i se sumen els punts obtinguts. Calcula la probabilitat que la suma:`,
     apartats: [TEX`Sigui $3$.`, TEX`No sigui $7$.`, TEX`Sigui més petita que $11$.`, TEX`Sigui $4$ o $5$.`],
-    col: 2 },
+    col: 1 },
 
   'apl-ud9/U9.41': {
     text: TEX`Es llancen $3$ monedes enlaire. Construeix el diagrama d’arbre i calcula aquestes probabilitats:`,
@@ -574,7 +574,7 @@ const ENUNCIATS = {
     titol: TEX`Interès simple`,
     text: TEX`Calcula l’interès de:`,
     apartats: [TEX`$2\,000$ € al $6\,\%$ durant $3$ anys`, TEX`$800$ € al $10\,\%$ durant $1$ any`],
-    col: 2,
+    col: 1,
     solucio: [TEX`a) $2\,000\cdot 0{,}06\cdot 3 = 360$ €`,
               TEX`b) $800\cdot 0{,}10\cdot 1 = 80$ €`] },
 
@@ -607,7 +607,7 @@ const ENUNCIATS = {
     titol: TEX`Escalfem el cap`,
     text: TEX`Calcula el cost total de:`,
     apartats: [TEX`entrada $100$ € $+$ $6$ quotes de $30$ €`, TEX`$10$ quotes de $25$ €`],
-    col: 2,
+    col: 1,
     solucio: [TEX`a) $100 + 6\cdot 30 = 280$ €`,
               TEX`b) $10\cdot 25 = 250$ €`] },
 
@@ -922,7 +922,8 @@ const ENUNCIATS = {
 
   'apl-ud10/U3.24': {
     text: TEX`Resol aquestes inequacions.`,
-    apartats: [TEX`$2x - 3x + 5 > 6x - 1$`, TEX`$-2x < 2x - 4$`, TEX`$2x > 4x + 2$`, TEX`$5x \le x + 5$`, TEX`$7 - 2x < -4$`, TEX`$x + 1 < 2x - 1$`, TEX`$4x \ge 1 - x$`, TEX`$-2x \ge 0$`] },
+    apartats: [TEX`$2x - 3x + 5 > 6x - 1$`, TEX`$-2x < 2x - 4$`, TEX`$2x > 4x + 2$`, TEX`$5x \le x + 5$`, TEX`$7 - 2x < -4$`, TEX`$x + 1 < 2x - 1$`, TEX`$4x \ge 1 - x$`, TEX`$-2x \ge 0$`],
+    col: 1 },
 
   'apl-ud10/U3.59': {
     text: TEX`Opera i resol aquestes inequacions.`,
@@ -1164,6 +1165,175 @@ const ENUNCIATS = {
   'apl-ud9/U9.102': {
     titol: TEX`Investiga`,
     text: TEX`Dos jugadors de bàsquet tenen un percentatge d’encert del $50$ % en tirs lliures. Juguen alternant els tirs fins que un dels dos anoti. Quin avantatge té el primer que llança?` },
+
+  /* ── Enunciats de les tasques UD1 i UD2 (amagades fins al curs 2027-28) ── */
+
+  'apl-ud1/U1.4': {
+    text: TEX`Considera les arrels quadrades dels nombres naturals de l’$1$ al $20$ i indica quines són nombres racionals i quines són nombres irracionals.` },
+
+  'apl-ud1/U1.5': {
+    text: TEX`Indica de quin tipus són aquests nombres.`,
+    apartats: [TEX`$1{,}232323\ldots$`, TEX`$-0{,}246810$`, TEX`$\sqrt{13}$`, TEX`$0{,}135791113$`] },
+
+  'apl-ud1/U1.6': {
+    text: TEX`Escriu quatre nombres irracionals i explica per què ho són.` },
+
+  'apl-ud1/U1.40': {
+    text: TEX`Digues quines de les arrels quadrades de l’$1$ al $20$ són nombres racionals i quines, irracionals.` },
+
+  'apl-ud1/U1.41': {
+    text: TEX`Esbrina quins d’aquests nombres són racionals i quins, irracionals.`,
+    apartats: [TEX`$24{,}232323\ldots$`, TEX`$1 + \sqrt{8}$`, TEX`$\sqrt{1 + 8}$`, TEX`$2\sqrt[4]{4}$`, TEX`$\left(\sqrt[4]{4}\right)^2$`, TEX`$\pi^2$`] },
+
+  'apl-ud1/U1.23': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Calcula la diagonal d’un rectangle de costats $8$ cm i $10$ cm. Quina classe de nombre s’obté? Arrodoneix el resultat a les mil·lèsimes.` },
+
+  'apl-ud1/U1.46': {
+    text: TEX`En un triangle equilàter, calcula i determina de quin tipus de nombre es tracta:`,
+    apartats: [TEX`L’altura, si el costat fa $10$ cm.`, TEX`L’àrea, si el costat fa $3$ cm.`, TEX`L’altura i l’àrea, si el costat fa $\sqrt{3}$ cm.`],
+    col: 1 },
+
+  'apl-ud1/U1.8': {
+    text: TEX`Representa aquests nombres reals.`,
+    apartats: [TEX`$\sqrt{10}$`, TEX`$1{,}\widehat{3}$`, TEX`$\sqrt{13}$`, TEX`$-2{,}334445555\ldots$`, TEX`$2\pi$`, TEX`$1{,}25$`] },
+
+  'apl-ud1/U1.10': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Observa aquesta recta real i escriu:`,
+    fig: ['enunciats/U1.10.png'],
+    apartats: [TEX`Dos nombres enters entre $A$ i $C$.`, TEX`Tres nombres racionals no enters entre $B$ i $C$.`, TEX`Tres nombres irracionals entre $C$ i $D$.`],
+    col: 1 },
+
+  'apl-ud1/U1.43': {
+    text: TEX`Representa aquestes arrels a la recta real.`,
+    apartats: [TEX`$\sqrt{3}$`, TEX`$\sqrt{6}$`, TEX`$\sqrt{38}$`, TEX`$1 + \sqrt{37}$`] },
+
+  'apl-ud1/U1.20': {
+    text: TEX`Trunca i arrodoneix a les centèsimes.`,
+    apartats: [TEX`$24{,}1587$`, TEX`$24{,}1507$`, TEX`$24{,}9215$`, TEX`$24{,}1582$`, TEX`$24{,}1617$`, TEX`$24{,}1627$`],
+    col: 3 },
+
+  'apl-ud1/U1.21': {
+    text: TEX`Una professora decideix arrodonir les notes de $10$ estudiants. Quines notes els posarà?`,
+    despres: TEX`$\begin{array}{ccccc} 3{,}8 & 6{,}4 & 9{,}7 & 4{,}3 & 5{,}8\\ 8{,}4 & 9{,}7 & 2{,}3 & 3{,}8 & 6{,}4 \end{array}$` },
+
+  'apl-ud1/U1.22': {
+    text: TEX`Aproxima $0{,}121212\ldots$; $5{,}23888\ldots$ i $\dfrac{11}{9}$ per arrodoniment i per truncament amb dues xifres decimals.` },
+
+  'apl-ud1/U1.83': {
+    text: TEX`Fes aquestes operacions i arrodoneix els resultats a les dècimes. Després, arrodoneix cada nombre a les dècimes i resol l’operació. Amb quin procediment es comet un error menor?`,
+    apartats: [TEX`$3{,}253 + 8{,}45$`, TEX`$53{,}32 - 18{,}93$`, TEX`$13{,}5 \cdot 2{,}7$`, TEX`$40{,}92 : 5{,}3$`] },
+
+  'apl-ud1/U1.11': {
+    text: TEX`Indica el conjunt numèric al qual pertany cada nombre.`,
+    apartats: [TEX`$8{,}0999\ldots$`, TEX`$-11$`, TEX`$2{,}5$`, TEX`$-\dfrac{1}{5}$`, TEX`$6{,}\widehat{126}$`, TEX`$1{,}223334444\ldots$`, TEX`$\sqrt{15}$`, TEX`$\dfrac{8}{7}$`, TEX`$\pi$`],
+    col: 3 },
+
+  'apl-ud1/U1.12': {
+    text: TEX`Decideix el menor conjunt numèric al qual pertany cadascun d’aquests nombres.`,
+    apartats: [TEX`$-5$`, TEX`$\sqrt{2}$`, TEX`$\dfrac{3}{5}$`, TEX`$\sqrt{625}$`, TEX`$3\pi$`, TEX`$-37$`, TEX`$\sqrt{\dfrac{1125}{5}}$`, TEX`$21{,}\widehat{463}$`] },
+
+  'apl-ud1/U1.50': {
+    text: TEX`Classifica cada nombre en el menor conjunt numèric al qual pertany.`,
+    apartats: [TEX`$\pi$`, TEX`$-7$`, TEX`$6{,}\widehat{72}$`, TEX`$418$`],
+    col: 4 },
+
+  'apl-ud1/U1.52': {
+    text: TEX`Indica tots els conjunts numèrics als quals pertanyen aquests nombres.`,
+    apartats: [TEX`$\sqrt{17} + 8$`, TEX`$\sqrt{17 + 8}$`, TEX`$8 - \sqrt{17}$`, TEX`$\sqrt{17 - 8}$`, TEX`$4 - \sqrt{20}$`, TEX`$20 - \sqrt{4}$`, TEX`$\sqrt{20 - 4}$`, TEX`$4 + \sqrt{20}$`] },
+
+  'apl-ud1/U1.53': {
+    text: TEX`Classifica aquests nombres reals. Expressa’ls en forma decimal i ordena’ls de menor a major.`,
+    apartats: [TEX`$5$; $\dfrac{7}{3}$; $2\sqrt{5}$; $\dfrac{7}{9}$; $\dfrac{8}{5}$`, TEX`$\sqrt{8}$; $6 - \sqrt{3}$; $\dfrac{35}{90}$; $\dfrac{\sqrt{12}}{2}$`],
+    col: 1 },
+
+  'apl-ud1/U1.60': {
+    text: TEX`Opera i indica quin tipus de nombre real resulta.`,
+    apartats: [TEX`$\sqrt{2{,}\widehat{7}}$`, TEX`$4{,}0\widehat{9} - 1{,}3\widehat{9}$`, TEX`$5{,}4\widehat{3} \cdot 1{,}\widehat{2}$`, TEX`$\sqrt{\dfrac{1{,}\widehat{3}}{3}}$`] },
+
+  'apl-ud1/U1.FN': {
+    titol: TEX`Fake news: tanta gent hi havia?`,
+    text: TEX`Mario Vargas Llosa explica, a la novel·la «El Paraíso en la otra esquina», que en un acte la protagonista va descobrir que tres quartes parts dels assistents eren patrons i només un terç, obrers. A mi no em surten els comptes… I tu, què en penses?` },
+
+  'apl-ud1/U1.82': {
+    titol: TEX`Matemàtiques i… història`,
+    text: TEX`Observa aquestes aproximacions de $\pi = 3{,}14159265\ldots$:`,
+    punts: [TEX`Antic Egipte (1800 aC): $\left(\dfrac{4}{3}\right)^4$`, TEX`Grècia (s. III aC), Arquimedes: $\dfrac{22}{7}$`, TEX`Egipte (s. II dC), Ptolemeu: $\dfrac{377}{120}$`, TEX`Xina (s. V dC), Tsu Chung Chih: $\dfrac{355}{113}$`],
+    despres: TEX`Arrodoneix les aproximacions a les milionèsimes i troba l’error absolut i el relatiu. Quina és la més precisa?` },
+
+  'apl-ud2/U2.27': {
+    text: TEX`Calcula el percentatge d’estudiants, d’un total de $432$, que fan aquestes activitats extraescolars.`,
+    apartats: [TEX`$54$ estudiants juguen a bàsquet.`, TEX`$144$ estudiants toquen un instrument musical.`, TEX`$62$ estudiants participen en el club de lectura.`],
+    col: 1 },
+
+  'apl-ud2/U2.29': {
+    titol: TEX`Reflexiona`,
+    text: TEX`L’Agnès cull $70$ tones de cereal, que ven a $323$ € la tona de gra i a $15$ € la tona de palla. Si la palla representa el $60$ % del pes total del cereal, calcula els diners que obté.` },
+
+  'apl-ud2/U2.30': {
+    text: TEX`La natalitat d’una població ha baixat un $12{,}5$ %. Si aquest any han nascut $98$ nadons, quants en van néixer l’any passat?` },
+
+  'apl-ud2/U2.89': {
+    text: TEX`Quin percentatge hi ha en aquestes expressions?`,
+    apartats: [TEX`Tres de cada vint persones s’adormen als viatges.`, TEX`Vuit de cada deu establiments tanquen a les 20:00 h.`, TEX`Dos de cada cinc cotxes tenen més de $10$ anys.`, TEX`Un de cada dos pastissos porta xocolata.`, TEX`Set de cada cinquanta pacients no es recuperen amb el primer tractament.`],
+    col: 1 },
+
+  'apl-ud2/U2.90': {
+    text: TEX`Calcula aquests percentatges de $300$.`,
+    apartats: [TEX`$50$ %`, TEX`$10$ %`, TEX`$100$ %`, TEX`$200$ %`, TEX`$25$ %`, TEX`$11$ %`],
+    col: 3 },
+
+  'apl-ud2/U2.91': {
+    text: TEX`En una època de sequera, un embassament amb una capacitat màxima de $200$ hm³ era al $45$ % de la seva capacitat. Quina quantitat d’aigua contenia en aquell moment?` },
+
+  'apl-ud2/U2.31': {
+    text: TEX`Després d’augmentar una quantitat un $12$ %, se’n calcula el $20$ % i s’obté $112$. Calcula la quantitat.` },
+
+  'apl-ud2/U2.33': {
+    text: TEX`En augmentar el preu d’un producte un $28$ % i després rebaixar-lo un $12$ %, obtenim un preu final de $527{,}85$ €. Quin era el preu inicial?` },
+
+  'apl-ud2/U2.96': {
+    text: TEX`El nombre d’estudiants d’un institut ha disminuït un $20$ % respecte a l’any anterior. Si actualment n’hi ha $1\,500$:`,
+    apartats: [TEX`Quants estudiants es van matricular l’any anterior?`, TEX`En quant ha disminuït la matrícula?`],
+    col: 1 },
+
+  'apl-ud2/U2.99': {
+    text: TEX`Quants diners cal augmentar el preu d’aquests articles perquè tinguin una pujada del $24$ %?`,
+    apartats: [TEX`Pa: $0{,}60$ €/unitat.`, TEX`Llet: $1{,}10$ €/ℓ.`, TEX`Ous: $2{,}42$ €/dotzena.`, TEX`Pomes: $2{,}30$ €/kg.`] },
+
+  'apl-ud2/U2.32': {
+    text: TEX`El Raül va comprar un cotxe que costava $18\,000$ €, i li van fer un descompte del $20$ %. A aquest preu se li va sumar un $21$ % d’IVA. Quin preu va pagar finalment pel cotxe?` },
+
+  'apl-ud2/U2.97': {
+    text: TEX`Comprem un televisor que costa $240$ € sense IVA. El dependent ens proposa un descompte del $20$ % d’aquesta quantitat i, després, hi afegeix un $21$ % d’IVA. Quants diners hem de pagar?` },
+
+  'apl-ud2/U2.98': {
+    text: TEX`Un minorista compra un lot d’articles a un preu unitari de $15$ €. Si vol obtenir un guany del $20$ %, a quant ha de vendre cada article?` },
+
+  'apl-ud2/U2.104': {
+    text: TEX`Compro uns pantalons de $38$ €. Em fan un descompte del $25$ %, però al preu rebaixat cal afegir-hi un $21$ % d’IVA. Quin preu hauré de pagar?` },
+
+  'apl-ud2/U2.105': {
+    text: TEX`Un fabricant elabora un producte que ven a un magatzemista per $3\,000$ €. El magatzemista paga un $21$ % d’IVA i el ven a una botiga per $5\,000$ €. La propietària de la botiga paga un $21$ % d’IVA i ven el producte al públic per $6\,000$ €, més el $21$ % d’IVA.`,
+    apartats: [TEX`Quant paga d’IVA cada intermediari?`, TEX`Quin és l’IVA que paga, finalment, el consumidor?`, TEX`Quin tant per cent representa l’IVA que paga el consumidor?`],
+    col: 1 },
+
+  'apl-ud2/U2.37': {
+    text: TEX`Si faig una inversió al $4{,}5$ % durant $2$ anys en un producte a interès simple, quin és el capital que he invertit si el capital que em tornen puja a $2\,346$ €?` },
+
+  'apl-ud2/U2.38': {
+    text: TEX`La Laura demana un préstec de $4\,000$ € i torna $5\,080$ € en un pagament únic amb interessos al cap de $3$ anys. Sabent que és un interès simple, calcula el rèdit del préstec.` },
+
+  'apl-ud2/U2.39': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Quant de temps he de mantenir $3\,000$ € en un dipòsit a interès simple amb un rèdit del $3$ % per obtenir uns interessos de $225$ €?` },
+
+  'apl-ud2/U2.FN': {
+    titol: TEX`Fake news: la calefacció està pels núvols!`,
+    text: TEX`A l’última reunió, la presidenta de la comunitat ens va avisar que enguany el preu del gasoil per a la caldera de calefacció ha pujat:`,
+    punts: [TEX`Un $10$ % al gener.`, TEX`Un $10$ % al febrer.`, TEX`Un $10$ % al març.`],
+    despres: TEX`És a dir, en el que portem d’any, el preu del gasoil ha pujat un $30$ %, i si continua així haurà pujat un $120$ % a final d’any. Per tant, a l’octubre pagaríem el doble que al gener i, al desembre, més del doble. A la pròxima junta s’haurà de decidir si continuem encenent la calefacció, perquè és possible que alguns veïns no puguin fer front a aquesta nova despesa. I tu, què en penses?` },
 };
 
 /* ── Funcions (no cal tocar-les) ─────────────────────────────────────── */
