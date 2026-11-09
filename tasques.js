@@ -5,10 +5,23 @@ const TASQUES = [
 
   /* EXEMPLES: amagats (visible:'mai'). Es veuen només amb  index.html?tot=1 .
      Quan tinguis les setmanes de la UD4, substitueix-los per les de debò.   */
-  { unitat:'apl-ud1',  setmana:1, limit:'2026-10-04', visible:'mai',
-    exercicis:['U1.45', 'U1.57', 'U1.90', 'U1.97', 'U1.99', 'U1.101'] },
-  { unitat:'apl-ud2',  setmana:1, limit:'2026-10-25', visible:'mai',
-    exercicis:['U2.28', 'U2.35', 'U2.36', 'U2.92', 'U2.94', 'U2.103', '2.5.2', '2.6.3'] },
+  /* UD1 i UD2: setmanes de 2026-27 ja passades. Amagades (visible:'mai'); per al curs 2027-28, canvia les dates i treu visible. */
+  { unitat:'apl-ud1',  setmana:1, limit:'2026-09-20', visible:'mai',
+    exercicis:['U1.4', 'U1.5', 'U1.6', 'U1.40', 'U1.41', 'U1.23', 'U1.46'] },
+  { unitat:'apl-ud1',  setmana:2, limit:'2026-09-27', visible:'mai',
+    exercicis:['U1.8', 'U1.10', 'U1.43', 'U1.45', 'U1.20', 'U1.21', 'U1.22', 'U1.83'] },
+  { unitat:'apl-ud1',  setmana:3, limit:'2026-10-04', visible:'mai',
+    exercicis:['U1.11', 'U1.12', 'U1.50', 'U1.52', 'U1.53', 'U1.60', 'U1.FN', 'U1.82'] },
+  { unitat:'apl-ud2',  setmana:1, limit:'2026-10-11', visible:'mai',
+    exercicis:['U2.27', 'U2.28', 'U2.29', 'U2.30', 'U2.89', 'U2.90', 'U2.91'] },
+  { unitat:'apl-ud2',  setmana:2, limit:'2026-10-18', visible:'mai',
+    exercicis:['U2.31', 'U2.33', 'U2.35', 'U2.92', 'U2.96', 'U2.99'] },
+  { unitat:'apl-ud2',  setmana:3, limit:'2026-10-25', visible:'mai',
+    exercicis:['U2.32', 'U2.97', 'U2.98', 'U2.103', 'U2.104', 'U2.105'] },
+  { unitat:'apl-ud2',  setmana:4, limit:'2026-11-01', visible:'mai',
+    exercicis:['U2.36', 'U2.37', 'U2.38', 'U2.39', '2.5.1', '2.5.2', '2.5.3', '2.5.4'] },
+  { unitat:'apl-ud2',  setmana:5, limit:'2026-11-08', visible:'mai',
+    exercicis:['2.5.5', '2.6.1', '2.6.2', '2.6.3', '2.6.4', '2.6.5', 'U2.94', 'U2.FN'] },
   { unitat:'apl-ud3',  setmana:1, limit:'2026-11-15', visible:'mai',
     exercicis:['U2.48', 'U2.59', 'U5.28', 'U5.34', 'U5.67', 'U5.69'] },
   { unitat:'apl-ud4',  setmana:1, limit:'2026-11-29', visible:'mai',

@@ -12,7 +12,7 @@ continguts 4t A ↔ Santillana» (punts P1–P11) i, més detallada, al doc «Ma
       Els ex. 82, 87, 88 i 89 demanen error absolut i relatiu; es carreguen perquè són a P1.
 - [x] Errades de la llista: 45 a), 48 c), 57 c) i d), 89 (kg i g barrejats), 90 b), 99 d), 101
       (hi ha 5 solucions).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Tres setmanes (S2–S4) amagades, per al curs 2027-28. Els intervals, a la UD10; l'error, només com a repte (U1 · 82).
 
 ## 4t ESO Aplicades · UD2 (Percentatges i matemàtica financera)
 
@@ -20,7 +20,8 @@ continguts 4t A ↔ Santillana» (punts P1–P11) i, més detallada, al doc «Ma
 - [x] Errades de la llista: 35, 94 b) i 103.
 - [x] Llibre propi (S2): 2.5.1–2.5.6 i 2.6.1–2.6.5 (11 fitxes), amb l'enunciat i la solució en KaTeX.
       Fora: els «Per al Quadern d'eines». En total, 44 fitxes.
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Cinc setmanes (S5–S9) amagades, per al curs 2027-28.
+- [ ] Quan es facin visibles les tasques de la UD1 i la UD2: transcriure els enunciats que falten (`comprova.js` avisa).
 
 ## 4t ESO Aplicades · UD3 (Proporcionalitat i escales)
 
