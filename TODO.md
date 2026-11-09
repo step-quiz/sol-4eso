@@ -118,8 +118,10 @@ Comença a finals de novembre de 2026.
 ## Les altres UD (vistiplau P1–P3, P5–P6, P8–P11)
 
 - [ ] Després de les UD d'Aplicades, Acadèmiques.
-- [ ] Exercicis propis sense pràctica a Santillana (vistiplau S3–S5; els S2, a la UD2): 8.3 (mitjana ponderada), 9.5 (joc just) i altres continguts propis quan surtin a una
-      tasca. Com a la UD4: enunciat i solució en KaTeX.
+- [x] Exercicis propis sense pràctica a Santillana (vistiplau S2–S5): 2.5–2.6 (UD2), 8.3.1–8.3.11 (UD8,
+      mitjana ponderada) i 9.5.1–9.5.12 (UD9, joc just), amb l'enunciat i la solució en KaTeX. Fora: els
+      «Per al Quadern d'eines». A 9.5.1–9.5.4 l'enunciat porta el context de la teoria, que a la fitxa no hi és.
+- [ ] Altres continguts propis, quan surtin a una tasca.
 - [ ] Marca «Ampliació» (vistiplau E6): més endavant. Ara no es carrega cap ampliació (F2, F3, F6–F9,
       F11, F16, F18: no).
 

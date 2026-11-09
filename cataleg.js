@@ -746,6 +746,20 @@ const CATALEG = {
     'U8.FN': {t:'Malos humos: els fumadors per província', d:'', i:['u8-informacio/data/full-4.png', 'u8-informacio/data/full-5.png'], e:'Fake news', nom:'Fake news'},
     'U8.88': {t:'Dades 2, 5, 5, 7, 3, x: la mitjana i la mediana', d:'', i:['u8-informacio/data/full-5.png']},
     'U8.89': {t:'La corredora: quants quilòmetres ha de córrer dissabte?', d:'', i:['u8-informacio/data/full-5.png']},
+
+    /* ── Llibre propi · UD8 (activitat 8.3, mitjana ponderada). L'enunciat i la solució són a enunciats.js.
+          Fora: «Per al Quadern d'eines». */
+    '8.3.1': {t:'Escalfem el cap: mitjana, mediana i moda de set dades', d:'', i:[]},
+    '8.3.2': {t:'Nota final amb pesos del 20 %, 30 % i 50 %', d:'', i:[]},
+    '8.3.3': {t:'Nota final amb pesos del 40 %, 40 % i 20 %', d:'', i:[]},
+    '8.3.4': {t:'Mitjana simple o ponderada: per què surten diferents?', d:'', i:[]},
+    '8.3.5': {t:'Sous amb un valor extrem: mitjana o mediana?', d:'', i:[]},
+    '8.3.6': {t:'Caça l’error: dividir pel nombre de dades', d:'', i:[]},
+    '8.3.7': {t:'Decideix la mesura: mitjana, mediana o moda', d:'', i:[]},
+    '8.3.8': {t:'La nota que falta', d:'', i:[]},
+    '8.3.9': {t:'Un jugador nou: l’alçada mitjana dels 12', d:'', i:[]},
+    '8.3.10': {t:'Quina nota cal a l’examen per treure un 7,5?', d:'', i:[]},
+    '8.3.11': {t:'Caça l’error: la mitjana de dues classes', d:'', i:[]},
   },
 
   'apl-ud9': {
@@ -816,6 +830,21 @@ const CATALEG = {
     'U9.101': {t:'Set pinzells: almenys un que no sigui petit', d:'●●●', i:['u9-problemes/data/full-2.png', 'u9-problemes/data/full-3.png']},
     'U9.102': {t:'Dos jugadors de bàsquet alternen tirs lliures', d:'●●●', i:['u9-problemes/data/full-3.png']},
     'U9.103': {t:'Tres taronges de vuit fruites: dues peces a l’atzar', d:'●●●', i:['u9-problemes/data/full-3.png']},
+
+    /* ── Llibre propi · UD9 (activitat 9.5, joc just i apostes). L'enunciat i la solució són a enunciats.js.
+          Fora: «Per al Quadern d'eines». */
+    '9.5.1': {t:'Escalfem el cap: un joc que paga 4 € si surt parell', d:'', i:[]},
+    '9.5.2': {t:'Just o no? Un joc que paga 3 € si surt un 6', d:'', i:[]},
+    '9.5.3': {t:'La ruleta amb un premi de 36 €', d:'', i:[]},
+    '9.5.4': {t:'Caça el parany de cada missatge', d:'', i:[]},
+    '9.5.5': {t:'Compara riscos: la loteria 6/49', d:'', i:[]},
+    '9.5.6': {t:'Debat en grup: entreteniment o mal pla', d:'', i:[]},
+    '9.5.7': {t:'Decideix i recomana: «recuperar-ho» jugant més', d:'', i:[]},
+    '9.5.8': {t:'Una rifa de 500 butlletes', d:'', i:[]},
+    '9.5.9': {t:'Una aposta de 10 € a quota 1,80', d:'', i:[]},
+    '9.5.10': {t:'El marge d’un partit', d:'', i:[]},
+    '9.5.11': {t:'Cada setmana: 10 € a quota 1,90 durant un any', d:'', i:[]},
+    '9.5.12': {t:'Respon amb números: «a la llarga es guanya»', d:'', i:[]},
   },
 
 

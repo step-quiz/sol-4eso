@@ -660,6 +660,151 @@ const ENUNCIATS = {
   'apl-ud3/U5.69': {
     titol: TEX`Inventa`,
     text: TEX`Tria $3$ escales diferents de manera que puguis representar Galícia en un paper de mida DIN A4. La pots representar amb aquestes mateixes escales en un pòsit de mida $10 \times 10$ cm?` },
+
+  /* ── 4t ESO Aplicades · UD8 · llibre propi (activitat 8.3) ── */
+
+  'apl-ud8/8.3.1': {
+    titol: TEX`Escalfem el cap`,
+    text: TEX`Calcula mitjana, mediana i moda de: $4, 6, 6, 7, 9, 6, 8$.`,
+    solucio: [TEX`Suma $= 46$, $n = 7$: mitjana $= \dfrac{46}{7} \approx 6{,}57$.`,
+              TEX`Ordenades: $4, 6, 6, 6, 7, 8, 9 \to$ mediana $= 6$. Moda $= 6$.`] },
+
+  'apl-ud8/8.3.2': {
+    titol: TEX`Ponderada bàsica`,
+    text: TEX`Una nota es calcula amb tres proves que pesen $20\,\%$, $30\,\%$ i $50\,\%$. Un alumne treu $6$, $7$ i $8$. Quina és la nota final?`,
+    solucio: [TEX`$\dfrac{6\cdot 20 + 7\cdot 30 + 8\cdot 50}{100} = \dfrac{120 + 210 + 400}{100} = \dfrac{730}{100} = 7{,}3$.`] },
+
+  'apl-ud8/8.3.3': {
+    titol: TEX`Ponderada 2`,
+    text: TEX`En un altre grup, els pesos són $40\,\%$ examen, $40\,\%$ projecte i $20\,\%$ actitud. Amb notes $4$, $8$ i $9$, quina és la nota final?`,
+    solucio: [TEX`$\dfrac{4\cdot 40 + 8\cdot 40 + 9\cdot 20}{100} = \dfrac{160 + 320 + 180}{100} = \dfrac{660}{100} = 6{,}6$.`] },
+
+  'apl-ud8/8.3.4': {
+    titol: TEX`Simple vs ponderada`,
+    text: TEX`Per a l’exercici 8.3.3, calcula també la mitjana simple. Per què surten diferents?`,
+    solucio: [TEX`Simple: $\dfrac{4 + 8 + 9}{3} = 7$.`,
+              TEX`Surten diferents perquè l’examen, on ha tret la nota més baixa ($4$), pesa un $40\,\%$: arrossega la nota final cap avall.`] },
+
+  'apl-ud8/8.3.5': {
+    titol: TEX`Valors extrems`,
+    text: TEX`Amb els sous $1\,200,\ 1\,250,\ 1\,300,\ 1\,350,\ 1\,400,\ 8\,000$: calcula mitjana i mediana. Quina fa servir un sindicat per descriure el sou «normal»? Per què?`,
+    solucio: [TEX`Mitjana $= \dfrac{14\,500}{6} = 2\,416{,}67$ €; mediana $= \dfrac{1\,300 + 1\,350}{2} = 1\,325$ €.`,
+              TEX`Un sindicat faria servir la mediana: la mitjana està distorsionada pel sou de $8\,000$ € i no descriu el que cobra la majoria.`] },
+
+  'apl-ud8/8.3.6': {
+    titol: TEX`Caça l’error`,
+    text: TEX`Un company calcula una mitjana ponderada amb pesos $30$, $30$ i $40$ així: $\dfrac{5\cdot 30 + 7\cdot 30 + 8\cdot 40}{3}$. Quin error ha fet? Quin és el resultat correcte?`,
+    solucio: [TEX`Ha dividit per $3$ (el nombre de dades) en comptes de per la suma dels pesos ($100$). Correcte: $\dfrac{680}{100} = 6{,}8$.`] },
+
+  'apl-ud8/8.3.7': {
+    titol: TEX`Decideix la mesura`,
+    text: TEX`Per a cada cas, digues quina mesura és més adequada (mitjana, mediana o moda):`,
+    apartats: [TEX`la talla de samarreta més demanada;`,
+               TEX`el sou típic en una empresa amb un directiu que cobra molt;`,
+               TEX`la nota mitjana d’un examen sense notes extremes.`],
+    col: 1,
+    solucio: [TEX`a) moda; b) mediana; c) mitjana.`] },
+
+  'apl-ud8/8.3.8': {
+    titol: TEX`La nota que falta`,
+    text: TEX`Les notes d’un alumne són $6$, $8$, $5$, $9$, $7$ i una sisena que no sabem. La mitjana de les sis és $7{,}5$. Quina és la sisena nota?`,
+    solucio: [TEX`Les sis notes sumen $6\cdot 7{,}5 = 45$; les cinc conegudes, $6 + 8 + 5 + 9 + 7 = 35$. La sisena és $45 - 35 = 10$.`] },
+
+  'apl-ud8/8.3.9': {
+    titol: TEX`Un jugador nou`,
+    text: TEX`Els $11$ jugadors d’un equip fan, de mitjana, $1{,}78$ m. S’hi afegeix un jugador de $1{,}90$ m. Quina és l’alçada mitjana dels $12$?`,
+    solucio: [TEX`Suma antiga: $11\cdot 1{,}78 = 19{,}58$ m. Suma nova: $19{,}58 + 1{,}90 = 21{,}48$ m.`,
+              TEX`Mitjana: $\dfrac{21{,}48}{12} = 1{,}79$ m.`] },
+
+  'apl-ud8/8.3.10': {
+    titol: TEX`Quina nota cal?`,
+    text: TEX`La nota final és un $40\,\%$ de l’examen i un $60\,\%$ dels treballs. Als treballs tens un $7$. Quina nota necessites a l’examen per treure un $7{,}5$ de final?`,
+    solucio: [TEX`$0{,}4\cdot x + 0{,}6\cdot 7 = 7{,}5 \Rightarrow 0{,}4\cdot x = 7{,}5 - 4{,}2 = 3{,}3 \Rightarrow x = \dfrac{3{,}3}{0{,}4} = 8{,}25$.`] },
+
+  'apl-ud8/8.3.11': {
+    titol: TEX`Caça l’error`,
+    text: TEX`La classe A ($20$ alumnes) té mitjana $6$ i la classe B ($30$ alumnes), mitjana $7$. Un company diu: «la mitjana de les dues classes juntes és $\dfrac{6 + 7}{2} = 6{,}5$». Per què s’equivoca? Quina és la mitjana correcta?`,
+    solucio: [TEX`Perquè les dues classes no tenen el mateix nombre d’alumnes: la B pesa més.`,
+              TEX`Sumes: $20\cdot 6 = 120$ i $30\cdot 7 = 210$; total $330$ entre $50$ alumnes: $\dfrac{330}{50} = 6{,}6$. És una mitjana ponderada, amb pesos $20$ i $30$.`] },
+
+  /* ── 4t ESO Aplicades · UD9 · llibre propi (activitat 9.5) ── */
+
+  'apl-ud9/9.5.1': {
+    titol: TEX`Escalfem el cap`,
+    text: TEX`Un joc paga $4$ € si encertes un dau parell ($P = \tfrac12$) i perds l’euro si no. És just? Calcula el guany mitjà per euro. (Quan diem que un joc paga $X$ €, vol dir que guanyes $X$ € i a més recuperes l’euro apostat; si perds, perds l’euro.)`,
+    solucio: [TEX`Guany mitjà $= 4\cdot\dfrac12 - 1\cdot\dfrac12 = 2 - 0{,}5 = 1{,}5$ € per euro.`,
+              TEX`Aquest joc et seria favorable (per això no existeix cap joc comercial així).`] },
+
+  'apl-ud9/9.5.2': {
+    titol: TEX`Just o no?`,
+    text: TEX`Un joc et paga $3$ € si surt un $6$ amb un dau. Quant hauria de pagar perquè fos just? Qui hi guanya, tal com està? (Quan diem que un joc paga $X$ €, vol dir que guanyes $X$ € i a més recuperes l’euro apostat; si perds, perds l’euro.)`,
+    solucio: [TEX`Com que $P(6) = \dfrac16$, per ser just hauria de pagar $5$ €: $5\cdot\dfrac16 - 1\cdot\dfrac56 = 0$.`,
+              TEX`Pagant-ne $3$, hi guanya la casa: de mitjana perds $3\cdot\dfrac16 - 1\cdot\dfrac56 = \dfrac{3 - 5}{6} \approx -0{,}33$ € per euro.`] },
+
+  'apl-ud9/9.5.3': {
+    titol: TEX`La ruleta`,
+    text: TEX`En una ruleta europea hi ha $37$ caselles ($0$ a $36$). Si apostes $1$ € a un número i encertes, et paguen $35$ € (a més de recuperar el teu), i de mitjana perds $35\cdot\dfrac{1}{37} - 1\cdot\dfrac{36}{37} = -\dfrac{1}{37}$ € per euro. Repeteix el càlcul si el premi fos $36$ € en comptes de $35$. Seria just?`,
+    solucio: [TEX`$36\cdot\dfrac{1}{37} - 1\cdot\dfrac{36}{37} = \dfrac{36 - 36}{37} = 0$. Sí, seria just (ni guanyes ni perds de mitjana).`,
+              TEX`Per això les ruletes reals paguen $35$ i no $36$: aquesta casella de diferència és el benefici.`] },
+
+  'apl-ud9/9.5.4': {
+    titol: TEX`Caça el parany`,
+    text: TEX`Els quatre paranys habituals són: 1) «Ja toca»; 2) ensenyar els guanyadors i amagar els perdedors; 3) premis petits freqüents; 4) «depèn de l’habilitat». Identifica quin parany hi ha a cada missatge:`,
+    apartats: [TEX`«Fa setmanes que no surt el $7$: aquesta setmana és la bona»;`,
+               TEX`«Mira el vídeo de la Maria, que ha guanyat $10\,000$ €!»;`,
+               TEX`«Amb el meu sistema encerto més sovint a la ruleta».`],
+    col: 1,
+    solucio: [TEX`a) parany 1, «ja toca» (l’atzar no té memòria);`,
+              TEX`b) parany 2 (ensenyar guanyadors i amagar perdedors);`,
+              TEX`c) parany 4 (en atzar pur no hi ha habilitat que canviï la probabilitat).`] },
+
+  'apl-ud9/9.5.5': {
+    titol: TEX`Compara riscos`,
+    text: TEX`La probabilitat d’encertar la loteria $6/49$ és d’$1$ entre $14$ milions. Quantes setmanes seguides hauries de jugar, aproximadament, perquè fos raonable esperar-ne un encert?`,
+    solucio: [TEX`Aproximadament $14$ milions de setmanes, és a dir, centenars de milers d’anys. Serveix per fer palpable la magnitud.`] },
+
+  'apl-ud9/9.5.6': {
+    titol: TEX`Debat en grup`,
+    text: TEX`«Jugar de tant en tant és entreteniment; jugar per guanyar diners és un mal pla.» Prepareu arguments a favor i en contra i debateu-los amb dades (també les de les apostes en línia).`,
+    solucio: [TEX`Resposta oberta (debat amb arguments i dades).`] },
+
+  'apl-ud9/9.5.7': {
+    titol: TEX`Decideix i recomana`,
+    text: TEX`Un amic et diu que ha perdut i que vol «recuperar-ho» jugant més. Amb el que saps, què li diries? (Pensa en l’avantatge de la casa i en la llei dels grans nombres.)`,
+    solucio: [TEX`Resposta oberta. Idees: cada jugada és independent, així que jugar més no «recupera» res; l’avantatge de la casa fa que, com més jugues, més probable és perdre encara més. Convé parlar-ne amb algú de confiança.`] },
+
+  'apl-ud9/9.5.8': {
+    titol: TEX`Una rifa`,
+    text: TEX`Una associació ven $500$ butlletes a $3$ € i sorteja un premi de $600$ €. Calcula el guany mitjà d’una butlleta. Quin hauria de ser el premi perquè la rifa fos justa?`,
+    solucio: [TEX`$600\cdot\dfrac{1}{500} - 3 = 1{,}20 - 3 = -1{,}80$ € per butlleta. Justa amb un premi de $500\cdot 3 = 1\,500$ €.`] },
+
+  'apl-ud9/9.5.9': {
+    titol: TEX`Una aposta de $10$ €`,
+    text: TEX`Apostes $10$ € a quota $1{,}80$ en un fet que té, de debò, probabilitat $\tfrac12$. Calcula el guany mitjà. Si en fas $50$ com aquesta, quant esperes perdre?`,
+    solucio: [TEX`Guany si encertes: $0{,}80\cdot 10 = 8$ €. Guany mitjà: $8\cdot\dfrac12 - 10\cdot\dfrac12 = 4 - 5 = -1$ € per aposta (un $10\,\%$).`,
+              TEX`En $50$ apostes, de mitjana, $50$ € perduts.`] },
+
+  'apl-ud9/9.5.10': {
+    titol: TEX`El marge d’un partit`,
+    text: TEX`Una casa d’apostes ofereix aquestes quotes per a un partit: $1$ (guanya el local) $2{,}10$; X (empat) $3{,}20$; $2$ (guanya el visitant) $3{,}60$.`,
+    apartats: [TEX`Per a cada quota, calcula $\tfrac{1}{\text{quota}}$ (és la probabilitat que «insinua» la casa).`,
+               TEX`Suma els tres resultats. Hauria de donar $1$ (un dels tres resultats segur que passa). Quant dona?`,
+               TEX`El que sobra per sobre de $1$ és el marge de la casa. Quants cèntims per euro torna, de mitjana? (Calcula $\tfrac{1}{\text{suma}}$.)`],
+    col: 1,
+    solucio: [TEX`a) $\dfrac{1}{2{,}10} \approx 0{,}476$; $\dfrac{1}{3{,}20} = 0{,}3125$; $\dfrac{1}{3{,}60} \approx 0{,}278$.`,
+              TEX`b) Suma $\approx 1{,}066$: més d’$1$.`,
+              TEX`c) $\dfrac{1}{1{,}066} \approx 0{,}938$: torna uns $94$ cèntims per euro, de mitjana. El marge és d’uns $6$ cèntims per euro.`] },
+
+  'apl-ud9/9.5.11': {
+    titol: TEX`Cada setmana`,
+    text: TEX`Un jove de $19$ anys aposta $10$ € cada setmana, tot l’any, a quota $1{,}90$ en fets del $50\,\%$. Quant ha apostat en total? Quant esperes que hagi perdut? I si fa combinades de tres?`,
+    solucio: [TEX`$52\cdot 10 = 520$ € apostats. Pèrdua mitjana: $520\cdot 0{,}05 = 26$ €.`,
+              TEX`Amb combinades de tres, $520\cdot 0{,}143 \approx 74$ €.`] },
+
+  'apl-ud9/9.5.12': {
+    titol: TEX`Respon amb números`,
+    text: TEX`Un amic et diu: «el meu cosí guanya diners amb les apostes; si en saps, a la llarga es guanya». Fes-li una resposta de tres o quatre frases amb els números d’aquesta activitat.`,
+    solucio: [TEX`Resposta oberta. Idees: cada aposta té guany mitjà negatiu (per exemple, $-5$ cèntims per euro a quota $1{,}90$); al principi molta gent va guanyant (un $38\,\%$ després de $10$ apostes), però després de $1\,000$ només un $5\,\%$, i la pèrdua mitjana és de $500$ €; qui guanya ho explica i qui perd, no.`] },
 };
 
 /* ── Funcions (no cal tocar-les) ─────────────────────────────────────── */

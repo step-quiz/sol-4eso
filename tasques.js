@@ -22,9 +22,9 @@ const TASQUES = [
   { unitat:'apl-ud7',  setmana:1, limit:'2027-04-18', visible:'mai',
     exercicis:['U6.7', 'U6.52', 'U6.89', 'U7.89', 'U7.92', 'U2.44'] },
   { unitat:'apl-ud8',  setmana:1, limit:'2027-05-09', visible:'mai',
-    exercicis:['U8.6', 'U8.34', 'U8.40', 'U8.58', 'U8.70', 'U8.89'] },
+    exercicis:['U8.6', 'U8.34', 'U8.40', 'U8.58', 'U8.70', 'U8.89', '8.3.2', '8.3.10'] },
   { unitat:'apl-ud9',  setmana:1, limit:'2027-05-30', visible:'mai',
-    exercicis:['U9.2', 'U9.27', 'U9.33', 'U9.41', 'U9.58', 'U9.93'] },
+    exercicis:['U9.2', 'U9.27', 'U9.33', 'U9.41', 'U9.58', 'U9.93', '9.5.2', '9.5.9'] },
   { unitat:'apl-ud10', setmana:1, limit:'2027-02-28', visible:'mai',
     exercicis:['U4.24', 'U4.25', 'U4.26', 'U4.32', 'U4.39', 'U4.SA1'] },
 
