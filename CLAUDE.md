@@ -224,9 +224,12 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** Ara mateix `hints.js` és buit. No es reescriu cap pista
-  seva si ell no ho demana. Una errada d'escriptura o de format no es corregeix en silenci: s'enumera, i es
-  corregeix quan ell ho diu.
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 15 pistes de la UD4 (setmanes 1 i 2).
+  No es reescriu cap pista seva si ell no ho demana.
+- **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
+  ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
+  Enter, `<br>` al final, cursiva en nombres sols. Es corregeix al camp `text` de l'Editor i a la `resposta` es
+  diu què s'ha corregit. El que no és un descuit (una frase, una idea, l'estil) no es toca.
 - **Flux de treball.** Com a `sol`: el professor edita les pistes amb l'artifact «Editor de pistes · 4t ESO»
   (https://claude.ai/artifact/HwSFxGF2DzqWXi7sDkedT8), que porta l'enunciat de cada exercici programat. Si Claude
   proposa pistes noves, les deixa com a **esborranys a la base de dades de l'artifact** (col·lecció `hints`,
@@ -236,7 +239,7 @@ descuits, no estil. No les copiïs.
   sota del comentari). Abans de tornar a escriure un document, comprova que la versió encara és la que va escriure
   Claude (si el professor l'ha tocat, no el trepitgis): escriu sempre amb `if_version`.
 - **«Revisa artifact».** Claude llegeix la col·lecció, compara `text` amb `claude` a cada pista, respon al camp
-  `resposta` (què n'aprèn i, sense corregir-los, els descuits que hi veu) i apunta les lliçons a «Què s'ha après
+  `resposta` (què n'aprèn i quins descuits ha corregit) i apunta les lliçons a «Què s'ha après
   dels esborranys».
 - **`estat: parlem` («En parlem»)** vol dir: «compara el teu text amb el meu i entén per què el meu és millor».
   No espera una discussió: espera que la `resposta` expliqui el **perquè** del canvi (què hi veu un professor que
@@ -260,6 +263,24 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 2, 9/11/2026)**: 3 de 8 sense
+  canvis (U5.81, 4.3.6 i, de la setmana 1, 4.2.1). Les lliçons de la setmana 1 ja funcionen; ara afina:
+  - **El mateix nom per a la mateixa eina, cada vegada**: «proporció directa» també al mirall i al riu (4.2.4,
+    4.2.7). Si tots els exercicis porten la mateixa etiqueta, l'alumne veu que són el mateix problema. «Posa cada
+    dada al seu lloc» converteix l'exercici en omplir forats: fora.
+  - **«Fes un esquema» / «Fes un dibuix»**: una acció concreta en lloc de «pensa bé» (4.3.2, 4.2.7). Els
+    elements que cal dibuixar, en llista «- ».
+  - L'objectiu es diu amb les dades, no amb l'operació algebraica: «l'has de trobar a partir de la hipotenusa i
+    l'altre catet», no «aïlla'l de la igualtat» (4.3.1). No repeteix definicions ja repassades a l'«Escalfem el
+    cap» (què és la hipotenusa).
+  - Passos explícits i separats: «Finalment, amb el valor de *k*, podràs trobar els costats del triangle gran»
+    (U5.65). Noms que no deixen dubte («el triangle gran», no «els tres costats»).
+  - Precisió: «tenen en comú el vèrtex *B*», no «es toquen pel punt *B*» (4.2.7).
+  - **Caça l'error, afinat**: el «És veritat que…» només hi va si diu alguna cosa (4.3.6: triangle rectangle i
+    Pitàgores, d'acord); si no, comença directament per l'absurd. I després de l'absurd assenyala **on** és
+    l'error sense dir quin és: «Segurament el company no ha escrit correctament la proporció» (4.2.5).
+  - Descuits seus: espai abans dels dos punts, «quin del tres».
 
 - **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 1, 9/11/2026)**:
   - **El perquè de fons.** Claude escrivia des del contingut matemàtic i ho explicava tot; el professor escriu
