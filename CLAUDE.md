@@ -224,9 +224,12 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** Ara mateix `hints.js` és buit. No es reescriu cap pista
-  seva si ell no ho demana. Una errada d'escriptura o de format no es corregeix en silenci: s'enumera, i es
-  corregeix quan ell ho diu.
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 15 pistes de la UD4 (setmanes 1 i 2).
+  No es reescriu cap pista seva si ell no ho demana.
+- **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
+  ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
+  Enter, `<br>` al final, cursiva en nombres sols. Es corregeix al camp `text` de l'Editor i a la `resposta` es
+  diu què s'ha corregit. El que no és un descuit (una frase, una idea, l'estil) no es toca.
 - **Flux de treball.** Com a `sol`: el professor edita les pistes amb l'artifact «Editor de pistes · 4t ESO»
   (https://claude.ai/artifact/HwSFxGF2DzqWXi7sDkedT8), que porta l'enunciat de cada exercici programat. Si Claude
   proposa pistes noves, les deixa com a **esborranys a la base de dades de l'artifact** (col·lecció `hints`,
@@ -236,7 +239,7 @@ descuits, no estil. No les copiïs.
   sota del comentari). Abans de tornar a escriure un document, comprova que la versió encara és la que va escriure
   Claude (si el professor l'ha tocat, no el trepitgis): escriu sempre amb `if_version`.
 - **«Revisa artifact».** Claude llegeix la col·lecció, compara `text` amb `claude` a cada pista, respon al camp
-  `resposta` (què n'aprèn i, sense corregir-los, els descuits que hi veu) i apunta les lliçons a «Què s'ha après
+  `resposta` (què n'aprèn i quins descuits ha corregit) i apunta les lliçons a «Què s'ha après
   dels esborranys».
 - **`estat: parlem` («En parlem»)** vol dir: «compara el teu text amb el meu i entén per què el meu és millor».
   No espera una discussió: espera que la `resposta` expliqui el **perquè** del canvi (què hi veu un professor que
