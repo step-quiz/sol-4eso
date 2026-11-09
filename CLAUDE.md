@@ -238,6 +238,9 @@ descuits, no estil. No les copiïs.
 - **«Revisa artifact».** Claude llegeix la col·lecció, compara `text` amb `claude` a cada pista, respon al camp
   `resposta` (què n'aprèn i, sense corregir-los, els descuits que hi veu) i apunta les lliçons a «Què s'ha après
   dels esborranys».
+- **`estat: parlem` («En parlem»)** vol dir: «compara el teu text amb el meu i entén per què el meu és millor».
+  No espera una discussió: espera que la `resposta` expliqui el **perquè** del canvi (què hi veu un professor que
+  la màquina no hi veia), no només què ha canviat.
 - Quan el professor dona per bones les pistes, Claude les passa a `hints.js` (i a la base de l'Editor) i passa
   `node eines/comprova.js`, que valida el format de cada pista.
 - Quan el professor retoca els esborranys, Claude compara la seva versió amb la final i afegeix aquí, a
@@ -259,6 +262,11 @@ descuits, no estil. No les copiïs.
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
 
 - **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 1, 9/11/2026)**:
+  - **El perquè de fons.** Claude escrivia des del contingut matemàtic i ho explicava tot; el professor escriu
+    des del que l'alumne ja sap i ja ha viscut (la fotocopiadora, els percentatges de la UD2, la proporció directa
+    de la UD3) i li deixa el pas central. Plantejar la proporció *és* l'exercici: si la pista l'escriu, no queda
+    res per pensar. Quan l'alumne s'equivoca, no li diu la regla: li fa *sentir* l'absurd amb un cas que es pot
+    imaginar. I primer el raonament, després el càlcul, que només el comprova.
   - Una situació quotidiana que l'alumne coneix val més que una definició: la **fotocòpia ampliada** per a la
     semblança i la raó de semblança (4.1.2, U5.64). I l'enllaça amb els percentatges de la UD2: «una fotocòpia
     amb un 20% d'augment, llavors *k* = 1,2»; «*r* = 1,6… posaries l'ampliació del 60%».
