@@ -97,10 +97,10 @@ UD9 (camp `ordre` a `UNITATS_META`). No es carrega cap contingut d'ampliació.
 | `cataleg.js` | `MATERIES`, `UNITATS_META` i la fitxa de **cada** exercici de la unitat (títol `t`, dificultat `d`, imatges `i`, i `e`/`nom` per a les claus de text). Mantingut a mà |
 | `hints.js` | Pistes, **només** dels exercicis programats a `tasques.js` |
 | `enunciats.js` | Enunciats complets en català i KaTeX, **només** dels exercicis programats. A la llista de la tasca substitueixen el títol curt `t` |
-| `errades.js` | Errades del solucionari dels exercicis programats. Ara és **buit**, però amb totes les funcions de `sol` (targetes, marques, pegats) |
+| `errades.js` | Errades del solucionari dels exercicis programats (62 errades, 55 exercicis, totes amb `pegat`), amb totes les funcions de `sol` (targetes, marques, pegats) i la taula `PAGINES_IGUALS` |
 | `assets/katex/` | KaTeX 0.16.47: pinta les fórmules de `errades.js`. No s'hi toca res |
 | `marca.js` | Eina del professor per marcar on és una errada dins la imatge (`tasca.html?tot=1&marca=1`) |
-| `pegats/` | Trossos de pàgina ja corregits. Ara és buit |
+| `pegats/` | Trossos de pàgina ja corregits (163 PNG). Els fa `eines/pegats/` |
 | `eines/retalla.py`, `eines/retalls.json` | Fan les imatges d'una unitat a partir del PDF |
 | `eines/figura.py` | Retalla una figura del PDF per a un enunciat (`apl-uN/enunciats/<n>-1.png`) |
 | `eines/comprova.js` | Les proves: catàleg, imatges, tasques, pistes, errades, enunciats i fórmules (KaTeX) |
@@ -335,12 +335,11 @@ descuits, no estil. No les copiïs.
 - El sistema és el de `sol`, sencer i provat: `errades.js` (dades i funcions), KaTeX, `marca.js`, `pegats/`,
   `errades.html`. Les errades de cada UD són a `TODO.md`; `OBSERVACIONS` és buit. Format i comportament: `ERRADES.md`.
 - **Diferència amb `sol`:** allà `errades.js` es genera amb `eines/conversor/genera.py` a partir de `tex/`, i
-  les marques i els pegats tenen les seves eines (`eines/localitzador/`, `eines/pegats/`). Aquí encara no hi
-  són. Mentre no hi siguin, les errades s'escriuen **directament a `errades.js`**. Quan se'n vulguin fer
-  moltes, o amb pegats, es copien les eines de `sol` i s'adapten als identificadors nous (`apl-ud4` en lloc de
-  `u7`: hi ha expressions regulars `u\d+` a `genera.py` i `dades.py`).
-- El llibre fa servir les mateixes lletres que el de `sol` (VectoraLTStd, MMa…): el motor de pegats hauria de
-  funcionar amb poques adaptacions.
+  les marques tenen la seva eina (`eines/localitzador/`). Aquí aquestes dues no hi són: les errades i les marques
+  s'escriuen **directament a `errades.js`**.
+- **Els pegats sí que hi són:** `eines/pegats/` (motor i receptes per UD; documentació tècnica a
+  `eines/pegats/README.md`). `pegat` i `PAGINES_IGUALS` no s'escriuen a mà: els posa `eines/pegats/aplica.py`.
+  Si s'afegeix una errada nova, se n'ha de fer el pegat i mirar-lo ampliat, abans i després.
 - El text s'escriu entre accents greus amb `TEX` al davant, i les fórmules entre `$...$` (LaTeX). No s'hi pot
   posar cap accent greu ni la parella `${`.
 - Una marca mal posada és pitjor que cap marca: s'ha de comprovar sempre a la imatge ampliada.

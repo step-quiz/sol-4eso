@@ -25,8 +25,8 @@
 - **Les imatges de les pàgines no es toquen mai.** Tot el que es veu a sobre (requadres i pegats) ho
   posa el navegador.
 - **Diferència amb `sol`:** allà `errades.js` es genera (`eines/conversor/genera.py`, a partir de `tex/`,
-  `marques.json` i `pegats.json`). Aquí, de moment, **s'escriu a mà**, directament a `errades.js`.
-  Vegeu l'apartat 6.
+  `marques.json` i `pegats.json`). Aquí les errades i les marques **s'escriuen a mà**, directament a
+  `errades.js`; els pegats els posa `eines/pegats/aplica.py`. Vegeu l'apartat 6.
 
 | Fitxer o carpeta | Paper |
 |---|---|
@@ -163,7 +163,8 @@ Com `marca`, més el nom del fitxer, que és a `pegats/<unitat>/`.
   i `tasca.html` el posa dins de la figura, sobre la imatge, i també a la imatge ampliada
   (`#lb-pegats`). No atura els clics (`pointer-events:none`).
 - **Quins pegats surten sobre una imatge:** **tots** els d'aquella imatge, siguin de
-  l'exercici que siguin. La pàgina s'ha de veure corregida es miri des d'on es miri.
+  l'exercici que siguin. La pàgina s'ha de veure corregida es miri des d'on es miri. Si la pàgina del PDF
+  és a més d'una carpeta, la taula `PAGINES_IGUALS` fa que els pegats surtin a totes les còpies.
 
 ### Una errada amb pegat és una errada «callada»
 
@@ -187,7 +188,7 @@ Amb `ERRADES_PEGATS = false` no surt cap pegat i tot torna a ser com a la fase 2
 
 **Només canvien els signes equivocats.** Estan fets amb signes copiats de la mateixa pàgina
 (la lletra del llibre de veritat, no una d'imitada), i la resta de la línia són els seus
-píxels originals, desplaçats si el text nou fa una altra amplada. No es fa servir LaTeX. Com es fan, a `sol` (`ERRADES.md`, apartat 9, i `eines/pegats/`).
+píxels originals, desplaçats si el text nou fa una altra amplada. No es fa servir LaTeX. Com es fan: `eines/pegats/README.md`.
 
 ---
 
@@ -226,20 +227,14 @@ La `marca` es fa amb l'eina `tasca.html?tot=1&marca=1` (arrossegant un rectangle
 a la imatge ampliada. Després: `node eines/comprova.js`, obrir la tasca amb `?tot=1` i mirar que cap
 fórmula surti en vermell, i pujar el número de `errades.js?v=` a `tasca.html` i `errades.html`.
 
-**Quan n'hi hagi moltes, o es vulguin pegats.** Es copien de `sol` les eines (`eines/conversor/`,
-`eines/localitzador/`, `eines/pegats/`, `eines/dades.py`, `eines/camins.py`) i la carpeta `tex/`, i
-s'adapten:
+**Els pegats.** Una errada nova es fa així: (1) s'escriu a `errades.js`, amb la `marca`; (2) se n'afegeix la recepta a
+`eines/pegats/receptes_udN.py`; (3) `python3 eines/pegats/fes.py receptes_udN` i es mira ampliat el full de
+`eines/sortida/` (abans i després); (4) `python3 eines/pegats/fes.py receptes_udN --escriu` i
+`python3 eines/pegats/aplica.py`; (5) `node eines/comprova.js` i pujar el número de `errades.js?v=`. Referència tècnica de
+les operacions i dels paranys: `eines/pegats/README.md`. **Un pegat mal fet és pitjor que cap pegat.**
 
-- els identificadors: `genera.py` i `dades.py` busquen unitats amb l'expressió `u\d+` (`u7`); aquí són
-  `apl-ud4`, `aca-ud2`, i les claus d'exercici porten l'origen (`U5.64`, `4.2.7`);
-- la relació setmana → unitat (`tex/errors-setmanaN.tex`), que aquí pot ser de dues matèries;
-- el PDF de `source/` i la casació imatge ↔ pàgina (`localitzador/casa.json`): aquí la relació és a
-  `eines/retalls.json`, i les imatges es fan amb una caixa fixa i la resolució triada perquè facin 1208 px
-  d'amplada, cosa que la fa directa.
-
-El llibre fa servir les mateixes lletres que el de `sol` (VectoraLTStd, MMa…), així que el motor de
-pegats hauria de funcionar amb pocs canvis. **Un pegat mal fet és pitjor que cap pegat**: s'ha de mirar
-ampliat, abans i després.
+Les altres dues eines de `sol` (`eines/conversor/` i `eines/localitzador/`) no s'han portat: aquí les errades i les
+marques s'escriuen directament a `errades.js`.
 
 ## 7. Regles
 

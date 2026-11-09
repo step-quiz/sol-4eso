@@ -104,7 +104,7 @@ hints.js        ← LES PISTES (una línia per pista; s'edita a mà)
 enunciats.js    ← ELS ENUNCIATS complets, en català i amb KaTeX, i les solucions del llibre propi
 errades.js      ← LES ERRADES DEL SOLUCIONARI (el sistema és el de sol). Vegeu ERRADES.md
 marca.js        ← eina del professor per marcar on és una errada (tasca.html?tot=1&marca=1)
-pegats/         ← trossos de pàgina ja corregits que es posen a sobre de les imatges (ara buit)
+pegats/         ← trossos de pàgina ja corregits que es posen a sobre de les imatges (els fa eines/pegats/)
 progres.js      ← les creuetes de "fet" de l'alumne (al seu navegador)
 README.md       ← aquest fitxer
 CLAUDE.md       ← instruccions per a Claude (flux per afegir una unitat, estil de les pistes)
@@ -221,7 +221,7 @@ const PISTES = {
 El solucionari té errades. Les dels exercicis programats van a **`errades.js`**, amb la mateixa clau
 que les pistes. El sistema és el de `sol`, sencer: avís a la llista de la tasca, targeta «On diu /
 Ha de dir» dins de l'exercici, requadre vermell sobre la imatge (`marca`) i, si es fa, la imatge ja
-corregida (`pegat`). Ara n'hi ha a totes les UD carregades menys la UD10. Com s'escriuen: `ERRADES.md`.
+corregida (`pegat`). Ara n'hi ha a totes les UD carregades menys la UD10, i totes porten pegat: l'alumne veu la pàgina ja corregida. Com s'escriuen: `ERRADES.md`.
 
 ## Les proves
 

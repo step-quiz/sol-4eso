@@ -41,8 +41,8 @@ Comença a finals de novembre de 2026.
       solució en KaTeX (`enunciats.js`). Fora: els «Per al Quadern d'eines» i la reflexió final.
       La 4.5 (producte) no té exercicis i la 4.7 (prova escrita) no es publica.
 - [x] Errades del solucionari: U5 · 64 (6 cm per 8 cm) i U5 · 77 (CB per CD).
-- [ ] Setmanes de debò (`tasques.js`). Ara hi ha una setmana d'**exemple**, amagada (`visible:'mai'`).
-- [ ] Enunciats en català dels exercicis de Santillana que es programin (ara: U5 · 57, 64 i 81).
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27.
+- [x] Enunciats en català de tots els exercicis de Santillana programats.
 - [ ] Pistes dels exercicis programats (`hints.js`).
 
 ## 4t ESO Aplicades · UD11 (Idea de polinomi)
@@ -52,7 +52,7 @@ Comença a finals de novembre de 2026.
       productes de polinomis; eren a la llista aprovada (P5), però potser no cal posar-los a cap tasca.
 - [x] Errades: AP · 74 (17 686 i 13 384 per 17,686 i 13,384, a l'enunciat i a la solució) i AP · 77
       (1 460 € per 1 460 000 €: l'enunciat és en milers d'euros).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## 4t ESO Aplicades · UD5 (Equacions de 2n grau)
 
@@ -62,7 +62,7 @@ Comença a finals de novembre de 2026.
 - [x] Errades de la U3 ja detectades que toquen aquests exercicis (vistiplau E5): 33 e) (enunciat),
       41 e), 44 i 63. Noves: U7 · 95 (la paràbola té el vèrtex com a mínim) i AP · 52 d) (signe de
       2x³/5 i 51x³/125).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## 4t ESO Aplicades · UD10 (Sistemes d'equacions i inequacions)
 
@@ -72,7 +72,7 @@ Comença a finals de novembre de 2026.
 - [x] Afegits (vistiplau P7): U3 · Act. 24–26; ex. 58–59, 64–66, 73–75, 80–81. U2 · ex. 68–69.
       U7 · ex. 93. Cap no té errades de la llista. Fora: U2 · 67 (el solucionari diu «Resuelta en el
       libro de texto» i no en dona la solució). En total, 79 fitxes.
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## 4t ESO Aplicades · UD6 (La paràbola)
 
@@ -82,7 +82,7 @@ Comença a finals de novembre de 2026.
 - [x] Errades noves: U7 · 45 (taula: −1 i −2 per 1 i 2), 46 c) (vèrtex (−1, −2)), 47 d) (l'equació no
       passa pel vèrtex), 49 f) (vèrtex (−9/2, −9/4)), 51 d) (taula de valors), 95 (com a la UD5) i 100
       (es demana h = v²/20, no v = √(20h)).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## 4t ESO Aplicades · UD7 (Funcions: llegim gràfics)
 
@@ -94,7 +94,7 @@ Comença a finals de novembre de 2026.
       es poden unir), 52 f) (−12/15 per −12/5), 82 a) (no hi ha cap tram constant), 89 (la TVR
       divideix per f(a): −225 %, −225 %, −150 %), 106 (v = 340 i d = 340t), 112 (< 990, no < 900);
       U7 · 90 (a) i b) intercanviats; 301,4375 i 574,5875); U2 · 110 (10 048,68 € i 10 462,42 €).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## 4t ESO Aplicades · UD8 (Estadística)
 
@@ -106,7 +106,7 @@ Comença a finals de novembre de 2026.
       (histograma acumulat amb el doble d'altura), 59 b) (/14, no /28), 60 b) (9 dades, no 10), 81
       (el preu és per quilo: 75,53 €, 1,85 €/kg i, a e), 2,08 €/kg), 83 (19 i 21 intercanviats a l'eix),
       84 (30 marques i n'hi ha 33; F₁ = 9) i 85 (a l'enunciat hi falta la parella 6–6).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## 4t ESO Aplicades · UD9 (Atzar i decisions)
 
@@ -114,7 +114,7 @@ Comença a finals de novembre de 2026.
       (52 fitxes, 22 imatges a `apl-ud9/`). Fora: 83 («Resuelta en el libro de texto»).
 - [x] Errades noves: Act. 42 (exactament 3 cavalls en 4 cartes: 0,0036 i 0,0016), ex. 76 b) («moreno»,
       no «rubio») i 88 c) (7/8, no 6/8).
-- [ ] Setmanes de debò. Ara n'hi ha una d'exemple amagada.
+- [x] Setmanes de debò (`tasques.js`), amb el calendari 2026-27 i els enunciats en català.
 
 ## Les altres UD (vistiplau P1–P3, P5–P6, P8–P11)
 
@@ -139,8 +139,7 @@ Comença a finals de novembre de 2026.
 - [ ] U5 · 18 (no és al catàleg, però surt a la mateixa pàgina que l'activitat 19): B′(3, 24),
       C′(1, 2), D′(1, 6) i G′(3, 64) haurien de ser B′(2, 3), C′(2, 1), D′(6, 1) i G′(6, 3). Per a la llista d'errades de
       l'editorial.
-- [ ] Les errades: si se n'han de fer moltes, o amb pegats, portar les eines de `sol` i adaptar-les
-      (`ERRADES.md`, apartat 6).
+- [x] Els pegats: motor portat de `sol` i adaptat (`eines/pegats/`). Les 62 errades de 4t porten pegat.
 - [ ] U5 · 68 c): 12,85 cm (truncat); arrodonit seria 12,86. No s'ha posat a `errades.js`.
 - [ ] Annex de Polinomis, pàg. 332 del llibre: hi ha dos exercicis numerats 68 (el segon és el 69).
       Per a la llista d'errades de l'editorial.

@@ -121,7 +121,7 @@ const ENUNCIATS = {
     titol: TEX`Escalfem el cap`,
     text: TEX`Calcula el costat que falta:`,
     apartats: [TEX`catets $3$ i $4$; hipotenusa?`, TEX`hipotenusa $13$ i un catet $5$; l’altre catet?`],
-    col: 2,
+    col: 1,
     solucio: [TEX`a) $\sqrt{3^2+4^2} = \sqrt{25} = 5$`,
               TEX`b) $\sqrt{13^2-5^2} = \sqrt{144} = 12$`] },
 
@@ -306,7 +306,7 @@ const ENUNCIATS = {
       TEX`$x^2 + (x + 2)(x - 3) = 0$`, TEX`$4x^2 + 2(x - 6) - (x + 2)^2 = 0$`,
       TEX`$(x - 1)(x + 2) + 3x = 4(x - 2) - (x - 12)$`, TEX`$(x + 5)(3 - x) = 2x(1 - x) + 12$`,
       TEX`$x + x(x - 3) + 3 = x(4 - 2x) + x + 1$`, TEX`$2x^2 - 3(x + 2) = x(x + 3) - 11$`],
-    col: 2 },
+    col: 1 },
 
   'apl-ud5/AP.49': {
     text: TEX`Efectua:`,
@@ -416,9 +416,9 @@ const ENUNCIATS = {
   'apl-ud8/U8.58': {
     text: TEX`Calcula la mitjana aritmètica, la mediana i la moda de cada grup de valors.`,
     apartats: [
-      TEX`$1, 0, 2, 3, 1, 2, 2, 0, 3, 4, 1, 5, 3, 1, 2, 4, 5, 3, 2, 2, 1, 0$`,
-      TEX`$8, 4, 2, 6, 8, 4, 4, 2, 6, 6, 8, 8, 4, 6, 2$`,
-      TEX`$100, 150, 300, 100, 250, 200, 250, 100, 200, 250$`],
+      TEX`1, 0, 2, 3, 1, 2, 2, 0, 3, 4, 1, 5, 3, 1, 2, 4, 5, 3, 2, 2, 1, 0`,
+      TEX`8, 4, 2, 6, 8, 4, 4, 2, 6, 6, 8, 8, 4, 6, 2`,
+      TEX`100, 150, 300, 100, 250, 200, 250, 100, 200, 250`],
     col: 1 },
 
   'apl-ud8/U8.70': {
@@ -448,7 +448,7 @@ const ENUNCIATS = {
     apartats: [
       TEX`$P(\text{3 cares})$`, TEX`$P(\text{0 cares})$`, TEX`$P(\text{4 cares})$`, TEX`$P(\text{2 creus i 1 cara})$`,
       TEX`$P(\text{2 cares i 1 creu})$`, TEX`$P(\text{1 creu})$`, TEX`$P(\text{almenys 2 cares})$`, TEX`$P(\text{com a màxim 1 cara})$`],
-    col: 2 },
+    col: 1 },
 
   'apl-ud9/U9.58': {
     text: TEX`A una reunió hi van $10$ persones. Quantes encaixades de mans hi haurà si cadascuna saluda la resta una vegada?` },
@@ -805,6 +805,365 @@ const ENUNCIATS = {
     titol: TEX`Respon amb números`,
     text: TEX`Un amic et diu: «el meu cosí guanya diners amb les apostes; si en saps, a la llarga es guanya». Fes-li una resposta de tres o quatre frases amb els números d’aquesta activitat.`,
     solucio: [TEX`Resposta oberta. Idees: cada aposta té guany mitjà negatiu (per exemple, $-5$ cèntims per euro a quota $1{,}90$); al principi molta gent va guanyant (un $38\,\%$ després de $10$ apostes), però després de $1\,000$ només un $5\,\%$, i la pèrdua mitjana és de $500$ €; qui guanya ho explica i qui perd, no.`] },
+
+  /* ── Enunciats de les tasques UD4–UD11 del curs 2026-27 ── */
+
+  'apl-ud4/U5.65': {
+    text: TEX`Els costats d’un triangle fan $a = 7$ cm, $b = 8$ cm i $c = 10$ cm. Quant fan els costats d’un triangle semblant de perímetre $125$ cm?` },
+
+  'apl-ud4/U5.77': {
+    titol: TEX`Repte`,
+    text: TEX`Demostra que, per calcular l’altura $h$, no influeix la distància de separació de les columnes $AB$ i $CD$. Quant fa l’altura?`,
+    fig: ['enunciats/U5.77.png'] },
+
+  'apl-ud11/AP.76': {
+    text: TEX`Considera els polinomis $I(x) = x^2 + 2x$ i $G(x) = x^2 - 2x$ i calcula:`,
+    apartats: [TEX`$B(x) = I(x) - G(x)$`, TEX`$B(365)$`] },
+
+  'apl-ud11/AP.81': {
+    text: TEX`El nombre d’assistents a una festa ve donat per $N(t) = -\dfrac{20t^2}{3} + 40t + 10$, on $t$ són les hores transcorregudes des que comença. L’organització és al local abans i després de la festa, i el pic d’assistència va ser a les $3$ hores de començar.`,
+    apartats: [TEX`Quantes persones formen l’organització?`, TEX`Quantes persones hi va haver a la vegada, com a màxim?`, TEX`Quants assistents hi havia al cap d’una hora i mitja?`],
+    col: 1 },
+
+  'apl-ud5/U3.3': {
+    text: TEX`Comprova si $x = 3$ i $x = -3$ són solució d’aquestes equacions.`,
+    apartats: [TEX`$3x - 2 = 7$`, TEX`$x^2 - 9 = 0$`, TEX`$x - 3 = 0$`, TEX`$(x - 3)^2 = 0$`] },
+
+  'apl-ud5/U3.8': {
+    text: TEX`Resol aquestes equacions.`,
+    apartats: [TEX`$7x^2 - 12 = 0$`, TEX`$2x^2 - 32 = 0$`, TEX`$2x^2 = 0$`],
+    col: 3 },
+
+  'apl-ud5/U3.38': {
+    text: TEX`Resol aquestes equacions.`,
+    apartats: [TEX`$x(6x - 7) = 0$`, TEX`$x(5 - 4x) = 0$`, TEX`$x(2x + 9) = 0$`, TEX`$x(4x + 8) = 0$`] },
+
+  'apl-ud5/U3.39': {
+    text: TEX`Resol aquestes equacions.`,
+    apartats: [TEX`$x(x + 1) = 0$`, TEX`$x(x + 1) = 1$`, TEX`$x(x + 1) = x$`, TEX`$x(x + 1) = -x$`, TEX`$x(x + 1) = x + 1$`, TEX`$x(x + 1) = -x + 1$`] },
+
+  'apl-ud5/AP.10': {
+    text: TEX`Desenvolupa aplicant les igualtats notables.`,
+    apartats: [TEX`$(x + 3y)^2$`, TEX`$(3x + 2)(3x - 2)$`, TEX`$(5x - 1)^2$`, TEX`$(x + 5y)(x - 5y)$`, TEX`$(-3x + y)^2$`, TEX`$(-2x - y)^2$`] },
+
+  'apl-ud5/U3.9': {
+    text: TEX`Determina el nombre de solucions d’aquestes equacions.`,
+    apartats: [TEX`$x^2 - 10x + 25 = 0$`, TEX`$x^2 - 5x + 8 = 0$`] },
+
+  'apl-ud5/U3.45': {
+    text: TEX`Sense resoldre-les, digues quantes solucions tenen aquestes equacions.`,
+    apartats: [TEX`$x^2 - 8x + 16 = 0$`, TEX`$4x^2 + 4x - 1 = 0$`, TEX`$x^2 - 12x + 40 = 0$`, TEX`$x^2 + 3x = 0$`, TEX`$x^2 = x$`, TEX`$x^2 = x - 3$`, TEX`$-x^2 = 5$`, TEX`$x^2 = -x$`] },
+
+  'apl-ud5/U3.7': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Troba equacions de segon grau que tinguin aquestes solucions.`,
+    apartats: [TEX`$x_1 = 4$, $x_2 = -2$`, TEX`$x_1 = 7$, $x_2 = 0$`] },
+
+  'apl-ud5/U3.11': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Escriu dues equacions de segon grau que tinguin $-2$ com a única solució.` },
+
+  'apl-ud5/U3.40': {
+    titol: TEX`Investiga`,
+    text: TEX`Busca una manera de resoldre aquestes equacions sense la fórmula, fent servir les identitats notables, i resol-les.`,
+    apartats: [TEX`$(x - 3)^2 - 4 = 0$`, TEX`$x^2 - 6x + 8 = 0$`] },
+
+  'apl-ud5/U3.42': {
+    text: TEX`Indica el grau d’aquestes equacions i resol-les.`,
+    apartats: [TEX`$2x(1 + x) - 5 = x(x + 1) + x^2$`, TEX`$(x + 4)(x - 8) = x(x + 1) - 2$`, TEX`$4(x + 1)x - 9 + 2x(3 + x) \cdot 5 - 1 = 7x(2x + 3)$`],
+    col: 1 },
+
+  'apl-ud5/U3.43': {
+    text: TEX`Troba les solucions d’aquestes equacions.`,
+    apartats: [TEX`$-x^2 - \dfrac{x}{3} + \dfrac{1}{12} = 0$`, TEX`$x^2 - \dfrac{5x}{4} - \dfrac{3}{2} = 0$`, TEX`$\dfrac{x^2}{9} + \dfrac{2x}{3} - 3 = 0$`, TEX`$\dfrac{3x^2}{8} + \dfrac{5x}{4} + 1 = 0$`] },
+
+  'apl-ud5/U3.49': {
+    titol: TEX`Inventa`,
+    text: TEX`Escriu quatre equacions de segon grau de la forma $x^2 + 2x + c = 0$:`,
+    apartats: [TEX`amb dues solucions.`, TEX`amb una solució doble.`, TEX`sense solució.`],
+    col: 1 },
+
+  'apl-ud5/U3.51': {
+    text: TEX`Digues si és vertader o fals, i raona-ho.`,
+    apartats: [TEX`Les solucions de $x^2 + 1 = 0$ són $x = \pm 1$.`, TEX`$x^2 - 4 = 0$ té les mateixes solucions que $3x^2 = 12$.`, TEX`$x^2 + 2x^2 + 3x^2 + 4x^2 = 0$ té com a solució $x = 10$.`, TEX`Les solucions de $x^2 - x = 0$ i de $x^2 = -x$ coincideixen.`, TEX`Si es multiplica $ax^2 + bx + c = 0$ per $n$, les seves solucions queden multiplicades per $n$.`],
+    col: 1 },
+
+  'apl-ud5/U3.71': {
+    text: TEX`Tenim $70$ m de cable per encerclar un hort rectangular. Si l’amplada ha de ser tres quartes parts de la llargada, quina superfície tindrà l’hort?` },
+
+  'apl-ud5/U3.77': {
+    text: TEX`Un jardí rectangular fa $5\,600$ m² i té $10$ m més de llargada que d’amplada. Quant fa d’amplada?` },
+
+  'apl-ud5/U7.95': {
+    text: TEX`Un jugador de bàsquet, a la línia situada a $4{,}6$ m de la cistella, llança un tir lliure.`,
+    apartats: [TEX`Quin tipus de funció és la trajectòria de la pilota?`, TEX`Troba’n l’equació, sabent que el punt més alt és a la meitat de la distància entre el jugador i la cistella i que la seva altura és de $3{,}5$ m.`],
+    col: 1 },
+
+  'apl-ud5/U3.44': {
+    titol: TEX`Repte`,
+    text: TEX`Si $x = \sqrt{2} - 1$ és solució de $3x^2 - ax + 1 = 0$, quin és el valor de $a$?` },
+
+  'apl-ud10/U4.8': {
+    text: TEX`Resol per substitució, igualació i reducció aquests sistemes.`,
+    apartats: [TEX`$\left.\begin{aligned} x-y&=4\\ x+2y&=13 \end{aligned}\right\}$`, TEX`$\left.\begin{aligned} 2x+3y&=-5\\ 3x+2y&=-5 \end{aligned}\right\}$`] },
+
+  'apl-ud10/U4.63': {
+    text: TEX`En un congrés hi ha $60$ persones. Si se n’anessin $3$ homes i en vinguessin $3$ dones, el nombre de dones seria $\dfrac{1}{3}$ del d’homes. Quants homes i quantes dones hi ha?` },
+
+  'apl-ud10/U4.64': {
+    text: TEX`En una caravana de camells i dromedaris hi ha $440$ potes i $160$ gepes. Quants camells i quants dromedaris hi ha? (Els camells tenen dues gepes i els dromedaris, una.)` },
+
+  'apl-ud10/U4.68': {
+    text: TEX`L’Elena té vuit monedes que sumen $3{,}10$ €. Totes són de $0{,}50$ € o de $0{,}20$ €. Quantes en té de cada tipus?` },
+
+  'apl-ud10/U3.58': {
+    text: TEX`Completa amb $<$, $\le$, $>$ o $\ge$ perquè sigui cert per a $x = 2$.`,
+    apartats: [TEX`$2x\ \square\ 3$`, TEX`$-2x\ \square\ 3$`, TEX`$-2x\ \square\ -3$`, TEX`$-2x\ \square\ 3x$`, TEX`$2\ \square\ -3x$`, TEX`$-2\ \square\ -3x$`, TEX`$4x\ \square\ 1$`, TEX`$3x\ \square\ -x + 3$`] },
+
+  'apl-ud10/U3.24': {
+    text: TEX`Resol aquestes inequacions.`,
+    apartats: [TEX`$2x - 3x + 5 > 6x - 1$`, TEX`$-2x < 2x - 4$`, TEX`$2x > 4x + 2$`, TEX`$5x \le x + 5$`, TEX`$7 - 2x < -4$`, TEX`$x + 1 < 2x - 1$`, TEX`$4x \ge 1 - x$`, TEX`$-2x \ge 0$`] },
+
+  'apl-ud10/U3.59': {
+    text: TEX`Opera i resol aquestes inequacions.`,
+    apartats: [TEX`$1 - (x + 2) \cdot 2 \le 4(x - 9)$`, TEX`$6(x + 5) > x + 3(4 - x)$`, TEX`$-7(4 + x) < 1 + 5(2 - x)$`, TEX`$5(4x - 1) \ge (x + 3)(-4)$`, TEX`$2 - 3(9 - x) \ge x - (-x + 7)$`, TEX`$x + (7 - x) \cdot 3 < 4x - 5(3 + x)$`],
+    col: 1 },
+
+  'apl-ud10/U3.26': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Escriu una inequació que tingui com a solució $[2, +\infty)$.` },
+
+  'apl-ud10/U3.80': {
+    text: TEX`Resol $0 < x - 3 < 18$.` },
+
+  'apl-ud10/U3.73': {
+    text: TEX`A la platja, llogar una cadira costa $3$ € l’hora. Una gandula costa $5$ € fixos més $2$ € l’hora. A partir de quantes hores és més econòmica la gandula?` },
+
+  'apl-ud10/U7.93': {
+    text: TEX`El Carles vol llogar una caravana. La tarifa A és de $50$ € més $10$ € per dia, i la tarifa B, de $30$ € més $12$ € per dia.`,
+    apartats: [TEX`Si la lloga $8$ dies, quina empresa és més barata?`, TEX`I si la lloga $15$ dies?`, TEX`Escriu les funcions Preu–Temps i representa-les en els mateixos eixos. On es tallen? Què representen els punts de tall?`],
+    col: 1 },
+
+  'apl-ud6/U7.46': {
+    text: TEX`Relaciona cada funció amb la seva gràfica.`,
+    apartats: [TEX`$y = (x + 1)^2 - 1$`, TEX`$y = -(x + 2)^2 + 4$`, TEX`$y = 2(x + 1)^2 - 2$`, TEX`$y = -(x - 3)^2 + 5$`],
+    fig: ['enunciats/U7.46.png'] },
+
+  'apl-ud6/U7.51': {
+    text: TEX`Representa aquestes funcions.`,
+    apartats: [TEX`$y = -x^2 + 7x$`, TEX`$y = -\left(x - \dfrac{1}{2}\right)^2 + \dfrac{1}{4}$`, TEX`$y = 3x^2 - 4x$`, TEX`$y = -\left(\dfrac{1}{3} - x\right)^2 + \dfrac{1}{9}$`],
+    col: 1 },
+
+  'apl-ud6/U6.28': {
+    text: TEX`Troba en cada cas els punts de tall amb els eixos.`,
+    apartats: [TEX`$f(x) = \dfrac{x^2 + 4x + 3}{3}$`, TEX`$f(x) = \dfrac{2x - 1}{5}$`] },
+
+  'apl-ud6/U7.54': {
+    titol: TEX`Inventa`,
+    text: TEX`Escriu l’equació de dues paràboles:`,
+    apartats: [TEX`amb vèrtex al punt $(2, -1)$.`, TEX`que passin pel punt $(-1, 4)$.`],
+    col: 1 },
+
+  'apl-ud6/U7.106': {
+    text: TEX`En una fàbrica de tractors, el cost de fabricació per unitat, en milers d’euros, ve donat per la funció $y = -\dfrac{1}{4}x^2 + 4x + 20$, on $x$ és el nombre de tractors fabricats.`,
+    apartats: [TEX`Quin és el preu màxim de cost d’una unitat?`, TEX`Quant costa un tractor si avui se n’han fabricat $15$?`],
+    col: 1 },
+
+  'apl-ud6/U7.96': {
+    text: TEX`Es llança un bumerang que segueix la trajectòria $f(x) = -x^2 + 5x$. Un ocell vola al mateix temps seguint la recta $y = x + 3$. Es tallen les trajectòries en algun punt? En quin punt es produirà el xoc?` },
+
+  'apl-ud6/U7.100': {
+    titol: TEX`Ajuda humanitària`,
+    text: TEX`Els avions de càrrega llancen aliments i medicines a poblacions aïllades. Volen tan baix com poden perquè l’impacte no malmeti el contingut. La velocitat $v$, en m/s, amb què arriba a terra un objecte que cau des d’una altura $h$, en m, és $v = \sqrt{20h}$. Representa la funció que relaciona l’altura des de la qual s’ha de llançar un objecte amb la velocitat amb què ha d’arribar.` },
+
+  'apl-ud7/U6.79': {
+    text: TEX`Determina els intervals de creixement i de decreixement i els màxims i mínims d’aquestes funcions.`,
+    fig: ['enunciats/U6.79.png'] },
+
+  'apl-ud7/U6.84': {
+    text: TEX`El gràfic mostra l’evolució de la temperatura d’un dia (a l’eix horitzontal, les hores). Determina quan es va arribar a la temperatura màxima i a la mínima, i si aquest màxim és absolut o relatiu.`,
+    fig: ['enunciats/U6.84.png'] },
+
+  'apl-ud7/U6.100': {
+    text: TEX`Representa aquesta funció i troba’n el domini i el recorregut.`,
+    despres: TEX`$f(x) = \begin{cases} 2x - 2 & \text{si } x \le 1\\ 2 - 2x & \text{si } 1 < x \le 3\\ -4 & \text{si } x > 3 \end{cases}$` },
+
+  'apl-ud7/U6.112': {
+    text: TEX`Expressa amb una funció a trossos el cost dels enviaments d’una botiga:`,
+    punts: [TEX`Comanda de menys de $400$ €: $39$ €.`, TEX`Comanda d’entre $400$ € i $990$ €: el $10$ % de l’import.`, TEX`Comanda de $990$ € o més: $99$ €.`] },
+
+  'apl-ud7/U7.87': {
+    text: TEX`El cost fix de la factura mensual d’electricitat és de $10$ €. A més, cada quilowatt hora costa $0{,}02$ €. Fes una taula que relacioni la despesa mensual, en kWh, i l’import, en euros. Escriu la funció i representa-la.` },
+
+  'apl-ud7/U7.97': {
+    text: TEX`El bacteri E. coli, que viu a l’intestí d’alguns animals, es reprodueix per bipartició cada $25$ minuts. Calcula l’expressió de la funció que relaciona el nombre de bacteris, $n$, amb el temps, $t$, transcorregut des que el primer bacteri es reprodueix.` },
+
+  'apl-ud7/U7.75': {
+    text: TEX`Representa aquestes funcions sobre els mateixos eixos.`,
+    apartats: [TEX`$y = 2^{2x}$`, TEX`$y = 4^{-2x}$`, TEX`$y = \left(\dfrac{1}{2}\right)^{x/2}$`],
+    col: 3 },
+
+  'apl-ud8/U8.1': {
+    text: TEX`Digues si estudiaries la població o una mostra.`,
+    apartats: [TEX`La longitud dels cargols que fabrica una màquina de manera contínua.`, TEX`El pes d’un grup de cinc amics.`],
+    col: 1 },
+
+  'apl-ud8/U8.2': {
+    titol: TEX`Reflexiona`,
+    text: TEX`Aquest és el color de cabells de $15$ noies (M: morè, R: ros, P: pèl-roig). Fes-ne la taula de freqüències.`,
+    despres: TEX`M R P M M M P R R R M M R R P` },
+
+  'apl-ud8/U8.3': {
+    text: TEX`Aquest és el sexe de $20$ nadons (H: nen, M: nena). Fes-ne la taula de freqüències, el diagrama de sectors i el diagrama de barres.`,
+    despres: TEX`H M H H M · M H H M M · M M M H M · M H H M M` },
+
+  'apl-ud8/U8.39': {
+    text: TEX`Dels $30$ estudiants d’una classe, el $10$ % ho va aprovar tot, el $20$ % va suspendre una assignatura, el $50$ % en va suspendre dues i la resta, més de dues.`,
+    apartats: [TEX`Fes la taula de freqüències.`, TEX`Quina freqüència respon a quants van suspendre menys de dues assignatures?`],
+    col: 1 },
+
+  'apl-ud8/U8.46': {
+    text: TEX`Tria un gràfic adequat i representa les $35$ dades obtingudes en un estudi estadístic d’una variable quantitativa amb cinc valors, per als quals es té que $f_1 = 7$, $f_2 = 5$, $f_3 = 9$ i $f_4 = 10$.` },
+
+  'apl-ud8/U8.49': {
+    text: TEX`Construeix un diagrama de sectors per a aquesta taula.`,
+    despres: TEX`$\begin{array}{l|c|c} \text{Menjar} & f_i & h_i\\ \hline \text{Pasta} & 45 & 0{,}225\\ \text{Llegums} & 30 & 0{,}15\\ \text{Verdura} & 20 & 0{,}1\\ \text{Carn} & 65 & 0{,}325\\ \text{Peix} & 40 & 0{,}2 \end{array}$` },
+
+  'apl-ud8/U8.52': {
+    text: TEX`Aquestes són les estatures, en cm, de $27$ joves. Agrupa-les en intervals d’amplitud $5$ començant per $[150, 155)$, fes el recompte i la taula de freqüències, i dibuixa l’histograma.`,
+    despres: TEX`$\begin{array}{ccccc} 155 & 178 & 170 & 165 & 173\\ 169 & 158 & 170 & 179 & 161\\ 167 & 151 & 163 & 158 & 164\\ 168 & 160 & 166 & 176 & \\ 164 & 156 & 170 & 171 & \\ 174 & 176 & 164 & 154 & \end{array}$` },
+
+  'apl-ud8/U8.54': {
+    text: TEX`Fes la taula de freqüències d’aquest gràfic.`,
+    fig: ['enunciats/U8.54.png'] },
+
+  'apl-ud8/U8.63': {
+    text: TEX`Calcula les mesures de centralització d’aquestes dades.`,
+    despres: TEX`$\begin{array}{cccccccccc} 7&3&2&4&5&1&8&6&1&5\\ 8&6&3&4&0&9&2&5&7&4\\ 3&2&4&9&8&1&0&2&4&1\\ 0&2&1&5&6&4&3&5&2&3 \end{array}$` },
+
+  'apl-ud8/U8.59': {
+    text: TEX`Troba el valor de $x_4$ si la mitjana és $5$.`,
+    apartats: [TEX`$\begin{array}{c|ccccc} x_i & 1 & 4 & 6 & x_4 & 9\\ \hline f_i & 5 & 2 & 6 & 4 & 1 \end{array}$`, TEX`$\begin{array}{c|cccc} x_i & 2 & 3 & 6 & x_4\\ \hline f_i & 5 & 2 & 4 & 3 \end{array}$`],
+    col: 1 },
+
+  'apl-ud8/U8.62': {
+    text: TEX`Calcula la mitjana, la mediana i la moda d’aquestes dades.`,
+    despres: TEX`$\begin{array}{c|c} \text{Interval} & f_i\\ \hline [0, 4) & 15\\ {[4, 8)} & 12\\ {[8, 12)} & 9\\ {[12, 16)} & 10\\ {[16, 20)} & 7 \end{array}$` },
+
+  'apl-ud8/U8.69': {
+    text: TEX`Tenim les dades $23$, $17$, $y$, $19$, $x$, $16$. Troba $x$ i $y$ perquè la mitjana sigui $20$ i la moda, $23$.` },
+
+  'apl-ud8/U8.80': {
+    titol: TEX`Finances`,
+    text: TEX`L’1 de gener de 2018 vaig invertir $12\,000$ € en un fons d’inversió. Les rentabilitats anuals van ser: 2018, $+2{,}57$ %; 2019, $-0{,}22$ %; 2020, $+3{,}48$ %; 2021, $-4{,}67$ %; 2022, $-1{,}08$ %.`,
+    apartats: [TEX`Quina va ser la rentabilitat mitjana?`, TEX`Si vaig treure els diners l’1 de gener de 2023, en vaig obtenir més o menys dels que vaig invertir? Quant vaig obtenir?`],
+    col: 1 },
+
+  'apl-ud8/U8.81': {
+    titol: TEX`Agricultura`,
+    text: TEX`El preu per quilo de la coliflor depèn del pes de cada peça: fins a $0{,}5$ kg, $1{,}20$ €; de $0{,}51$ a $1$ kg, $1{,}50$ €; de $1{,}01$ a $1{,}5$ kg, $1{,}80$ €; de $1{,}51$ a $2$ kg, $2{,}10$ €; més de $2$ kg, $2{,}40$ €. Aquests són els pesos, en kg, de les coliflors d’un hort:`,
+    punts: [TEX`$0{,}45\quad 0{,}89\quad 1{,}12\quad 1{,}23\quad 1{,}01$`, TEX`$0{,}78\quad 1{,}56\quad 0{,}92\quad 1{,}34\quad 0{,}99$`, TEX`$1{,}67\quad 1{,}87\quad 1{,}56\quad 1{,}05\quad 0{,}91$`, TEX`$1{,}74\quad 1{,}22\quad 1{,}15\quad 1{,}46\quad 1{,}14$`, TEX`$1{,}23\quad 1{,}33\quad 1{,}47\quad 1{,}65\quad 1{,}78$`, TEX`$1{,}09\quad 0{,}85\quad 1{,}19\quad 1{,}22\quad 1{,}08$`, TEX`$1{,}18\quad 1{,}29\quad 1{,}36$`],
+    apartats: [TEX`Agrupa-les per classes i calcula quants ingressos s’obtenen per totes.`, TEX`Quant s’obté de mitjana per quilo?`, TEX`El pes mitjà d’una coliflor és de $1{,}2$ kg. Aquest hort és per sobre o per sota?`, TEX`Quina és la classe amb més coliflors? Com s’anomena aquesta classe?`, TEX`S’estima que poden augmentar $0{,}2$ kg per setmana durant dues setmanes. Quant s’obtindrà si es mantenen dues setmanes més? S’incrementarà la mitjana del preu per quilo?`],
+    col: 1 },
+
+  'apl-ud8/U8.82': {
+    titol: TEX`Investiga`,
+    text: TEX`L’estatura mitjana de $25$ estudiants és de $160$ cm. Digues si és vertader o fals.`,
+    apartats: [TEX`Si una noia fa $162$ cm, hi ha d’haver un estudiant de $158$ cm.`, TEX`L’estatura de la majoria és de $160$ cm.`, TEX`Si s’ordenen per estatura, el que ocupa la posició central fa $160$ cm.`, TEX`La meitat ha de fer menys de $160$ cm i l’altra meitat, més.`],
+    col: 1 },
+
+  'apl-ud8/U8.73': {
+    text: TEX`Afegeix dues dades a $8\ \ 8\ \ 8\ \ 8\ \ 8\ \ 9\ \ 9\ \ 10\ \ 10\ \ 10$ perquè:`,
+    apartats: [TEX`$Me = 8{,}5$`, TEX`$Me = 8$`, TEX`$Me = 9$`],
+    col: 3 },
+
+  'apl-ud8/U8.77': {
+    titol: TEX`Repte`,
+    text: TEX`La mitjana de $100$ nombres és $86$. S’esborren $20$ nombres i la mitjana passa a ser $84$. Quina és la mitjana dels $20$ nombres esborrats?` },
+
+  'apl-ud9/U9.17': {
+    text: TEX`Digues quins d’aquests experiments són aleatoris i quins són deterministes.`,
+    apartats: [TEX`Pesar $1$ dm³ d’aigua.`, TEX`Mesurar el costat d’un quadrat de $2$ cm².`, TEX`Preguntar un nombre de $2$ xifres.`, TEX`Llançar un dau i anotar el resultat.`],
+    col: 1 },
+
+  'apl-ud9/U9.63': {
+    text: TEX`Classifica en deterministes o aleatoris.`,
+    apartats: [TEX`El temps d’un atleta en una cursa.`, TEX`Repartir un nombre de caramels entre $4$ nenes.`, TEX`Triar un nombre menor que $12$.`, TEX`Les persones que hi ha en un autobús a una hora determinada.`, TEX`La distància recorreguda per un vehicle que circula a $80$ km/h.`, TEX`Els caràcters rebuts en el pròxim correu.`, TEX`Les monedes d’$1$ € per $4$ bitllets de $5$ €.`, TEX`Les monedes que et donen a canvi de $4$ bitllets de $5$ €.`],
+    col: 1 },
+
+  'apl-ud9/U9.1': {
+    text: TEX`Un equip de futbol té $2$ equipacions, formades per samarreta, pantalons i mitjons, de colors diferents, verd i blau. De quantes maneres diferents es poden vestir sense que es repeteixi la indumentària?` },
+
+  'apl-ud9/U9.45': {
+    text: TEX`Un menú té $3$ primers, $3$ segons i $4$ postres. Quants menús diferents es poden fer? Calcula-ho amb el mètode del producte i amb un diagrama d’arbre.` },
+
+  'apl-ud9/U9.47': {
+    text: TEX`Amb les xifres $1$, $2$, $3$ i $4$ es formen nombres de tres xifres. Quants nombres n’hi ha que comencin per una xifra parella? Quants comencen i acaben per una xifra senar?` },
+
+  'apl-ud9/U9.23': {
+    text: TEX`Llancem una moneda $75$ vegades i obtenim $43$ cares. La freqüència relativa de «Sortir creu» és:`,
+    apartats: [TEX`$\dfrac{32}{75}$`, TEX`$32$`, TEX`$\dfrac{32}{100}$`, TEX`$0{,}32$`],
+    col: 4 },
+
+  'apl-ud9/U9.26': {
+    text: TEX`En una bossa hi ha $5$ boles vermelles, $10$ de verdes i $5$ de blaves. Calcula la probabilitat d’extreure’n una que sigui:`,
+    apartats: [TEX`vermella.`, TEX`verda.`, TEX`blava.`, TEX`negra.`],
+    col: 4 },
+
+  'apl-ud9/U9.28': {
+    text: TEX`El Jordi té $5$ camises de màniga llarga, $8$ de màniga curta i $7$ samarretes. Si tria una peça a l’atzar, calcula la probabilitat que sigui:`,
+    apartats: [TEX`una camisa de màniga llarga.`, TEX`una samarreta.`, TEX`una camisa de màniga curta.`, TEX`una camisa.`],
+    col: 1 },
+
+  'apl-ud9/U9.80': {
+    text: TEX`Traiem una carta d’una baralla espanyola de $40$ cartes (oros, copes, espases i bastos; cada pal té as, del $2$ al $7$, sota, cavall i rei). Calcula la probabilitat de treure:`,
+    apartats: [TEX`un as.`, TEX`un oro.`, TEX`el rei de bastos.`, TEX`un as o una figura.`] },
+
+  'apl-ud9/U9.81': {
+    titol: TEX`Investiga`,
+    text: TEX`Un espai mostral té quatre successos elementals. Raona si pot ser cert que les seves probabilitats siguin $\dfrac{1}{5}$, $\dfrac{2}{3}$, $\dfrac{1}{10}$ i $\dfrac{1}{20}$.` },
+
+  'apl-ud9/U9.40': {
+    text: TEX`En una urna hi ha $2$ boles blanques i $2$ de blaves. Calcula la probabilitat d’extreure primer una bola blava i després una de blanca si:`,
+    apartats: [TEX`no tornem la primera bola a l’urna.`, TEX`tornem la primera bola a l’urna.`],
+    col: 1 },
+
+  'apl-ud9/U9.99': {
+    titol: TEX`Biologia`,
+    text: TEX`Suposem que és igual de probable que un nadó sigui nen o nena. Una parella té dos fills. Calcula la probabilitat que siguin:`,
+    apartats: [TEX`dos nens.`, TEX`dues nenes.`, TEX`un nen i una nena.`],
+    col: 1 },
+
+  'apl-ud9/U9.88': {
+    text: TEX`Es llancen tres monedes. Calcula la probabilitat d’obtenir:`,
+    apartats: [TEX`almenys dues creus.`, TEX`almenys una cara.`, TEX`com a molt dues creus.`, TEX`com a molt una cara.`] },
+
+  'apl-ud9/U9.43': {
+    text: TEX`Durant una campanya de vacunació de la grip es vacuna el $60$ % de la població. Passat un mes, s’observa que han emmalaltit el $10$ % de les persones vacunades i el $60$ % de les no vacunades. Calcula la probabilitat que, triada una persona a l’atzar:`,
+    apartats: [TEX`estigui vacunada i no hagi emmalaltit.`, TEX`no estigui vacunada i hagi emmalaltit.`],
+    col: 1 },
+
+  'apl-ud9/U9.87': {
+    text: TEX`Es llança un dau enlaire i se sumen els punts de les cares visibles. Calcula la probabilitat d’obtenir:`,
+    apartats: [TEX`exactament $15$.`, TEX`$17$ o $19$.`, TEX`més de $16$.`, TEX`un nombre primer.`] },
+
+  'apl-ud9/U9.34': {
+    text: TEX`Calcula la probabilitat de no treure ni asos ni figures en extreure una carta de la baralla espanyola.` },
+
+  'apl-ud9/U9.84': {
+    text: TEX`En un dau tenim que $P(1) = P(2) = P(3) = \dfrac{1}{7}$ i $P(4) = P(5) = P(6) = x$. Quin és el valor de $x$?` },
+
+  'apl-ud9/U9.98': {
+    text: TEX`En una penya, la probabilitat que, triada una persona a l’atzar, sigui un noi és $0{,}48$.`,
+    apartats: [TEX`Quina és la probabilitat que sigui una noia?`, TEX`Quants membres té la penya si hi ha $13$ noies?`],
+    col: 1 },
+
+  'apl-ud9/U9.96': {
+    text: TEX`Es llancen tres daus i es multipliquen els resultats. Quina és la probabilitat que el producte sigui $36$?` },
+
+  'apl-ud9/U9.102': {
+    titol: TEX`Investiga`,
+    text: TEX`Dos jugadors de bàsquet tenen un percentatge d’encert del $50$ % en tirs lliures. Juguen alternant els tirs fins que un dels dos anoti. Quin avantatge té el primer que llança?` },
 };
 
 /* ── Funcions (no cal tocar-les) ─────────────────────────────────────── */

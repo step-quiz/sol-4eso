@@ -9,6 +9,7 @@ Totes s'executen des de l'arrel del repo. **Cap eina toca el repo si no li ho di
 | `retalla.py` + `retalls.json` | Fa les imatges de les pàgines d'una unitat a partir del PDF de `source/` |
 | `figura.py` | Retalla una figura del PDF (gràfica, taula, dibuix) per posar-la dins d'un enunciat |
 | `optimitza_png.py` | Comprimeix les imatges sense cap pèrdua (només si el resultat és idèntic píxel a píxel) |
+| `pegats/` | Motor de pegats: `fes.py` fa els PNG a partir de les receptes (`receptes_udN.py`) i `aplica.py` els posa a `errades.js`. Referència tècnica: `pegats/README.md` |
 
 ## Què cal
 
@@ -54,5 +55,5 @@ d'errades d'aquella unitat deixen de valer.
 
 ## Les errades
 
-Les eines de `sol` per a les errades (conversor, localitzador i pegats) no hi són encara. Vegeu
-`ERRADES.md`, apartat 6.
+El motor de pegats és a `eines/pegats/`. Les altres dues eines de `sol` per a les errades (conversor i
+localitzador) no s'han portat: les errades i les marques s'escriuen directament a `errades.js`. Vegeu `ERRADES.md`, apartat 6.

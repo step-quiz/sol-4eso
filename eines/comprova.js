@@ -117,6 +117,11 @@ if (ERRADES) for (const [k, llista] of Object.entries(ERRADES)) {
   });
 }
 
+/* Les pàgines que surten a més d'una carpeta i porten pegats (la taula la fa eines/pegats/aplica.py). */
+if (ctx.PAGINES_IGUALS) for (const r of Object.keys(ctx.PAGINES_IGUALS)) {
+  if (!existeix(r)) mal(`errades.js: PAGINES_IGUALS: no existeix la imatge ${r}`);
+}
+
 /* ── enunciats.js ── */
 const CAMPS_ENUN = ['titol', 'text', 'punts', 'apartats', 'col', 'fig', 'despres', 'solucio'];
 if (ENUNCIATS) for (const [k, e] of Object.entries(ENUNCIATS)) {
