@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 15 pistes de la UD4 (setmanes 1 i 2).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 22 pistes de la UD4 (setmanes 1, 2 i 3).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,13 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 3, 10/11/2026)**: 5 de 7 sense
+  canvis. Els dos retocs treuen el final, no hi afegeixen res:
+  - **Confia en l'esquema**: si la pista diu «Fes un esquema» i el dibuix ja mostra quin costat és la
+    hipotenusa, no cal preguntar-ho al final (4.3.3).
+  - **Un parany ja treballat no es torna a avisar**: la hipotenusa a l'escala o a la rampa ja s'ha treballat
+    (4.3.2, 4.3.6), i en un «Tria i resol» la pista ajuda a triar el mètode, no a resoldre (4.4.1).
 
 - **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 2, 9/11/2026)**: 3 de 8 sense
   canvis (U5.81, 4.3.6 i, de la setmana 1, 4.2.1). Les lliçons de la setmana 1 ja funcionen; ara afina:
