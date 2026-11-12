@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 154 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 169 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,18 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la vuitena tanda (UD5, UD6, UD10, 12/11/2026)**: 15 revisades, 8 sense canvis (U4.24, U4.32,
+  U4.39, U4.64, U4.8, U3.49, U6.28, U7.51). Els retocs són petits: les pistes ja s'acosten al seu estil.
+  - **Un sol camí, el que ja saben**: fora la drecera «o bé sumar 3 als tres membres» (U3.80). Una segona opció pot
+    confondre l'alumne d'Aplicades.
+  - **Però dos mètodes bons, sí, sense imposar-ne cap**: «treure factor comú… o bé fer servir la fórmula» (U6.24).
+  - **«Pista extra:»** per a la drecera que es pot fer «per lògica» (U3.45). El concepte, dit directament: «el
+    discriminant… que vol dir: *b*² − 4*ac*», sense descriure on és a la fórmula.
+  - **Fora els avisos que l'exercici no necessita**: «(diferent de 0)» (U7.54).
+  - **Més planer**: «el signe que tingui el valor *a*», no «el signe d'*a*» (U7.46); «el valor de *c*» (U7.54). El
+    gràfic no és la resposta, ens la diu: «el punt on es tallen… ens indica el dia» (U7.93).
+  - Descuits seus: dos dos punts a la mateixa frase (U3.45, U7.QS1).
 
 - **Què s'ha après de la setena tanda (UD2, UD3, UD5, UD8, 12/11/2026)**: 14 revisades, 4 sense canvis (2.5.5,
   2.6.4, AP.49, U3.51).
