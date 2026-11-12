@@ -264,8 +264,8 @@ descuits, no estil. No les copiïs.
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
 
-- **Què s'ha après de la setena tanda (UD2, UD3, UD5, UD8, 12/11/2026)**: 14 revisades, 5 sense canvis (2.5.5,
-  2.6.4, AP.49, U3.51, i U8.77 en part).
+- **Què s'ha après de la setena tanda (UD2, UD3, UD5, UD8, 12/11/2026)**: 14 revisades, 4 sense canvis (2.5.5,
+  2.6.4, AP.49, U3.51).
   - **Una equivalència que es pot imaginar**: «1 cm de futbolí són 100 cm = 1 m del camp de futbol real» (U5.34); «el
     7,5‰ és 0,0075, perquè és el 7,5 per cada 1 000» (U2.94), amb el símbol que veuran escrit.
   - **Instruccions que es veuen**: «passa-ho tot a l'esquerra», no «a un membre» (U3.37).
