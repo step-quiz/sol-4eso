@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 132 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 140 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,21 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la sisena tanda (UD9, 12/11/2026)**: 9 revisades, 1 sense canvis (U9.45).
+  - **Una reflexió oberta no porta pista**: ha buidat la de 9.5.12 («No hi ha una única resposta bona…»). Una pista
+    només condicionaria l'opinió de l'alumne. Text buit = sense pista: no va a `hints.js`.
+  - **L'absurd amb el número que surt**: «si multipliques 10 per 9, sortiran 90 encaixades, i això és massa. Per quin
+    motiu?» (U9.58), en lloc de preguntar per una parella amb noms inventats.
+  - **Fora l'exemple que resol un apartat**: els dos camins de l'apartat b) (U9.93). En lloc d'això, el contrast que
+    importa: «ja no n'hi ha 10, sinó que només en queden 9».
+  - **Preguntes en llista, una per línia** («Calcula pas a pas: - quantes opcions… - quantes per a la segona?…»,
+    U9.47), i els casos paral·lels també (encertar / fallar, 9.5.9).
+  - **Dir exactament de què es parla i una acció que es pot acabar**: «quins valors pot prendre aquesta suma? Fes les
+    6 possibilitats segons la cara que no es veu» (U9.87); «un diagrama d'arbre amb les probabilitats» (U9.43).
+  - **Lèxic**: «dividit entre», no «dividit per» (U9.23); «els diners que hagis apostat» (9.5.9).
+  - Descuits seus: dos dos punts seguits, «Atenció.» per «Atenció:», ítems d'una llista amb majúscula i puntuació
+    diferents.
 
 - **Què s'ha après de la cinquena tanda (UD2, UD6–UD8, UD10, 12/11/2026)**: 18 revisades, 7 sense canvis (U3.24,
   U3.26, U4.68, U2.104, U2.36, U2.37, 8.3.2).

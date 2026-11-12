@@ -165,11 +165,19 @@ const PISTES = {
 
   /* ── 4t ESO Aplicades · Unitat 9 · Atzar i decisions ── */
   'apl-ud9/U9.1': 'Fes un <b>diagrama d\'arbre</b>:<br>- en primer lloc, tria el color de la samarreta.<br>- per a cadascuna de les tries anteriors, escull el color dels pantalons.<br>- finalment, per tancar l\'arbre, has d\'escollir el color dels mitjons.',
+  'apl-ud9/U9.45': 'Fes un <b>diagrama d\'arbre</b>:<br>- en primer lloc, tria el primer plat;<br>- per a cadascun dels primers, tria el segon;<br>- finalment, per tancar l\'arbre, tria les postres.',
+  'apl-ud9/U9.47': 'Calcula pas a pas:<br>- quantes opcions tens per a la primera xifra?<br>- quantes per a la segona?<br>- quantes per a la tercera?<br><br><b>Atenció</b>: les xifres es poden repetir. Per exemple, 211 també val.',
+  'apl-ud9/U9.58': 'Cada persona encaixa la mà amb les altres 9. Però si multipliques 10 per 9, sortiran 90 encaixades, i això és massa. Per quin motiu?',
+  'apl-ud9/U9.23': 'En primer lloc, troba quantes creus han sortit.<br><b>Atenció</b>: el total són 75 llançaments, no 100.<br>La <b>freqüència relativa</b> és el nombre de vegades que ha sortit dividit entre el nombre total de llançaments.',
   'apl-ud9/U9.27': 'Aplica la regla de Laplace. Per poder aplicar la fórmula, necessites saber quantes persones hi ha a l\'aula en total.',
   'apl-ud9/U9.81': 'Les probabilitats dels successos elementals han de complir dues condicions alhora:<br>1- Cadascuna ha de ser entre 0 i 1.<br>2- Entre totes han de sumar exactament 1.<br><br>Pensa si en el cas de l\'enunciat es compleixen les dues condicions.',
   'apl-ud9/U9.40': 'Fes un diagrama d\'arbre de dues extraccions i escriu la probabilitat a cada branca:<br>- Si <b>no retornes la bola</b>, a la segona extracció només queden 3 boles.<br>- Si <b>tornes la bola</b>, a la segona extracció tenim 4 boles, és a dir, igual que a la primera.',
   'apl-ud9/U9.88': 'Fes l\'arbre de les tres monedes. Et sortiran 8 casos, tots ells igual de probables.<br>- CCC<br>- CCX<br>- CXC<br>…',
+  'apl-ud9/U9.93': 'Fes un arbre de dues extraccions. Les boles no es tornen a l\'urna: a la segona extracció ja no n\'hi ha 10, sinó que només en queden 9.',
+  'apl-ud9/U9.43': 'Fes un diagrama d\'arbre amb les probabilitats:<br>- en primer lloc, vacunat (0,6) o no vacunat (0,4);<br>- per a cadascuna d\'aquestes branques, emmalaltit o no.',
+  'apl-ud9/U9.87': 'En un dau, les sis cares sumen 21. Si el dau és sobre la taula, es veuen totes les cares menys la de sota.<br>Per tant, la suma de les cares visibles només depèn de la cara de sota: quins valors pot prendre aquesta suma? Fes les 6 possibilitats segons la cara que no es veu.',
   'apl-ud9/9.5.5': 'És preferible començar amb una situació més senzilla. Tens un dau equilibrat i vols endevinar quin nombre sortirà, de l\'1 al 6.<br>Quantes vegades de mitjana creus que caldrà llançar el dau per tal que l\'encertis per primera vegada?',
+  'apl-ud9/9.5.9': 'Amb quota 1,80, si encertes et tornen 1,80 vegades els diners que hagis apostat. Per exemple, en una aposta de 10 €:<br>- si encertes, te\'n tornen 18 €, i per tant guanyes 8 €;<br>- si falles, perds els 10 €.',
   'apl-ud9/9.5.10': '<b>a)</b> Fes els càlculs amb la calculadora, amb tres decimals. Per exemple, la divisió 1 : 2,10 ≈ 0,476.<br><br><b>b)</b> Si la casa fos justa, la suma hauria de donar exactament 1.<br><br><b>c)</b> Calcula 1 dividit per la suma i expressa-ho en cèntims per euro.',
   'apl-ud9/U9.98': '<b>a)</b> «Ser un noi» i «ser una noia» són successos contraris: les dues probabilitats sumen 1.<br><br><b>b)</b> Anomenem <i>n</i> el nombre de membres: hi ha proporció directa entre les noies i el total.',
   'apl-ud9/U9.96': 'Fes una llista <b>ordenada</b> de totes les maneres d\'obtenir 36 multiplicant tres nombres de l\'1 al 6:<br>- 1 · 6 · 6<br>- 2 · 3 · 6<br>- …<br>Després, compta en quants ordres pot sortir cadascuna.<br><br><b>Atenció</b>: recorda que en total hi ha 6 · 6 · 6 = 216 casos possibles.'
