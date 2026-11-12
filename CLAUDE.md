@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 218 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 219 pistes que el professor ha revisat (UD1–UD11; la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -278,6 +278,12 @@ descuits, no estil. No les copiïs.
 - **Revisió crítica de Claude (13/11/2026)**: artifact «Revisió de les pistes · 4t ESO»
   (https://claude.ai/artifact/7TCb4T8pfRWfQdHi2s9rJ3), 16 punts (B1, R1–R4, F1–F3, C1–C5, L1–L2, P1); les respostes
   del professor són a la col·lecció `respostes` (camps `decisio`, `comentari`; Claude respon al camp `resposta`).
+  Aprovats i aplicats: B1, R1–R4, F2, F3, C1, C3, C4, L1, L2, P1. Rebutjats: C2, C5. Criteris que en surten:
+  - **L'equació es pot donar** (U2.37, 8.3.10, U9.84) quan l'exercici no tracta de plantejar-la: a Aplicades, sovint
+    el que es treballa és resoldre-la i interpretar-la. A la UD4, en canvi, plantejar la proporció *era* l'exercici.
+  - **Cap avís sobre un error que l'alumne no faria** (U9.23, «no 100»): li posa la idea al cap.
+  - **«Factor multiplicador» és sempre 1 + el tant per u** (1,24 per a un augment del 24 %); 0,24 és el tant per u.
+  - Les pistes no remeten a altres pistes («com a U6.52»).
 
 - **Què s'ha après de la vuitena tanda (UD5, UD6, UD10, 12/11/2026)**: 15 revisades, 8 sense canvis (U4.24, U4.32,
   U4.39, U4.64, U4.8, U3.49, U6.28, U7.51). Els retocs són petits: les pistes ja s'acosten al seu estil.
