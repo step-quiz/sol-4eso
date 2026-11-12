@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 22 pistes de la UD4 (setmanes 1, 2 i 3).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 99 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,33 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la tercera tanda (UD1, UD2, UD5–UD10, 13/11/2026)**: 36 revisades, 6 sense canvis.
+  - **«Pensa una cosa:» amb mesura.** Ha tret els de Claude que donaven la resposta (U7.97, U2.35). Es reserva per
+    a una idea que l'alumne no veuria sol, no per al pas que és l'exercici.
+  - **Atenció per al parany concret de l'exercici**: les unitats (U7.106, «en milers d'euros»), els negatius entre
+    parèntesis (U6.52), que un nombre pot ser de més d'un conjunt (U1.52), simplificar abans (U1.12), «el factor
+    multiplicador és 0,24, i no 1,24» (U2.99), «pujar dues vegades un 3 % no equival a pujar un 6 %, saps per quin
+    motiu?» (U2.92). La pregunta «saps per què?» la manté quan és la idea clau.
+  - **Exemples amb les dades de l'enunciat**: «tot i que el −5 és un nombre real, també és un nombre enter» (U1.12),
+    «el nombre 418… respondrem "natural"» (U1.50), dos exemples, un de cada cas (3,8 → 4 i 3,2 → 3, U1.21).
+  - **Explica les paraules de l'enunciat**: «Et demanen el sobrecost: això vol dir…» (2.6.2).
+  - **Una altra manera de llegir la mateixa relació**: «o potser et convé pensar-ho com que els homes són el triple
+    que les dones» (U4.63).
+  - **El perquè, explícit**: «(el motiu és que el coeficient… és negatiu). Com que la paràbola mira cap avall, sabem
+    que…» (U7.106); «Cada persona fa un regal a les altres menys a ella mateixa. Per tant…» (U3.63).
+  - **Instruccions precises**: «amb **quatre decimals**», «≈» (U1.22); «truncat a les centèsimes… arrodonit a les
+    centèsimes» (U1.20); «com a últim pas… en segon lloc…» (U1.83); «calcula el perímetre en funció de la llargada i
+    l'amplada» (U3.71).
+  - **No copia la fórmula**: «Repassa quina és la fórmula per a un préstec amb interès simple» (2.5.1).
+  - **Sorpresa davant l'absurd**: «Et sorprèn que el preu final sigui superior a 130 €? Creus realment que els
+    percentatges encadenats es poden sumar?» (U2.FN).
+  - **Vertader o fals, en dos casos**: «si creus que és vertadera, busca un cas més senzill… si creus que és falsa,
+    busca un contraexemple» (U8.82). Tanca portant-ho a l'enunciat: «Pensa si en el cas de l'enunciat es compleixen
+    les dues condicions» (U9.81).
+  - Treu els apartats que surten sols (U2.96 b) i els avisos innecessaris (U3.63, la solució natural).
+  - Descuits seus: el signe < escrit (trenca la pista), salts de línia amb Enter, cometes rectes, «__», espai abans
+    de % i dins la negreta, concordança.
 
 - **Què s'ha après de la segona tanda de les UD1, UD2, UD3, UD5, UD7, UD8, UD9 i UD10 (12/11/2026)**: 21 revisades.
   Matisa la lliçó anterior: **treu el que és general (definicions, avisos), però afegeix bastida concreta**.
