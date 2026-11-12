@@ -264,6 +264,29 @@ descuits, no estil. No les copiïs.
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
 
+- **Què s'ha après de les primeres pistes revisades de les UD1, UD5 i UD11 (12/11/2026)**: 22 revisades, 3 sense
+  canvis (AP.1, U3.33, U3.9).
+  - **Un exemple fet val més que la regla.** En lloc d'enunciar el mètode, el mostra aplicat al primer apartat:
+    «Per exemple, en el primer cas, … o bé *x* = 0, o bé (6*x* − 7) = 0» (U3.38); «en el primer apartat has de
+    multiplicar per 12» (U3.43). O un exemple paral·lel amb números: «l'equació (*x* − 3) · (*x* + 5) = 0 té
+    solucions *x* = 3 i *x* = −5» (U3.11).
+  - **«Et donem una pista:»** seguit d'un fet, sense l'ordre de què fer després (U3.7, U3.11): el pas d'aplicar-lo
+    a l'exercici és de l'alumne.
+  - **Treu el que ja saben**: què és una solució (U3.3), la fórmula de l'àrea (U1.46), la definició de valor
+    numèric (AP.36, «Sabem que, si substituïm…»). I treu els avisos que resolen un apartat (U1.5 d) o que
+    distreuen (U3.39: no dividir per *x*).
+  - **Primer el mètode general, després la drecera com a pregunta**: «En general, pots aplicar la propietat
+    distributiva… L'apartat **a)** es pot resoldre més ràpidament, saps per què?» (U3.39).
+  - Anomena la propietat («aplicant la propietat distributiva», U3.41) i escriu l'expressió que costa de traduir
+    («l'altura és el doble, o sigui, 2*x*», AP.71).
+  - Ordena els passos amb «en primer lloc… posteriorment…» (U3.8) i posa la forma final en una línia a part (U3.41).
+  - Termes tècnics en negreta dins de les llistes (**decimal exacte**, **decimal periòdic**, **nombre irracional**,
+    U1.5) i casos paral·lels en llista (U1.4).
+  - Diu com s'escriu bé, sense mostrar la forma equivocada: «una hora i mitja s'expressa així: *t* = 1,5», no
+    «no 1,30» (AP.81). Enllaça amb l'apartat anterior en lloc de dir què no s'ha de fer (AP.76).
+  - Totes les parts porten etiqueta, també la **a)** (U1.10).
+  - Descuits seus: «hagit», una paraula que falta («si»), cursives i espais als binomis, «Atenció» sense negreta.
+
 - **Què s'ha après dels esborranys de la UD4 de 4t ESO Aplicades (setmana 3, 10/11/2026)**: 5 de 7 sense
   canvis. Els dos retocs treuen el final, no hi afegeixen res:
   - **Confia en l'esquema**: si la pista diu «Fes un esquema» i el dibuix ja mostra quin costat és la
