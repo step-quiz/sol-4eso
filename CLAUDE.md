@@ -264,6 +264,32 @@ descuits, no estil. No les copiïs.
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
 
+- **Què s'ha après de la segona tanda de les UD1, UD2, UD3, UD5, UD7, UD8, UD9 i UD10 (12/11/2026)**: 21 revisades.
+  Matisa la lliçó anterior: **treu el que és general (definicions, avisos), però afegeix bastida concreta**.
+  Aquesta vegada sovint allarga la pista.
+  - **Escriu el pas intermedi que costa de traduir**: «surt de terra, és a dir, amb altura *h* = 0… troba els
+    dos moments *t* on *h(t)* = 0» (U7.94); «obtens (*x* − 3)² = 4» (U3.40); «ha passat del 100 % al 87,5 %»
+    (U2.30); «La nostra funció serà *f(x)*» (U6.112).
+  - **Passos en llista, amb els noms en negreta i connectors d'ordre**: «En primer lloc, calcula **l'interès**.
+    Després… - **el total**… - **la quota mensual**…» (2.5.2); l'arbre «en primer lloc… per a cadascuna de les
+    tries anteriors… finalment, per tancar l'arbre…» (U9.1); els tres costats del triangle, també «l'altre catet
+    és l'altura que has dibuixat» (U1.46). Comença la llista que l'alumne ha de completar: CCC, CCX, CXC, …
+    (U9.88).
+  - **«Pensa una cosa:»** per a la idea clau, al final: «els 28 estudiants són l'Ana i els 27 anteriors» (U8.70).
+  - **Estratègia del cas més senzill**: «Si no saps com començar, pensa-ho en un cas més senzill… estàs d'acord
+    que calen menys pals?» (U2.59); «És preferible començar amb una situació més senzilla… Quantes vegades de
+    mitjana creus que caldrà…?» (9.5.5).
+  - **Vocabulari de classe**: «**factor multiplicador**», no «índex de variació» (U2.28), amb un exemple paral·lel
+    («si l'augment és d'un 30 %, el factor multiplicador és 1,30»). Els percentatges amb la quantitat inicial
+    desconeguda es tracten com a **proporció directa** («aplica la proporció, planteja l'equació», U2.30, U5.67).
+  - Parèntesis amb la dada: «pel total (que és 432)» (U2.27), «(que en aquest cas és 15)» (U8.2). «En canvi»
+    per contraposar dos conceptes (U8.2). «Et recomanem que…» (U5.67). Avisa del que veurà: «un nombre enorme,
+    però en centímetres» (U5.67).
+  - Treu els exemples que resolen apartats (U1.41) i el «saps per què?» (U7.94). Un fet com a fet: «necessites
+    saber quantes persones…» (U9.27). Explica per què es pot aplicar el mètode: «perquè en el fons és la
+    hipotenusa» (U1.23).
+  - Descuits seus: «escullir», «nomes», unitats (km per m), «..», cursiva de *h(t)* i *f(x)*.
+
 - **Què s'ha après de les primeres pistes revisades de les UD1, UD5 i UD11 (12/11/2026)**: 22 revisades, 3 sense
   canvis (AP.1, U3.33, U3.9).
   - **Un exemple fet val més que la regla.** En lloc d'enunciar el mètode, el mostra aplicat al primer apartat:
