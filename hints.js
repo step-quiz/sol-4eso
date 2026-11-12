@@ -63,8 +63,16 @@ const PISTES = {
   'apl-ud2/U2.97': 'En primer lloc aplica el descompte i, posteriorment, l\'IVA sobre el preu ja rebaixat: pots multiplicar els 240 € pels <b>factors multiplicadors</b>: 0,80 i 1,21.',
   'apl-ud2/U2.98': 'Guanyar un 20 % vol dir vendre a un preu un 20 % més alt que el de compra: pots fer servir el <b>factor multiplicador</b> 1,20.',
   'apl-ud2/U2.103': 'Fes el camí a l\'inrevés: primer s\'afegeix el guany al preu inicial i, després, l\'IVA sobre aquest preu.<br>Per tant, si anomenem <i>x</i> el preu inicial, tenim aquesta equació: <i>x</i> · 1,10 · 1,21 = 60.',
+  'apl-ud2/U2.104': 'En primer lloc el descompte i, posteriorment, l\'IVA sobre el preu rebaixat. Pots fer-ho de cop amb els dos <b>factors multiplicadors</b>: 0,75 i 1,21.',
+  'apl-ud2/U2.105': '<b>a)</b> L\'IVA és el 21 % del preu de venda. Cada intermediari paga IVA quan compra i en cobra quan ven: el que li toca pagar és la diferència.<br><br><b>b)</b> El consumidor paga el 21 % dels 6 000 €.<br><br><b>c)</b> Compara aquest IVA amb el preu final que paga el consumidor.',
+  'apl-ud2/U2.36': 'Repassa quina és la fórmula de l\'interès <b>simple</b>.<br>Fixa\'t que dos anys i mig són 2,5 anys.',
+  'apl-ud2/U2.37': 'Els 2 346 € que et tornen són el capital més els interessos. Anomenem <i>C</i> el capital: els interessos són <i>C</i> · 0,045 · 2, i per tant tenim aquesta equació:<br><i>C</i> + <i>C</i> · 0,045 · 2 = 2 346',
+  'apl-ud2/U2.38': 'En primer lloc, calcula els interessos: el que torna menys el que va demanar.<br>Posteriorment, fes servir la fórmula de l\'interès simple, on ara la incògnita és el rèdit, que és el tant per u (i no el %).',
+  'apl-ud2/U2.39': 'Fes servir la fórmula de l\'interès simple: ara coneixes l\'interès (225 €), el capital (3 000 €) i el rèdit (3 % = 0,03), i la incògnita és el temps.',
   'apl-ud2/2.5.1': 'Repassa quina és la fórmula per a un préstec amb interès <b>simple</b>.<br>Recorda que un 6 % es representa com 0,06.',
   'apl-ud2/2.5.2': 'En primer lloc, calcula <b>l\'interès</b>. Després, pots calcular les altres dades:<br>- <b>el total</b> es calcula amb una suma: cal sumar el capital inicial més els interessos<br>- <b>la quota mensual</b> és aquest total que has obtingut, però repartit entre tots els mesos que hi ha en 2 anys.',
+  'apl-ud2/2.5.3': 'En primer lloc, calcula el <b>total</b>: la suma de totes les quotes.<br>Després, el <b>sobrecost</b>: el que pagues de més respecte al preu que haguessis pagat al comptat.',
+  'apl-ud2/2.5.4': 'És veritat que cal multiplicar el capital pel rèdit en tant per u.<br>Però fixa\'t en el resultat: 50 € és l\'interès d\'un any. Tu creus que en dos anys et donen la mateixa quantitat?',
   'apl-ud2/2.6.1': 'El cost total és tot el que pagues: l\'entrada (si és que n\'hi ha), més totes les quotes.',
   'apl-ud2/2.6.2': 'Calcula el cost total de cada opció:<br>- <b>al comptat</b>: 400 €;<br>- <b>a terminis</b>: l\'entrada més les nou quotes.<br>Et demanen el «sobrecost»: això vol dir la diferència entre els dos preus obtinguts.',
   'apl-ud2/U2.FN': 'Si no saps com començar, prova-ho amb un preu concret que et resulti fàcil, com per exemple 100 €:<br>- al gener, apuja\'l un 10 %;<br>- al febrer, apuja un 10 % sobre el nou preu;<br>- al març, torna\'l a apujar un 10 %.<br><br>A partir dels 100 €, quin ha estat el preu final? Et sorprèn que el preu final sigui <b>superior a</b> 130 €?<br>Creus realment que els percentatges encadenats es poden sumar?',
@@ -126,23 +134,33 @@ const PISTES = {
   /* ── 4t ESO Aplicades · Unitat 10 · Sistemes d’equacions i inequacions ── */
   'apl-ud10/U4.26': 'Substitueix cada possibilitat a l\'equació i comprova si es compleix la igualtat.',
   'apl-ud10/U4.63': 'Anomenem <i>x</i> el nombre d\'homes i <i>y</i> el de dones. Cada frase de l\'enunciat et dona una equació:<br>- el <b>total de persones</b>: <i>x</i> + <i>y</i> = 60;<br>- la <b>situació imaginada</b>: si marxen 3 homes i en vénen 3 dones, queden <i>x</i> − 3 homes i <i>y</i> + 3 dones, i les dones són la tercera part dels homes (o potser et convé pensar-ho com que «els homes són el triple que les dones»).',
+  'apl-ud10/U4.68': 'Anomenem <i>x</i> el nombre de monedes de 0,50 € i <i>y</i> el de monedes de 0,20 €. Escriu dues equacions:<br>- una amb el <b>nombre de monedes</b> (n\'hi ha 8);<br>- una altra amb els <b>diners</b> (en total, 3,10 €).',
+  'apl-ud10/U3.58': 'Substitueix <i>x</i> = 2 a cada costat i compara els dos nombres que obtens.<br>Per exemple, a l\'apartat a): 2 · 2 = 4, i 4 és més gran que 3. Per tant, en aquest cas faràs servir >.',
+  'apl-ud10/U3.24': 'Resol-les com una equació: passa les <i>x</i> a un membre i els nombres a l\'altre.<br><br><b>Atenció</b>: si multipliques o divideixes els dos membres per un nombre negatiu, el sentit de la desigualtat canvia. Per exemple, 2 és més petit que 3, però −2 és més gran que −3.',
   'apl-ud10/U3.59': 'En primer lloc, elimina els parèntesis aplicant la propietat distributiva, i agrupa els termes semblants.<br>Posteriorment, resol la inequació que obtinguis.',
+  'apl-ud10/U3.26': 'Et donem una pista: la solució [2, +∞) vol dir que <i>x</i> pot ser 2 o qualsevol nombre més gran, és a dir, <i>x</i> ≥ 2.<br>A partir d\'aquí, suma, resta o multiplica els dos membres pel mateix nombre (positiu) i ja tindràs una inequació diferent amb la mateixa solució.',
   'apl-ud10/U3.73': 'Anomenem <i>x</i> el nombre d\'hores. Escriu què costa cada opció:<br>- la <b>cadira</b>: 3 € per hora, és a dir, 3<i>x</i>;<br>- la <b>gandula</b>: 5 € fixos més 2 € per hora.<br>«Més econòmica» vol dir que la gandula costa menys que la cadira: això et dona una <b>inequació</b>, perquè faràs servir el signe «menor que».',
 
   /* ── 4t ESO Aplicades · Unitat 6 · La paràbola ── */
+  'apl-ud6/U7.45': 'Fes una taula de valors amb <i>x</i> = −2, −1, 0, 1 i 2 i representa els punts obtinguts al pla cartesià.<br>Després, compara les tres paràboles: què canvia quan el coeficient de <i>x</i>² és negatiu?',
+  'apl-ud6/U7.49': 'En primer lloc, troba el <b>vèrtex</b>: repassa quina és la fórmula de la primera coordenada, i recorda que per obtenir la segona coordenada del vèrtex només cal trobar la imatge de la primera coordenada amb la funció.<br>Posteriorment, mira el coeficient de <i>x</i>²:<br>- si és positiu, la paràbola s\'obre cap amunt i el vèrtex és un <b>mínim</b>;<br>- si és negatiu, s\'obre cap avall i el vèrtex és un <b>màxim</b>.',
   'apl-ud6/U7.106': '<b>a)</b> La funció és una paràbola cap avall (el motiu és que el coeficient que multiplica la <i>x</i>² és negatiu). Com que la paràbola mira cap avall, sabem que el cost més alt serà justament al <b>vèrtex</b>.<br><br><b>b)</b> Substitueix <i>x</i> = 15. <b>Atenció</b>: recorda que el resultat és en milers d\'euros.',
 
   /* ── 4t ESO Aplicades · Unitat 7 · Funcions: llegim gràfics ── */
   'apl-ud7/U6.52': 'Substitueix cada valor a la funció.<br><b>Atenció</b>: quan substitueixes nombres negatius, recorda escriure\'ls entre parèntesis: (−2)² = 4, i (−2)³ = −8.',
+  'apl-ud7/U6.84': 'Busca el punt més alt i el més baix de la gràfica i llegeix a quina hora correspon cada valor.<br>Un màxim és <b>absolut</b> si és el valor més alt de tot el dia. En canvi, tenim un màxim <b>relatiu</b> si només ho és comparat amb els punts del seu voltant.',
   'apl-ud7/U6.112': 'La nostra funció serà <i>f(x)</i>, on anomenem <i>x</i> l\'import de la comanda.<br>Cada frase de l\'enunciat és un tros de la funció: escriu què costa l\'enviament i segons els valors de <i>x</i>.',
   'apl-ud7/U7.89': 'El preu és una part fixa (la baixada de bandera, 1 €) més una part que depèn dels quilòmetres (0,80 € per quilòmetre).',
   'apl-ud7/U7.97': 'Comença amb 1 bacteri i fes una taula: cada 25 minuts, el nombre de bacteris es multiplica per 2 (1, 2, 4, 8…). Per tant, és una funció <b>exponencial</b> de base 2.',
 
   /* ── 4t ESO Aplicades · Unitat 8 · Estadística ── */
   'apl-ud8/U8.2': 'Compta quantes vegades surt cada color: aquesta és la <b>freqüència absoluta</b>.<br>En canvi, la <b>freqüència relativa</b> és la freqüència absoluta dividida pel total de dades (que en aquest cas és 15).',
+  'apl-ud8/U8.40': 'El 15 % del nombre d\'estudiants ha de ser un nombre enter (no hi pot haver mitja persona esquerrana).<br>Escriu el 15 % com una fracció, 15/100, i simplifica-la. Què et diu el denominador?',
   'apl-ud8/U8.52': 'En primer lloc, fes els intervals: [150, 155), [155, 160)…, de manera que hi puguis classificar totes les dades. Posteriorment, compta les dades que conté cada interval.<br><br><b>Atenció</b>: l\'interval [150, 155) inclou el 150 però no el 155.',
+  'apl-ud8/8.3.2': 'És una <b>mitjana ponderada</b>: cada nota compta segons el seu pes.<br>- Multiplica cada nota pel seu pes i suma-ho tot.<br>- Divideix per la suma dels pesos (que és 100).',
   'apl-ud8/8.3.5': 'Calcula la mitjana i també la mediana. Després, concentra\'t en el sou de 8 000 €: quina de les dues mesures canvia molt per «culpa» d\'aquest sou, i en canvi l\'altra gairebé no canvia?',
   'apl-ud8/U8.70': '- Si la mitjana dels 27 estudiants és 84, quant sumen totes les puntuacions de tots aquests estudiants?<br>- Troba també la suma de les puntuacions de 28 estudiants amb mitjana 83.<br>- Pensa una cosa: els 28 estudiants són l\'Ana i els 27 estudiants anteriors.',
+  'apl-ud8/U8.89': '<b>La mitjana</b>: calcula la mitjana dels cinc dies. Quina distància ha de córrer dissabte perquè la mitjana sigui la mateixa?<br><br><b>La mediana</b>: ordena les cinc distàncies. Com que tens 6 dades i és un nombre parell, no existeix «la posició que està al mig». En aquests casos, per trobar la mediana has de fer la mitjana aritmètica de les dues posicions que queden al mig (en aquest cas, la 3a i la 4a posició).',
   'apl-ud8/U8.82': '- Si creus que una frase és vertadera, busca un cas més senzill (no cal que siguin 25 estudiants) on s\'entengui el teu raonament.<br>- Si creus que una frase és falsa, busca un contraexemple, és a dir, un cas on veiem clar per què és impossible.',
 
   /* ── 4t ESO Aplicades · Unitat 9 · Atzar i decisions ── */

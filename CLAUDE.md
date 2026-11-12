@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 114 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 132 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,24 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la cinquena tanda (UD2, UD6–UD8, UD10, 12/11/2026)**: 18 revisades, 7 sense canvis (U3.24,
+  U3.26, U4.68, U2.104, U2.36, U2.37, 8.3.2).
+  - **L'exemple s'acaba fins a la decisió que demana l'enunciat**: «…i 4 és més gran que 3. Per tant, en aquest cas
+    faràs servir >» (U3.58). Un exemple a mitges no ensenya com es lliga el càlcul amb la resposta.
+  - **El perquè d'una regla, i les dades concretes**: la mediana amb un nombre parell de dades «no existeix "la
+    posició que està al mig"… la mitjana aritmètica de les dues posicions que queden al mig (en aquest cas, la 3a i
+    la 4a)» (U8.89).
+  - **El parany del tant per u, on surt**: «el rèdit, que és el tant per u (i no el %)» (U2.38); «(3 % = 0,03)»
+    (U2.39).
+  - **El concepte pel seu nom, no el procediment**: «la imatge de la primera coordenada amb la funció», no
+    «substituint» (U7.49).
+  - **Noms concrets en lloc de pronoms buits**: «la mateixa quantitat», no «el mateix» (2.5.4); «a quina hora
+    correspon cada valor» (U6.84). L'acció sencera: «representa els punts obtinguts al pla cartesià» (U7.45).
+  - **Explica la paraula de l'enunciat amb una situació**: «el preu que haguessis pagat al comptat» (2.5.3).
+  - «En canvi» per contraposar absolut i relatiu (U6.84). Expressions naturals: «mitja persona esquerrana», no «mig
+    esquerrà» (U8.40). Fora el que és redundant («de cada venda», U2.105).
+  - Descuits seus: espai al final i abans del punt, cometes rectes, «En aquesta casos».
 
 - **Què s'ha après de la quarta tanda (UD1–UD3, 12/11/2026)**: 15 revisades, 4 sense canvis (U1.53, U2.32, U2.91,
   U2.98).
