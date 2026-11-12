@@ -40,16 +40,29 @@ const PISTES = {
   'apl-ud1/U1.12': 'El <b>menor conjunt</b> és el conjunt més petit on hi pertany el nombre.<br>Per exemple, tot i que el −5 és un nombre real, també és un <b>nombre enter</b>.<br><b>Atenció</b>: en primer lloc, simplifica el que es pugui, com per exemple, √625, que és una arrel exacta.',
   'apl-ud1/U1.50': 'Pista: el nombre 418 és un nombre enter i racional, però també és nombre natural i per tant respondrem «natural» en aquest cas, perquè és el menor conjunt on hi pertany.',
   'apl-ud1/U1.52': 'En primer lloc, fes les operacions que es puguin fer i mira si l\'arrel és exacta. Per exemple, √(17 + 8) = √25 = 5.<br><b>Atenció</b>: tingues en compte que un nombre pot pertànyer a més d\'un conjunt: un natural també és enter, racional i real.',
+  'apl-ud1/U1.53': 'Passa cada nombre a forma decimal amb la calculadora i, posteriorment, ordena\'ls. Per exemple, 7/3 ≈ 2,333.',
   'apl-ud1/U1.60': 'En primer lloc, passa cada decimal periòdic a fracció. Per exemple, 2,777… = 25/9.<br>Posteriorment, opera amb les fraccions i comprova si finalment obtens una arrel exacta.',
+  'apl-ud1/U1.FN': 'Les tres quartes parts i el terç són parts del total d\'assistents. Suma 3/4 + 1/3: quina part del total obtens?<br>Té sentit que sumi més que 1? És a dir, més que el 100 %?',
+  'apl-ud1/U1.82': 'Calcula el valor decimal de cada aproximació i arrodoneix-lo a sis decimals (a les milionèsimes). Després, calcula:<br>- l\'<b>error absolut</b>: la diferència, en valor absolut, entre l\'aproximació i el valor de π;<br>- l\'<b>error relatiu</b>: l\'error absolut dividit pel valor de π.',
 
   /* ── 4t ESO Aplicades · Unitat 2 · Percentatges i matemàtica financera ── */
   'apl-ud2/U2.27': 'Divideix el nombre d\'estudiants de cada activitat pel total (que és 432), i multiplica-ho per 100.',
   'apl-ud2/U2.28': 'Per aplicar un augment del 5,8 %, pots fer servir directament el <b>factor multiplicador</b>: 1,058.<br>(Un altre exemple: si l\'augment és d\'un 30 %, llavors el factor multiplicador és 1,30.)',
+  'apl-ud2/U2.29': 'Si la palla és el 60 % del pes, vol dir que el gra és el 40 % restant. Calcula:<br>- quantes tones hi ha de <b>gra</b> i de <b>palla</b>;<br>- quants diners en treu de cadascun, multiplicant les tones pel seu preu.',
   'apl-ud2/U2.30': 'Si la natalitat ha baixat un 12,5 %, vol dir que ha passat del 100 % al 87,5 %.<br>També sabem que els 98 nadons d\'aquest any corresponen al 87,5 %.<br>Tens una situació de proporció directa: aplica la proporció, planteja l\'equació i trobaràs la resposta.',
+  'apl-ud2/U2.89': 'Per exemple, «tres de cada vint» és la fracció 3/20.<br>Per expressar-ho com un percentatge, planteja una situació de proporcionalitat:<br>3/20 = <i>x</i>/100.',
+  'apl-ud2/U2.90': 'En alguns casos, es pot fer gairebé mentalment:<br>- el 50 % és trobar la meitat.<br>- el 10 % és la desena part.<br>- el 25 % és la quarta part.',
+  'apl-ud2/U2.91': 'L\'aigua que conté és el 45 % de la capacitat màxima (que és 200 hm³).',
+  'apl-ud2/U2.31': 'Fes el camí a l\'inrevés:<br>- en primer lloc, 112 és el 20 % de la quantitat augmentada: troba aquesta quantitat amb una proporció directa;<br>- posteriorment, la quantitat augmentada és la inicial multiplicada pel <b>factor multiplicador</b> 1,12.',
+  'apl-ud2/U2.33': 'Els percentatges encadenats es fan multiplicant els <b>factors multiplicadors</b>: augmentar un 28 % és multiplicar per 1,28, i rebaixar un 12 %, per 0,88.<br>Per tant, si anomenem <i>x</i> el preu inicial, tenim una equació: <i>x</i> · 1,28 · 0,88 = 527,85.',
   'apl-ud2/U2.35': 'Si no saps com començar, prova-ho amb un preu concret, per exemple 100 €: augmenta\'l un 15 % i, al resultat que obtinguis, resta-li un 15 %.',
   'apl-ud2/U2.92': 'Si vols aplicar dues vegades un augment del 3 %, pots multiplicar dues vegades pel <b>factor multiplicador</b>: 1,03.<br><b>Atenció</b>: pujar dues vegades un 3 % no equival a pujar un 6 %, saps per quin motiu?',
   'apl-ud2/U2.96': '<b>a)</b> Si ha disminuït un 20 %, vol dir que ha passat del 100 % al 80 %. També sabem que els 1 500 estudiants d\'ara corresponen al 80 %: tens una situació de proporció directa.',
   'apl-ud2/U2.99': '<b>Atenció</b>: et demanen quants diners puja cada article, no el preu final: n\'hi ha prou de calcular el 24 % de cada preu. És a dir, que en aquest cas <b>el factor multiplicador</b> és 0,24, i no 1,24.',
+  'apl-ud2/U2.32': 'En primer lloc, aplica el descompte al preu del cotxe i, posteriorment, l\'IVA al preu rebaixat. Ho pots fer de cop multiplicant pels dos <b>factors multiplicadors</b>: 0,80 i 1,21.',
+  'apl-ud2/U2.97': 'En primer lloc aplica el descompte i, posteriorment, l\'IVA sobre el preu ja rebaixat: pots multiplicar els 240 € pels <b>factors multiplicadors</b>: 0,80 i 1,21.',
+  'apl-ud2/U2.98': 'Guanyar un 20 % vol dir vendre a un preu un 20 % més alt que el de compra: pots fer servir el <b>factor multiplicador</b> 1,20.',
+  'apl-ud2/U2.103': 'Fes el camí a l\'inrevés: primer s\'afegeix el guany al preu inicial i, després, l\'IVA sobre aquest preu.<br>Per tant, si anomenem <i>x</i> el preu inicial, tenim aquesta equació: <i>x</i> · 1,10 · 1,21 = 60.',
   'apl-ud2/2.5.1': 'Repassa quina és la fórmula per a un préstec amb interès <b>simple</b>.<br>Recorda que un 6 % es representa com 0,06.',
   'apl-ud2/2.5.2': 'En primer lloc, calcula <b>l\'interès</b>. Després, pots calcular les altres dades:<br>- <b>el total</b> es calcula amb una suma: cal sumar el capital inicial més els interessos<br>- <b>la quota mensual</b> és aquest total que has obtingut, però repartit entre tots els mesos que hi ha en 2 anys.',
   'apl-ud2/2.6.1': 'El cost total és tot el que pagues: l\'entrada (si és que n\'hi ha), més totes les quotes.',
@@ -57,7 +70,9 @@ const PISTES = {
   'apl-ud2/U2.FN': 'Si no saps com començar, prova-ho amb un preu concret que et resulti fàcil, com per exemple 100 €:<br>- al gener, apuja\'l un 10 %;<br>- al febrer, apuja un 10 % sobre el nou preu;<br>- al març, torna\'l a apujar un 10 %.<br><br>A partir dels 100 €, quin ha estat el preu final? Et sorprèn que el preu final sigui <b>superior a</b> 130 €?<br>Creus realment que els percentatges encadenats es poden sumar?',
 
   /* ── 4t ESO Aplicades · Unitat 3 · Proporcionalitat i escales ── */
+  'apl-ud3/U2.48': 'Entre les persones i el salmó hi ha <b>proporció directa</b>. Si no saps com començar, pensa primer quant salmó correspon a una sola persona.',
   'apl-ud3/U2.59': 'Si no saps com començar, pensa-ho en un cas més senzill.<br>Imagina que tens només 4 pals (separats 15 m entre si). I fes-ho més fàcil: si estiguessin a 30 m de separació, estàs d\'acord que calen menys pals? Com trobaries la distància entre les dues poblacions?',
+  'apl-ud3/U5.28': 'Una escala 1:75 vol dir que cada longitud del futbolí és 75 vegades més petita que la real.<br>- En primer lloc, calcula les dimensions del futbolí.<br>- Posteriorment, calcula la seva àrea.',
   'apl-ud3/U5.67': 'Una escala 1:400 000 vol dir que 1 cm del mapa són 400 000 cm de la realitat.<br><br><b>a)</b> Aplica l\'escala i obtindràs un resultat que serà un nombre enorme, però expressat en centímetres. Per tant, com a pas final, has de passar el resultat a quilòmetres.<br><br><b>b)</b> Et recomanem que, abans de res, passis primer els 236 quilòmetres a centímetres.<br>Després, aplica l\'escala, però planteja bé l\'equació a partir de la proporció directa.',
 
   /* ── 4t ESO Aplicades · Unitat 4 · Mesura indirecta ── */
@@ -139,8 +154,7 @@ const PISTES = {
   'apl-ud9/9.5.5': 'És preferible començar amb una situació més senzilla. Tens un dau equilibrat i vols endevinar quin nombre sortirà, de l\'1 al 6.<br>Quantes vegades de mitjana creus que caldrà llançar el dau per tal que l\'encertis per primera vegada?',
   'apl-ud9/9.5.10': '<b>a)</b> Fes els càlculs amb la calculadora, amb tres decimals. Per exemple, la divisió 1 : 2,10 ≈ 0,476.<br><br><b>b)</b> Si la casa fos justa, la suma hauria de donar exactament 1.<br><br><b>c)</b> Calcula 1 dividit per la suma i expressa-ho en cèntims per euro.',
   'apl-ud9/U9.98': '<b>a)</b> «Ser un noi» i «ser una noia» són successos contraris: les dues probabilitats sumen 1.<br><br><b>b)</b> Anomenem <i>n</i> el nombre de membres: hi ha proporció directa entre les noies i el total.',
-  'apl-ud9/U9.96': 'Fes una llista <b>ordenada</b> de totes les maneres d\'obtenir 36 multiplicant tres nombres de l\'1 al 6:<br>- 1 · 6 · 6<br>- 2 · 3 · 6<br>- …<br>Després, compta en quants ordres pot sortir cadascuna.<br><br><b>Atenció</b>: recorda que en total hi ha 6 · 6 · 6 = 216 casos possibles.',
-
+  'apl-ud9/U9.96': 'Fes una llista <b>ordenada</b> de totes les maneres d\'obtenir 36 multiplicant tres nombres de l\'1 al 6:<br>- 1 · 6 · 6<br>- 2 · 3 · 6<br>- …<br>Després, compta en quants ordres pot sortir cadascuna.<br><br><b>Atenció</b>: recorda que en total hi ha 6 · 6 · 6 = 216 casos possibles.'
 };
 
 function pistaDe(u, n){

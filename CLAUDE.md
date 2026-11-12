@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 99 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 114 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,23 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la quarta tanda (UD1–UD3, 12/11/2026)**: 15 revisades, 4 sense canvis (U1.53, U2.32, U2.91,
+  U2.98).
+  - **Lèxic**: «a l'inrevés», no «al revés» (castellanisme); «tenim aquesta equació:», no «tenim que» (calc de
+    «tenemos que»); **«àrea»** per a la mesura d'una superfície («calcula la seva àrea», mai «la seva superfície»).
+  - **La incògnita es diu *x***, com a classe, no *p* de preu (U2.103, U2.33). I es diu que el que surt és una
+    **equació**.
+  - **El mètode, no el resultat**: en lloc de «3/20 = 15/100», «planteja una situació de proporcionalitat:
+    3/20 = *x*/100», que serveix per a tots els apartats (U2.89).
+  - **Fora la regla general que ja saben** («multiplica per… i divideix per 100»): la pista aporta només el que és
+    nou (el càlcul mental del 50 %, 10 %, 25 %), com a possibilitat («En alguns casos…») i en llista (U2.90).
+  - **Primer la dada concreta, el nom tècnic entre parèntesis**: «a sis decimals (a les milionèsimes)» (U1.82).
+  - **L'absurd en el número que l'alumne acaba d'obtenir**: «Té sentit que sumi més que 1? És a dir, més que el
+    100 %?» (U1.FN), no «més que el total».
+  - Connectors que fan veure el raonament: «vol dir que» (U2.29), «una **sola** persona» (U2.48), «ja rebaixat»;
+    cada pas amb el seu verb («aplica el descompte») i el mètode com a opció («pots multiplicar», U2.97).
+  - Descuits seus: «100%» sense espai, *x* sense cursiva, una coma entre subjecte i verb («el 10 %, és»).
 
 - **Què s'ha après de la tercera tanda (UD1, UD2, UD5–UD10, 13/11/2026)**: 36 revisades, 6 sense canvis.
   - **«Pensa una cosa:» amb mesura.** Ha tret els de Claude que donaven la resposta (U7.97, U2.35). Es reserva per
