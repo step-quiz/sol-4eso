@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 169 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 218 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,21 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la novena tanda (UD6–UD9, 13/11/2026)**: 49 revisades, 25 sense canvis. Ja són totes revisades.
+  - **Frases senceres, sense el·lipsis**: «si hi van 20 alumnes» (U7.92), «llança el segon jugador; si aquest falla,
+    llavors…» (U9.102), «quantes lletres queden per a la segona posició» (U9.2).
+  - **«Creus realment que…?» / «Tu creus que…?»** per fer sentir l'absurd (U8.1, 9.5.4, 9.5.7).
+  - **Les incògnites amb les lletres de l'enunciat**: «quin valor ha de tenir la variable *x*?» (U8.69).
+  - **Una definició ja vista no es copia**: «Busca als teus apunts què significa la freqüència acumulada» (U8.34).
+  - **Fora els avisos que ja es veuen a l'exemple** (U8.80) i **l'exemple que resol un apartat** (U9.33).
+  - **La definició amb verb**: «que és el punt mig», «que és la suma de les freqüències» (U8.62, U8.59); «es calcula
+    així:» (U8.49).
+  - Descuits seus: «lletresqueden», un «?» enmig de la frase, «...» en lloc de «- », dos dos punts a la mateixa
+    frase, cometes rectes, «10%», «permetrà troba», la línia en blanc entre apartats.
+- **Revisió crítica de Claude (13/11/2026)**: artifact «Revisió de les pistes · 4t ESO»
+  (https://claude.ai/artifact/7TCb4T8pfRWfQdHi2s9rJ3), 16 punts (B1, R1–R4, F1–F3, C1–C5, L1–L2, P1); les respostes
+  del professor són a la col·lecció `respostes` (camps `decisio`, `comentari`; Claude respon al camp `resposta`).
 
 - **Què s'ha après de la vuitena tanda (UD5, UD6, UD10, 12/11/2026)**: 15 revisades, 8 sense canvis (U4.24, U4.32,
   U4.39, U4.64, U4.8, U3.49, U6.28, U7.51). Els retocs són petits: les pistes ja s'acosten al seu estil.
