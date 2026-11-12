@@ -224,7 +224,7 @@ descuits, no estil. No les copiïs.
 
 ### Qui toca què
 
-- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 140 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva).
+- **Les pistes les escriu o les revisa el professor.** `hints.js` té les 154 pistes que el professor ha revisat (UD1–UD11; l'AP.2 queda pendent, i la 9.5.12 queda sense pista per decisió seva; l'esborrany 2.6.5, buit per la mateixa raó).
   No es reescriu cap pista seva si ell no ho demana.
 - **Els descuits es corregeixen sempre, automàticament** (decisió del professor, 9/11/2026): errades
   ortogràfiques i tipogràfiques, espais de més o de menys, punts finals que falten, salts de línia fets amb
@@ -263,6 +263,24 @@ descuits, no estil. No les copiïs.
 ### Què s'ha après dels esborranys
 
 *(Els de 4t d'ESO van al davant; els de `sol`, 2n de Batxillerat, a continuació.)*
+
+- **Què s'ha après de la setena tanda (UD2, UD3, UD5, UD8, 12/11/2026)**: 14 revisades, 5 sense canvis (2.5.5,
+  2.6.4, AP.49, U3.51, i U8.77 en part).
+  - **Una equivalència que es pot imaginar**: «1 cm de futbolí són 100 cm = 1 m del camp de futbol real» (U5.34); «el
+    7,5‰ és 0,0075, perquè és el 7,5 per cada 1 000» (U2.94), amb el símbol que veuran escrit.
+  - **Instruccions que es veuen**: «passa-ho tot a l'esquerra», no «a un membre» (U3.37).
+  - **El nom exacte de l'eina, tal com es diu a classe**: «la igualtat notable del quadrat d'una resta» (U3.44), «suma
+    per diferència» (AP.10), «és un tir parabòlic» (U7.95).
+  - **No insinuar quina solució falla**: «Pensa si les dues solucions que obtinguis realment tenen sentit per a aquest
+    enunciat» (U3.77), no «per a una amplada».
+  - **«Una altra pista:»** en lloc de «Pensa una cosa:», i la incògnita dita clarament: «la sisena que tu vols saber»
+    (8.3.8).
+  - **La fórmula en una línia a part**: «d'aquesta manera:<br>*y = a(x − p)² + q*» (U7.95); el pas següent, també
+    (U3.37).
+  - Fora el que ja saben («el nombre de quotes per la quota», 2.6.3). Paraules de l'alumne: «post-it», no «pòsit»
+    (U5.69). Subjecte explícit: «quantes vegades és més petita aquesta àrea» (U5.34).
+  - Descuits seus: un salt de línia amb Enter i una cursiva mal tancada, la cursiva sobre el signe =, cometes rectes,
+    «1000», «per aquest» per «per a aquest».
 
 - **Què s'ha après de la sisena tanda (UD9, 12/11/2026)**: 9 revisades, 1 sense canvis (U9.45).
   - **Una reflexió oberta no porta pista**: ha buidat la de 9.5.12 («No hi ha una única resposta bona…»). Una pista
