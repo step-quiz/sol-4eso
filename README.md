@@ -28,7 +28,7 @@ de Polinomis. **UD5** (*Equacions de 2n grau*): 49 exercicis de la U3, la U7 i l
 (igualtats notables). **UD10** (*Sistemes*): 79 exercicis de la U4, la U3 (inequacions i problemes), la U2 (mòbils) i la
 U7. **UD6** (*La paràbola*): 25 exercicis de la U7, la U6 i la U3. **UD7** (*Funcions: llegim
 gràfics*): 79 exercicis de la U6, la U7 i la U2 (interès compost). **UD8** (*Estadística*): 59 exercicis de la U8 i 11 del llibre propi amb la solució.
-**UD9** (*Atzar i decisions*): 52 exercicis de la U9 i 12 del llibre propi amb la solució. Hi ha pistes de la UD4 (setmanes 1, 2 i 3); falten les setmanes de debò (`tasques.js`) i la resta de pistes; les altres UD es carregaran unes
+**UD9** (*Atzar i decisions*): 52 exercicis de la U9 i 12 del llibre propi amb la solució. Hi ha 99 pistes revisades (de totes les UD); falten les setmanes de debò (`tasques.js`) i la resta de pistes; les altres UD es carregaran unes
 setmanes abans de fer-les. Vegeu `TODO.md`.
 
 ## Com programo la feina
